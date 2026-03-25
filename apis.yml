@@ -1,0 +1,38 @@
+aid: aws-cognito
+name: Amazon Cognito
+description: >-
+  Amazon Cognito is an AWS service that provides authentication, authorization, and user management for web and mobile applications with OAuth2, OIDC, and SAML federation.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Authentication
+  - Identity Provider
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/apis.yml
+created: '2026-03-25'
+modified: '2026-03-25'
+specificationVersion: '0.19'
+apis:
+  - aid: aws-cognito:aws-cognito
+    name: Amazon Cognito
+    description: >-
+      Amazon Cognito is an AWS service that provides authentication, authorization, and user management for web and mobile applications with OAuth2, OIDC, and SAML federation.
+    humanURL: https://aws.amazon.com/cognito/
+    tags:
+      - Authentication
+      - Identity Provider
+    properties:
+      - type: Documentation
+        url: https://docs.aws.amazon.com/cognito/
+      - type: GitHub Repository
+        url: https://github.com/aws-amplify
+common:
+  - type: Website
+    url: https://aws.amazon.com/cognito/
+  - type: Documentation
+    url: https://docs.aws.amazon.com/cognito/
+  - type: GitHub Organization
+    url: https://github.com/aws-amplify
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
