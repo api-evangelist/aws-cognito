@@ -1,0 +1,13 @@
+{
+  "type": "string",
+  "enum": [
+    "BLOCK",
+    "MFA_IF_CONFIGURED",
+    "MFA_REQUIRED",
+    "NO_ACTION"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-account-takeover-event-action-type-schema.json",
+  "title": "AccountTakeoverEventActionType",
+  "description": "AccountTakeoverEventActionType schema from Amazon Cognito"
+}

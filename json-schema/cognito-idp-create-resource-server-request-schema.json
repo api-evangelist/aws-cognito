@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool."
+        }
+      ]
+    },
+    "Identifier": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServerIdentifierType"
+        },
+        {
+          "description": "A unique resource server identifier for the resource server. This could be an HTTPS endpoint where the resource server is located, such as <code>https://my-weather-api.example.com</code>."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServerNameType"
+        },
+        {
+          "description": "A friendly name for the resource server."
+        }
+      ]
+    },
+    "Scopes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServerScopeListType"
+        },
+        {
+          "description": "A list of scopes. Each scope is a key-value map with the keys <code>name</code> and <code>description</code>."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "Identifier",
+    "Name"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-create-resource-server-request-schema.json",
+  "title": "CreateResourceServerRequest",
+  "description": "CreateResourceServerRequest schema from Amazon Cognito"
+}

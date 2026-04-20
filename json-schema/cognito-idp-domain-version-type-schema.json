@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 20,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-domain-version-type-schema.json",
+  "title": "DomainVersionType",
+  "description": "DomainVersionType schema from Amazon Cognito"
+}

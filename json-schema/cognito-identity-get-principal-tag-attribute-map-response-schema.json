@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolId"
+        },
+        {
+          "description": "You can use this operation to get the ID of the Identity Pool you setup attribute mappings for."
+        }
+      ]
+    },
+    "IdentityProviderName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityProviderName"
+        },
+        {
+          "description": "You can use this operation to get the provider name."
+        }
+      ]
+    },
+    "UseDefaults": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UseDefaults"
+        },
+        {
+          "description": "You can use this operation to list "
+        }
+      ]
+    },
+    "PrincipalTags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PrincipalTags"
+        },
+        {
+          "description": "You can use this operation to add principal tags. The <code>PrincipalTags</code>operation enables you to reference user attributes in your IAM permissions policy."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-get-principal-tag-attribute-map-response-schema.json",
+  "title": "GetPrincipalTagAttributeMapResponse",
+  "description": "GetPrincipalTagAttributeMapResponse schema from Amazon Cognito"
+}

@@ -1,0 +1,6 @@
+{
+  "AccessToken": "eyJhbGciOiJSUzI1NiJ9...",
+  "DeviceKey": "example-value",
+  "DeviceSecretVerifierConfig": "example-value",
+  "DeviceName": "my-user-pool-01"
+}

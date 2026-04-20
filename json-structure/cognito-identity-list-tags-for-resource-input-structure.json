@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "ResourceArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ARNString"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the identity pool that the tags are assigned to."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceArn"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-list-tags-for-resource-input-structure.json",
+  "name": "ListTagsForResourceInput",
+  "description": "ListTagsForResourceInput schema from Amazon Cognito"
+}

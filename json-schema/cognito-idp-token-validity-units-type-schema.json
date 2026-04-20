@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimeUnitsType"
+        },
+        {
+          "description": " A time unit of <code>seconds</code>, <code>minutes</code>, <code>hours</code>, or <code>days</code> for the value that you set in the <code>AccessTokenValidity</code> parameter. The default <code>AccessTokenValidity</code> time unit is hours."
+        }
+      ]
+    },
+    "IdToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimeUnitsType"
+        },
+        {
+          "description": "A time unit of <code>seconds</code>, <code>minutes</code>, <code>hours</code>, or <code>days</code> for the value that you set in the <code>IdTokenValidity</code> parameter. The default <code>IdTokenValidity</code> time unit is hours."
+        }
+      ]
+    },
+    "RefreshToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimeUnitsType"
+        },
+        {
+          "description": "A time unit of <code>seconds</code>, <code>minutes</code>, <code>hours</code>, or <code>days</code> for the value that you set in the <code>RefreshTokenValidity</code> parameter. The default <code>RefreshTokenValidity</code> time unit is days."
+        }
+      ]
+    }
+  },
+  "description": "The data type TokenValidityUnits specifies the time units you use when you set the duration of ID, access, and refresh tokens.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-token-validity-units-type-schema.json",
+  "title": "TokenValidityUnitsType"
+}

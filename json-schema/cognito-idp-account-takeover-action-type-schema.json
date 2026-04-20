@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "Notify": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccountTakeoverActionNotifyType"
+        },
+        {
+          "description": "Flag specifying whether to send a notification."
+        }
+      ]
+    },
+    "EventAction": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccountTakeoverEventActionType"
+        },
+        {
+          "description": "<p>The action to take in response to the account takeover action. Valid values are as follows:</p> <ul> <li> <p> <code>BLOCK</code> Choosing this action will block the request.</p> </li> <li> <p> <code>MFA_IF_CONFIGURED</code> Present an MFA challenge if user has configured it, else allow the request.</p> </li> <li> <p> <code>MFA_REQUIRED</code> Present an MFA challenge if user has configured it, else block the request.</p> </li> <li> <p> <code>NO_ACTION</code> Allow the user to sign in.</p> </li> </ul>"
+        }
+      ]
+    }
+  },
+  "required": [
+    "Notify",
+    "EventAction"
+  ],
+  "description": "Account takeover action type.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-account-takeover-action-type-schema.json",
+  "title": "AccountTakeoverActionType"
+}

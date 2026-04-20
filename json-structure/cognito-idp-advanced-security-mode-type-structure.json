@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    false,
+    "AUDIT",
+    "ENFORCED"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-advanced-security-mode-type-structure.json",
+  "name": "AdvancedSecurityModeType",
+  "description": "AdvancedSecurityModeType schema from Amazon Cognito"
+}

@@ -1,0 +1,33 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "IdentityPoolId": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/IdentityPoolId"
+          },
+          {
+            "description": "An identity pool ID in the format REGION:GUID."
+          }
+        ]
+      },
+      "IdentityPoolName": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/IdentityPoolName"
+          },
+          {
+            "description": "A string that you provide."
+          }
+        ]
+      }
+    },
+    "description": "A description of the identity pool."
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-identity-pools-list-schema.json",
+  "title": "IdentityPoolsList",
+  "description": "IdentityPoolsList schema from Amazon Cognito"
+}

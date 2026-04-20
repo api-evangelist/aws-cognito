@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}\\s*]*\\{####\\}[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}\\s*]*",
+  "minLength": 6,
+  "maxLength": 20000,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-email-verification-message-type-schema.json",
+  "title": "EmailVerificationMessageType",
+  "description": "EmailVerificationMessageType schema from Amazon Cognito"
+}

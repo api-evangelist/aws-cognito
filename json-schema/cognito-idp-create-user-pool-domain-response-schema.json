@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "CloudFrontDomain": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainType"
+        },
+        {
+          "description": "The Amazon CloudFront endpoint that you use as the target of the alias that you set up with your Domain Name Service (DNS) provider."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-create-user-pool-domain-response-schema.json",
+  "title": "CreateUserPoolDomainResponse",
+  "description": "CreateUserPoolDomainResponse schema from Amazon Cognito"
+}

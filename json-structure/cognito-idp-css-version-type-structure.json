@@ -1,0 +1,7 @@
+{
+  "type": "string",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-css-version-type-structure.json",
+  "name": "CSSVersionType",
+  "description": "CSSVersionType schema from Amazon Cognito"
+}

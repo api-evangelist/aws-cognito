@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "Group": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/GroupType"
+        },
+        {
+          "description": "The group object for the group."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-get-group-response-schema.json",
+  "title": "GetGroupResponse",
+  "description": "GetGroupResponse schema from Amazon Cognito"
+}

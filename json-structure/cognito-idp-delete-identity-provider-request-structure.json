@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID."
+        }
+      ]
+    },
+    "ProviderName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProviderNameType"
+        },
+        {
+          "description": "The IdP name."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "ProviderName"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-delete-identity-provider-request-structure.json",
+  "name": "DeleteIdentityProviderRequest",
+  "description": "DeleteIdentityProviderRequest schema from Amazon Cognito"
+}

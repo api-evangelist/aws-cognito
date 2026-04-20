@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string",
+    "minLength": 1,
+    "maxLength": 1024
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-developer-user-identifier-list-schema.json",
+  "title": "DeveloperUserIdentifierList",
+  "description": "DeveloperUserIdentifierList schema from Amazon Cognito"
+}

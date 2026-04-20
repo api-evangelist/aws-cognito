@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameType"
+        },
+        {
+          "description": "The username for the user."
+        }
+      ]
+    },
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool."
+        }
+      ]
+    },
+    "Limit": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/QueryLimitType"
+        },
+        {
+          "description": "The limit of the request to list groups."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKey"
+        },
+        {
+          "description": "An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Username",
+    "UserPoolId"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-admin-list-groups-for-user-request-schema.json",
+  "title": "AdminListGroupsForUserRequest",
+  "description": "AdminListGroupsForUserRequest schema from Amazon Cognito"
+}

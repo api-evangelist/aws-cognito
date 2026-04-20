@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityProvider": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityProviderType"
+        },
+        {
+          "description": "The identity provider details."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityProvider"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-get-identity-provider-by-identifier-response-structure.json",
+  "name": "GetIdentityProviderByIdentifierResponse",
+  "description": "GetIdentityProviderByIdentifierResponse schema from Amazon Cognito"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "string",
+  "enum": [
+    "SMS_MFA",
+    "SOFTWARE_TOKEN_MFA",
+    "SELECT_MFA_TYPE",
+    "MFA_SETUP",
+    "PASSWORD_VERIFIER",
+    "CUSTOM_CHALLENGE",
+    "DEVICE_SRP_AUTH",
+    "DEVICE_PASSWORD_VERIFIER",
+    "ADMIN_NO_SRP_AUTH",
+    "NEW_PASSWORD_REQUIRED"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-challenge-name-type-schema.json",
+  "title": "ChallengeNameType",
+  "description": "ChallengeNameType schema from Amazon Cognito"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "pattern": "^[0-9a-fA-F]+$",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-hex-string-type-structure.json",
+  "name": "HexStringType",
+  "description": "HexStringType schema from Amazon Cognito"
+}

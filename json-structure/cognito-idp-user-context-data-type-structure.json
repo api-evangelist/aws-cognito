@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "IpAddress": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The source IP address of your user's device."
+        }
+      ]
+    },
+    "EncodedData": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "Encoded device-fingerprint details that your app collected with the Amazon Cognito context data collection library. For more information, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pool-settings-adaptive-authentication.html#user-pool-settings-adaptive-authentication-device-fingerprint\">Adding user device and session data to API requests</a>."
+        }
+      ]
+    }
+  },
+  "description": "Contextual data, such as the user's device fingerprint, IP address, or location, used for evaluating the risk of an unexpected event by Amazon Cognito advanced security.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-user-context-data-type-structure.json",
+  "name": "UserContextDataType"
+}

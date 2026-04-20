@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "Subject": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailNotificationSubjectType"
+        },
+        {
+          "description": "The email subject."
+        }
+      ]
+    },
+    "HtmlBody": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailNotificationBodyType"
+        },
+        {
+          "description": "The email HTML body."
+        }
+      ]
+    },
+    "TextBody": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailNotificationBodyType"
+        },
+        {
+          "description": "The email text body."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Subject"
+  ],
+  "description": "The notify email type.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-notify-email-type-schema.json",
+  "title": "NotifyEmailType"
+}

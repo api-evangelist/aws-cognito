@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool where you want to add custom attributes."
+        }
+      ]
+    },
+    "CustomAttributes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CustomAttributesListType"
+        },
+        {
+          "description": "An array of custom attributes, such as Mutable and Name."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "CustomAttributes"
+  ],
+  "description": "Represents the request to add custom attributes.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-add-custom-attributes-request-schema.json",
+  "title": "AddCustomAttributesRequest"
+}

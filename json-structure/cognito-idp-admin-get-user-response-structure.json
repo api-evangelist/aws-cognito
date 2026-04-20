@@ -1,0 +1,102 @@
+{
+  "type": "object",
+  "properties": {
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameType"
+        },
+        {
+          "description": "The user name of the user about whom you're receiving information."
+        }
+      ]
+    },
+    "UserAttributes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AttributeListType"
+        },
+        {
+          "description": "An array of name-value pairs representing user attributes."
+        }
+      ]
+    },
+    "UserCreateDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date the user was created."
+        }
+      ]
+    },
+    "UserLastModifiedDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date the user was last modified."
+        }
+      ]
+    },
+    "Enabled": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BooleanType"
+        },
+        {
+          "description": "Indicates that the status is <code>enabled</code>."
+        }
+      ]
+    },
+    "UserStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserStatusType"
+        },
+        {
+          "description": "<p>The user status. Can be one of the following:</p> <ul> <li> <p>UNCONFIRMED - User has been created but not confirmed.</p> </li> <li> <p>CONFIRMED - User has been confirmed.</p> </li> <li> <p>ARCHIVED - User is no longer active.</p> </li> <li> <p>UNKNOWN - User status isn't known.</p> </li> <li> <p>RESET_REQUIRED - User is confirmed, but the user must request a code and reset their password before they can sign in.</p> </li> <li> <p>FORCE_CHANGE_PASSWORD - The user is confirmed and the user can sign in using a temporary password, but on first sign-in, the user must change their password to a new value before doing anything else. </p> </li> </ul>"
+        }
+      ]
+    },
+    "MFAOptions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MFAOptionListType"
+        },
+        {
+          "description": " <i>This response parameter is no longer supported.</i> It provides information only about SMS MFA configurations. It doesn't provide information about time-based one-time password (TOTP) software token MFA configurations. To look up information about either type of MFA configuration, use UserMFASettingList instead."
+        }
+      ]
+    },
+    "PreferredMfaSetting": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The user's preferred MFA setting."
+        }
+      ]
+    },
+    "UserMFASettingList": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserMFASettingListType"
+        },
+        {
+          "description": "The MFA options that are activated for the user. The possible values in this list are <code>SMS_MFA</code> and <code>SOFTWARE_TOKEN_MFA</code>."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Username"
+  ],
+  "description": "Represents the response from the server from the request to get the specified user as an administrator.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-admin-get-user-response-structure.json",
+  "name": "AdminGetUserResponse"
+}

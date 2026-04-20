@@ -1,0 +1,9 @@
+{
+  "Name": "my-user-pool-01",
+  "AttributeDataType": "example-value",
+  "DeveloperOnlyAttribute": "example-value",
+  "Mutable": "example-value",
+  "Required": "example-value",
+  "NumberAttributeConstraints": "example-value",
+  "StringAttributeConstraints": "example-value"
+}

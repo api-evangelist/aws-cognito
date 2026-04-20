@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool where you want to list user pool clients."
+        }
+      ]
+    },
+    "MaxResults": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/QueryLimit"
+        },
+        {
+          "description": "The maximum number of results you want the request to return when listing the user pool clients."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKey"
+        },
+        {
+          "description": "An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId"
+  ],
+  "description": "Represents the request to list the user pool clients.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-list-user-pool-clients-request-schema.json",
+  "title": "ListUserPoolClientsRequest"
+}

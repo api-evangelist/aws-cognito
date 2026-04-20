@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolId"
+        },
+        {
+          "description": "You can use this operation to get the ID of the Identity Pool you setup attribute mappings for."
+        }
+      ]
+    },
+    "IdentityProviderName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityProviderName"
+        },
+        {
+          "description": "You can use this operation to get the provider name."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityPoolId",
+    "IdentityProviderName"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-get-principal-tag-attribute-map-input-schema.json",
+  "title": "GetPrincipalTagAttributeMapInput",
+  "description": "GetPrincipalTagAttributeMapInput schema from Amazon Cognito"
+}

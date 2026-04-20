@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool."
+        }
+      ]
+    },
+    "ClientId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientIdType"
+        },
+        {
+          "description": "The client ID for the client app."
+        }
+      ]
+    },
+    "CSS": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CSSType"
+        },
+        {
+          "description": "The CSS values in the UI customization."
+        }
+      ]
+    },
+    "ImageFile": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImageFileType"
+        },
+        {
+          "description": "The uploaded logo image for the UI customization."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-set-ui-customization-request-structure.json",
+  "name": "SetUICustomizationRequest",
+  "description": "SetUICustomizationRequest schema from Amazon Cognito"
+}

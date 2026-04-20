@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityId"
+        },
+        {
+          "description": "A unique identifier in the format REGION:GUID."
+        }
+      ]
+    },
+    "Logins": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LoginsMap"
+        },
+        {
+          "description": "A set of optional name-value pairs that map provider names to provider tokens."
+        }
+      ]
+    },
+    "LoginsToRemove": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LoginsList"
+        },
+        {
+          "description": "Provider names to unlink from this identity."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityId",
+    "Logins",
+    "LoginsToRemove"
+  ],
+  "description": "Input to the UnlinkIdentity action.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-unlink-identity-input-schema.json",
+  "title": "UnlinkIdentityInput"
+}

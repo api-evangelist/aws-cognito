@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityIdsToDelete": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityIdList"
+        },
+        {
+          "description": "A list of 1-60 identities that you want to delete."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityIdsToDelete"
+  ],
+  "description": "Input to the <code>DeleteIdentities</code> action.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-delete-identities-input-schema.json",
+  "title": "DeleteIdentitiesInput"
+}

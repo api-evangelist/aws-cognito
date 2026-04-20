@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\w\\s+=,.@-]+",
+  "minLength": 1,
+  "maxLength": 256,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-resource-server-name-type-schema.json",
+  "title": "ResourceServerNameType",
+  "description": "ResourceServerNameType schema from Amazon Cognito"
+}

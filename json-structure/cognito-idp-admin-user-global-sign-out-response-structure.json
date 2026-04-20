@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "description": "The global sign-out response, as an administrator.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-admin-user-global-sign-out-response-structure.json",
+  "name": "AdminUserGlobalSignOutResponse"
+}

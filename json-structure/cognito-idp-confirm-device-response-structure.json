@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "UserConfirmationNecessary": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BooleanType"
+        },
+        {
+          "description": "Indicates whether the user confirmation must confirm the device response."
+        }
+      ]
+    }
+  },
+  "description": "Confirms the device response.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-confirm-device-response-structure.json",
+  "name": "ConfirmDeviceResponse"
+}

@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool."
+        }
+      ]
+    },
+    "ClientId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientIdType"
+        },
+        {
+          "description": "The client ID for the client app."
+        }
+      ]
+    },
+    "ImageUrl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImageUrlType"
+        },
+        {
+          "description": "The logo image for the UI customization."
+        }
+      ]
+    },
+    "CSS": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CSSType"
+        },
+        {
+          "description": "The CSS values in the UI customization."
+        }
+      ]
+    },
+    "CSSVersion": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CSSVersionType"
+        },
+        {
+          "description": "The CSS version number."
+        }
+      ]
+    },
+    "LastModifiedDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The last-modified date for the UI customization."
+        }
+      ]
+    },
+    "CreationDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The creation date for the UI customization."
+        }
+      ]
+    }
+  },
+  "description": "A container for the UI customization information for a user pool's built-in app UI.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-ui-customization-type-structure.json",
+  "name": "UICustomizationType"
+}

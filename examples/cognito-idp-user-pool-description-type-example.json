@@ -1,0 +1,8 @@
+{
+  "Id": "my-user-pool-01",
+  "Name": "my-user-pool-01",
+  "LambdaConfig": "example-value",
+  "Status": "CONFIRMED",
+  "LastModifiedDate": "example-value",
+  "CreationDate": "example-value"
+}

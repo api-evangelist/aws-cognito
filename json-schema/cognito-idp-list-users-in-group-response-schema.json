@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Users": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsersListType"
+        },
+        {
+          "description": "The users returned in the request to list users."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKey"
+        },
+        {
+          "description": "An identifier that you can use in a later request to return the next set of items in the list."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-list-users-in-group-response-schema.json",
+  "title": "ListUsersInGroupResponse",
+  "description": "ListUsersInGroupResponse schema from Amazon Cognito"
+}

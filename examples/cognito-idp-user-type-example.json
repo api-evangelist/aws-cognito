@@ -1,0 +1,9 @@
+{
+  "Username": "my-user-pool-01",
+  "Attributes": "example-value",
+  "UserCreateDate": "example-value",
+  "UserLastModifiedDate": "example-value",
+  "Enabled": "example-value",
+  "UserStatus": "CONFIRMED",
+  "MFAOptions": "example-value"
+}

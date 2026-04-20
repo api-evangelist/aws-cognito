@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "pattern": "[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}]+@[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}]+",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-email-address-type-structure.json",
+  "name": "EmailAddressType",
+  "description": "EmailAddressType schema from Amazon Cognito"
+}

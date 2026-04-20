@@ -1,0 +1,15 @@
+{
+  "type": "string",
+  "enum": [
+    "SAML",
+    "Facebook",
+    "Google",
+    "LoginWithAmazon",
+    "SignInWithApple",
+    "OIDC"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-identity-provider-type-type-structure.json",
+  "name": "IdentityProviderTypeType",
+  "description": "IdentityProviderTypeType schema from Amazon Cognito"
+}

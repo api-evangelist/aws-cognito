@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "LEGACY",
+    "ENABLED"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-prevent-user-existence-error-types-structure.json",
+  "name": "PreventUserExistenceErrorTypes",
+  "description": "PreventUserExistenceErrorTypes schema from Amazon Cognito"
+}

@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "MinValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The minimum value of an attribute that is of the number data type."
+        }
+      ]
+    },
+    "MaxValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The maximum value of an attribute that is of the number data type."
+        }
+      ]
+    }
+  },
+  "description": "The minimum and maximum values of an attribute that is of the number data type.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-number-attribute-constraints-type-schema.json",
+  "title": "NumberAttributeConstraintsType"
+}

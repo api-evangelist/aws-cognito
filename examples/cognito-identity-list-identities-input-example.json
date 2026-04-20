@@ -1,0 +1,6 @@
+{
+  "IdentityPoolId": "my-user-pool-01",
+  "MaxResults": "example-value",
+  "NextToken": "eyJhbGciOiJSUzI1NiJ9...",
+  "HideDisabled": "my-user-pool-01"
+}

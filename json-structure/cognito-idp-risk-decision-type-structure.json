@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "NoRisk",
+    "AccountTakeover",
+    "Block"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-risk-decision-type-structure.json",
+  "name": "RiskDecisionType",
+  "description": "RiskDecisionType schema from Amazon Cognito"
+}

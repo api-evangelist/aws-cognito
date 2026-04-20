@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "ResourceServer": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServerType"
+        },
+        {
+          "description": "The resource server."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceServer"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-update-resource-server-response-schema.json",
+  "title": "UpdateResourceServerResponse",
+  "description": "UpdateResourceServerResponse schema from Amazon Cognito"
+}

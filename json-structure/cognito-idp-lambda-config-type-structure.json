@@ -1,0 +1,139 @@
+{
+  "type": "object",
+  "properties": {
+    "PreSignUp": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "A pre-registration Lambda trigger."
+        }
+      ]
+    },
+    "CustomMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "A custom Message Lambda trigger."
+        }
+      ]
+    },
+    "PostConfirmation": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "A post-confirmation Lambda trigger."
+        }
+      ]
+    },
+    "PreAuthentication": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "A pre-authentication Lambda trigger."
+        }
+      ]
+    },
+    "PostAuthentication": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "A post-authentication Lambda trigger."
+        }
+      ]
+    },
+    "DefineAuthChallenge": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "Defines the authentication challenge."
+        }
+      ]
+    },
+    "CreateAuthChallenge": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "Creates an authentication challenge."
+        }
+      ]
+    },
+    "VerifyAuthChallengeResponse": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "Verifies the authentication challenge response."
+        }
+      ]
+    },
+    "PreTokenGeneration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "A Lambda trigger that is invoked before token generation."
+        }
+      ]
+    },
+    "UserMigration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "The user migration Lambda config type."
+        }
+      ]
+    },
+    "CustomSMSSender": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CustomSMSLambdaVersionConfigType"
+        },
+        {
+          "description": "A custom SMS sender Lambda trigger."
+        }
+      ]
+    },
+    "CustomEmailSender": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CustomEmailLambdaVersionConfigType"
+        },
+        {
+          "description": "A custom email sender Lambda trigger."
+        }
+      ]
+    },
+    "KMSKeyID": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of an <a href=\"/kms/latest/developerguide/concepts.html#master_keys\">KMS key</a>. Amazon Cognito uses the key to encrypt codes and temporary passwords sent to <code>CustomEmailSender</code> and <code>CustomSMSSender</code>."
+        }
+      ]
+    }
+  },
+  "description": "Specifies the configuration for Lambda triggers.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-lambda-config-type-structure.json",
+  "name": "LambdaConfigType"
+}

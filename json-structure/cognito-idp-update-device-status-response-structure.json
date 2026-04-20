@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "description": "The response to the request to update the device status.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-update-device-status-response-structure.json",
+  "name": "UpdateDeviceStatusResponse"
+}

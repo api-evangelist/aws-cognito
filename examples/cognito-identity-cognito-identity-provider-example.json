@@ -1,0 +1,5 @@
+{
+  "ProviderName": "my-user-pool-01",
+  "ClientId": "my-user-pool-01",
+  "ServerSideTokenCheck": "eyJhbGciOiJSUzI1NiJ9..."
+}

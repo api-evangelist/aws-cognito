@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "ChallengeName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ChallengeNameType"
+        },
+        {
+          "description": "The name of the challenge. For more information, see <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminInitiateAuth.html\">AdminInitiateAuth</a>."
+        }
+      ]
+    },
+    "Session": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SessionType"
+        },
+        {
+          "description": "The session that should be passed both ways in challenge-response calls to the service. If the caller must pass another challenge, they return a session with other challenge parameters. This session should be passed as it is to the next <code>RespondToAuthChallenge</code> API call."
+        }
+      ]
+    },
+    "ChallengeParameters": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ChallengeParametersType"
+        },
+        {
+          "description": "The challenge parameters. For more information, see <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminInitiateAuth.html\">AdminInitiateAuth</a>."
+        }
+      ]
+    },
+    "AuthenticationResult": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AuthenticationResultType"
+        },
+        {
+          "description": "The result returned by the server in response to the authentication request."
+        }
+      ]
+    }
+  },
+  "description": "Responds to the authentication challenge, as an administrator.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-admin-respond-to-auth-challenge-response-structure.json",
+  "name": "AdminRespondToAuthChallengeResponse"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string",
+    "pattern": "[\\w-]+:[0-9a-f-]+",
+    "minLength": 1,
+    "maxLength": 55
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-identity-id-list-structure.json",
+  "name": "IdentityIdList",
+  "description": "IdentityIdList schema from Amazon Cognito"
+}

@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolId"
+        },
+        {
+          "description": "An identity pool ID in the format REGION:GUID."
+        }
+      ]
+    },
+    "Roles": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RolesMap"
+        },
+        {
+          "description": "The map of roles associated with this pool. For a given role, the key will be either \"authenticated\" or \"unauthenticated\" and the value will be the Role ARN."
+        }
+      ]
+    },
+    "RoleMappings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RoleMappingMap"
+        },
+        {
+          "description": "<p>How users for a specific identity provider are to mapped to roles. This is a string to <a>RoleMapping</a> object map. The string identifies the identity provider, for example, \"graph.facebook.com\" or \"cognito-idp.us-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id\".</p> <p>Up to 25 rules can be specified per identity provider.</p>"
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityPoolId",
+    "Roles"
+  ],
+  "description": "Input to the <code>SetIdentityPoolRoles</code> action.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-set-identity-pool-roles-input-schema.json",
+  "title": "SetIdentityPoolRolesInput"
+}

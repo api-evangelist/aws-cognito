@@ -1,0 +1,7 @@
+{
+  "UserPoolId": "my-user-pool-01",
+  "AttributesToGet": "example-value",
+  "Limit": "example-value",
+  "PaginationToken": "eyJhbGciOiJSUzI1NiJ9...",
+  "Filter": "example-value"
+}

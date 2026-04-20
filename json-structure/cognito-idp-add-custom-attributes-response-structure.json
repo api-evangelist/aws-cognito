@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "description": "Represents the response from the server for the request to add custom attributes.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-add-custom-attributes-response-structure.json",
+  "name": "AddCustomAttributesResponse"
+}

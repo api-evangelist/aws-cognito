@@ -1,0 +1,6 @@
+{
+  "IdentityPoolId": "my-user-pool-01",
+  "IdentityProviderName": "my-user-pool-01",
+  "UseDefaults": "example-value",
+  "PrincipalTags": "example-value"
+}

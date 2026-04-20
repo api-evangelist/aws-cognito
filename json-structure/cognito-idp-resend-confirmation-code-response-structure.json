@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "CodeDeliveryDetails": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CodeDeliveryDetailsType"
+        },
+        {
+          "description": "The code delivery details returned by the server in response to the request to resend the confirmation code."
+        }
+      ]
+    }
+  },
+  "description": "The response from the server when Amazon Cognito makes the request to resend a confirmation code.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-resend-confirmation-code-response-structure.json",
+  "name": "ResendConfirmationCodeResponse"
+}

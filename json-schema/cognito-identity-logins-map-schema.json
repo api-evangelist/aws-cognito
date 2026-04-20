@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/components/schemas/IdentityProviderToken"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-logins-map-schema.json",
+  "title": "LoginsMap",
+  "description": "LoginsMap schema from Amazon Cognito"
+}

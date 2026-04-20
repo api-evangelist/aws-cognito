@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\w._-]+",
+  "minLength": 1,
+  "maxLength": 128,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-developer-provider-name-structure.json",
+  "name": "DeveloperProviderName",
+  "description": "DeveloperProviderName schema from Amazon Cognito"
+}

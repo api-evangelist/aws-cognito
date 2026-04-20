@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "enum": [
+    "V1_0"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-custom-email-sender-lambda-version-type-schema.json",
+  "title": "CustomEmailSenderLambdaVersionType",
+  "description": "CustomEmailSenderLambdaVersionType schema from Amazon Cognito"
+}

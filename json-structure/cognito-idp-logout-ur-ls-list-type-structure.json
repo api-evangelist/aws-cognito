@@ -1,0 +1,13 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string",
+    "pattern": "[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}]+",
+    "minLength": 1,
+    "maxLength": 1024
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-logout-ur-ls-list-type-structure.json",
+  "name": "LogoutURLsListType",
+  "description": "LogoutURLsListType schema from Amazon Cognito"
+}

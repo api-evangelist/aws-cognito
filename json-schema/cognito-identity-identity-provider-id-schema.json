@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\w.;_/-]+",
+  "minLength": 1,
+  "maxLength": 128,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-identity-provider-id-schema.json",
+  "title": "IdentityProviderId",
+  "description": "IdentityProviderId schema from Amazon Cognito"
+}

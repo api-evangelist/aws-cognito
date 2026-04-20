@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\w-]+_[0-9a-f-]+",
+  "minLength": 1,
+  "maxLength": 55,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-device-key-type-structure.json",
+  "name": "DeviceKeyType",
+  "description": "DeviceKeyType schema from Amazon Cognito"
+}

@@ -1,0 +1,5 @@
+{
+  "IdentityPoolId": "my-user-pool-01",
+  "Identities": "my-user-pool-01",
+  "NextToken": "eyJhbGciOiJSUzI1NiJ9..."
+}

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool that the users are being imported into."
+        }
+      ]
+    },
+    "JobId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserImportJobIdType"
+        },
+        {
+          "description": "The job ID for the user import job."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "JobId"
+  ],
+  "description": "Represents the request to describe the user import job.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-describe-user-import-job-request-structure.json",
+  "name": "DescribeUserImportJobRequest"
+}

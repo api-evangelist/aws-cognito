@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/components/schemas/IdentityProviderId"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-identity-providers-structure.json",
+  "name": "IdentityProviders",
+  "description": "IdentityProviders schema from Amazon Cognito"
+}

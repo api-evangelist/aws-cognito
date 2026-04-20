@@ -1,0 +1,21 @@
+{
+  "UserPoolId": "my-user-pool-01",
+  "Policies": "example-value",
+  "DeletionProtection": "example-value",
+  "LambdaConfig": "example-value",
+  "AutoVerifiedAttributes": "example-value",
+  "SmsVerificationMessage": "example-value",
+  "EmailVerificationMessage": "user@example.com",
+  "EmailVerificationSubject": "user@example.com",
+  "VerificationMessageTemplate": "example-value",
+  "SmsAuthenticationMessage": "example-value",
+  "UserAttributeUpdateSettings": "example-value",
+  "MfaConfiguration": "example-value",
+  "DeviceConfiguration": "example-value",
+  "EmailConfiguration": "user@example.com",
+  "SmsConfiguration": "example-value",
+  "UserPoolTags": "example-value",
+  "AdminCreateUserConfig": "example-value",
+  "UserPoolAddOns": "example-value",
+  "AccountRecoverySetting": "example-value"
+}

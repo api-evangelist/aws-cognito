@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "SmsMfaConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SmsMfaConfigType"
+        },
+        {
+          "description": "The SMS text message multi-factor authentication (MFA) configuration."
+        }
+      ]
+    },
+    "SoftwareTokenMfaConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SoftwareTokenMfaConfigType"
+        },
+        {
+          "description": "The software token multi-factor authentication (MFA) configuration."
+        }
+      ]
+    },
+    "MfaConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolMfaType"
+        },
+        {
+          "description": "<p>The multi-factor authentication (MFA) configuration. Valid values include:</p> <ul> <li> <p> <code>OFF</code> MFA won't be used for any users.</p> </li> <li> <p> <code>ON</code> MFA is required for all users to sign in.</p> </li> <li> <p> <code>OPTIONAL</code> MFA will be required only for individual users who have an MFA factor activated.</p> </li> </ul>"
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-get-user-pool-mfa-config-response-schema.json",
+  "title": "GetUserPoolMfaConfigResponse",
+  "description": "GetUserPoolMfaConfigResponse schema from Amazon Cognito"
+}

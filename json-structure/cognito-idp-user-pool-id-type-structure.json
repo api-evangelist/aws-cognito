@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\w-]+_[0-9a-zA-Z]+",
+  "minLength": 1,
+  "maxLength": 55,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-user-pool-id-type-structure.json",
+  "name": "UserPoolIdType",
+  "description": "UserPoolIdType schema from Amazon Cognito"
+}

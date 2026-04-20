@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolId"
+        },
+        {
+          "description": "An identity pool ID in the format REGION:GUID."
+        }
+      ]
+    },
+    "IdentityId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityId"
+        },
+        {
+          "description": "A unique identifier in the format REGION:GUID."
+        }
+      ]
+    },
+    "DeveloperUserIdentifier": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeveloperUserIdentifier"
+        },
+        {
+          "description": "A unique ID used by your backend authentication process to identify a user. Typically, a developer identity provider would issue many developer user identifiers, in keeping with the number of users."
+        }
+      ]
+    },
+    "MaxResults": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/QueryLimit"
+        },
+        {
+          "description": "The maximum number of identities to return."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKey"
+        },
+        {
+          "description": "A pagination token. The first call you make will have <code>NextToken</code> set to null. After that the service will return <code>NextToken</code> values as needed. For example, let's say you make a request with <code>MaxResults</code> set to 10, and there are 20 matches in the database. The service will return a pagination token as a part of the response. This token can be used to call the API again and get results starting from the 11th match."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityPoolId"
+  ],
+  "description": "Input to the <code>LookupDeveloperIdentityInput</code> action.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-lookup-developer-identity-input-schema.json",
+  "title": "LookupDeveloperIdentityInput"
+}

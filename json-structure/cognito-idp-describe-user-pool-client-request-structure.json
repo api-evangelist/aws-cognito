@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool you want to describe."
+        }
+      ]
+    },
+    "ClientId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientIdType"
+        },
+        {
+          "description": "The app client ID of the app associated with the user pool."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "ClientId"
+  ],
+  "description": "Represents the request to describe a user pool client.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-describe-user-pool-client-request-structure.json",
+  "name": "DescribeUserPoolClientRequest"
+}

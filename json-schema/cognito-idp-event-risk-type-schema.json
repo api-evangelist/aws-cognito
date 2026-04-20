@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "RiskDecision": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RiskDecisionType"
+        },
+        {
+          "description": "The risk decision."
+        }
+      ]
+    },
+    "RiskLevel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RiskLevelType"
+        },
+        {
+          "description": "The risk level."
+        }
+      ]
+    },
+    "CompromisedCredentialsDetected": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WrappedBooleanType"
+        },
+        {
+          "description": "Indicates whether compromised credentials were detected during an authentication event."
+        }
+      ]
+    }
+  },
+  "description": "The event risk type.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-event-risk-type-schema.json",
+  "title": "EventRiskType"
+}

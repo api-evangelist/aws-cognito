@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "Domain": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainType"
+        },
+        {
+          "description": "The domain string. For custom domains, this is the fully-qualified domain name, such as <code>auth.example.com</code>. For Amazon Cognito prefix domains, this is the prefix alone, such as <code>auth</code>."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Domain"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-describe-user-pool-domain-request-schema.json",
+  "title": "DescribeUserPoolDomainRequest",
+  "description": "DescribeUserPoolDomainRequest schema from Amazon Cognito"
+}

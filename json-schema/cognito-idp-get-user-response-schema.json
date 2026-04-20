@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameType"
+        },
+        {
+          "description": "The user name of the user you want to retrieve from the get user request."
+        }
+      ]
+    },
+    "UserAttributes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AttributeListType"
+        },
+        {
+          "description": "<p>An array of name-value pairs representing user attributes.</p> <p>For custom attributes, you must prepend the <code>custom:</code> prefix to the attribute name.</p>"
+        }
+      ]
+    },
+    "MFAOptions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MFAOptionListType"
+        },
+        {
+          "description": " <i>This response parameter is no longer supported.</i> It provides information only about SMS MFA configurations. It doesn't provide information about time-based one-time password (TOTP) software token MFA configurations. To look up information about either type of MFA configuration, use UserMFASettingList instead."
+        }
+      ]
+    },
+    "PreferredMfaSetting": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The user's preferred MFA setting."
+        }
+      ]
+    },
+    "UserMFASettingList": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserMFASettingListType"
+        },
+        {
+          "description": "The MFA options that are activated for the user. The possible values in this list are <code>SMS_MFA</code> and <code>SOFTWARE_TOKEN_MFA</code>."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Username",
+    "UserAttributes"
+  ],
+  "description": "Represents the response from the server from the request to get information about the user.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-get-user-response-schema.json",
+  "title": "GetUserResponse"
+}

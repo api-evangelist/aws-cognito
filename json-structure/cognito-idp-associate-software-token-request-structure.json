@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A valid access token that Amazon Cognito issued to the user whose software token you want to generate."
+        }
+      ]
+    },
+    "Session": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SessionType"
+        },
+        {
+          "description": "The session that should be passed both ways in challenge-response calls to the service. This allows authentication of the user as part of the MFA setup process."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-associate-software-token-request-structure.json",
+  "name": "AssociateSoftwareTokenRequest",
+  "description": "AssociateSoftwareTokenRequest schema from Amazon Cognito"
+}

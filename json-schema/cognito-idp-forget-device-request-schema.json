@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A valid access token that Amazon Cognito issued to the user whose registered device you want to forget."
+        }
+      ]
+    },
+    "DeviceKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceKeyType"
+        },
+        {
+          "description": "The device key."
+        }
+      ]
+    }
+  },
+  "required": [
+    "DeviceKey"
+  ],
+  "description": "Represents the request to forget the device.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-forget-device-request-schema.json",
+  "title": "ForgetDeviceRequest"
+}

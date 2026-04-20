@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "ResourceArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ARNString"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the identity pool."
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolTagsType"
+        },
+        {
+          "description": "The tags to assign to the identity pool."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceArn",
+    "Tags"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-tag-resource-input-structure.json",
+  "name": "TagResourceInput",
+  "description": "TagResourceInput schema from Amazon Cognito"
+}

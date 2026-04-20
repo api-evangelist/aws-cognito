@@ -1,0 +1,7 @@
+{
+  "type": "boolean",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-force-alias-creation-schema.json",
+  "title": "ForceAliasCreation",
+  "description": "ForceAliasCreation schema from Amazon Cognito"
+}

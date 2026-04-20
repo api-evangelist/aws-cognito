@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-user-not-confirmed-exception-structure.json",
+  "name": "UserNotConfirmedException",
+  "description": "UserNotConfirmedException schema from Amazon Cognito"
+}

@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RoleMappingType"
+        },
+        {
+          "description": "The role mapping type. Token will use <code>cognito:roles</code> and <code>cognito:preferred_role</code> claims from the Cognito identity provider token to map groups to roles. Rules will attempt to match claims from the token to map to a role."
+        }
+      ]
+    },
+    "AmbiguousRoleResolution": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmbiguousRoleResolutionType"
+        },
+        {
+          "description": "<p>If you specify Token or Rules as the <code>Type</code>, <code>AmbiguousRoleResolution</code> is required.</p> <p>Specifies the action to be taken if either no rules match the claim value for the <code>Rules</code> type, or there is no <code>cognito:preferred_role</code> claim and there are multiple <code>cognito:roles</code> matches for the <code>Token</code> type.</p>"
+        }
+      ]
+    },
+    "RulesConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RulesConfigurationType"
+        },
+        {
+          "description": "<p>The rules to be used for mapping users to roles.</p> <p>If you specify Rules as the role mapping type, <code>RulesConfiguration</code> is required.</p>"
+        }
+      ]
+    }
+  },
+  "required": [
+    "Type"
+  ],
+  "description": "A role mapping.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-role-mapping-schema.json",
+  "title": "RoleMapping"
+}

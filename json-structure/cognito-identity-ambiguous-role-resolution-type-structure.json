@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "AuthenticatedRole",
+    "Deny"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-ambiguous-role-resolution-type-structure.json",
+  "name": "AmbiguousRoleResolutionType",
+  "description": "AmbiguousRoleResolutionType schema from Amazon Cognito"
+}

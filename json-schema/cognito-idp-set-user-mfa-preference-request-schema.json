@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "SMSMfaSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SMSMfaSettingsType"
+        },
+        {
+          "description": "The SMS text message multi-factor authentication (MFA) settings."
+        }
+      ]
+    },
+    "SoftwareTokenMfaSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SoftwareTokenMfaSettingsType"
+        },
+        {
+          "description": "The time-based one-time password (TOTP) software token MFA settings."
+        }
+      ]
+    },
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A valid access token that Amazon Cognito issued to the user whose MFA preference you want to set."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AccessToken"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-set-user-mfa-preference-request-schema.json",
+  "title": "SetUserMFAPreferenceRequest",
+  "description": "SetUserMFAPreferenceRequest schema from Amazon Cognito"
+}

@@ -1,0 +1,9 @@
+{
+  "ClientId": "my-user-pool-01",
+  "ChallengeName": "my-user-pool-01",
+  "Session": "example-value",
+  "ChallengeResponses": "example-value",
+  "AnalyticsMetadata": "example-value",
+  "UserContextData": "example-value",
+  "ClientMetadata": "example-value"
+}

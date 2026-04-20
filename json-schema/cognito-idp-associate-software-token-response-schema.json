@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "SecretCode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SecretCodeType"
+        },
+        {
+          "description": "A unique generated shared secret code that is used in the TOTP algorithm to generate a one-time code."
+        }
+      ]
+    },
+    "Session": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SessionType"
+        },
+        {
+          "description": "The session that should be passed both ways in challenge-response calls to the service. This allows authentication of the user as part of the MFA setup process."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-associate-software-token-response-schema.json",
+  "title": "AssociateSoftwareTokenResponse",
+  "description": "AssociateSoftwareTokenResponse schema from Amazon Cognito"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\w_]+",
+  "minLength": 1,
+  "maxLength": 128,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-cognito-identity-provider-client-id-structure.json",
+  "name": "CognitoIdentityProviderClientId",
+  "description": "CognitoIdentityProviderClientId schema from Amazon Cognito"
+}

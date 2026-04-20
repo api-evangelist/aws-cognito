@@ -1,0 +1,5 @@
+{
+  "SmsMfaConfiguration": "example-value",
+  "SoftwareTokenMfaConfiguration": "eyJhbGciOiJSUzI1NiJ9...",
+  "MfaConfiguration": "example-value"
+}

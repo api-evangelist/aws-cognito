@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "UserConfirmed": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BooleanType"
+        },
+        {
+          "description": "A response from the server indicating that a user registration has been confirmed."
+        }
+      ]
+    },
+    "CodeDeliveryDetails": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CodeDeliveryDetailsType"
+        },
+        {
+          "description": "The code delivery details returned by the server response to the user registration request."
+        }
+      ]
+    },
+    "UserSub": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The UUID of the authenticated user. This isn't the same as <code>username</code>."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserConfirmed",
+    "UserSub"
+  ],
+  "description": "The response from the server for a registration request.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-sign-up-response-structure.json",
+  "name": "SignUpResponse"
+}

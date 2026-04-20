@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityPools": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolsList"
+        },
+        {
+          "description": "The identity pools returned by the ListIdentityPools action."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKey"
+        },
+        {
+          "description": "A pagination token."
+        }
+      ]
+    }
+  },
+  "description": "The result of a successful ListIdentityPools action.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-list-identity-pools-response-schema.json",
+  "title": "ListIdentityPoolsResponse"
+}

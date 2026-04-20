@@ -1,0 +1,279 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "aws": "https://aws.amazon.com/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "DeleteIdentityPoolInput": "aws:DeleteIdentityPoolInput",
+    "DescribeIdentityInput": "aws:DescribeIdentityInput",
+    "ListTagsForResourceInput": "aws:ListTagsForResourceInput",
+    "ListIdentityPoolsResponse": "aws:ListIdentityPoolsResponse",
+    "GetIdentityPoolRolesResponse": "aws:GetIdentityPoolRolesResponse",
+    "GetOpenIdTokenForDeveloperIdentityResponse": "aws:GetOpenIdTokenForDeveloperIdentityResponse",
+    "GetCredentialsForIdentityInput": "aws:GetCredentialsForIdentityInput",
+    "IdentityProviders": "aws:IdentityProviders",
+    "MergeDeveloperIdentitiesResponse": "aws:MergeDeveloperIdentitiesResponse",
+    "TagResourceInput": "aws:TagResourceInput",
+    "GetIdentityPoolRolesInput": "aws:GetIdentityPoolRolesInput",
+    "GetIdResponse": "aws:GetIdResponse",
+    "GetPrincipalTagAttributeMapResponse": "aws:GetPrincipalTagAttributeMapResponse",
+    "IdentityPoolTagsType": "aws:IdentityPoolTagsType",
+    "CreateIdentityPoolInput": "aws:CreateIdentityPoolInput",
+    "LookupDeveloperIdentityResponse": "aws:LookupDeveloperIdentityResponse",
+    "SetPrincipalTagAttributeMapInput": "aws:SetPrincipalTagAttributeMapInput",
+    "GetIdInput": "aws:GetIdInput",
+    "GetOpenIdTokenForDeveloperIdentityInput": "aws:GetOpenIdTokenForDeveloperIdentityInput",
+    "GetOpenIdTokenInput": "aws:GetOpenIdTokenInput",
+    "CognitoIdentityProvider": "aws:CognitoIdentityProvider",
+    "UnlinkDeveloperIdentityInput": "aws:UnlinkDeveloperIdentityInput",
+    "IdentityPool": "aws:IdentityPool",
+    "TagResourceResponse": "aws:TagResourceResponse",
+    "LoginsMap": "aws:LoginsMap",
+    "SetIdentityPoolRolesInput": "aws:SetIdentityPoolRolesInput",
+    "GetPrincipalTagAttributeMapInput": "aws:GetPrincipalTagAttributeMapInput",
+    "RoleMappingMap": "aws:RoleMappingMap",
+    "PrincipalTags": {
+      "@id": "aws:PrincipalTags",
+      "@type": "xsd:string"
+    },
+    "RoleMapping": "aws:RoleMapping",
+    "DeleteIdentitiesInput": "aws:DeleteIdentitiesInput",
+    "ListIdentityPoolsInput": "aws:ListIdentityPoolsInput",
+    "IdentityDescription": "aws:IdentityDescription",
+    "LookupDeveloperIdentityInput": "aws:LookupDeveloperIdentityInput",
+    "MappingRule": "aws:MappingRule",
+    "UnprocessedIdentityId": "aws:UnprocessedIdentityId",
+    "UnlinkIdentityInput": "aws:UnlinkIdentityInput",
+    "RolesMap": "aws:RolesMap",
+    "SetPrincipalTagAttributeMapResponse": "aws:SetPrincipalTagAttributeMapResponse",
+    "RulesConfigurationType": "aws:RulesConfigurationType",
+    "GetCredentialsForIdentityResponse": "aws:GetCredentialsForIdentityResponse",
+    "UntagResourceInput": "aws:UntagResourceInput",
+    "Credentials": {
+      "@id": "aws:Credentials",
+      "@type": "xsd:string"
+    },
+    "GetOpenIdTokenResponse": "aws:GetOpenIdTokenResponse",
+    "UntagResourceResponse": "aws:UntagResourceResponse",
+    "ListTagsForResourceResponse": "aws:ListTagsForResourceResponse",
+    "IdentityPoolShortDescription": "aws:IdentityPoolShortDescription",
+    "ListIdentitiesInput": "aws:ListIdentitiesInput",
+    "ListIdentitiesResponse": "aws:ListIdentitiesResponse",
+    "MergeDeveloperIdentitiesInput": "aws:MergeDeveloperIdentitiesInput",
+    "DescribeIdentityPoolInput": "aws:DescribeIdentityPoolInput",
+    "DeleteIdentitiesResponse": "aws:DeleteIdentitiesResponse",
+    "IdentityPoolId": {
+      "@id": "aws:IdentityPoolId",
+      "@type": "xsd:string"
+    },
+    "IdentityId": {
+      "@id": "aws:IdentityId",
+      "@type": "xsd:string"
+    },
+    "IdentityProviderName": {
+      "@id": "aws:IdentityProviderName",
+      "@type": "xsd:string"
+    },
+    "UseDefaults": {
+      "@id": "aws:UseDefaults",
+      "@type": "xsd:string"
+    },
+    "ResourceArn": {
+      "@id": "aws:ResourceArn",
+      "@type": "xsd:string"
+    },
+    "TagKeys": {
+      "@id": "aws:TagKeys",
+      "@type": "xsd:string"
+    },
+    "Tags": {
+      "@id": "aws:Tags",
+      "@type": "xsd:string"
+    },
+    "IdentityPoolName": {
+      "@id": "aws:IdentityPoolName",
+      "@type": "xsd:string"
+    },
+    "AllowUnauthenticatedIdentities": {
+      "@id": "aws:AllowUnauthenticatedIdentities",
+      "@type": "xsd:string"
+    },
+    "AllowClassicFlow": {
+      "@id": "aws:AllowClassicFlow",
+      "@type": "xsd:string"
+    },
+    "SupportedLoginProviders": {
+      "@id": "aws:SupportedLoginProviders",
+      "@type": "xsd:string"
+    },
+    "DeveloperProviderName": {
+      "@id": "aws:DeveloperProviderName",
+      "@type": "xsd:string"
+    },
+    "OpenIdConnectProviderARNs": {
+      "@id": "aws:OpenIdConnectProviderARNs",
+      "@type": "xsd:string"
+    },
+    "CognitoIdentityProviders": {
+      "@id": "aws:CognitoIdentityProviders",
+      "@type": "xsd:string"
+    },
+    "SamlProviderARNs": {
+      "@id": "aws:SamlProviderARNs",
+      "@type": "xsd:string"
+    },
+    "IdentityPoolTags": {
+      "@id": "aws:IdentityPoolTags",
+      "@type": "xsd:string"
+    },
+    "MaxResults": {
+      "@id": "aws:MaxResults",
+      "@type": "xsd:string"
+    },
+    "NextToken": {
+      "@id": "aws:NextToken",
+      "@type": "xsd:string"
+    },
+    "HideDisabled": {
+      "@id": "aws:HideDisabled",
+      "@type": "xsd:string"
+    },
+    "Token": {
+      "@id": "aws:Token",
+      "@type": "xsd:string"
+    },
+    "DeveloperUserIdentifier": {
+      "@id": "aws:DeveloperUserIdentifier",
+      "@type": "xsd:string"
+    },
+    "Logins": {
+      "@id": "aws:Logins",
+      "@type": "xsd:string"
+    },
+    "CustomRoleArn": {
+      "@id": "aws:CustomRoleArn",
+      "@type": "xsd:string"
+    },
+    "Roles": {
+      "@id": "aws:Roles",
+      "@type": "xsd:string"
+    },
+    "RoleMappings": {
+      "@id": "aws:RoleMappings",
+      "@type": "xsd:string"
+    },
+    "LoginsToRemove": {
+      "@id": "aws:LoginsToRemove",
+      "@type": "xsd:string"
+    },
+    "ProviderName": {
+      "@id": "aws:ProviderName",
+      "@type": "xsd:string"
+    },
+    "ClientId": {
+      "@id": "aws:ClientId",
+      "@type": "xsd:string"
+    },
+    "ServerSideTokenCheck": {
+      "@id": "aws:ServerSideTokenCheck",
+      "@type": "xsd:string"
+    },
+    "CreationDate": {
+      "@id": "aws:CreationDate",
+      "@type": "xsd:string"
+    },
+    "LastModifiedDate": {
+      "@id": "aws:LastModifiedDate",
+      "@type": "xsd:string"
+    },
+    "DeveloperUserIdentifierList": {
+      "@id": "aws:DeveloperUserIdentifierList",
+      "@type": "xsd:string"
+    },
+    "AccountId": {
+      "@id": "aws:AccountId",
+      "@type": "xsd:string"
+    },
+    "AccessKeyId": {
+      "@id": "aws:AccessKeyId",
+      "@type": "xsd:string"
+    },
+    "SecretKey": {
+      "@id": "aws:SecretKey",
+      "@type": "xsd:string"
+    },
+    "SessionToken": {
+      "@id": "aws:SessionToken",
+      "@type": "xsd:string"
+    },
+    "Expiration": {
+      "@id": "aws:Expiration",
+      "@type": "xsd:string"
+    },
+    "Identities": {
+      "@id": "aws:Identities",
+      "@type": "xsd:string"
+    },
+    "UnprocessedIdentityIds": {
+      "@id": "aws:UnprocessedIdentityIds",
+      "@type": "xsd:string"
+    },
+    "Type": {
+      "@id": "aws:Type",
+      "@type": "xsd:string"
+    },
+    "AmbiguousRoleResolution": {
+      "@id": "aws:AmbiguousRoleResolution",
+      "@type": "xsd:string"
+    },
+    "RulesConfiguration": {
+      "@id": "aws:RulesConfiguration",
+      "@type": "xsd:string"
+    },
+    "IdentityPools": {
+      "@id": "aws:IdentityPools",
+      "@type": "xsd:string"
+    },
+    "Rules": {
+      "@id": "aws:Rules",
+      "@type": "xsd:string"
+    },
+    "ErrorCode": {
+      "@id": "aws:ErrorCode",
+      "@type": "xsd:string"
+    },
+    "SourceUserIdentifier": {
+      "@id": "aws:SourceUserIdentifier",
+      "@type": "xsd:string"
+    },
+    "DestinationUserIdentifier": {
+      "@id": "aws:DestinationUserIdentifier",
+      "@type": "xsd:string"
+    },
+    "TokenDuration": {
+      "@id": "aws:TokenDuration",
+      "@type": "xsd:string"
+    },
+    "IdentityIdsToDelete": {
+      "@id": "aws:IdentityIdsToDelete",
+      "@type": "xsd:string"
+    },
+    "Claim": {
+      "@id": "aws:Claim",
+      "@type": "xsd:string"
+    },
+    "MatchType": {
+      "@id": "aws:MatchType",
+      "@type": "xsd:string"
+    },
+    "Value": {
+      "@id": "aws:Value",
+      "@type": "xsd:string"
+    },
+    "RoleARN": {
+      "@id": "aws:RoleARN",
+      "@type": "xsd:string"
+    }
+  }
+}

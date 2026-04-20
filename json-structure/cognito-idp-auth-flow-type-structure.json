@@ -1,0 +1,16 @@
+{
+  "type": "string",
+  "enum": [
+    "USER_SRP_AUTH",
+    "REFRESH_TOKEN_AUTH",
+    "REFRESH_TOKEN",
+    "CUSTOM_AUTH",
+    "ADMIN_NO_SRP_AUTH",
+    "USER_PASSWORD_AUTH",
+    "ADMIN_USER_PASSWORD_AUTH"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-auth-flow-type-structure.json",
+  "name": "AuthFlowType",
+  "description": "AuthFlowType schema from Amazon Cognito"
+}

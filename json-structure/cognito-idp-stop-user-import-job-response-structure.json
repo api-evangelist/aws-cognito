@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "UserImportJob": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserImportJobType"
+        },
+        {
+          "description": "The job object that represents the user import job."
+        }
+      ]
+    }
+  },
+  "description": "Represents the response from the server to the request to stop the user import job.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-stop-user-import-job-response-structure.json",
+  "name": "StopUserImportJobResponse"
+}

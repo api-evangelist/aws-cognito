@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-risk-level-type-structure.json",
+  "name": "RiskLevelType",
+  "description": "RiskLevelType schema from Amazon Cognito"
+}

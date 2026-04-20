@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "RiskConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RiskConfigurationType"
+        },
+        {
+          "description": "The risk configuration."
+        }
+      ]
+    }
+  },
+  "required": [
+    "RiskConfiguration"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-set-risk-configuration-response-schema.json",
+  "title": "SetRiskConfigurationResponse",
+  "description": "SetRiskConfigurationResponse schema from Amazon Cognito"
+}

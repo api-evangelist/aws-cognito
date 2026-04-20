@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-too-many-requests-exception-structure.json",
+  "name": "TooManyRequestsException",
+  "description": "TooManyRequestsException schema from Amazon Cognito"
+}

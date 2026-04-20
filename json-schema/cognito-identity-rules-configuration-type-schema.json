@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "Rules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MappingRulesList"
+        },
+        {
+          "description": "<p>An array of rules. You can specify up to 25 rules per identity provider.</p> <p>Rules are evaluated in order. The first one to match specifies the role.</p>"
+        }
+      ]
+    }
+  },
+  "required": [
+    "Rules"
+  ],
+  "description": "A container for rules.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-rules-configuration-type-schema.json",
+  "title": "RulesConfigurationType"
+}

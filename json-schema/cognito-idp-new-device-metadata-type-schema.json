@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "DeviceKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceKeyType"
+        },
+        {
+          "description": "The device key."
+        }
+      ]
+    },
+    "DeviceGroupKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The device group key."
+        }
+      ]
+    }
+  },
+  "description": "The new device metadata type.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-new-device-metadata-type-schema.json",
+  "title": "NewDeviceMetadataType"
+}

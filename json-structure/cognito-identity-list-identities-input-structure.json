@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolId"
+        },
+        {
+          "description": "An identity pool ID in the format REGION:GUID."
+        }
+      ]
+    },
+    "MaxResults": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/QueryLimit"
+        },
+        {
+          "description": "The maximum number of identities to return."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKey"
+        },
+        {
+          "description": "A pagination token."
+        }
+      ]
+    },
+    "HideDisabled": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HideDisabled"
+        },
+        {
+          "description": "An optional boolean parameter that allows you to hide disabled identities. If omitted, the ListIdentities API will include disabled identities in the response."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityPoolId",
+    "MaxResults"
+  ],
+  "description": "Input to the ListIdentities action.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-list-identities-input-structure.json",
+  "name": "ListIdentitiesInput"
+}

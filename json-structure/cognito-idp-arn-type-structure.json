@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "arn:[\\w+=/,.@-]+:[\\w+=/,.@-]+:([\\w+=/,.@-]*)?:[0-9]+:[\\w+=/,.@-]+(:[\\w+=/,.@-]+)?(:[\\w+=/,.@-]+)?",
+  "minLength": 20,
+  "maxLength": 2048,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-arn-type-structure.json",
+  "name": "ArnType",
+  "description": "ArnType schema from Amazon Cognito"
+}

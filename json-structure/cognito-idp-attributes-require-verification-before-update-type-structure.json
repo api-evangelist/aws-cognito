@@ -1,0 +1,14 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string",
+    "enum": [
+      "phone_number",
+      "email"
+    ]
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-attributes-require-verification-before-update-type-structure.json",
+  "name": "AttributesRequireVerificationBeforeUpdateType",
+  "description": "AttributesRequireVerificationBeforeUpdateType schema from Amazon Cognito"
+}

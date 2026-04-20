@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "DeviceKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceKeyType"
+        },
+        {
+          "description": "The device key."
+        }
+      ]
+    },
+    "DeviceAttributes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AttributeListType"
+        },
+        {
+          "description": "The device attributes."
+        }
+      ]
+    },
+    "DeviceCreateDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The creation date of the device."
+        }
+      ]
+    },
+    "DeviceLastModifiedDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The last modified date of the device."
+        }
+      ]
+    },
+    "DeviceLastAuthenticatedDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date when the device was last authenticated."
+        }
+      ]
+    }
+  },
+  "description": "The device type.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-device-type-schema.json",
+  "title": "DeviceType"
+}

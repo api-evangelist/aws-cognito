@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "CodeDeliveryDetailsList": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CodeDeliveryDetailsListType"
+        },
+        {
+          "description": "The code delivery details list from the server for the request to update user attributes."
+        }
+      ]
+    }
+  },
+  "description": "Represents the response from the server for the request to update user attributes.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-update-user-attributes-response-structure.json",
+  "name": "UpdateUserAttributesResponse"
+}

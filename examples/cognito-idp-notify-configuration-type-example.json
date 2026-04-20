@@ -1,0 +1,8 @@
+{
+  "From": "example-value",
+  "ReplyTo": "example-value",
+  "SourceArn": "example-value",
+  "BlockEmail": "user@example.com",
+  "NoActionEmail": "user@example.com",
+  "MfaEmail": "user@example.com"
+}

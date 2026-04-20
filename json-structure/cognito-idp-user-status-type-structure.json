@@ -1,0 +1,16 @@
+{
+  "type": "string",
+  "enum": [
+    "UNCONFIRMED",
+    "CONFIRMED",
+    "ARCHIVED",
+    "COMPROMISED",
+    "UNKNOWN",
+    "RESET_REQUIRED",
+    "FORCE_CHANGE_PASSWORD"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-user-status-type-structure.json",
+  "name": "UserStatusType",
+  "description": "UserStatusType schema from Amazon Cognito"
+}

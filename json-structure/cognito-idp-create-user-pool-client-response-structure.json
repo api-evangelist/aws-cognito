@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolClient": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolClientType"
+        },
+        {
+          "description": "The user pool client that was just created."
+        }
+      ]
+    }
+  },
+  "description": "Represents the response from the server to create a user pool client.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-create-user-pool-client-response-structure.json",
+  "name": "CreateUserPoolClientResponse"
+}

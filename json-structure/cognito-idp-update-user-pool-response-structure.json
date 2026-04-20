@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "description": "Represents the response from the server when you make a request to update the user pool.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-update-user-pool-response-structure.json",
+  "name": "UpdateUserPoolResponse"
+}

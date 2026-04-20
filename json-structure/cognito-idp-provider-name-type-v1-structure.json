@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[^_][\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}][^_]+",
+  "minLength": 3,
+  "maxLength": 32,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-provider-name-type-v1-structure.json",
+  "name": "ProviderNameTypeV1",
+  "description": "ProviderNameTypeV1 schema from Amazon Cognito"
+}

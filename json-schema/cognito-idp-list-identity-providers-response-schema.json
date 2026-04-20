@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "Providers": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProvidersListType"
+        },
+        {
+          "description": "A list of IdP objects."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKeyType"
+        },
+        {
+          "description": "A pagination token."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Providers"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-list-identity-providers-response-schema.json",
+  "title": "ListIdentityProvidersResponse",
+  "description": "ListIdentityProvidersResponse schema from Amazon Cognito"
+}

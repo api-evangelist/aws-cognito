@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID."
+        }
+      ]
+    },
+    "ProviderName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProviderNameType"
+        },
+        {
+          "description": "The IdP name."
+        }
+      ]
+    },
+    "ProviderType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityProviderTypeType"
+        },
+        {
+          "description": "The IdP type."
+        }
+      ]
+    },
+    "ProviderDetails": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProviderDetailsType"
+        },
+        {
+          "description": "<p>The IdP details. The following list describes the provider detail keys for each IdP type.</p> <ul> <li> <p>For Google and Login with Amazon:</p> <ul> <li> <p>client_id</p> </li> <li> <p>client_secret</p> </li> <li> <p>authorize_scopes</p> </li> </ul> </li> <li> <p>For Facebook:</p> <ul> <li> <p>client_id</p> </li> <li> <p>client_secret</p> </li> <li> <p>authorize_scopes</p> </li> <li> <p>api_version</p> </li> </ul> </li> <li> <p>For Sign in with Apple:</p> <ul> <li> <p>client_id</p> </li> <li> <p>team_id</p> </li> <li> <p>key_id</p> </li> <li> <p>private_key</p> <p> <i>You can submit a private_key when you add or update an IdP. Describe operations don't return the private key.</i> </p> </li> <li> <p>authorize_scopes</p> </li> </ul> </li> <li> <p>For OIDC providers:</p> <ul> <li> <p>client_id</p> </li> <li> <p>client_secret</p> </li> <li> <p>attributes_request_method</p> </li> <li> <p>oidc_issuer</p> </li> <li> <p>authorize_scopes</p> </li> <li> <p>The following keys are only present if Amazon Cognito didn't discover them at the <code>oidc_issuer</code> URL.</p> <ul> <li> <p>authorize_url </p> </li> <li> <p>token_url </p> </li> <li> <p>attributes_url </p> </li> <li> <p>jwks_uri </p> </li> </ul> </li> <li> <p>Amazon Cognito sets the value of the following keys automatically. They are read-only.</p> <ul> <li> <p>attributes_url_add_attributes </p> </li> </ul> </li> </ul> </li> <li> <p>For SAML providers:</p> <ul> <li> <p>MetadataFile or MetadataURL</p> </li> <li> <p>IDPSignout <i>optional</i> </p> </li> </ul> </li> </ul>"
+        }
+      ]
+    },
+    "AttributeMapping": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AttributeMappingType"
+        },
+        {
+          "description": "A mapping of IdP attributes to standard and custom user pool attributes."
+        }
+      ]
+    },
+    "IdpIdentifiers": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdpIdentifiersListType"
+        },
+        {
+          "description": "A list of IdP identifiers."
+        }
+      ]
+    },
+    "LastModifiedDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date the IdP was last modified."
+        }
+      ]
+    },
+    "CreationDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date the IdP was created."
+        }
+      ]
+    }
+  },
+  "description": "A container for information about an IdP.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-identity-provider-type-schema.json",
+  "title": "IdentityProviderType"
+}

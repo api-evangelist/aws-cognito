@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "description": "Represents the response received from the server to disable the user as an administrator.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-admin-disable-user-response-structure.json",
+  "name": "AdminDisableUserResponse"
+}

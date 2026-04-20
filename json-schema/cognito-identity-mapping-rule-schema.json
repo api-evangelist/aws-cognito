@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "properties": {
+    "Claim": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClaimName"
+        },
+        {
+          "description": "The claim name that must be present in the token, for example, \"isAdmin\" or \"paid\"."
+        }
+      ]
+    },
+    "MatchType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MappingRuleMatchType"
+        },
+        {
+          "description": "The match condition that specifies how closely the claim value in the IdP token must match <code>Value</code>."
+        }
+      ]
+    },
+    "Value": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClaimValue"
+        },
+        {
+          "description": "A brief string that the claim must match, for example, \"paid\" or \"yes\"."
+        }
+      ]
+    },
+    "RoleARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ARNString"
+        },
+        {
+          "description": "The role ARN."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Claim",
+    "MatchType",
+    "Value",
+    "RoleARN"
+  ],
+  "description": "A rule that maps a claim name, a claim value, and a match type to a role ARN.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-mapping-rule-schema.json",
+  "title": "MappingRule"
+}

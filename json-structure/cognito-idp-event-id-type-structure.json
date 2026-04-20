@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\w+-]+",
+  "minLength": 1,
+  "maxLength": 50,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-event-id-type-structure.json",
+  "name": "EventIdType",
+  "description": "EventIdType schema from Amazon Cognito"
+}

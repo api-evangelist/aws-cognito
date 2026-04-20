@@ -1,0 +1,7 @@
+{
+  "IdentityPoolId": "my-user-pool-01",
+  "IdentityId": "my-user-pool-01",
+  "Logins": "example-value",
+  "PrincipalTags": "example-value",
+  "TokenDuration": "eyJhbGciOiJSUzI1NiJ9..."
+}

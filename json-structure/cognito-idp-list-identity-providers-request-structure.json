@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID."
+        }
+      ]
+    },
+    "MaxResults": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ListProvidersLimitType"
+        },
+        {
+          "description": "The maximum number of IdPs to return."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKeyType"
+        },
+        {
+          "description": "A pagination token."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-list-identity-providers-request-structure.json",
+  "name": "ListIdentityProvidersRequest",
+  "description": "ListIdentityProvidersRequest schema from Amazon Cognito"
+}

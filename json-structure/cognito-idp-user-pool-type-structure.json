@@ -1,0 +1,339 @@
+{
+  "type": "object",
+  "properties": {
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The ID of the user pool."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolNameType"
+        },
+        {
+          "description": "The name of the user pool."
+        }
+      ]
+    },
+    "Policies": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolPolicyType"
+        },
+        {
+          "description": "The policies associated with the user pool."
+        }
+      ]
+    },
+    "DeletionProtection": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeletionProtectionType"
+        },
+        {
+          "description": "<p>When active, <code>DeletionProtection</code> prevents accidental deletion of your user pool. Before you can delete a user pool that you have protected against deletion, you must deactivate this feature.</p> <p>When you try to delete a protected user pool in a <code>DeleteUserPool</code> API request, Amazon Cognito returns an <code>InvalidParameterException</code> error. To delete a protected user pool, send a new <code>DeleteUserPool</code> request after you deactivate deletion protection in an <code>UpdateUserPool</code> API request.</p>"
+        }
+      ]
+    },
+    "LambdaConfig": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LambdaConfigType"
+        },
+        {
+          "description": "The Lambda triggers associated with the user pool."
+        }
+      ]
+    },
+    "Status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StatusType"
+        },
+        {
+          "description": "The status of a user pool."
+        }
+      ]
+    },
+    "LastModifiedDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date the user pool was last modified."
+        }
+      ]
+    },
+    "CreationDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date the user pool was created."
+        }
+      ]
+    },
+    "SchemaAttributes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SchemaAttributesListType"
+        },
+        {
+          "description": "A container with the schema attributes of a user pool."
+        }
+      ]
+    },
+    "AutoVerifiedAttributes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VerifiedAttributesListType"
+        },
+        {
+          "description": "The attributes that are auto-verified in a user pool."
+        }
+      ]
+    },
+    "AliasAttributes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AliasAttributesListType"
+        },
+        {
+          "description": "The attributes that are aliased in a user pool."
+        }
+      ]
+    },
+    "UsernameAttributes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameAttributesListType"
+        },
+        {
+          "description": "Specifies whether a user can use an email address or phone number as a username when they sign up."
+        }
+      ]
+    },
+    "SmsVerificationMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SmsVerificationMessageType"
+        },
+        {
+          "description": "This parameter is no longer used. See <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_VerificationMessageTemplateType.html\">VerificationMessageTemplateType</a>."
+        }
+      ]
+    },
+    "EmailVerificationMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailVerificationMessageType"
+        },
+        {
+          "description": "This parameter is no longer used. See <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_VerificationMessageTemplateType.html\">VerificationMessageTemplateType</a>."
+        }
+      ]
+    },
+    "EmailVerificationSubject": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailVerificationSubjectType"
+        },
+        {
+          "description": "This parameter is no longer used. See <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_VerificationMessageTemplateType.html\">VerificationMessageTemplateType</a>."
+        }
+      ]
+    },
+    "VerificationMessageTemplate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VerificationMessageTemplateType"
+        },
+        {
+          "description": "The template for verification messages."
+        }
+      ]
+    },
+    "SmsAuthenticationMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SmsVerificationMessageType"
+        },
+        {
+          "description": "The contents of the SMS authentication message."
+        }
+      ]
+    },
+    "UserAttributeUpdateSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserAttributeUpdateSettingsType"
+        },
+        {
+          "description": "The settings for updates to user attributes. These settings include the property <code>AttributesRequireVerificationBeforeUpdate</code>, a user-pool setting that tells Amazon Cognito how to handle changes to the value of your users' email address and phone number attributes. For more information, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-email-phone-verification.html#user-pool-settings-verifications-verify-attribute-updates\"> Verifying updates to email addresses and phone numbers</a>."
+        }
+      ]
+    },
+    "MfaConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolMfaType"
+        },
+        {
+          "description": "<p>Can be one of the following values:</p> <ul> <li> <p> <code>OFF</code> - MFA tokens aren't required and can't be specified during user registration.</p> </li> <li> <p> <code>ON</code> - MFA tokens are required for all user registrations. You can only specify required when you're initially creating a user pool.</p> </li> <li> <p> <code>OPTIONAL</code> - Users have the option when registering to create an MFA token.</p> </li> </ul>"
+        }
+      ]
+    },
+    "DeviceConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceConfigurationType"
+        },
+        {
+          "description": "<p>The device-remembering configuration for a user pool. A null value indicates that you have deactivated device remembering in your user pool.</p> <note> <p>When you provide a value for any <code>DeviceConfiguration</code> field, you activate the Amazon Cognito device-remembering feature.</p> </note>"
+        }
+      ]
+    },
+    "EstimatedNumberOfUsers": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IntegerType"
+        },
+        {
+          "description": "A number estimating the size of the user pool."
+        }
+      ]
+    },
+    "EmailConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailConfigurationType"
+        },
+        {
+          "description": "The email configuration of your user pool. The email configuration type sets your preferred sending method, Amazon Web Services Region, and sender for messages tfrom your user pool."
+        }
+      ]
+    },
+    "SmsConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SmsConfigurationType"
+        },
+        {
+          "description": "The SMS configuration with the settings that your Amazon Cognito user pool must use to send an SMS message from your Amazon Web Services account through Amazon Simple Notification Service. To send SMS messages with Amazon SNS in the Amazon Web Services Region that you want, the Amazon Cognito user pool uses an Identity and Access Management (IAM) role in your Amazon Web Services account."
+        }
+      ]
+    },
+    "UserPoolTags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolTagsType"
+        },
+        {
+          "description": "The tags that are assigned to the user pool. A tag is a label that you can apply to user pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria."
+        }
+      ]
+    },
+    "SmsConfigurationFailure": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "<p>The reason why the SMS configuration can't send the messages to your users.</p> <p>This message might include comma-separated values to describe why your SMS configuration can't send messages to user pool end users.</p> <dl> <dt>InvalidSmsRoleAccessPolicyException</dt> <dd> <p>The Identity and Access Management role that Amazon Cognito uses to send SMS messages isn't properly configured. For more information, see <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SmsConfigurationType.html\">SmsConfigurationType</a>.</p> </dd> <dt>SNSSandbox</dt> <dd> <p>The Amazon Web Services account is in the SNS SMS Sandbox and messages will only reach verified end users. This parameter won\u2019t get populated with SNSSandbox if the IAM user creating the user pool doesn\u2019t have SNS permissions. To learn how to move your Amazon Web Services account out of the sandbox, see <a href=\"https://docs.aws.amazon.com/sns/latest/dg/sns-sms-sandbox-moving-to-production.html\">Moving out of the SMS sandbox</a>.</p> </dd> </dl>"
+        }
+      ]
+    },
+    "EmailConfigurationFailure": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "Deprecated. Review error codes from API requests with <code>EventSource:cognito-idp.amazonaws.com</code> in CloudTrail for information about problems with user pool email configuration."
+        }
+      ]
+    },
+    "Domain": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainType"
+        },
+        {
+          "description": "The domain prefix, if the user pool has a domain associated with it."
+        }
+      ]
+    },
+    "CustomDomain": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainType"
+        },
+        {
+          "description": "<p>A custom domain name that you provide to Amazon Cognito. This parameter applies only if you use a custom domain to host the sign-up and sign-in pages for your application. An example of a custom domain name might be <code>auth.example.com</code>.</p> <p>For more information about adding a custom domain to your user pool, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-add-custom-domain.html\">Using Your Own Domain for the Hosted UI</a>.</p>"
+        }
+      ]
+    },
+    "AdminCreateUserConfig": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AdminCreateUserConfigType"
+        },
+        {
+          "description": "The configuration for <code>AdminCreateUser</code> requests."
+        }
+      ]
+    },
+    "UserPoolAddOns": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolAddOnsType"
+        },
+        {
+          "description": "The user pool add-ons."
+        }
+      ]
+    },
+    "UsernameConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameConfigurationType"
+        },
+        {
+          "description": "Case sensitivity of the username input for the selected sign-in option. For example, when case sensitivity is set to <code>False</code>, users can sign in using either \"username\" or \"Username\". This configuration is immutable once it has been set. For more information, see <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UsernameConfigurationType.html\">UsernameConfigurationType</a>."
+        }
+      ]
+    },
+    "Arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) for the user pool."
+        }
+      ]
+    },
+    "AccountRecoverySetting": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccountRecoverySettingType"
+        },
+        {
+          "description": "The available verified method a user can use to recover their password when they call <code>ForgotPassword</code>. You can use this setting to define a preferred method when a user has more than one method available. With this setting, SMS doesn't qualify for a valid password recovery mechanism if the user also has SMS multi-factor authentication (MFA) activated. In the absence of this setting, Amazon Cognito uses the legacy behavior to determine the recovery method where SMS is preferred through email."
+        }
+      ]
+    }
+  },
+  "description": "A container for information about the user pool.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-user-pool-type-structure.json",
+  "name": "UserPoolType"
+}

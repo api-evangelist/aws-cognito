@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolId"
+        },
+        {
+          "description": "An identity pool ID in the format REGION:GUID."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityPoolId"
+  ],
+  "description": "Input to the DescribeIdentityPool action.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-describe-identity-pool-input-structure.json",
+  "name": "DescribeIdentityPoolInput"
+}

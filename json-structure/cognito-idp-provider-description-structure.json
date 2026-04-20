@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "ProviderName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProviderNameType"
+        },
+        {
+          "description": "The IdP name."
+        }
+      ]
+    },
+    "ProviderType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityProviderTypeType"
+        },
+        {
+          "description": "The IdP type."
+        }
+      ]
+    },
+    "LastModifiedDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date the provider was last modified."
+        }
+      ]
+    },
+    "CreationDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date the provider was added to the user pool."
+        }
+      ]
+    }
+  },
+  "description": "A container for IdP details.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-provider-description-structure.json",
+  "name": "ProviderDescription"
+}

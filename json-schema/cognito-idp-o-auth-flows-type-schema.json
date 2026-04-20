@@ -1,0 +1,15 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string",
+    "enum": [
+      "code",
+      "implicit",
+      "client_credentials"
+    ]
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-o-auth-flows-type-schema.json",
+  "title": "OAuthFlowsType",
+  "description": "OAuthFlowsType schema from Amazon Cognito"
+}

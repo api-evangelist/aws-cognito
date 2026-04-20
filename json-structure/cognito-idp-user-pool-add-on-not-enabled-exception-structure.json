@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-user-pool-add-on-not-enabled-exception-structure.json",
+  "name": "UserPoolAddOnNotEnabledException",
+  "description": "UserPoolAddOnNotEnabledException schema from Amazon Cognito"
+}

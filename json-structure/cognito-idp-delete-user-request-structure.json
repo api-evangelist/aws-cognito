@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A valid access token that Amazon Cognito issued to the user whose user profile you want to delete."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AccessToken"
+  ],
+  "description": "Represents the request to delete a user.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-delete-user-request-structure.json",
+  "name": "DeleteUserRequest"
+}

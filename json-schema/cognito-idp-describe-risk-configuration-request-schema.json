@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID."
+        }
+      ]
+    },
+    "ClientId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientIdType"
+        },
+        {
+          "description": "The app client ID."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-describe-risk-configuration-request-schema.json",
+  "title": "DescribeRiskConfigurationRequest",
+  "description": "DescribeRiskConfigurationRequest schema from Amazon Cognito"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-revoke-token-response-structure.json",
+  "name": "RevokeTokenResponse",
+  "description": "RevokeTokenResponse schema from Amazon Cognito"
+}

@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "Domain": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainType"
+        },
+        {
+          "description": "<p>The domain name for the custom domain that hosts the sign-up and sign-in pages for your application. One example might be <code>auth.example.com</code>. </p> <p>This string can include only lowercase letters, numbers, and hyphens. Don't use a hyphen for the first or last character. Use periods to separate subdomain names.</p>"
+        }
+      ]
+    },
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The ID of the user pool that is associated with the custom domain whose certificate you're updating."
+        }
+      ]
+    },
+    "CustomDomainConfig": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CustomDomainConfigType"
+        },
+        {
+          "description": "The configuration for a custom domain that hosts the sign-up and sign-in pages for your application. Use this object to specify an SSL certificate that is managed by ACM."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Domain",
+    "UserPoolId",
+    "CustomDomainConfig"
+  ],
+  "description": "The UpdateUserPoolDomain request input.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-update-user-pool-domain-request-schema.json",
+  "title": "UpdateUserPoolDomainRequest"
+}

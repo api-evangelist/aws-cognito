@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A valid access token that Amazon Cognito issued to the user who you want to sign out."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AccessToken"
+  ],
+  "description": "Represents the request to sign out all devices.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-global-sign-out-request-structure.json",
+  "name": "GlobalSignOutRequest"
+}

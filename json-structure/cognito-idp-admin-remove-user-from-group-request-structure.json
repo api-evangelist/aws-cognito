@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool."
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameType"
+        },
+        {
+          "description": "The username for the user."
+        }
+      ]
+    },
+    "GroupName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/GroupNameType"
+        },
+        {
+          "description": "The group name."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "Username",
+    "GroupName"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-admin-remove-user-from-group-request-structure.json",
+  "name": "AdminRemoveUserFromGroupRequest",
+  "description": "AdminRemoveUserFromGroupRequest schema from Amazon Cognito"
+}

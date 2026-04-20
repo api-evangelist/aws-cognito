@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID."
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameType"
+        },
+        {
+          "description": "The user name."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "Username"
+  ],
+  "description": "The request to sign out of all devices, as an administrator.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-admin-user-global-sign-out-request-schema.json",
+  "title": "AdminUserGlobalSignOutRequest"
+}

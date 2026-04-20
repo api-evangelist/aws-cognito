@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "Valid",
+    "Invalid"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-feedback-value-type-structure.json",
+  "name": "FeedbackValueType",
+  "description": "FeedbackValueType schema from Amazon Cognito"
+}

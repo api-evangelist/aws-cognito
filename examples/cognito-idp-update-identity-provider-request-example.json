@@ -1,0 +1,7 @@
+{
+  "UserPoolId": "my-user-pool-01",
+  "ProviderName": "my-user-pool-01",
+  "ProviderDetails": "my-user-pool-01",
+  "AttributeMapping": "example-value",
+  "IdpIdentifiers": "my-user-pool-01"
+}

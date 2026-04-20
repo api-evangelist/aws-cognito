@@ -1,0 +1,9 @@
+{
+  "UserPoolId": "my-user-pool-01",
+  "ClientId": "my-user-pool-01",
+  "ImageUrl": "example-value",
+  "CSS": "example-value",
+  "CSSVersion": "example-value",
+  "LastModifiedDate": "example-value",
+  "CreationDate": "example-value"
+}

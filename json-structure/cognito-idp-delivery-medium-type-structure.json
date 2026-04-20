@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "SMS",
+    "EMAIL"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-delivery-medium-type-structure.json",
+  "name": "DeliveryMediumType",
+  "description": "DeliveryMediumType schema from Amazon Cognito"
+}

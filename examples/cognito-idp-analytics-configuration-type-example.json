@@ -1,0 +1,7 @@
+{
+  "ApplicationId": "my-user-pool-01",
+  "ApplicationArn": "example-value",
+  "RoleArn": "example-value",
+  "ExternalId": "my-user-pool-01",
+  "UserDataShared": "example-value"
+}

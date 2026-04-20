@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-limit-exceeded-exception-schema.json",
+  "title": "LimitExceededException",
+  "description": "LimitExceededException schema from Amazon Cognito"
+}

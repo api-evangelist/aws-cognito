@@ -1,0 +1,13 @@
+{
+  "type": "string",
+  "enum": [
+    "Equals",
+    "Contains",
+    "StartsWith",
+    "NotEqual"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-mapping-rule-match-type-schema.json",
+  "title": "MappingRuleMatchType",
+  "description": "MappingRuleMatchType schema from Amazon Cognito"
+}

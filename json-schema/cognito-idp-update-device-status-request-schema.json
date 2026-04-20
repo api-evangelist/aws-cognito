@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A valid access token that Amazon Cognito issued to the user whose device status you want to update."
+        }
+      ]
+    },
+    "DeviceKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceKeyType"
+        },
+        {
+          "description": "The device key."
+        }
+      ]
+    },
+    "DeviceRememberedStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceRememberedStatusType"
+        },
+        {
+          "description": "The status of whether a device is remembered."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AccessToken",
+    "DeviceKey"
+  ],
+  "description": "Represents the request to update the device status.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-update-device-status-request-schema.json",
+  "title": "UpdateDeviceStatusRequest"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A non-expired access token for the user whose information you want to query."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AccessToken"
+  ],
+  "description": "Represents the request to get information about the user.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-get-user-request-structure.json",
+  "name": "GetUserRequest"
+}

@@ -1,0 +1,9 @@
+{
+  "UserPoolId": "my-user-pool-01",
+  "ClientId": "my-user-pool-01",
+  "AuthFlow": "example-value",
+  "AuthParameters": "example-value",
+  "ClientMetadata": "example-value",
+  "AnalyticsMetadata": "example-value",
+  "ContextData": "example-value"
+}

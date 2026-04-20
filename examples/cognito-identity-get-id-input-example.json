@@ -1,0 +1,5 @@
+{
+  "AccountId": "my-user-pool-01",
+  "IdentityPoolId": "my-user-pool-01",
+  "Logins": "example-value"
+}

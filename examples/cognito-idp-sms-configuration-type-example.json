@@ -1,0 +1,5 @@
+{
+  "SnsCallerArn": "example-value",
+  "ExternalId": "my-user-pool-01",
+  "SnsRegion": "example-value"
+}

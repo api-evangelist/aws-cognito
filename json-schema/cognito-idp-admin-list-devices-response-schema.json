@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Devices": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceListType"
+        },
+        {
+          "description": "The devices in the list of devices response."
+        }
+      ]
+    },
+    "PaginationToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SearchPaginationTokenType"
+        },
+        {
+          "description": "The pagination token."
+        }
+      ]
+    }
+  },
+  "description": "Lists the device's response, as an administrator.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-admin-list-devices-response-schema.json",
+  "title": "AdminListDevicesResponse"
+}

@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VerifySoftwareTokenResponseType"
+        },
+        {
+          "description": "The status of the verify software token."
+        }
+      ]
+    },
+    "Session": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SessionType"
+        },
+        {
+          "description": "The session that should be passed both ways in challenge-response calls to the service."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-verify-software-token-response-structure.json",
+  "name": "VerifySoftwareTokenResponse",
+  "description": "VerifySoftwareTokenResponse schema from Amazon Cognito"
+}

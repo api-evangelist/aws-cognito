@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "ResourceArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the user pool that the tags are assigned to."
+        }
+      ]
+    },
+    "TagKeys": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolTagsListType"
+        },
+        {
+          "description": "The keys of the tags to remove from the user pool."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceArn",
+    "TagKeys"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-untag-resource-request-schema.json",
+  "title": "UntagResourceRequest",
+  "description": "UntagResourceRequest schema from Amazon Cognito"
+}

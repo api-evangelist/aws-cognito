@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/components/schemas/PrincipalTagValue"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-principal-tags-structure.json",
+  "name": "PrincipalTags",
+  "description": "PrincipalTags schema from Amazon Cognito"
+}

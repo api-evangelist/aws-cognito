@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "UnprocessedIdentityIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UnprocessedIdentityIdList"
+        },
+        {
+          "description": "An array of UnprocessedIdentityId objects, each of which contains an ErrorCode and IdentityId."
+        }
+      ]
+    }
+  },
+  "description": "Returned in response to a successful <code>DeleteIdentities</code> operation.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-delete-identities-response-schema.json",
+  "title": "DeleteIdentitiesResponse"
+}

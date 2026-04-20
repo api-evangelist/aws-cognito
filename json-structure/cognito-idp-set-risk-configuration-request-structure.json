@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID. "
+        }
+      ]
+    },
+    "ClientId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientIdType"
+        },
+        {
+          "description": "<p>The app client ID. If <code>ClientId</code> is null, then the risk configuration is mapped to <code>userPoolId</code>. When the client ID is null, the same risk configuration is applied to all the clients in the userPool.</p> <p>Otherwise, <code>ClientId</code> is mapped to the client. When the client ID isn't null, the user pool configuration is overridden and the risk configuration for the client is used instead.</p>"
+        }
+      ]
+    },
+    "CompromisedCredentialsRiskConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CompromisedCredentialsRiskConfigurationType"
+        },
+        {
+          "description": "The compromised credentials risk configuration."
+        }
+      ]
+    },
+    "AccountTakeoverRiskConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccountTakeoverRiskConfigurationType"
+        },
+        {
+          "description": "The account takeover risk configuration."
+        }
+      ]
+    },
+    "RiskExceptionConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RiskExceptionConfigurationType"
+        },
+        {
+          "description": "The configuration to override the risk decision."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-set-risk-configuration-request-structure.json",
+  "name": "SetRiskConfigurationRequest",
+  "description": "SetRiskConfigurationRequest schema from Amazon Cognito"
+}

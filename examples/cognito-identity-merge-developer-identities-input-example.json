@@ -1,0 +1,6 @@
+{
+  "SourceUserIdentifier": "my-user-pool-01",
+  "DestinationUserIdentifier": "my-user-pool-01",
+  "DeveloperProviderName": "my-user-pool-01",
+  "IdentityPoolId": "my-user-pool-01"
+}

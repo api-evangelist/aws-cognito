@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "CertificateArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of an Certificate Manager SSL certificate. You use this certificate for the subdomain of your custom domain."
+        }
+      ]
+    }
+  },
+  "required": [
+    "CertificateArn"
+  ],
+  "description": "The configuration for a custom domain that hosts the sign-up and sign-in webpages for your application.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-custom-domain-config-type-structure.json",
+  "name": "CustomDomainConfigType"
+}

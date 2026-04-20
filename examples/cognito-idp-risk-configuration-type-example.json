@@ -1,0 +1,8 @@
+{
+  "UserPoolId": "my-user-pool-01",
+  "ClientId": "my-user-pool-01",
+  "CompromisedCredentialsRiskConfiguration": "example-value",
+  "AccountTakeoverRiskConfiguration": "example-value",
+  "RiskExceptionConfiguration": "example-value",
+  "LastModifiedDate": "example-value"
+}

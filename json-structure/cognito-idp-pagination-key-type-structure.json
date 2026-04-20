@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "pattern": "[\\S]+",
+  "minLength": 1,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-pagination-key-type-structure.json",
+  "name": "PaginationKeyType",
+  "description": "PaginationKeyType schema from Amazon Cognito"
+}

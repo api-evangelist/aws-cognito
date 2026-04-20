@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "LowAction": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccountTakeoverActionType"
+        },
+        {
+          "description": "Action to take for a low risk."
+        }
+      ]
+    },
+    "MediumAction": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccountTakeoverActionType"
+        },
+        {
+          "description": "Action to take for a medium risk."
+        }
+      ]
+    },
+    "HighAction": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccountTakeoverActionType"
+        },
+        {
+          "description": "Action to take for a high risk."
+        }
+      ]
+    }
+  },
+  "description": "Account takeover actions type.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-account-takeover-actions-type-structure.json",
+  "name": "AccountTakeoverActionsType"
+}

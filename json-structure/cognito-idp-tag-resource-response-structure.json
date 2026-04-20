@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-tag-resource-response-structure.json",
+  "name": "TagResourceResponse",
+  "description": "TagResourceResponse schema from Amazon Cognito"
+}

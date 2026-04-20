@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "SMSMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SmsVerificationMessageType"
+        },
+        {
+          "description": "The message template for SMS messages."
+        }
+      ]
+    },
+    "EmailMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailVerificationMessageType"
+        },
+        {
+          "description": "The message template for email messages. EmailMessage is allowed only if <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount\">EmailSendingAccount</a> is DEVELOPER. "
+        }
+      ]
+    },
+    "EmailSubject": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailVerificationSubjectType"
+        },
+        {
+          "description": "The subject line for email messages. EmailSubject is allowed only if <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount\">EmailSendingAccount</a> is DEVELOPER. "
+        }
+      ]
+    }
+  },
+  "description": "The message template structure.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-message-template-type-structure.json",
+  "name": "MessageTemplateType"
+}

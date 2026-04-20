@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPools": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolListType"
+        },
+        {
+          "description": "The user pools from the response to list users."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKeyType"
+        },
+        {
+          "description": "An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list."
+        }
+      ]
+    }
+  },
+  "description": "Represents the response to list user pools.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-list-user-pools-response-schema.json",
+  "title": "ListUserPoolsResponse"
+}

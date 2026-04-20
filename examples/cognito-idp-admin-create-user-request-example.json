@@ -1,0 +1,11 @@
+{
+  "UserPoolId": "my-user-pool-01",
+  "Username": "my-user-pool-01",
+  "UserAttributes": "example-value",
+  "ValidationData": "my-user-pool-01",
+  "TemporaryPassword": "example-value",
+  "ForceAliasCreation": "example-value",
+  "MessageAction": "example-value",
+  "DesiredDeliveryMediums": "example-value",
+  "ClientMetadata": "example-value"
+}

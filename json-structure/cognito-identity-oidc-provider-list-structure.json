@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string",
+    "minLength": 20,
+    "maxLength": 2048
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-oidc-provider-list-structure.json",
+  "name": "OIDCProviderList",
+  "description": "OIDCProviderList schema from Amazon Cognito"
+}

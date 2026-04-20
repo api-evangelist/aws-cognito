@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A valid access token that Amazon Cognito issued to the user whose user attributes you want to verify."
+        }
+      ]
+    },
+    "AttributeName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AttributeNameType"
+        },
+        {
+          "description": "The attribute name in the request to verify user attributes."
+        }
+      ]
+    },
+    "Code": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConfirmationCodeType"
+        },
+        {
+          "description": "The verification code in the request to verify user attributes."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AccessToken",
+    "AttributeName",
+    "Code"
+  ],
+  "description": "Represents the request to verify user attributes.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-verify-user-attribute-request-schema.json",
+  "title": "VerifyUserAttributeRequest"
+}

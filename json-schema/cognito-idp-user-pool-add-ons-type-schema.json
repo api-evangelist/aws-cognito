@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "AdvancedSecurityMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AdvancedSecurityModeType"
+        },
+        {
+          "description": "The advanced security mode."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AdvancedSecurityMode"
+  ],
+  "description": "The user pool add-ons type.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-user-pool-add-ons-type-schema.json",
+  "title": "UserPoolAddOnsType"
+}

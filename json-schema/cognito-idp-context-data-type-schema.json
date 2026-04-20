@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "IpAddress": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The source IP address of your user's device."
+        }
+      ]
+    },
+    "ServerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "Your server endpoint where this API is invoked."
+        }
+      ]
+    },
+    "ServerPath": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "Your server path where this API is invoked."
+        }
+      ]
+    },
+    "HttpHeaders": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HttpHeaderList"
+        },
+        {
+          "description": "HttpHeaders received on your server in same order."
+        }
+      ]
+    },
+    "EncodedData": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "Encoded device-fingerprint details that your app collected with the Amazon Cognito context data collection library. For more information, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pool-settings-adaptive-authentication.html#user-pool-settings-adaptive-authentication-device-fingerprint\">Adding user device and session data to API requests</a>."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IpAddress",
+    "ServerName",
+    "ServerPath",
+    "HttpHeaders"
+  ],
+  "description": "Contextual user data type used for evaluating the risk of an unexpected event by Amazon Cognito advanced security.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-context-data-type-schema.json",
+  "title": "ContextDataType"
+}

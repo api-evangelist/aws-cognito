@@ -1,0 +1,5 @@
+{
+  "SMSMessage": "example-value",
+  "EmailMessage": "user@example.com",
+  "EmailSubject": "user@example.com"
+}

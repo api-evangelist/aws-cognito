@@ -1,0 +1,6 @@
+{
+  "UserPoolId": "my-user-pool-01",
+  "Username": "my-user-pool-01",
+  "Limit": "example-value",
+  "PaginationToken": "eyJhbGciOiJSUzI1NiJ9..."
+}

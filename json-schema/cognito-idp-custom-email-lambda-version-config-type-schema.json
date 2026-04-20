@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "LambdaVersion": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CustomEmailSenderLambdaVersionType"
+        },
+        {
+          "description": "Signature of the \"request\" attribute in the \"event\" information Amazon Cognito passes to your custom email Lambda function. The only supported value is <code>V1_0</code>."
+        }
+      ]
+    },
+    "LambdaArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the Lambda function that Amazon Cognito activates to send email notifications to users."
+        }
+      ]
+    }
+  },
+  "required": [
+    "LambdaVersion",
+    "LambdaArn"
+  ],
+  "description": "A custom email sender Lambda configuration type.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-custom-email-lambda-version-config-type-schema.json",
+  "title": "CustomEmailLambdaVersionConfigType"
+}

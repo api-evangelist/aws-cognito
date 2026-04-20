@@ -1,0 +1,13 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string",
+    "pattern": "[\\x21\\x23-\\x5B\\x5D-\\x7E]+",
+    "minLength": 1,
+    "maxLength": 256
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-scope-list-type-structure.json",
+  "name": "ScopeListType",
+  "description": "ScopeListType schema from Amazon Cognito"
+}

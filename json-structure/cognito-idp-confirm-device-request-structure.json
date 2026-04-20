@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A valid access token that Amazon Cognito issued to the user whose device you want to confirm."
+        }
+      ]
+    },
+    "DeviceKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceKeyType"
+        },
+        {
+          "description": "The device key."
+        }
+      ]
+    },
+    "DeviceSecretVerifierConfig": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceSecretVerifierConfigType"
+        },
+        {
+          "description": "The configuration of the device secret verifier."
+        }
+      ]
+    },
+    "DeviceName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceNameType"
+        },
+        {
+          "description": "The device name."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AccessToken",
+    "DeviceKey"
+  ],
+  "description": "Confirms the device request.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-confirm-device-request-structure.json",
+  "name": "ConfirmDeviceRequest"
+}

@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "FeedbackValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FeedbackValueType"
+        },
+        {
+          "description": "The event feedback value."
+        }
+      ]
+    },
+    "Provider": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The provider."
+        }
+      ]
+    },
+    "FeedbackDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The event feedback date."
+        }
+      ]
+    }
+  },
+  "required": [
+    "FeedbackValue",
+    "Provider"
+  ],
+  "description": "Specifies the event feedback type.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-event-feedback-type-schema.json",
+  "title": "EventFeedbackType"
+}

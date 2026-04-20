@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "phone_number",
+    "email"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-username-attribute-type-structure.json",
+  "name": "UsernameAttributeType",
+  "description": "UsernameAttributeType schema from Amazon Cognito"
+}

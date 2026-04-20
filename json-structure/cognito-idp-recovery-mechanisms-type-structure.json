@@ -1,0 +1,37 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "Priority": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/PriorityType"
+          },
+          {
+            "description": "A positive integer specifying priority of a method with 1 being the highest priority."
+          }
+        ]
+      },
+      "Name": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/RecoveryOptionNameType"
+          },
+          {
+            "description": "The recovery method for a user."
+          }
+        ]
+      }
+    },
+    "required": [
+      "Priority",
+      "Name"
+    ],
+    "description": "A map containing a priority as a key, and recovery method name as a value."
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-recovery-mechanisms-type-structure.json",
+  "name": "RecoveryMechanismsType",
+  "description": "RecoveryMechanismsType schema from Amazon Cognito"
+}

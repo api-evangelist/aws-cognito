@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The ID of the user pool that contains the user whose options you're setting."
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameType"
+        },
+        {
+          "description": "The user name of the user whose options you're setting."
+        }
+      ]
+    },
+    "MFAOptions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MFAOptionListType"
+        },
+        {
+          "description": "You can use this parameter only to set an SMS configuration that uses SMS for delivery."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "Username",
+    "MFAOptions"
+  ],
+  "description": "You can use this parameter to set an MFA configuration that uses the SMS delivery medium.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-admin-set-user-settings-request-structure.json",
+  "name": "AdminSetUserSettingsRequest"
+}

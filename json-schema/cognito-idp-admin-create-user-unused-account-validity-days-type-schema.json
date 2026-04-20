@@ -1,0 +1,9 @@
+{
+  "type": "integer",
+  "minimum": 0,
+  "maximum": 365,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-admin-create-user-unused-account-validity-days-type-schema.json",
+  "title": "AdminCreateUserUnusedAccountValidityDaysType",
+  "description": "AdminCreateUserUnusedAccountValidityDaysType schema from Amazon Cognito"
+}

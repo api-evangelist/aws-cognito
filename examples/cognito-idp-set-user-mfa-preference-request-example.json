@@ -1,0 +1,5 @@
+{
+  "SMSMfaSettings": "example-value",
+  "SoftwareTokenMfaSettings": "eyJhbGciOiJSUzI1NiJ9...",
+  "AccessToken": "eyJhbGciOiJSUzI1NiJ9..."
+}

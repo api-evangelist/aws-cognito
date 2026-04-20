@@ -1,0 +1,8 @@
+{
+  "type": "integer",
+  "minimum": 0,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-precedence-type-schema.json",
+  "title": "PrecedenceType",
+  "description": "PrecedenceType schema from Amazon Cognito"
+}

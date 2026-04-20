@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-invalid-o-auth-flow-exception-structure.json",
+  "name": "InvalidOAuthFlowException",
+  "description": "InvalidOAuthFlowException schema from Amazon Cognito"
+}

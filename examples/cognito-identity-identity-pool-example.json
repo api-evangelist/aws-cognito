@@ -1,0 +1,12 @@
+{
+  "IdentityPoolId": "my-user-pool-01",
+  "IdentityPoolName": "my-user-pool-01",
+  "AllowUnauthenticatedIdentities": "my-user-pool-01",
+  "AllowClassicFlow": "example-value",
+  "SupportedLoginProviders": "my-user-pool-01",
+  "DeveloperProviderName": "my-user-pool-01",
+  "OpenIdConnectProviderARNs": "my-user-pool-01",
+  "CognitoIdentityProviders": "my-user-pool-01",
+  "SamlProviderARNs": "my-user-pool-01",
+  "IdentityPoolTags": "my-user-pool-01"
+}

@@ -1,0 +1,73 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "Id": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/UserPoolIdType"
+          },
+          {
+            "description": "The ID in a user pool description."
+          }
+        ]
+      },
+      "Name": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/UserPoolNameType"
+          },
+          {
+            "description": "The name in a user pool description."
+          }
+        ]
+      },
+      "LambdaConfig": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/LambdaConfigType"
+          },
+          {
+            "description": "The Lambda configuration information in a user pool description."
+          }
+        ]
+      },
+      "Status": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/StatusType"
+          },
+          {
+            "description": "The user pool status in a user pool description."
+          }
+        ]
+      },
+      "LastModifiedDate": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DateType"
+          },
+          {
+            "description": "The date the user pool description was last modified."
+          }
+        ]
+      },
+      "CreationDate": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DateType"
+          },
+          {
+            "description": "The date the user pool description was created."
+          }
+        ]
+      }
+    },
+    "description": "A user pool description."
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-user-pool-list-type-structure.json",
+  "name": "UserPoolListType",
+  "description": "UserPoolListType schema from Amazon Cognito"
+}

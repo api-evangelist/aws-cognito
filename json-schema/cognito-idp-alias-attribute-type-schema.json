@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "phone_number",
+    "email",
+    "preferred_username"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-alias-attribute-type-schema.json",
+  "title": "AliasAttributeType",
+  "description": "AliasAttributeType schema from Amazon Cognito"
+}

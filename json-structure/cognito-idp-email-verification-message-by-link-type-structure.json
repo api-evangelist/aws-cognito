@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}\\s*]*\\{##[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}\\s*]*##\\}[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}\\s*]*",
+  "minLength": 6,
+  "maxLength": 20000,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-email-verification-message-by-link-type-structure.json",
+  "name": "EmailVerificationMessageByLinkType",
+  "description": "EmailVerificationMessageByLinkType schema from Amazon Cognito"
+}

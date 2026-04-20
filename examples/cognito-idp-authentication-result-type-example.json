@@ -1,0 +1,8 @@
+{
+  "AccessToken": "eyJhbGciOiJSUzI1NiJ9...",
+  "ExpiresIn": "example-value",
+  "TokenType": "eyJhbGciOiJSUzI1NiJ9...",
+  "RefreshToken": "eyJhbGciOiJSUzI1NiJ9...",
+  "IdToken": "eyJhbGciOiJSUzI1NiJ9...",
+  "NewDeviceMetadata": "example-value"
+}

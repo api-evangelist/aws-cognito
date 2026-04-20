@@ -1,0 +1,10 @@
+{
+  "EventId": "my-user-pool-01",
+  "EventType": "example-value",
+  "CreationDate": "example-value",
+  "EventResponse": "example-value",
+  "EventRisk": "example-value",
+  "ChallengeResponses": "example-value",
+  "EventContextData": "example-value",
+  "EventFeedback": "example-value"
+}

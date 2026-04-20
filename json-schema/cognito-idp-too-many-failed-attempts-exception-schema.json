@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-too-many-failed-attempts-exception-schema.json",
+  "title": "TooManyFailedAttemptsException",
+  "description": "TooManyFailedAttemptsException schema from Amazon Cognito"
+}

@@ -1,0 +1,103 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityPoolName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolName"
+        },
+        {
+          "description": "A string that you provide."
+        }
+      ]
+    },
+    "AllowUnauthenticatedIdentities": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolUnauthenticated"
+        },
+        {
+          "description": "TRUE if the identity pool supports unauthenticated logins."
+        }
+      ]
+    },
+    "AllowClassicFlow": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClassicFlow"
+        },
+        {
+          "description": "Enables or disables the Basic (Classic) authentication flow. For more information, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html\">Identity Pools (Federated Identities) Authentication Flow</a> in the <i>Amazon Cognito Developer Guide</i>."
+        }
+      ]
+    },
+    "SupportedLoginProviders": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityProviders"
+        },
+        {
+          "description": "Optional key:value pairs mapping provider names to provider app IDs."
+        }
+      ]
+    },
+    "DeveloperProviderName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeveloperProviderName"
+        },
+        {
+          "description": "<p>The \"domain\" by which Cognito will refer to your users. This name acts as a placeholder that allows your backend and the Cognito service to communicate about the developer provider. For the <code>DeveloperProviderName</code>, you can use letters as well as period (<code>.</code>), underscore (<code>_</code>), and dash (<code>-</code>).</p> <p>Once you have set a developer provider name, you cannot change it. Please take care in setting this parameter.</p>"
+        }
+      ]
+    },
+    "OpenIdConnectProviderARNs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OIDCProviderList"
+        },
+        {
+          "description": "The Amazon Resource Names (ARN) of the OpenID Connect providers."
+        }
+      ]
+    },
+    "CognitoIdentityProviders": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CognitoIdentityProviderList"
+        },
+        {
+          "description": "An array of Amazon Cognito user pools and their client IDs."
+        }
+      ]
+    },
+    "SamlProviderARNs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SAMLProviderList"
+        },
+        {
+          "description": "An array of Amazon Resource Names (ARNs) of the SAML provider for your identity pool."
+        }
+      ]
+    },
+    "IdentityPoolTags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolTagsType"
+        },
+        {
+          "description": "Tags to assign to the identity pool. A tag is a label that you can apply to identity pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityPoolName",
+    "AllowUnauthenticatedIdentities"
+  ],
+  "description": "Input to the CreateIdentityPool action.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-create-identity-pool-input-schema.json",
+  "title": "CreateIdentityPoolInput"
+}

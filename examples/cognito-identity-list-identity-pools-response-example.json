@@ -1,0 +1,4 @@
+{
+  "IdentityPools": "my-user-pool-01",
+  "NextToken": "eyJhbGciOiJSUzI1NiJ9..."
+}

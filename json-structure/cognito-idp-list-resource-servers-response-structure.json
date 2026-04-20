@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "ResourceServers": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServersListType"
+        },
+        {
+          "description": "The resource servers."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKeyType"
+        },
+        {
+          "description": "A pagination token."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceServers"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-list-resource-servers-response-structure.json",
+  "name": "ListResourceServersResponse",
+  "description": "ListResourceServersResponse schema from Amazon Cognito"
+}

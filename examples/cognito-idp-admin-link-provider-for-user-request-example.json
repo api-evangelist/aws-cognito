@@ -1,0 +1,5 @@
+{
+  "UserPoolId": "my-user-pool-01",
+  "DestinationUser": "example-value",
+  "SourceUser": "example-value"
+}

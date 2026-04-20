@@ -1,0 +1,5 @@
+{
+  "JobName": "my-user-pool-01",
+  "UserPoolId": "my-user-pool-01",
+  "CloudWatchLogsRoleArn": "example-value"
+}

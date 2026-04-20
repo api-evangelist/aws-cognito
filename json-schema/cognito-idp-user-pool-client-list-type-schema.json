@@ -1,0 +1,43 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "ClientId": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ClientIdType"
+          },
+          {
+            "description": "The ID of the client associated with the user pool."
+          }
+        ]
+      },
+      "UserPoolId": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/UserPoolIdType"
+          },
+          {
+            "description": "The user pool ID for the user pool where you want to describe the user pool client."
+          }
+        ]
+      },
+      "ClientName": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ClientNameType"
+          },
+          {
+            "description": "The client name from the user pool client description."
+          }
+        ]
+      }
+    },
+    "description": "The description of the user pool client."
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-user-pool-client-list-type-schema.json",
+  "title": "UserPoolClientListType",
+  "description": "UserPoolClientListType schema from Amazon Cognito"
+}

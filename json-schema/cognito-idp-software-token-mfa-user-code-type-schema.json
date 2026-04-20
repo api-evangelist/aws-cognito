@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[0-9]+",
+  "minLength": 6,
+  "maxLength": 6,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-software-token-mfa-user-code-type-schema.json",
+  "title": "SoftwareTokenMFAUserCodeType",
+  "description": "SoftwareTokenMFAUserCodeType schema from Amazon Cognito"
+}

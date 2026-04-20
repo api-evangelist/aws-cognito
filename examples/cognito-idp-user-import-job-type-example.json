@@ -1,0 +1,15 @@
+{
+  "JobName": "my-user-pool-01",
+  "JobId": "my-user-pool-01",
+  "UserPoolId": "my-user-pool-01",
+  "PreSignedUrl": "example-value",
+  "CreationDate": "example-value",
+  "StartDate": "example-value",
+  "CompletionDate": "example-value",
+  "Status": "CONFIRMED",
+  "CloudWatchLogsRoleArn": "example-value",
+  "ImportedUsers": "example-value",
+  "SkippedUsers": "example-value",
+  "FailedUsers": "example-value",
+  "CompletionMessage": "example-value"
+}

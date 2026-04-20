@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-admin-disable-provider-for-user-response-schema.json",
+  "title": "AdminDisableProviderForUserResponse",
+  "description": "AdminDisableProviderForUserResponse schema from Amazon Cognito"
+}

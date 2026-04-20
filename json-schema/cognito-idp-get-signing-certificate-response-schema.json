@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "Certificate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The signing certificate."
+        }
+      ]
+    }
+  },
+  "description": "Response from Amazon Cognito for a signing certificate request.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-get-signing-certificate-response-schema.json",
+  "title": "GetSigningCertificateResponse"
+}

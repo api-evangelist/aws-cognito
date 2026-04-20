@@ -1,0 +1,13 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string",
+    "pattern": "[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}]+",
+    "minLength": 1,
+    "maxLength": 32
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-searched-attribute-names-list-type-structure.json",
+  "name": "SearchedAttributeNamesListType",
+  "description": "SearchedAttributeNamesListType schema from Amazon Cognito"
+}

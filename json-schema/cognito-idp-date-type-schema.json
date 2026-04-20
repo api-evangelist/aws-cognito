@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "format": "date-time",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-date-type-schema.json",
+  "title": "DateType",
+  "description": "DateType schema from Amazon Cognito"
+}

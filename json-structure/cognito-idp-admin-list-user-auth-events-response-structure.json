@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "AuthEvents": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AuthEventsType"
+        },
+        {
+          "description": "The response object. It includes the <code>EventID</code>, <code>EventType</code>, <code>CreationDate</code>, <code>EventRisk</code>, and <code>EventResponse</code>."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKey"
+        },
+        {
+          "description": "A pagination token."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-admin-list-user-auth-events-response-structure.json",
+  "name": "AdminListUserAuthEventsResponse",
+  "description": "AdminListUserAuthEventsResponse schema from Amazon Cognito"
+}

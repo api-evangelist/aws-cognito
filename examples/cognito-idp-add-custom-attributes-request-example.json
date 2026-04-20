@@ -1,0 +1,4 @@
+{
+  "UserPoolId": "my-user-pool-01",
+  "CustomAttributes": "example-value"
+}

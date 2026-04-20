@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "PasswordPolicy": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PasswordPolicyType"
+        },
+        {
+          "description": "The password policy."
+        }
+      ]
+    }
+  },
+  "description": "The policy associated with a user pool.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-user-pool-policy-type-structure.json",
+  "name": "UserPoolPolicyType"
+}

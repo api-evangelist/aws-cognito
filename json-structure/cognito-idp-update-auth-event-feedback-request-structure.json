@@ -1,0 +1,66 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID."
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameType"
+        },
+        {
+          "description": "The user pool username."
+        }
+      ]
+    },
+    "EventId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EventIdType"
+        },
+        {
+          "description": "The event ID."
+        }
+      ]
+    },
+    "FeedbackToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "The feedback token."
+        }
+      ]
+    },
+    "FeedbackValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FeedbackValueType"
+        },
+        {
+          "description": "The authentication event feedback value."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "Username",
+    "EventId",
+    "FeedbackToken",
+    "FeedbackValue"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-update-auth-event-feedback-request-structure.json",
+  "name": "UpdateAuthEventFeedbackRequest",
+  "description": "UpdateAuthEventFeedbackRequest schema from Amazon Cognito"
+}

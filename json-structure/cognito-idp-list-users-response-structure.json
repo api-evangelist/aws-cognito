@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Users": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsersListType"
+        },
+        {
+          "description": "The users returned in the request to list users."
+        }
+      ]
+    },
+    "PaginationToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SearchPaginationTokenType"
+        },
+        {
+          "description": "An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list."
+        }
+      ]
+    }
+  },
+  "description": "The response from the request to list users.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-list-users-response-structure.json",
+  "name": "ListUsersResponse"
+}

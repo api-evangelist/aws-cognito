@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "ChallengeName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ChallengeName"
+        },
+        {
+          "description": "The challenge name."
+        }
+      ]
+    },
+    "ChallengeResponse": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ChallengeResponse"
+        },
+        {
+          "description": "The challenge response."
+        }
+      ]
+    }
+  },
+  "description": "The challenge response type.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-challenge-response-type-schema.json",
+  "title": "ChallengeResponseType"
+}

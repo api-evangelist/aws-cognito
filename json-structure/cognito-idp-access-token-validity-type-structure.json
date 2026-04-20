@@ -1,0 +1,9 @@
+{
+  "type": "int32",
+  "minimum": 1,
+  "maximum": 86400,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-access-token-validity-type-structure.json",
+  "name": "AccessTokenValidityType",
+  "description": "AccessTokenValidityType schema from Amazon Cognito"
+}

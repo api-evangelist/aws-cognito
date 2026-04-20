@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/components/schemas/RoleMapping"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-role-mapping-map-structure.json",
+  "name": "RoleMappingMap",
+  "description": "RoleMappingMap schema from Amazon Cognito"
+}

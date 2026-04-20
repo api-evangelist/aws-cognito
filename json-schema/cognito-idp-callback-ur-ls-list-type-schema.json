@@ -1,0 +1,13 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string",
+    "pattern": "[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}]+",
+    "minLength": 1,
+    "maxLength": 1024
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-callback-ur-ls-list-type-schema.json",
+  "title": "CallbackURLsListType",
+  "description": "CallbackURLsListType schema from Amazon Cognito"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "CloudFrontDomain": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainType"
+        },
+        {
+          "description": "The Amazon CloudFront endpoint that Amazon Cognito set up when you added the custom domain to your user pool."
+        }
+      ]
+    }
+  },
+  "description": "The UpdateUserPoolDomain response output.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-update-user-pool-domain-response-structure.json",
+  "name": "UpdateUserPoolDomainResponse"
+}

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A valid access token that Amazon Cognito issued to the user whose user settings you want to configure."
+        }
+      ]
+    },
+    "MFAOptions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MFAOptionListType"
+        },
+        {
+          "description": "You can use this parameter only to set an SMS configuration that uses SMS for delivery."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AccessToken",
+    "MFAOptions"
+  ],
+  "description": "Represents the request to set user settings.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-set-user-settings-request-structure.json",
+  "name": "SetUserSettingsRequest"
+}

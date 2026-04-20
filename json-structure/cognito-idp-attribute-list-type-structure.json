@@ -1,0 +1,36 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "Name": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/AttributeNameType"
+          },
+          {
+            "description": "The name of the attribute."
+          }
+        ]
+      },
+      "Value": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/AttributeValueType"
+          },
+          {
+            "description": "The value of the attribute."
+          }
+        ]
+      }
+    },
+    "required": [
+      "Name"
+    ],
+    "description": "Specifies whether the attribute is standard or custom."
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-attribute-list-type-structure.json",
+  "name": "AttributeListType",
+  "description": "AttributeListType schema from Amazon Cognito"
+}

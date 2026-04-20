@@ -1,0 +1,7 @@
+{
+  "IdentityPoolId": "my-user-pool-01",
+  "IdentityId": "my-user-pool-01",
+  "DeveloperUserIdentifier": "my-user-pool-01",
+  "MaxResults": "example-value",
+  "NextToken": "eyJhbGciOiJSUzI1NiJ9..."
+}

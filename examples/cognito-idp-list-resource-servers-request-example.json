@@ -1,0 +1,5 @@
+{
+  "UserPoolId": "my-user-pool-01",
+  "MaxResults": "example-value",
+  "NextToken": "eyJhbGciOiJSUzI1NiJ9..."
+}

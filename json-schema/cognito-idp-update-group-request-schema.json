@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "GroupName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/GroupNameType"
+        },
+        {
+          "description": "The name of the group."
+        }
+      ]
+    },
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DescriptionType"
+        },
+        {
+          "description": "A string containing the new description of the group."
+        }
+      ]
+    },
+    "RoleArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "The new role Amazon Resource Name (ARN) for the group. This is used for setting the <code>cognito:roles</code> and <code>cognito:preferred_role</code> claims in the token."
+        }
+      ]
+    },
+    "Precedence": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PrecedenceType"
+        },
+        {
+          "description": "The new precedence value for the group. For more information about this parameter, see <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateGroup.html\">CreateGroup</a>."
+        }
+      ]
+    }
+  },
+  "required": [
+    "GroupName",
+    "UserPoolId"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-update-group-request-schema.json",
+  "title": "UpdateGroupRequest",
+  "description": "UpdateGroupRequest schema from Amazon Cognito"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "AccessDenied",
+    "InternalServerError"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-error-code-structure.json",
+  "name": "ErrorCode",
+  "description": "ErrorCode schema from Amazon Cognito"
+}

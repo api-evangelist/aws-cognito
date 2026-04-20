@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPool": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolType"
+        },
+        {
+          "description": "The container of metadata returned by the server to describe the pool."
+        }
+      ]
+    }
+  },
+  "description": "Represents the response to describe the user pool.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-describe-user-pool-response-structure.json",
+  "name": "DescribeUserPoolResponse"
+}

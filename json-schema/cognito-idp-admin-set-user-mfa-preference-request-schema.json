@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "SMSMfaSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SMSMfaSettingsType"
+        },
+        {
+          "description": "The SMS text message MFA settings."
+        }
+      ]
+    },
+    "SoftwareTokenMfaSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SoftwareTokenMfaSettingsType"
+        },
+        {
+          "description": "The time-based one-time password software token MFA settings."
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameType"
+        },
+        {
+          "description": "The user pool username or alias."
+        }
+      ]
+    },
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Username",
+    "UserPoolId"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-admin-set-user-mfa-preference-request-schema.json",
+  "title": "AdminSetUserMFAPreferenceRequest",
+  "description": "AdminSetUserMFAPreferenceRequest schema from Amazon Cognito"
+}

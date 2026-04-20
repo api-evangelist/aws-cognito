@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-group-exists-exception-structure.json",
+  "name": "GroupExistsException",
+  "description": "GroupExistsException schema from Amazon Cognito"
+}

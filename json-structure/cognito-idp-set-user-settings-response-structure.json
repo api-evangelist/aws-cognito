@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "description": "The response from the server for a set user settings request.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-set-user-settings-response-structure.json",
+  "name": "SetUserSettingsResponse"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "ResourceServer": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServerType"
+        },
+        {
+          "description": "The resource server."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceServer"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-describe-resource-server-response-structure.json",
+  "name": "DescribeResourceServerResponse",
+  "description": "DescribeResourceServerResponse schema from Amazon Cognito"
+}

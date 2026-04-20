@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "remembered",
+    "not_remembered"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-device-remembered-status-type-structure.json",
+  "name": "DeviceRememberedStatusType",
+  "description": "DeviceRememberedStatusType schema from Amazon Cognito"
+}

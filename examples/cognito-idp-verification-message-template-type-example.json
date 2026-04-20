@@ -1,0 +1,8 @@
+{
+  "SmsMessage": "example-value",
+  "EmailMessage": "user@example.com",
+  "EmailSubject": "user@example.com",
+  "EmailMessageByLink": "user@example.com",
+  "EmailSubjectByLink": "user@example.com",
+  "DefaultEmailOption": "user@example.com"
+}

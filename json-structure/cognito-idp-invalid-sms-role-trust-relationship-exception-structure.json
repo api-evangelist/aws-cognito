@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-invalid-sms-role-trust-relationship-exception-structure.json",
+  "name": "InvalidSmsRoleTrustRelationshipException",
+  "description": "InvalidSmsRoleTrustRelationshipException schema from Amazon Cognito"
+}

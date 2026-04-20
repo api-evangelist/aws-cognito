@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool that the users are being imported into."
+        }
+      ]
+    },
+    "MaxResults": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PoolQueryLimitType"
+        },
+        {
+          "description": "The maximum number of import jobs you want the request to return."
+        }
+      ]
+    },
+    "PaginationToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKeyType"
+        },
+        {
+          "description": "An identifier that was returned from the previous call to <code>ListUserImportJobs</code>, which can be used to return the next set of import jobs in the list."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "MaxResults"
+  ],
+  "description": "Represents the request to list the user import jobs.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-list-user-import-jobs-request-schema.json",
+  "title": "ListUserImportJobsRequest"
+}

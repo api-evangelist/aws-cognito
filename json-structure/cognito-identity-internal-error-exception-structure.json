@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-internal-error-exception-structure.json",
+  "name": "InternalErrorException",
+  "description": "InternalErrorException schema from Amazon Cognito"
+}

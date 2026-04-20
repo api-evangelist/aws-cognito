@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "CONFIRM_WITH_LINK",
+    "CONFIRM_WITH_CODE"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-default-email-option-type-structure.json",
+  "name": "DefaultEmailOptionType",
+  "description": "DefaultEmailOptionType schema from Amazon Cognito"
+}

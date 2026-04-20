@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "SUCCESS",
+    "ERROR"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-verify-software-token-response-type-schema.json",
+  "title": "VerifySoftwareTokenResponseType",
+  "description": "VerifySoftwareTokenResponseType schema from Amazon Cognito"
+}

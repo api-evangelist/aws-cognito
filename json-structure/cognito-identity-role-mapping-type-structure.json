@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "Token",
+    "Rules"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-role-mapping-type-structure.json",
+  "name": "RoleMappingType",
+  "description": "RoleMappingType schema from Amazon Cognito"
+}

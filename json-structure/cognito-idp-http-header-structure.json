@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "headerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The header name."
+        }
+      ]
+    },
+    "headerValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The header value."
+        }
+      ]
+    }
+  },
+  "description": "The HTTP header.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-http-header-structure.json",
+  "name": "HttpHeader"
+}

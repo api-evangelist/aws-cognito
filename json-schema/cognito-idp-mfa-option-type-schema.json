@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "DeliveryMedium": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeliveryMediumType"
+        },
+        {
+          "description": "The delivery medium to send the MFA code. You can use this parameter to set only the <code>SMS</code> delivery medium value."
+        }
+      ]
+    },
+    "AttributeName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AttributeNameType"
+        },
+        {
+          "description": "The attribute name of the MFA option type. The only valid value is <code>phone_number</code>."
+        }
+      ]
+    }
+  },
+  "description": " <i>This data type is no longer supported.</i> Applies only to SMS multi-factor authentication (MFA) configurations. Does not apply to time-based one-time password (TOTP) software token MFA configurations.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-mfa-option-type-schema.json",
+  "title": "MFAOptionType"
+}

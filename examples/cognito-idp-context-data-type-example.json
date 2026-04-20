@@ -1,0 +1,7 @@
+{
+  "IpAddress": "example-value",
+  "ServerName": "my-user-pool-01",
+  "ServerPath": "example-value",
+  "HttpHeaders": "example-value",
+  "EncodedData": "example-value"
+}

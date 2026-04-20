@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "format": "password",
+  "pattern": "[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}]+",
+  "minLength": 1,
+  "maxLength": 128,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-username-type-structure.json",
+  "name": "UsernameType",
+  "description": "UsernameType schema from Amazon Cognito"
+}

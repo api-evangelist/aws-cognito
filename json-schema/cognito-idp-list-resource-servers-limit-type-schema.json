@@ -1,0 +1,9 @@
+{
+  "type": "integer",
+  "minimum": 1,
+  "maximum": 50,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-list-resource-servers-limit-type-schema.json",
+  "title": "ListResourceServersLimitType",
+  "description": "ListResourceServersLimitType schema from Amazon Cognito"
+}

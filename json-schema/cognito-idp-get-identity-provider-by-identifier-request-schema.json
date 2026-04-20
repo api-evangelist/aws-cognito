@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID."
+        }
+      ]
+    },
+    "IdpIdentifier": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdpIdentifierType"
+        },
+        {
+          "description": "The IdP identifier."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "IdpIdentifier"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-get-identity-provider-by-identifier-request-schema.json",
+  "title": "GetIdentityProviderByIdentifierRequest",
+  "description": "GetIdentityProviderByIdentifierRequest schema from Amazon Cognito"
+}

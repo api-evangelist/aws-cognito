@@ -1,0 +1,83 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "Name": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/CustomAttributeNameType"
+          },
+          {
+            "description": "A schema attribute of the name type."
+          }
+        ]
+      },
+      "AttributeDataType": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/AttributeDataType"
+          },
+          {
+            "description": "The attribute data type."
+          }
+        ]
+      },
+      "DeveloperOnlyAttribute": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BooleanType"
+          },
+          {
+            "description": "<note> <p>You should use <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UserPoolClientType.html#CognitoUserPools-Type-UserPoolClientType-WriteAttributes\">WriteAttributes</a> in the user pool client to control how attributes can be mutated for new use cases instead of using <code>DeveloperOnlyAttribute</code>.</p> </note> <p>Specifies whether the attribute type is developer only. This attribute can only be modified by an administrator. Users won't be able to modify this attribute using their access token. For example, <code>DeveloperOnlyAttribute</code> can be modified using AdminUpdateUserAttributes but can't be updated using UpdateUserAttributes.</p>"
+          }
+        ]
+      },
+      "Mutable": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BooleanType"
+          },
+          {
+            "description": "<p>Specifies whether the value of the attribute can be changed.</p> <p>For any user pool attribute that is mapped to an IdP attribute, you must set this parameter to <code>true</code>. Amazon Cognito updates mapped attributes when users sign in to your application through an IdP. If an attribute is immutable, Amazon Cognito throws an error when it attempts to update the attribute. For more information, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-specifying-attribute-mapping.html\">Specifying Identity Provider Attribute Mappings for Your User Pool</a>.</p>"
+          }
+        ]
+      },
+      "Required": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BooleanType"
+          },
+          {
+            "description": "Specifies whether a user pool attribute is required. If the attribute is required and the user doesn't provide a value, registration or sign-in will fail."
+          }
+        ]
+      },
+      "NumberAttributeConstraints": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/NumberAttributeConstraintsType"
+          },
+          {
+            "description": "Specifies the constraints for an attribute of the number type."
+          }
+        ]
+      },
+      "StringAttributeConstraints": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/StringAttributeConstraintsType"
+          },
+          {
+            "description": "Specifies the constraints for an attribute of the string type."
+          }
+        ]
+      }
+    },
+    "description": "Contains information about the schema attribute."
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-custom-attributes-list-type-schema.json",
+  "title": "CustomAttributesListType",
+  "description": "CustomAttributesListType schema from Amazon Cognito"
+}

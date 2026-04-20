@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-user-mfa-setting-list-type-schema.json",
+  "title": "UserMFASettingListType",
+  "description": "UserMFASettingListType schema from Amazon Cognito"
+}

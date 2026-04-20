@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "(un)?authenticated",
+  "minLength": 1,
+  "maxLength": 128,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-role-type-structure.json",
+  "name": "RoleType",
+  "description": "RoleType schema from Amazon Cognito"
+}

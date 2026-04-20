@@ -1,0 +1,13 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string",
+    "pattern": "[\\w\\s+=.@-]+",
+    "minLength": 1,
+    "maxLength": 40
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-idp-identifiers-list-type-schema.json",
+  "title": "IdpIdentifiersListType",
+  "description": "IdpIdentifiersListType schema from Amazon Cognito"
+}

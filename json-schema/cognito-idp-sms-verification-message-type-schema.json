@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": ".*\\{####\\}.*",
+  "minLength": 6,
+  "maxLength": 140,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-sms-verification-message-type-schema.json",
+  "title": "SmsVerificationMessageType",
+  "description": "SmsVerificationMessageType schema from Amazon Cognito"
+}

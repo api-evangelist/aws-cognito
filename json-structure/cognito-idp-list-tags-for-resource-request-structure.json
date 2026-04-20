@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "ResourceArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the user pool that the tags are assigned to."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceArn"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-list-tags-for-resource-request-structure.json",
+  "name": "ListTagsForResourceRequest",
+  "description": "ListTagsForResourceRequest schema from Amazon Cognito"
+}

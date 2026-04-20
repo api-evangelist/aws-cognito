@@ -1,0 +1,7 @@
+{
+  "SourceArn": "example-value",
+  "ReplyToEmailAddress": "user@example.com",
+  "EmailSendingAccount": "user@example.com",
+  "From": "example-value",
+  "ConfigurationSet": "example-value"
+}

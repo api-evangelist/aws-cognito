@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool that hosts the resource server."
+        }
+      ]
+    },
+    "Identifier": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServerIdentifierType"
+        },
+        {
+          "description": "The identifier for the resource server."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "Identifier"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-delete-resource-server-request-schema.json",
+  "title": "DeleteResourceServerRequest",
+  "description": "DeleteResourceServerRequest schema from Amazon Cognito"
+}

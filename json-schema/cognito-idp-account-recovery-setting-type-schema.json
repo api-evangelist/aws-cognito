@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "RecoveryMechanisms": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RecoveryMechanismsType"
+        },
+        {
+          "description": "The list of <code>RecoveryOptionTypes</code>."
+        }
+      ]
+    }
+  },
+  "description": "The data type for <code>AccountRecoverySetting</code>.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-account-recovery-setting-type-schema.json",
+  "title": "AccountRecoverySettingType"
+}

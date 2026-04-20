@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-admin-set-user-mfa-preference-response-structure.json",
+  "name": "AdminSetUserMFAPreferenceResponse",
+  "description": "AdminSetUserMFAPreferenceResponse schema from Amazon Cognito"
+}

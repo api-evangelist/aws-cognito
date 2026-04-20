@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "maxLength": 2048,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-description-type-structure.json",
+  "name": "DescriptionType",
+  "description": "DescriptionType schema from Amazon Cognito"
+}

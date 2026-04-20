@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityId"
+        },
+        {
+          "description": "A unique identifier in the format REGION:GUID."
+        }
+      ]
+    },
+    "IdentityPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolId"
+        },
+        {
+          "description": "An identity pool ID in the format REGION:GUID."
+        }
+      ]
+    },
+    "DeveloperProviderName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeveloperProviderName"
+        },
+        {
+          "description": "The \"domain\" by which Cognito will refer to your users."
+        }
+      ]
+    },
+    "DeveloperUserIdentifier": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeveloperUserIdentifier"
+        },
+        {
+          "description": "A unique ID used by your backend authentication process to identify a user."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityId",
+    "IdentityPoolId",
+    "DeveloperProviderName",
+    "DeveloperUserIdentifier"
+  ],
+  "description": "Input to the <code>UnlinkDeveloperIdentity</code> action.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-unlink-developer-identity-input-structure.json",
+  "name": "UnlinkDeveloperIdentityInput"
+}

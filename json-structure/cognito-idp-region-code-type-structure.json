@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "minLength": 5,
+  "maxLength": 32,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-region-code-type-structure.json",
+  "name": "RegionCodeType",
+  "description": "RegionCodeType schema from Amazon Cognito"
+}

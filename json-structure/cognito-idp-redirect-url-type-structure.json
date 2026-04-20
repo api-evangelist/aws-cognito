@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}]+",
+  "minLength": 1,
+  "maxLength": 1024,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-redirect-url-type-structure.json",
+  "name": "RedirectUrlType",
+  "description": "RedirectUrlType schema from Amazon Cognito"
+}

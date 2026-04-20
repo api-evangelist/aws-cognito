@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "UICustomization": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UICustomizationType"
+        },
+        {
+          "description": "The UI customization information."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UICustomization"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-get-ui-customization-response-structure.json",
+  "name": "GetUICustomizationResponse",
+  "description": "GetUICustomizationResponse schema from Amazon Cognito"
+}

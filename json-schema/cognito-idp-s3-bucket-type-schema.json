@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^[0-9A-Za-z\\.\\-_]*(?<!\\.)$",
+  "minLength": 3,
+  "maxLength": 1024,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-s3-bucket-type-schema.json",
+  "title": "S3BucketType",
+  "description": "S3BucketType schema from Amazon Cognito"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "CodeDeliveryDetails": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CodeDeliveryDetailsType"
+        },
+        {
+          "description": "The code delivery details returned by the server in response to the request to get the user attribute verification code."
+        }
+      ]
+    }
+  },
+  "description": "The verification code response returned by the server response to get the user attribute verification code.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-get-user-attribute-verification-code-response-schema.json",
+  "title": "GetUserAttributeVerificationCodeResponse"
+}

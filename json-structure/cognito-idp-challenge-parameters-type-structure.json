@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/components/schemas/StringType"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-challenge-parameters-type-structure.json",
+  "name": "ChallengeParametersType",
+  "description": "ChallengeParametersType schema from Amazon Cognito"
+}

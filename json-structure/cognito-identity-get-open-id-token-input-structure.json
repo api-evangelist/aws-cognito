@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityId"
+        },
+        {
+          "description": "A unique identifier in the format REGION:GUID."
+        }
+      ]
+    },
+    "Logins": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LoginsMap"
+        },
+        {
+          "description": "A set of optional name-value pairs that map provider names to provider tokens. When using graph.facebook.com and www.amazon.com, supply the access_token returned from the provider's authflow. For accounts.google.com, an Amazon Cognito user pool provider, or any other OpenID Connect provider, always include the <code>id_token</code>."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityId"
+  ],
+  "description": "Input to the GetOpenIdToken action.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-get-open-id-token-input-structure.json",
+  "name": "GetOpenIdTokenInput"
+}

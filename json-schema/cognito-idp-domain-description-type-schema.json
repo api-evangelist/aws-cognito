@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID."
+        }
+      ]
+    },
+    "AWSAccountId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AWSAccountIdType"
+        },
+        {
+          "description": "The Amazon Web Services ID for the user pool owner."
+        }
+      ]
+    },
+    "Domain": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainType"
+        },
+        {
+          "description": "The domain string. For custom domains, this is the fully-qualified domain name, such as <code>auth.example.com</code>. For Amazon Cognito prefix domains, this is the prefix alone, such as <code>auth</code>."
+        }
+      ]
+    },
+    "S3Bucket": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/S3BucketType"
+        },
+        {
+          "description": "The Amazon S3 bucket where the static files for this domain are stored."
+        }
+      ]
+    },
+    "CloudFrontDistribution": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the Amazon CloudFront distribution."
+        }
+      ]
+    },
+    "Version": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainVersionType"
+        },
+        {
+          "description": "The app version."
+        }
+      ]
+    },
+    "Status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainStatusType"
+        },
+        {
+          "description": "The domain status."
+        }
+      ]
+    },
+    "CustomDomainConfig": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CustomDomainConfigType"
+        },
+        {
+          "description": "The configuration for a custom domain that hosts the sign-up and sign-in webpages for your application."
+        }
+      ]
+    }
+  },
+  "description": "A container for information about a domain.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-domain-description-type-schema.json",
+  "title": "DomainDescriptionType"
+}

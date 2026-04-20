@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "MinLength": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The minimum length."
+        }
+      ]
+    },
+    "MaxLength": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The maximum length."
+        }
+      ]
+    }
+  },
+  "description": "The constraints associated with a string attribute.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-string-attribute-constraints-type-schema.json",
+  "title": "StringAttributeConstraintsType"
+}

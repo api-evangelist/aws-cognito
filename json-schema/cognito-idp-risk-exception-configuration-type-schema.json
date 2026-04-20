@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "BlockedIPRangeList": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BlockedIPRangeListType"
+        },
+        {
+          "description": "Overrides the risk decision to always block the pre-authentication requests. The IP range is in CIDR notation, a compact representation of an IP address and its routing prefix."
+        }
+      ]
+    },
+    "SkippedIPRangeList": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SkippedIPRangeListType"
+        },
+        {
+          "description": "Risk detection isn't performed on the IP addresses in this range list. The IP range is in CIDR notation."
+        }
+      ]
+    }
+  },
+  "description": "The type of the configuration to override the risk decision.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-risk-exception-configuration-type-schema.json",
+  "title": "RiskExceptionConfigurationType"
+}

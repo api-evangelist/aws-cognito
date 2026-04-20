@@ -1,0 +1,5 @@
+{
+  "IdentityPoolId": "my-user-pool-01",
+  "Roles": "example-value",
+  "RoleMappings": "example-value"
+}

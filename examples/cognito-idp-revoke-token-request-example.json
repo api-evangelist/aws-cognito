@@ -1,0 +1,5 @@
+{
+  "Token": "eyJhbGciOiJSUzI1NiJ9...",
+  "ClientId": "my-user-pool-01",
+  "ClientSecret": "example-value"
+}

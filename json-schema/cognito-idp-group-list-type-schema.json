@@ -1,0 +1,83 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "GroupName": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/GroupNameType"
+          },
+          {
+            "description": "The name of the group."
+          }
+        ]
+      },
+      "UserPoolId": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/UserPoolIdType"
+          },
+          {
+            "description": "The user pool ID for the user pool."
+          }
+        ]
+      },
+      "Description": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DescriptionType"
+          },
+          {
+            "description": "A string containing the description of the group."
+          }
+        ]
+      },
+      "RoleArn": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ArnType"
+          },
+          {
+            "description": "The role Amazon Resource Name (ARN) for the group."
+          }
+        ]
+      },
+      "Precedence": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/PrecedenceType"
+          },
+          {
+            "description": "<p>A non-negative integer value that specifies the precedence of this group relative to the other groups that a user can belong to in the user pool. Zero is the highest precedence value. Groups with lower <code>Precedence</code> values take precedence over groups with higher ornull <code>Precedence</code> values. If a user belongs to two or more groups, it is the group with the lowest precedence value whose role ARN is given in the user's tokens for the <code>cognito:roles</code> and <code>cognito:preferred_role</code> claims.</p> <p>Two groups can have the same <code>Precedence</code> value. If this happens, neither group takes precedence over the other. If two groups with the same <code>Precedence</code> have the same role ARN, that role is used in the <code>cognito:preferred_role</code> claim in tokens for users in each group. If the two groups have different role ARNs, the <code>cognito:preferred_role</code> claim isn't set in users' tokens.</p> <p>The default <code>Precedence</code> value is null.</p>"
+          }
+        ]
+      },
+      "LastModifiedDate": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DateType"
+          },
+          {
+            "description": "The date the group was last modified."
+          }
+        ]
+      },
+      "CreationDate": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DateType"
+          },
+          {
+            "description": "The date the group was created."
+          }
+        ]
+      }
+    },
+    "description": "The group type."
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-group-list-type-schema.json",
+  "title": "GroupListType",
+  "description": "GroupListType schema from Amazon Cognito"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string",
+    "pattern": "[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}]+",
+    "minLength": 1,
+    "maxLength": 32
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-supported-identity-providers-list-type-structure.json",
+  "name": "SupportedIdentityProvidersListType",
+  "description": "SupportedIdentityProvidersListType schema from Amazon Cognito"
+}

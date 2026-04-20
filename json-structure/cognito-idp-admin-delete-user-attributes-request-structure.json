@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool where you want to delete user attributes."
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameType"
+        },
+        {
+          "description": "The user name of the user from which you would like to delete attributes."
+        }
+      ]
+    },
+    "UserAttributeNames": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AttributeNameListType"
+        },
+        {
+          "description": "<p>An array of strings representing the user attribute names you want to delete.</p> <p>For custom attributes, you must prepend the <code>custom:</code> prefix to the attribute name.</p>"
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "Username",
+    "UserAttributeNames"
+  ],
+  "description": "Represents the request to delete user attributes as an administrator.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-admin-delete-user-attributes-request-structure.json",
+  "name": "AdminDeleteUserAttributesRequest"
+}

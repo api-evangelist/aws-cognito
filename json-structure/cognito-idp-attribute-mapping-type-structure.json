@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/components/schemas/StringType"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-attribute-mapping-type-structure.json",
+  "name": "AttributeMappingType",
+  "description": "AttributeMappingType schema from Amazon Cognito"
+}

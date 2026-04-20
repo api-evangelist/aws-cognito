@@ -1,0 +1,53 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "ProviderName": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ProviderNameType"
+          },
+          {
+            "description": "The IdP name."
+          }
+        ]
+      },
+      "ProviderType": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/IdentityProviderTypeType"
+          },
+          {
+            "description": "The IdP type."
+          }
+        ]
+      },
+      "LastModifiedDate": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DateType"
+          },
+          {
+            "description": "The date the provider was last modified."
+          }
+        ]
+      },
+      "CreationDate": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DateType"
+          },
+          {
+            "description": "The date the provider was added to the user pool."
+          }
+        ]
+      }
+    },
+    "description": "A container for IdP details."
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-providers-list-type-schema.json",
+  "title": "ProvidersListType",
+  "description": "ProvidersListType schema from Amazon Cognito"
+}

@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "properties": {
+    "EventId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The event ID."
+        }
+      ]
+    },
+    "EventType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EventType"
+        },
+        {
+          "description": "The event type."
+        }
+      ]
+    },
+    "CreationDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The creation date"
+        }
+      ]
+    },
+    "EventResponse": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EventResponseType"
+        },
+        {
+          "description": "The event response."
+        }
+      ]
+    },
+    "EventRisk": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EventRiskType"
+        },
+        {
+          "description": "The event risk."
+        }
+      ]
+    },
+    "ChallengeResponses": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ChallengeResponseListType"
+        },
+        {
+          "description": "The challenge responses."
+        }
+      ]
+    },
+    "EventContextData": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EventContextDataType"
+        },
+        {
+          "description": "The user context data captured at the time of an event request. This value provides additional information about the client from which event the request is received."
+        }
+      ]
+    },
+    "EventFeedback": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EventFeedbackType"
+        },
+        {
+          "description": "A flag specifying the user feedback captured at the time of an event request is good or bad. "
+        }
+      ]
+    }
+  },
+  "description": "The authentication event type.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-auth-event-type-structure.json",
+  "name": "AuthEventType"
+}

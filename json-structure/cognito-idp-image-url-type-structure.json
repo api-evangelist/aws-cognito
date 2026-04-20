@@ -1,0 +1,7 @@
+{
+  "type": "string",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-image-url-type-structure.json",
+  "name": "ImageUrlType",
+  "description": "ImageUrlType schema from Amazon Cognito"
+}

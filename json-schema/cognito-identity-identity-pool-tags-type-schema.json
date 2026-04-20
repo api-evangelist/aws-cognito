@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/components/schemas/TagValueType"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-identity-pool-tags-type-schema.json",
+  "title": "IdentityPoolTagsType",
+  "description": "IdentityPoolTagsType schema from Amazon Cognito"
+}

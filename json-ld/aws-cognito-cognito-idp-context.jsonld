@@ -1,0 +1,1488 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "aws": "https://aws.amazon.com/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "DescribeUserPoolRequest": "aws:DescribeUserPoolRequest",
+    "GlobalSignOutResponse": "aws:GlobalSignOutResponse",
+    "DescribeUserPoolDomainRequest": "aws:DescribeUserPoolDomainRequest",
+    "ProviderUserIdentifierType": "aws:ProviderUserIdentifierType",
+    "AdminInitiateAuthRequest": "aws:AdminInitiateAuthRequest",
+    "ListDevicesRequest": "aws:ListDevicesRequest",
+    "AccountTakeoverActionType": "aws:AccountTakeoverActionType",
+    "AdminSetUserPasswordRequest": "aws:AdminSetUserPasswordRequest",
+    "GetUICustomizationResponse": "aws:GetUICustomizationResponse",
+    "UserPoolDescriptionType": "aws:UserPoolDescriptionType",
+    "AdminResetUserPasswordResponse": "aws:AdminResetUserPasswordResponse",
+    "SMSMfaSettingsType": "aws:SMSMfaSettingsType",
+    "CreateResourceServerRequest": "aws:CreateResourceServerRequest",
+    "ListTagsForResourceRequest": "aws:ListTagsForResourceRequest",
+    "ListUsersInGroupRequest": "aws:ListUsersInGroupRequest",
+    "AdminUpdateAuthEventFeedbackResponse": "aws:AdminUpdateAuthEventFeedbackResponse",
+    "CreateUserPoolRequest": "aws:CreateUserPoolRequest",
+    "UpdateUserAttributesResponse": "aws:UpdateUserAttributesResponse",
+    "DescribeRiskConfigurationResponse": "aws:DescribeRiskConfigurationResponse",
+    "AdminCreateUserRequest": "aws:AdminCreateUserRequest",
+    "GetSigningCertificateRequest": "aws:GetSigningCertificateRequest",
+    "AssociateSoftwareTokenResponse": "aws:AssociateSoftwareTokenResponse",
+    "VerifyUserAttributeResponse": "aws:VerifyUserAttributeResponse",
+    "SoftwareTokenMfaConfigType": "aws:SoftwareTokenMfaConfigType",
+    "CreateUserPoolDomainRequest": "aws:CreateUserPoolDomainRequest",
+    "AssociateSoftwareTokenRequest": "aws:AssociateSoftwareTokenRequest",
+    "UpdateAuthEventFeedbackRequest": "aws:UpdateAuthEventFeedbackRequest",
+    "AdminDeleteUserRequest": "aws:AdminDeleteUserRequest",
+    "StartUserImportJobResponse": "aws:StartUserImportJobResponse",
+    "DeleteIdentityProviderRequest": "aws:DeleteIdentityProviderRequest",
+    "UICustomizationType": "aws:UICustomizationType",
+    "DescribeIdentityProviderRequest": "aws:DescribeIdentityProviderRequest",
+    "SetUserSettingsRequest": "aws:SetUserSettingsRequest",
+    "DeleteUserRequest": "aws:DeleteUserRequest",
+    "DeviceType": "aws:DeviceType",
+    "GetUserPoolMfaConfigRequest": "aws:GetUserPoolMfaConfigRequest",
+    "GetUICustomizationRequest": "aws:GetUICustomizationRequest",
+    "RevokeTokenRequest": "aws:RevokeTokenRequest",
+    "GetUserResponse": "aws:GetUserResponse",
+    "IdentityProviderType": "aws:IdentityProviderType",
+    "SetUICustomizationResponse": "aws:SetUICustomizationResponse",
+    "StopUserImportJobResponse": "aws:StopUserImportJobResponse",
+    "CreateUserPoolClientResponse": "aws:CreateUserPoolClientResponse",
+    "VerificationMessageTemplateType": "aws:VerificationMessageTemplateType",
+    "GetCSVHeaderResponse": "aws:GetCSVHeaderResponse",
+    "SmsMfaConfigType": "aws:SmsMfaConfigType",
+    "ResendConfirmationCodeResponse": "aws:ResendConfirmationCodeResponse",
+    "AdminListGroupsForUserRequest": "aws:AdminListGroupsForUserRequest",
+    "AdminDisableProviderForUserResponse": "aws:AdminDisableProviderForUserResponse",
+    "DescribeUserPoolResponse": "aws:DescribeUserPoolResponse",
+    "DeviceSecretVerifierConfigType": "aws:DeviceSecretVerifierConfigType",
+    "AuthEventType": "aws:AuthEventType",
+    "AdminUserGlobalSignOutResponse": "aws:AdminUserGlobalSignOutResponse",
+    "AdminGetUserRequest": "aws:AdminGetUserRequest",
+    "CreateUserPoolResponse": "aws:CreateUserPoolResponse",
+    "TokenValidityUnitsType": "aws:TokenValidityUnitsType",
+    "LambdaConfigType": "aws:LambdaConfigType",
+    "AttributeType": "aws:AttributeType",
+    "AdminDeleteUserAttributesResponse": "aws:AdminDeleteUserAttributesResponse",
+    "AnalyticsMetadataType": "aws:AnalyticsMetadataType",
+    "UserPoolPolicyType": "aws:UserPoolPolicyType",
+    "ConfirmForgotPasswordResponse": "aws:ConfirmForgotPasswordResponse",
+    "AdminUpdateAuthEventFeedbackRequest": "aws:AdminUpdateAuthEventFeedbackRequest",
+    "RevokeTokenResponse": "aws:RevokeTokenResponse",
+    "AdminSetUserSettingsResponse": "aws:AdminSetUserSettingsResponse",
+    "EventContextDataType": "aws:EventContextDataType",
+    "AdminSetUserMFAPreferenceRequest": "aws:AdminSetUserMFAPreferenceRequest",
+    "InitiateAuthRequest": "aws:InitiateAuthRequest",
+    "CustomEmailLambdaVersionConfigType": "aws:CustomEmailLambdaVersionConfigType",
+    "VerifySoftwareTokenResponse": "aws:VerifySoftwareTokenResponse",
+    "ListTagsForResourceResponse": "aws:ListTagsForResourceResponse",
+    "UpdateIdentityProviderRequest": "aws:UpdateIdentityProviderRequest",
+    "AdminRemoveUserFromGroupRequest": "aws:AdminRemoveUserFromGroupRequest",
+    "ProviderDetailsType": "aws:ProviderDetailsType",
+    "AdminGetDeviceRequest": "aws:AdminGetDeviceRequest",
+    "CompromisedCredentialsActionsType": "aws:CompromisedCredentialsActionsType",
+    "AdminRespondToAuthChallengeResponse": "aws:AdminRespondToAuthChallengeResponse",
+    "ForgotPasswordRequest": "aws:ForgotPasswordRequest",
+    "AdminForgetDeviceRequest": "aws:AdminForgetDeviceRequest",
+    "DescribeUserPoolClientRequest": "aws:DescribeUserPoolClientRequest",
+    "CreateUserImportJobRequest": "aws:CreateUserImportJobRequest",
+    "CustomSMSLambdaVersionConfigType": "aws:CustomSMSLambdaVersionConfigType",
+    "GetGroupRequest": "aws:GetGroupRequest",
+    "DeleteResourceServerRequest": "aws:DeleteResourceServerRequest",
+    "ListIdentityProvidersRequest": "aws:ListIdentityProvidersRequest",
+    "UserImportJobType": "aws:UserImportJobType",
+    "DeviceConfigurationType": "aws:DeviceConfigurationType",
+    "AdminGetUserResponse": "aws:AdminGetUserResponse",
+    "GetDeviceRequest": "aws:GetDeviceRequest",
+    "AnalyticsConfigurationType": "aws:AnalyticsConfigurationType",
+    "AccountTakeoverActionsType": "aws:AccountTakeoverActionsType",
+    "DeleteUserPoolDomainResponse": "aws:DeleteUserPoolDomainResponse",
+    "GetSigningCertificateResponse": "aws:GetSigningCertificateResponse",
+    "CreateResourceServerResponse": "aws:CreateResourceServerResponse",
+    "StartUserImportJobRequest": "aws:StartUserImportJobRequest",
+    "RespondToAuthChallengeResponse": "aws:RespondToAuthChallengeResponse",
+    "NotifyEmailType": "aws:NotifyEmailType",
+    "CreateGroupResponse": "aws:CreateGroupResponse",
+    "TagResourceResponse": "aws:TagResourceResponse",
+    "StopUserImportJobRequest": "aws:StopUserImportJobRequest",
+    "ResendConfirmationCodeRequest": "aws:ResendConfirmationCodeRequest",
+    "AdminCreateUserConfigType": "aws:AdminCreateUserConfigType",
+    "AdminUpdateDeviceStatusRequest": "aws:AdminUpdateDeviceStatusRequest",
+    "GroupType": "aws:GroupType",
+    "ConfirmDeviceRequest": "aws:ConfirmDeviceRequest",
+    "AdminUserGlobalSignOutRequest": "aws:AdminUserGlobalSignOutRequest",
+    "ListUserPoolClientsResponse": "aws:ListUserPoolClientsResponse",
+    "DeleteUserAttributesResponse": "aws:DeleteUserAttributesResponse",
+    "PasswordPolicyType": "aws:PasswordPolicyType",
+    "HttpHeader": "aws:HttpHeader",
+    "ConfirmSignUpResponse": "aws:ConfirmSignUpResponse",
+    "EmailConfigurationType": "aws:EmailConfigurationType",
+    "AdminAddUserToGroupRequest": "aws:AdminAddUserToGroupRequest",
+    "DescribeIdentityProviderResponse": "aws:DescribeIdentityProviderResponse",
+    "MessageTemplateType": "aws:MessageTemplateType",
+    "AttributeMappingType": "aws:AttributeMappingType",
+    "NewDeviceMetadataType": "aws:NewDeviceMetadataType",
+    "ForgetDeviceRequest": "aws:ForgetDeviceRequest",
+    "DeleteUserAttributesRequest": "aws:DeleteUserAttributesRequest",
+    "GetCSVHeaderRequest": "aws:GetCSVHeaderRequest",
+    "EventFeedbackType": "aws:EventFeedbackType",
+    "CompromisedCredentialsRiskConfigurationType": "aws:CompromisedCredentialsRiskConfigurationType",
+    "ListGroupsRequest": "aws:ListGroupsRequest",
+    "ListUserPoolsResponse": "aws:ListUserPoolsResponse",
+    "AdminResetUserPasswordRequest": "aws:AdminResetUserPasswordRequest",
+    "SignUpRequest": "aws:SignUpRequest",
+    "GetUserAttributeVerificationCodeResponse": "aws:GetUserAttributeVerificationCodeResponse",
+    "AddCustomAttributesRequest": "aws:AddCustomAttributesRequest",
+    "AdminRespondToAuthChallengeRequest": "aws:AdminRespondToAuthChallengeRequest",
+    "AddCustomAttributesResponse": "aws:AddCustomAttributesResponse",
+    "ConfirmDeviceResponse": "aws:ConfirmDeviceResponse",
+    "ResourceServerType": "aws:ResourceServerType",
+    "UsernameConfigurationType": "aws:UsernameConfigurationType",
+    "AdminUpdateUserAttributesRequest": "aws:AdminUpdateUserAttributesRequest",
+    "AdminDisableProviderForUserRequest": "aws:AdminDisableProviderForUserRequest",
+    "SetUICustomizationRequest": "aws:SetUICustomizationRequest",
+    "UpdateUserPoolClientRequest": "aws:UpdateUserPoolClientRequest",
+    "CreateUserImportJobResponse": "aws:CreateUserImportJobResponse",
+    "GetIdentityProviderByIdentifierResponse": "aws:GetIdentityProviderByIdentifierResponse",
+    "UpdateResourceServerResponse": "aws:UpdateResourceServerResponse",
+    "UpdateAuthEventFeedbackResponse": "aws:UpdateAuthEventFeedbackResponse",
+    "AdminLinkProviderForUserRequest": "aws:AdminLinkProviderForUserRequest",
+    "CustomDomainConfigType": "aws:CustomDomainConfigType",
+    "ListUsersInGroupResponse": "aws:ListUsersInGroupResponse",
+    "ConfirmSignUpRequest": "aws:ConfirmSignUpRequest",
+    "AdminListDevicesResponse": "aws:AdminListDevicesResponse",
+    "ListUsersRequest": "aws:ListUsersRequest",
+    "RecoveryOptionType": "aws:RecoveryOptionType",
+    "UserAttributeUpdateSettingsType": "aws:UserAttributeUpdateSettingsType",
+    "ConfirmForgotPasswordRequest": "aws:ConfirmForgotPasswordRequest",
+    "AdminUpdateUserAttributesResponse": "aws:AdminUpdateUserAttributesResponse",
+    "ListUserImportJobsRequest": "aws:ListUserImportJobsRequest",
+    "AdminUpdateDeviceStatusResponse": "aws:AdminUpdateDeviceStatusResponse",
+    "ListResourceServersResponse": "aws:ListResourceServersResponse",
+    "CreateIdentityProviderRequest": "aws:CreateIdentityProviderRequest",
+    "ListResourceServersRequest": "aws:ListResourceServersRequest",
+    "AdminConfirmSignUpRequest": "aws:AdminConfirmSignUpRequest",
+    "UpdateUserPoolDomainResponse": "aws:UpdateUserPoolDomainResponse",
+    "UserPoolClientDescription": "aws:UserPoolClientDescription",
+    "UpdateUserPoolClientResponse": "aws:UpdateUserPoolClientResponse",
+    "DescribeUserPoolDomainResponse": "aws:DescribeUserPoolDomainResponse",
+    "UpdateDeviceStatusRequest": "aws:UpdateDeviceStatusRequest",
+    "AuthenticationResultType": "aws:AuthenticationResultType",
+    "ChangePasswordResponse": "aws:ChangePasswordResponse",
+    "AuthParametersType": "aws:AuthParametersType",
+    "CreateGroupRequest": "aws:CreateGroupRequest",
+    "UpdateUserPoolDomainRequest": "aws:UpdateUserPoolDomainRequest",
+    "AdminInitiateAuthResponse": "aws:AdminInitiateAuthResponse",
+    "TagResourceRequest": "aws:TagResourceRequest",
+    "EventRiskType": "aws:EventRiskType",
+    "AccountRecoverySettingType": "aws:AccountRecoverySettingType",
+    "SignUpResponse": "aws:SignUpResponse",
+    "AdminCreateUserResponse": "aws:AdminCreateUserResponse",
+    "AdminListUserAuthEventsResponse": "aws:AdminListUserAuthEventsResponse",
+    "GlobalSignOutRequest": "aws:GlobalSignOutRequest",
+    "CreateUserPoolClientRequest": "aws:CreateUserPoolClientRequest",
+    "AdminSetUserSettingsRequest": "aws:AdminSetUserSettingsRequest",
+    "CodeDeliveryDetailsType": "aws:CodeDeliveryDetailsType",
+    "DescribeUserPoolClientResponse": "aws:DescribeUserPoolClientResponse",
+    "UserPoolAddOnsType": "aws:UserPoolAddOnsType",
+    "ChallengeParametersType": "aws:ChallengeParametersType",
+    "GetGroupResponse": "aws:GetGroupResponse",
+    "ContextDataType": "aws:ContextDataType",
+    "NumberAttributeConstraintsType": "aws:NumberAttributeConstraintsType",
+    "VerifySoftwareTokenRequest": "aws:VerifySoftwareTokenRequest",
+    "UpdateResourceServerRequest": "aws:UpdateResourceServerRequest",
+    "DescribeResourceServerResponse": "aws:DescribeResourceServerResponse",
+    "AdminEnableUserResponse": "aws:AdminEnableUserResponse",
+    "UpdateDeviceStatusResponse": "aws:UpdateDeviceStatusResponse",
+    "SetUserPoolMfaConfigResponse": "aws:SetUserPoolMfaConfigResponse",
+    "AdminSetUserMFAPreferenceResponse": "aws:AdminSetUserMFAPreferenceResponse",
+    "UntagResourceResponse": "aws:UntagResourceResponse",
+    "SetUserMFAPreferenceResponse": "aws:SetUserMFAPreferenceResponse",
+    "DescribeRiskConfigurationRequest": "aws:DescribeRiskConfigurationRequest",
+    "MFAOptionType": "aws:MFAOptionType",
+    "ListUserImportJobsResponse": "aws:ListUserImportJobsResponse",
+    "AdminDisableUserResponse": "aws:AdminDisableUserResponse",
+    "RiskExceptionConfigurationType": "aws:RiskExceptionConfigurationType",
+    "AdminSetUserPasswordResponse": "aws:AdminSetUserPasswordResponse",
+    "ChallengeResponsesType": "aws:ChallengeResponsesType",
+    "VerifyUserAttributeRequest": "aws:VerifyUserAttributeRequest",
+    "AdminEnableUserRequest": "aws:AdminEnableUserRequest",
+    "AdminListUserAuthEventsRequest": "aws:AdminListUserAuthEventsRequest",
+    "SetUserSettingsResponse": "aws:SetUserSettingsResponse",
+    "InitiateAuthResponse": "aws:InitiateAuthResponse",
+    "DescribeUserImportJobResponse": "aws:DescribeUserImportJobResponse",
+    "SoftwareTokenMfaSettingsType": "aws:SoftwareTokenMfaSettingsType",
+    "UserContextDataType": "aws:UserContextDataType",
+    "CreateIdentityProviderResponse": "aws:CreateIdentityProviderResponse",
+    "DescribeResourceServerRequest": "aws:DescribeResourceServerRequest",
+    "AdminDisableUserRequest": "aws:AdminDisableUserRequest",
+    "RespondToAuthChallengeRequest": "aws:RespondToAuthChallengeRequest",
+    "GetDeviceResponse": "aws:GetDeviceResponse",
+    "CreateUserPoolDomainResponse": "aws:CreateUserPoolDomainResponse",
+    "ClientMetadataType": "aws:ClientMetadataType",
+    "UntagResourceRequest": "aws:UntagResourceRequest",
+    "SmsConfigurationType": "aws:SmsConfigurationType",
+    "UpdateUserPoolResponse": "aws:UpdateUserPoolResponse",
+    "UserPoolType": "aws:UserPoolType",
+    "ListGroupsResponse": "aws:ListGroupsResponse",
+    "GetUserAttributeVerificationCodeRequest": "aws:GetUserAttributeVerificationCodeRequest",
+    "SetRiskConfigurationRequest": "aws:SetRiskConfigurationRequest",
+    "ListUsersResponse": "aws:ListUsersResponse",
+    "RiskConfigurationType": "aws:RiskConfigurationType",
+    "UpdateUserAttributesRequest": "aws:UpdateUserAttributesRequest",
+    "DomainDescriptionType": "aws:DomainDescriptionType",
+    "ProviderDescription": "aws:ProviderDescription",
+    "ListUserPoolClientsRequest": "aws:ListUserPoolClientsRequest",
+    "GetUserRequest": "aws:GetUserRequest",
+    "ChallengeResponseType": "aws:ChallengeResponseType",
+    "UserPoolClientType": "aws:UserPoolClientType",
+    "AccountTakeoverRiskConfigurationType": "aws:AccountTakeoverRiskConfigurationType",
+    "AdminLinkProviderForUserResponse": "aws:AdminLinkProviderForUserResponse",
+    "DeleteUserPoolDomainRequest": "aws:DeleteUserPoolDomainRequest",
+    "DeleteUserPoolRequest": "aws:DeleteUserPoolRequest",
+    "UpdateUserPoolRequest": "aws:UpdateUserPoolRequest",
+    "ChangePasswordRequest": "aws:ChangePasswordRequest",
+    "UserType": "aws:UserType",
+    "AdminGetDeviceResponse": "aws:AdminGetDeviceResponse",
+    "ForgotPasswordResponse": "aws:ForgotPasswordResponse",
+    "UpdateGroupRequest": "aws:UpdateGroupRequest",
+    "ListIdentityProvidersResponse": "aws:ListIdentityProvidersResponse",
+    "UpdateIdentityProviderResponse": "aws:UpdateIdentityProviderResponse",
+    "DeleteUserPoolClientRequest": "aws:DeleteUserPoolClientRequest",
+    "SetRiskConfigurationResponse": "aws:SetRiskConfigurationResponse",
+    "AdminDeleteUserAttributesRequest": "aws:AdminDeleteUserAttributesRequest",
+    "UserPoolTagsType": "aws:UserPoolTagsType",
+    "DeleteGroupRequest": "aws:DeleteGroupRequest",
+    "SchemaAttributeType": "aws:SchemaAttributeType",
+    "SetUserPoolMfaConfigRequest": "aws:SetUserPoolMfaConfigRequest",
+    "NotifyConfigurationType": "aws:NotifyConfigurationType",
+    "DescribeUserImportJobRequest": "aws:DescribeUserImportJobRequest",
+    "AdminListDevicesRequest": "aws:AdminListDevicesRequest",
+    "ResourceServerScopeType": "aws:ResourceServerScopeType",
+    "ListUserPoolsRequest": "aws:ListUserPoolsRequest",
+    "StringAttributeConstraintsType": "aws:StringAttributeConstraintsType",
+    "UpdateGroupResponse": "aws:UpdateGroupResponse",
+    "SetUserMFAPreferenceRequest": "aws:SetUserMFAPreferenceRequest",
+    "GetIdentityProviderByIdentifierRequest": "aws:GetIdentityProviderByIdentifierRequest",
+    "AdminListGroupsForUserResponse": "aws:AdminListGroupsForUserResponse",
+    "GetUserPoolMfaConfigResponse": "aws:GetUserPoolMfaConfigResponse",
+    "ListDevicesResponse": "aws:ListDevicesResponse",
+    "AdminConfirmSignUpResponse": "aws:AdminConfirmSignUpResponse",
+    "AccessToken": {
+      "@id": "aws:AccessToken",
+      "@type": "xsd:string"
+    },
+    "DeviceKey": {
+      "@id": "aws:DeviceKey",
+      "@type": "xsd:string"
+    },
+    "DeviceRememberedStatus": {
+      "@id": "aws:DeviceRememberedStatus",
+      "@type": "xsd:string"
+    },
+    "CodeDeliveryDetails": {
+      "@id": "aws:CodeDeliveryDetails",
+      "@type": "xsd:string"
+    },
+    "UserPoolId": {
+      "@id": "aws:UserPoolId",
+      "@type": "xsd:string"
+    },
+    "Tags": {
+      "@id": "aws:Tags",
+      "@type": "xsd:string"
+    },
+    "ChallengeName": {
+      "@id": "aws:ChallengeName",
+      "@type": "xsd:string"
+    },
+    "Session": {
+      "@id": "aws:Session",
+      "@type": "xsd:string"
+    },
+    "ChallengeParameters": {
+      "@id": "aws:ChallengeParameters",
+      "@type": "xsd:string"
+    },
+    "AuthenticationResult": {
+      "@id": "aws:AuthenticationResult",
+      "@type": "xsd:string"
+    },
+    "Limit": {
+      "@id": "aws:Limit",
+      "@type": "xsd:string"
+    },
+    "PaginationToken": {
+      "@id": "aws:PaginationToken",
+      "@type": "xsd:string"
+    },
+    "PreviousPassword": {
+      "@id": "aws:PreviousPassword",
+      "@type": "xsd:string"
+    },
+    "ProposedPassword": {
+      "@id": "aws:ProposedPassword",
+      "@type": "xsd:string"
+    },
+    "ProviderName": {
+      "@id": "aws:ProviderName",
+      "@type": "xsd:string"
+    },
+    "ProviderDetails": {
+      "@id": "aws:ProviderDetails",
+      "@type": "xsd:string"
+    },
+    "AttributeMapping": {
+      "@id": "aws:AttributeMapping",
+      "@type": "xsd:string"
+    },
+    "IdpIdentifiers": {
+      "@id": "aws:IdpIdentifiers",
+      "@type": "xsd:string"
+    },
+    "ClientId": {
+      "@id": "aws:ClientId",
+      "@type": "xsd:string"
+    },
+    "SecretHash": {
+      "@id": "aws:SecretHash",
+      "@type": "xsd:string"
+    },
+    "Username": {
+      "@id": "aws:Username",
+      "@type": "xsd:string"
+    },
+    "Password": {
+      "@id": "aws:Password",
+      "@type": "xsd:string"
+    },
+    "UserAttributes": {
+      "@id": "aws:UserAttributes",
+      "@type": "xsd:string"
+    },
+    "ValidationData": {
+      "@id": "aws:ValidationData",
+      "@type": "xsd:string"
+    },
+    "AnalyticsMetadata": {
+      "@id": "aws:AnalyticsMetadata",
+      "@type": "xsd:string"
+    },
+    "UserContextData": {
+      "@id": "aws:UserContextData",
+      "@type": "xsd:string"
+    },
+    "ClientMetadata": {
+      "@id": "aws:ClientMetadata",
+      "@type": "xsd:string"
+    },
+    "MaxResults": {
+      "@id": "aws:MaxResults",
+      "@type": "xsd:string"
+    },
+    "NextToken": {
+      "@id": "aws:NextToken",
+      "@type": "xsd:string"
+    },
+    "Domain": {
+      "@id": "aws:Domain",
+      "@type": "xsd:string"
+    },
+    "CustomDomainConfig": {
+      "@id": "aws:CustomDomainConfig",
+      "@type": "xsd:string"
+    },
+    "JobId": {
+      "@id": "aws:JobId",
+      "@type": "xsd:string"
+    },
+    "Identifier": {
+      "@id": "aws:Identifier",
+      "@type": "xsd:string"
+    },
+    "Name": {
+      "@id": "aws:Name",
+      "@type": "xsd:string"
+    },
+    "Scopes": {
+      "@id": "aws:Scopes",
+      "@type": "xsd:string"
+    },
+    "BlockedIPRangeList": {
+      "@id": "aws:BlockedIPRangeList",
+      "@type": "xsd:string"
+    },
+    "SkippedIPRangeList": {
+      "@id": "aws:SkippedIPRangeList",
+      "@type": "xsd:string"
+    },
+    "DeviceSecretVerifierConfig": {
+      "@id": "aws:DeviceSecretVerifierConfig",
+      "@type": "xsd:string"
+    },
+    "DeviceName": {
+      "@id": "aws:DeviceName",
+      "@type": "xsd:string"
+    },
+    "JobName": {
+      "@id": "aws:JobName",
+      "@type": "xsd:string"
+    },
+    "CloudWatchLogsRoleArn": {
+      "@id": "aws:CloudWatchLogsRoleArn",
+      "@type": "xsd:string"
+    },
+    "AWSAccountId": {
+      "@id": "aws:AWSAccountId",
+      "@type": "xsd:string"
+    },
+    "S3Bucket": {
+      "@id": "aws:S3Bucket",
+      "@type": "xsd:string"
+    },
+    "CloudFrontDistribution": {
+      "@id": "aws:CloudFrontDistribution",
+      "@type": "xsd:string"
+    },
+    "Version": {
+      "@id": "aws:Version",
+      "@type": "xsd:string"
+    },
+    "Status": {
+      "@id": "aws:Status",
+      "@type": "xsd:string"
+    },
+    "CSS": {
+      "@id": "aws:CSS",
+      "@type": "xsd:string"
+    },
+    "ImageFile": {
+      "@id": "aws:ImageFile",
+      "@type": "xsd:string"
+    },
+    "AuthFlow": {
+      "@id": "aws:AuthFlow",
+      "@type": "xsd:string"
+    },
+    "AuthParameters": {
+      "@id": "aws:AuthParameters",
+      "@type": "xsd:string"
+    },
+    "ContextData": {
+      "@id": "aws:ContextData",
+      "@type": "xsd:string"
+    },
+    "UICustomization": {
+      "@id": "aws:UICustomization",
+      "@type": "xsd:string"
+    },
+    "AttributesRequireVerificationBeforeUpdate": {
+      "@id": "aws:AttributesRequireVerificationBeforeUpdate",
+      "@type": "xsd:string"
+    },
+    "IpAddress": {
+      "@id": "aws:IpAddress",
+      "@type": "xsd:string"
+    },
+    "EncodedData": {
+      "@id": "aws:EncodedData",
+      "@type": "xsd:string"
+    },
+    "SmsAuthenticationMessage": {
+      "@id": "aws:SmsAuthenticationMessage",
+      "@type": "xsd:string"
+    },
+    "SmsConfiguration": {
+      "@id": "aws:SmsConfiguration",
+      "@type": "xsd:string"
+    },
+    "UserImportJob": {
+      "@id": "aws:UserImportJob",
+      "@type": "xsd:string"
+    },
+    "LowAction": {
+      "@id": "aws:LowAction",
+      "@type": "xsd:string"
+    },
+    "MediumAction": {
+      "@id": "aws:MediumAction",
+      "@type": "xsd:string"
+    },
+    "HighAction": {
+      "@id": "aws:HighAction",
+      "@type": "xsd:string"
+    },
+    "ConfirmationCode": {
+      "@id": "aws:ConfirmationCode",
+      "@type": "xsd:string"
+    },
+    "ForceAliasCreation": {
+      "@id": "aws:ForceAliasCreation",
+      "@type": "xsd:string"
+    },
+    "ProviderType": {
+      "@id": "aws:ProviderType",
+      "@type": "xsd:string"
+    },
+    "LastModifiedDate": {
+      "@id": "aws:LastModifiedDate",
+      "@type": "xsd:string"
+    },
+    "CreationDate": {
+      "@id": "aws:CreationDate",
+      "@type": "xsd:string"
+    },
+    "CloudFrontDomain": {
+      "@id": "aws:CloudFrontDomain",
+      "@type": "xsd:string"
+    },
+    "UserPoolClient": {
+      "@id": "aws:UserPoolClient",
+      "@type": "xsd:string"
+    },
+    "RecoveryMechanisms": {
+      "@id": "aws:RecoveryMechanisms",
+      "@type": "xsd:string"
+    },
+    "IdentityProvider": {
+      "@id": "aws:IdentityProvider",
+      "@type": "xsd:string"
+    },
+    "ResourceServers": {
+      "@id": "aws:ResourceServers",
+      "@type": "xsd:string"
+    },
+    "EventId": {
+      "@id": "aws:EventId",
+      "@type": "xsd:string"
+    },
+    "FeedbackValue": {
+      "@id": "aws:FeedbackValue",
+      "@type": "xsd:string"
+    },
+    "ApplicationId": {
+      "@id": "aws:ApplicationId",
+      "@type": "xsd:string"
+    },
+    "ApplicationArn": {
+      "@id": "aws:ApplicationArn",
+      "@type": "xsd:string"
+    },
+    "RoleArn": {
+      "@id": "aws:RoleArn",
+      "@type": "xsd:string"
+    },
+    "ExternalId": {
+      "@id": "aws:ExternalId",
+      "@type": "xsd:string"
+    },
+    "UserDataShared": {
+      "@id": "aws:UserDataShared",
+      "@type": "xsd:string"
+    },
+    "Group": {
+      "@id": "aws:Group",
+      "@type": "xsd:string"
+    },
+    "UserAttributeNames": {
+      "@id": "aws:UserAttributeNames",
+      "@type": "xsd:string"
+    },
+    "ScopeName": {
+      "@id": "aws:ScopeName",
+      "@type": "xsd:string"
+    },
+    "ScopeDescription": {
+      "@id": "aws:ScopeDescription",
+      "@type": "xsd:string"
+    },
+    "MinimumLength": {
+      "@id": "aws:MinimumLength",
+      "@type": "xsd:string"
+    },
+    "RequireUppercase": {
+      "@id": "aws:RequireUppercase",
+      "@type": "xsd:string"
+    },
+    "RequireLowercase": {
+      "@id": "aws:RequireLowercase",
+      "@type": "xsd:string"
+    },
+    "RequireNumbers": {
+      "@id": "aws:RequireNumbers",
+      "@type": "xsd:string"
+    },
+    "RequireSymbols": {
+      "@id": "aws:RequireSymbols",
+      "@type": "xsd:string"
+    },
+    "TemporaryPasswordValidityDays": {
+      "@id": "aws:TemporaryPasswordValidityDays",
+      "@type": "xsd:string"
+    },
+    "ChallengeResponses": {
+      "@id": "aws:ChallengeResponses",
+      "@type": "xsd:string"
+    },
+    "GroupName": {
+      "@id": "aws:GroupName",
+      "@type": "xsd:string"
+    },
+    "Description": {
+      "@id": "aws:Description",
+      "@type": "xsd:string"
+    },
+    "Precedence": {
+      "@id": "aws:Precedence",
+      "@type": "xsd:string"
+    },
+    "RiskDecision": {
+      "@id": "aws:RiskDecision",
+      "@type": "xsd:string"
+    },
+    "RiskLevel": {
+      "@id": "aws:RiskLevel",
+      "@type": "xsd:string"
+    },
+    "CompromisedCredentialsDetected": {
+      "@id": "aws:CompromisedCredentialsDetected",
+      "@type": "xsd:string"
+    },
+    "FeedbackToken": {
+      "@id": "aws:FeedbackToken",
+      "@type": "xsd:string"
+    },
+    "SMSMfaSettings": {
+      "@id": "aws:SMSMfaSettings",
+      "@type": "xsd:string"
+    },
+    "SoftwareTokenMfaSettings": {
+      "@id": "aws:SoftwareTokenMfaSettings",
+      "@type": "xsd:string"
+    },
+    "ChallengeRequiredOnNewDevice": {
+      "@id": "aws:ChallengeRequiredOnNewDevice",
+      "@type": "xsd:string"
+    },
+    "DeviceOnlyRememberedOnUserPrompt": {
+      "@id": "aws:DeviceOnlyRememberedOnUserPrompt",
+      "@type": "xsd:string"
+    },
+    "Token": {
+      "@id": "aws:Token",
+      "@type": "xsd:string"
+    },
+    "ClientSecret": {
+      "@id": "aws:ClientSecret",
+      "@type": "xsd:string"
+    },
+    "MFAOptions": {
+      "@id": "aws:MFAOptions",
+      "@type": "xsd:string"
+    },
+    "PreferredMfaSetting": {
+      "@id": "aws:PreferredMfaSetting",
+      "@type": "xsd:string"
+    },
+    "UserMFASettingList": {
+      "@id": "aws:UserMFASettingList",
+      "@type": "xsd:string"
+    },
+    "PasswordVerifier": {
+      "@id": "aws:PasswordVerifier",
+      "@type": "xsd:string"
+    },
+    "Salt": {
+      "@id": "aws:Salt",
+      "@type": "xsd:string"
+    },
+    "User": {
+      "@id": "aws:User",
+      "@type": "xsd:string"
+    },
+    "Enabled": {
+      "@id": "aws:Enabled",
+      "@type": "xsd:string"
+    },
+    "CustomAttributes": {
+      "@id": "aws:CustomAttributes",
+      "@type": "xsd:string"
+    },
+    "Policies": {
+      "@id": "aws:Policies",
+      "@type": "xsd:string"
+    },
+    "DeletionProtection": {
+      "@id": "aws:DeletionProtection",
+      "@type": "xsd:string"
+    },
+    "LambdaConfig": {
+      "@id": "aws:LambdaConfig",
+      "@type": "xsd:string"
+    },
+    "AutoVerifiedAttributes": {
+      "@id": "aws:AutoVerifiedAttributes",
+      "@type": "xsd:string"
+    },
+    "SmsVerificationMessage": {
+      "@id": "aws:SmsVerificationMessage",
+      "@type": "xsd:string"
+    },
+    "EmailVerificationMessage": {
+      "@id": "aws:EmailVerificationMessage",
+      "@type": "xsd:string"
+    },
+    "EmailVerificationSubject": {
+      "@id": "aws:EmailVerificationSubject",
+      "@type": "xsd:string"
+    },
+    "VerificationMessageTemplate": {
+      "@id": "aws:VerificationMessageTemplate",
+      "@type": "xsd:string"
+    },
+    "UserAttributeUpdateSettings": {
+      "@id": "aws:UserAttributeUpdateSettings",
+      "@type": "xsd:string"
+    },
+    "MfaConfiguration": {
+      "@id": "aws:MfaConfiguration",
+      "@type": "xsd:string"
+    },
+    "DeviceConfiguration": {
+      "@id": "aws:DeviceConfiguration",
+      "@type": "xsd:string"
+    },
+    "EmailConfiguration": {
+      "@id": "aws:EmailConfiguration",
+      "@type": "xsd:string"
+    },
+    "UserPoolTags": {
+      "@id": "aws:UserPoolTags",
+      "@type": "xsd:string"
+    },
+    "AdminCreateUserConfig": {
+      "@id": "aws:AdminCreateUserConfig",
+      "@type": "xsd:string"
+    },
+    "UserPoolAddOns": {
+      "@id": "aws:UserPoolAddOns",
+      "@type": "xsd:string"
+    },
+    "AccountRecoverySetting": {
+      "@id": "aws:AccountRecoverySetting",
+      "@type": "xsd:string"
+    },
+    "From": {
+      "@id": "aws:From",
+      "@type": "xsd:string"
+    },
+    "ReplyTo": {
+      "@id": "aws:ReplyTo",
+      "@type": "xsd:string"
+    },
+    "SourceArn": {
+      "@id": "aws:SourceArn",
+      "@type": "xsd:string"
+    },
+    "BlockEmail": {
+      "@id": "aws:BlockEmail",
+      "@type": "xsd:string"
+    },
+    "NoActionEmail": {
+      "@id": "aws:NoActionEmail",
+      "@type": "xsd:string"
+    },
+    "MfaEmail": {
+      "@id": "aws:MfaEmail",
+      "@type": "xsd:string"
+    },
+    "AllowAdminCreateUserOnly": {
+      "@id": "aws:AllowAdminCreateUserOnly",
+      "@type": "xsd:string"
+    },
+    "UnusedAccountValidityDays": {
+      "@id": "aws:UnusedAccountValidityDays",
+      "@type": "xsd:string"
+    },
+    "InviteMessageTemplate": {
+      "@id": "aws:InviteMessageTemplate",
+      "@type": "xsd:string"
+    },
+    "UserPool": {
+      "@id": "aws:UserPool",
+      "@type": "xsd:string"
+    },
+    "Attributes": {
+      "@id": "aws:Attributes",
+      "@type": "xsd:string"
+    },
+    "UserCreateDate": {
+      "@id": "aws:UserCreateDate",
+      "@type": "xsd:string"
+    },
+    "UserLastModifiedDate": {
+      "@id": "aws:UserLastModifiedDate",
+      "@type": "xsd:string"
+    },
+    "UserStatus": {
+      "@id": "aws:UserStatus",
+      "@type": "xsd:string"
+    },
+    "Certificate": {
+      "@id": "aws:Certificate",
+      "@type": "xsd:string"
+    },
+    "Devices": {
+      "@id": "aws:Devices",
+      "@type": "xsd:string"
+    },
+    "ClientName": {
+      "@id": "aws:ClientName",
+      "@type": "xsd:string"
+    },
+    "RefreshTokenValidity": {
+      "@id": "aws:RefreshTokenValidity",
+      "@type": "xsd:string"
+    },
+    "AccessTokenValidity": {
+      "@id": "aws:AccessTokenValidity",
+      "@type": "xsd:string"
+    },
+    "IdTokenValidity": {
+      "@id": "aws:IdTokenValidity",
+      "@type": "xsd:string"
+    },
+    "TokenValidityUnits": {
+      "@id": "aws:TokenValidityUnits",
+      "@type": "xsd:string"
+    },
+    "ReadAttributes": {
+      "@id": "aws:ReadAttributes",
+      "@type": "xsd:string"
+    },
+    "WriteAttributes": {
+      "@id": "aws:WriteAttributes",
+      "@type": "xsd:string"
+    },
+    "ExplicitAuthFlows": {
+      "@id": "aws:ExplicitAuthFlows",
+      "@type": "xsd:string"
+    },
+    "SupportedIdentityProviders": {
+      "@id": "aws:SupportedIdentityProviders",
+      "@type": "xsd:string"
+    },
+    "CallbackURLs": {
+      "@id": "aws:CallbackURLs",
+      "@type": "xsd:string"
+    },
+    "LogoutURLs": {
+      "@id": "aws:LogoutURLs",
+      "@type": "xsd:string"
+    },
+    "DefaultRedirectURI": {
+      "@id": "aws:DefaultRedirectURI",
+      "@type": "xsd:string"
+    },
+    "AllowedOAuthFlows": {
+      "@id": "aws:AllowedOAuthFlows",
+      "@type": "xsd:string"
+    },
+    "AllowedOAuthScopes": {
+      "@id": "aws:AllowedOAuthScopes",
+      "@type": "xsd:string"
+    },
+    "AllowedOAuthFlowsUserPoolClient": {
+      "@id": "aws:AllowedOAuthFlowsUserPoolClient",
+      "@type": "xsd:string"
+    },
+    "AnalyticsConfiguration": {
+      "@id": "aws:AnalyticsConfiguration",
+      "@type": "xsd:string"
+    },
+    "PreventUserExistenceErrors": {
+      "@id": "aws:PreventUserExistenceErrors",
+      "@type": "xsd:string"
+    },
+    "EnableTokenRevocation": {
+      "@id": "aws:EnableTokenRevocation",
+      "@type": "xsd:string"
+    },
+    "EnablePropagateAdditionalUserContextData": {
+      "@id": "aws:EnablePropagateAdditionalUserContextData",
+      "@type": "xsd:string"
+    },
+    "AuthSessionValidity": {
+      "@id": "aws:AuthSessionValidity",
+      "@type": "xsd:string"
+    },
+    "DeliveryMedium": {
+      "@id": "aws:DeliveryMedium",
+      "@type": "xsd:string"
+    },
+    "AttributeName": {
+      "@id": "aws:AttributeName",
+      "@type": "xsd:string"
+    },
+    "DeviceAttributes": {
+      "@id": "aws:DeviceAttributes",
+      "@type": "xsd:string"
+    },
+    "DeviceCreateDate": {
+      "@id": "aws:DeviceCreateDate",
+      "@type": "xsd:string"
+    },
+    "DeviceLastModifiedDate": {
+      "@id": "aws:DeviceLastModifiedDate",
+      "@type": "xsd:string"
+    },
+    "DeviceLastAuthenticatedDate": {
+      "@id": "aws:DeviceLastAuthenticatedDate",
+      "@type": "xsd:string"
+    },
+    "AuthEvents": {
+      "@id": "aws:AuthEvents",
+      "@type": "xsd:string"
+    },
+    "ResourceArn": {
+      "@id": "aws:ResourceArn",
+      "@type": "xsd:string"
+    },
+    "CertificateArn": {
+      "@id": "aws:CertificateArn",
+      "@type": "xsd:string"
+    },
+    "PreSignUp": {
+      "@id": "aws:PreSignUp",
+      "@type": "xsd:string"
+    },
+    "CustomMessage": {
+      "@id": "aws:CustomMessage",
+      "@type": "xsd:string"
+    },
+    "PostConfirmation": {
+      "@id": "aws:PostConfirmation",
+      "@type": "xsd:string"
+    },
+    "PreAuthentication": {
+      "@id": "aws:PreAuthentication",
+      "@type": "xsd:string"
+    },
+    "PostAuthentication": {
+      "@id": "aws:PostAuthentication",
+      "@type": "xsd:string"
+    },
+    "DefineAuthChallenge": {
+      "@id": "aws:DefineAuthChallenge",
+      "@type": "xsd:string"
+    },
+    "CreateAuthChallenge": {
+      "@id": "aws:CreateAuthChallenge",
+      "@type": "xsd:string"
+    },
+    "VerifyAuthChallengeResponse": {
+      "@id": "aws:VerifyAuthChallengeResponse",
+      "@type": "xsd:string"
+    },
+    "PreTokenGeneration": {
+      "@id": "aws:PreTokenGeneration",
+      "@type": "xsd:string"
+    },
+    "UserMigration": {
+      "@id": "aws:UserMigration",
+      "@type": "xsd:string"
+    },
+    "CustomSMSSender": {
+      "@id": "aws:CustomSMSSender",
+      "@type": "xsd:string"
+    },
+    "CustomEmailSender": {
+      "@id": "aws:CustomEmailSender",
+      "@type": "xsd:string"
+    },
+    "KMSKeyID": {
+      "@id": "aws:KMSKeyID",
+      "@type": "xsd:string"
+    },
+    "CaseSensitive": {
+      "@id": "aws:CaseSensitive",
+      "@type": "xsd:string"
+    },
+    "LambdaVersion": {
+      "@id": "aws:LambdaVersion",
+      "@type": "xsd:string"
+    },
+    "LambdaArn": {
+      "@id": "aws:LambdaArn",
+      "@type": "xsd:string"
+    },
+    "EventType": {
+      "@id": "aws:EventType",
+      "@type": "xsd:string"
+    },
+    "EventResponse": {
+      "@id": "aws:EventResponse",
+      "@type": "xsd:string"
+    },
+    "EventRisk": {
+      "@id": "aws:EventRisk",
+      "@type": "xsd:string"
+    },
+    "EventContextData": {
+      "@id": "aws:EventContextData",
+      "@type": "xsd:string"
+    },
+    "EventFeedback": {
+      "@id": "aws:EventFeedback",
+      "@type": "xsd:string"
+    },
+    "ProviderAttributeName": {
+      "@id": "aws:ProviderAttributeName",
+      "@type": "xsd:string"
+    },
+    "ProviderAttributeValue": {
+      "@id": "aws:ProviderAttributeValue",
+      "@type": "xsd:string"
+    },
+    "GenerateSecret": {
+      "@id": "aws:GenerateSecret",
+      "@type": "xsd:string"
+    },
+    "DestinationUser": {
+      "@id": "aws:DestinationUser",
+      "@type": "xsd:string"
+    },
+    "SourceUser": {
+      "@id": "aws:SourceUser",
+      "@type": "xsd:string"
+    },
+    "Users": {
+      "@id": "aws:Users",
+      "@type": "xsd:string"
+    },
+    "CSVHeader": {
+      "@id": "aws:CSVHeader",
+      "@type": "xsd:string"
+    },
+    "ReplyToEmailAddress": {
+      "@id": "aws:ReplyToEmailAddress",
+      "@type": "xsd:string"
+    },
+    "EmailSendingAccount": {
+      "@id": "aws:EmailSendingAccount",
+      "@type": "xsd:string"
+    },
+    "ConfigurationSet": {
+      "@id": "aws:ConfigurationSet",
+      "@type": "xsd:string"
+    },
+    "Id": {
+      "@id": "aws:Id",
+      "@type": "xsd:string"
+    },
+    "Groups": {
+      "@id": "aws:Groups",
+      "@type": "xsd:string"
+    },
+    "SmsMfaConfiguration": {
+      "@id": "aws:SmsMfaConfiguration",
+      "@type": "xsd:string"
+    },
+    "SoftwareTokenMfaConfiguration": {
+      "@id": "aws:SoftwareTokenMfaConfiguration",
+      "@type": "xsd:string"
+    },
+    "Device": {
+      "@id": "aws:Device",
+      "@type": "xsd:string"
+    },
+    "TagKeys": {
+      "@id": "aws:TagKeys",
+      "@type": "xsd:string"
+    },
+    "TemporaryPassword": {
+      "@id": "aws:TemporaryPassword",
+      "@type": "xsd:string"
+    },
+    "MessageAction": {
+      "@id": "aws:MessageAction",
+      "@type": "xsd:string"
+    },
+    "DesiredDeliveryMediums": {
+      "@id": "aws:DesiredDeliveryMediums",
+      "@type": "xsd:string"
+    },
+    "SmsMessage": {
+      "@id": "aws:SmsMessage",
+      "@type": "xsd:string"
+    },
+    "EmailMessage": {
+      "@id": "aws:EmailMessage",
+      "@type": "xsd:string"
+    },
+    "EmailSubject": {
+      "@id": "aws:EmailSubject",
+      "@type": "xsd:string"
+    },
+    "EmailMessageByLink": {
+      "@id": "aws:EmailMessageByLink",
+      "@type": "xsd:string"
+    },
+    "EmailSubjectByLink": {
+      "@id": "aws:EmailSubjectByLink",
+      "@type": "xsd:string"
+    },
+    "DefaultEmailOption": {
+      "@id": "aws:DefaultEmailOption",
+      "@type": "xsd:string"
+    },
+    "NotifyConfiguration": {
+      "@id": "aws:NotifyConfiguration",
+      "@type": "xsd:string"
+    },
+    "Actions": {
+      "@id": "aws:Actions",
+      "@type": "xsd:string"
+    },
+    "Provider": {
+      "@id": "aws:Provider",
+      "@type": "xsd:string"
+    },
+    "FeedbackDate": {
+      "@id": "aws:FeedbackDate",
+      "@type": "xsd:string"
+    },
+    "Timezone": {
+      "@id": "aws:Timezone",
+      "@type": "xsd:string"
+    },
+    "City": {
+      "@id": "aws:City",
+      "@type": "xsd:string"
+    },
+    "Country": {
+      "@id": "aws:Country",
+      "@type": "xsd:string"
+    },
+    "ResourceServer": {
+      "@id": "aws:ResourceServer",
+      "@type": "xsd:string"
+    },
+    "PreSignedUrl": {
+      "@id": "aws:PreSignedUrl",
+      "@type": "xsd:string"
+    },
+    "StartDate": {
+      "@id": "aws:StartDate",
+      "@type": "xsd:string"
+    },
+    "CompletionDate": {
+      "@id": "aws:CompletionDate",
+      "@type": "xsd:string"
+    },
+    "ImportedUsers": {
+      "@id": "aws:ImportedUsers",
+      "@type": "xsd:string"
+    },
+    "SkippedUsers": {
+      "@id": "aws:SkippedUsers",
+      "@type": "xsd:string"
+    },
+    "FailedUsers": {
+      "@id": "aws:FailedUsers",
+      "@type": "xsd:string"
+    },
+    "CompletionMessage": {
+      "@id": "aws:CompletionMessage",
+      "@type": "xsd:string"
+    },
+    "Value": {
+      "@id": "aws:Value",
+      "@type": "xsd:string"
+    },
+    "EventFilter": {
+      "@id": "aws:EventFilter",
+      "@type": "xsd:string"
+    },
+    "CompromisedCredentialsRiskConfiguration": {
+      "@id": "aws:CompromisedCredentialsRiskConfiguration",
+      "@type": "xsd:string"
+    },
+    "AccountTakeoverRiskConfiguration": {
+      "@id": "aws:AccountTakeoverRiskConfiguration",
+      "@type": "xsd:string"
+    },
+    "RiskExceptionConfiguration": {
+      "@id": "aws:RiskExceptionConfiguration",
+      "@type": "xsd:string"
+    },
+    "AdvancedSecurityMode": {
+      "@id": "aws:AdvancedSecurityMode",
+      "@type": "xsd:string"
+    },
+    "ChallengeResponse": {
+      "@id": "aws:ChallengeResponse",
+      "@type": "xsd:string"
+    },
+    "UserConfirmationNecessary": {
+      "@id": "aws:UserConfirmationNecessary",
+      "@type": "xsd:string"
+    },
+    "SchemaAttributes": {
+      "@id": "aws:SchemaAttributes",
+      "@type": "xsd:string"
+    },
+    "AliasAttributes": {
+      "@id": "aws:AliasAttributes",
+      "@type": "xsd:string"
+    },
+    "UsernameAttributes": {
+      "@id": "aws:UsernameAttributes",
+      "@type": "xsd:string"
+    },
+    "EstimatedNumberOfUsers": {
+      "@id": "aws:EstimatedNumberOfUsers",
+      "@type": "xsd:string"
+    },
+    "SmsConfigurationFailure": {
+      "@id": "aws:SmsConfigurationFailure",
+      "@type": "xsd:string"
+    },
+    "EmailConfigurationFailure": {
+      "@id": "aws:EmailConfigurationFailure",
+      "@type": "xsd:string"
+    },
+    "CustomDomain": {
+      "@id": "aws:CustomDomain",
+      "@type": "xsd:string"
+    },
+    "UsernameConfiguration": {
+      "@id": "aws:UsernameConfiguration",
+      "@type": "xsd:string"
+    },
+    "Arn": {
+      "@id": "aws:Arn",
+      "@type": "xsd:string"
+    },
+    "RiskConfiguration": {
+      "@id": "aws:RiskConfiguration",
+      "@type": "xsd:string"
+    },
+    "Code": {
+      "@id": "aws:Code",
+      "@type": "xsd:string"
+    },
+    "SecretCode": {
+      "@id": "aws:SecretCode",
+      "@type": "xsd:string"
+    },
+    "Destination": {
+      "@id": "aws:Destination",
+      "@type": "xsd:string"
+    },
+    "SMSMessage": {
+      "@id": "aws:SMSMessage",
+      "@type": "xsd:string"
+    },
+    "AnalyticsEndpointId": {
+      "@id": "aws:AnalyticsEndpointId",
+      "@type": "xsd:string"
+    },
+    "Notify": {
+      "@id": "aws:Notify",
+      "@type": "xsd:string"
+    },
+    "EventAction": {
+      "@id": "aws:EventAction",
+      "@type": "xsd:string"
+    },
+    "PoolName": {
+      "@id": "aws:PoolName",
+      "@type": "xsd:string"
+    },
+    "Schema": {
+      "@id": "aws:Schema",
+      "@type": "xsd:string"
+    },
+    "MinLength": {
+      "@id": "aws:MinLength",
+      "@type": "xsd:string"
+    },
+    "MaxLength": {
+      "@id": "aws:MaxLength",
+      "@type": "xsd:string"
+    },
+    "UserConfirmed": {
+      "@id": "aws:UserConfirmed",
+      "@type": "xsd:string"
+    },
+    "UserSub": {
+      "@id": "aws:UserSub",
+      "@type": "xsd:string"
+    },
+    "IdToken": {
+      "@id": "aws:IdToken",
+      "@type": "xsd:string"
+    },
+    "RefreshToken": {
+      "@id": "aws:RefreshToken",
+      "@type": "xsd:string"
+    },
+    "PreferredMfa": {
+      "@id": "aws:PreferredMfa",
+      "@type": "xsd:string"
+    },
+    "DeviceGroupKey": {
+      "@id": "aws:DeviceGroupKey",
+      "@type": "xsd:string"
+    },
+    "headerName": {
+      "@id": "aws:headerName",
+      "@type": "xsd:string"
+    },
+    "headerValue": {
+      "@id": "aws:headerValue",
+      "@type": "xsd:string"
+    },
+    "UserImportJobs": {
+      "@id": "aws:UserImportJobs",
+      "@type": "xsd:string"
+    },
+    "CodeDeliveryDetailsList": {
+      "@id": "aws:CodeDeliveryDetailsList",
+      "@type": "xsd:string"
+    },
+    "DomainDescription": {
+      "@id": "aws:DomainDescription",
+      "@type": "xsd:string"
+    },
+    "AttributesToGet": {
+      "@id": "aws:AttributesToGet",
+      "@type": "xsd:string"
+    },
+    "Filter": {
+      "@id": "aws:Filter",
+      "@type": "xsd:string"
+    },
+    "IdpIdentifier": {
+      "@id": "aws:IdpIdentifier",
+      "@type": "xsd:string"
+    },
+    "UserPoolClients": {
+      "@id": "aws:UserPoolClients",
+      "@type": "xsd:string"
+    },
+    "PasswordPolicy": {
+      "@id": "aws:PasswordPolicy",
+      "@type": "xsd:string"
+    },
+    "AttributeDataType": {
+      "@id": "aws:AttributeDataType",
+      "@type": "xsd:string"
+    },
+    "DeveloperOnlyAttribute": {
+      "@id": "aws:DeveloperOnlyAttribute",
+      "@type": "xsd:string"
+    },
+    "Mutable": {
+      "@id": "aws:Mutable",
+      "@type": "xsd:string"
+    },
+    "Required": {
+      "@id": "aws:Required",
+      "@type": "xsd:string"
+    },
+    "NumberAttributeConstraints": {
+      "@id": "aws:NumberAttributeConstraints",
+      "@type": "xsd:string"
+    },
+    "StringAttributeConstraints": {
+      "@id": "aws:StringAttributeConstraints",
+      "@type": "xsd:string"
+    },
+    "SnsCallerArn": {
+      "@id": "aws:SnsCallerArn",
+      "@type": "xsd:string"
+    },
+    "SnsRegion": {
+      "@id": "aws:SnsRegion",
+      "@type": "xsd:string"
+    },
+    "ExpiresIn": {
+      "@id": "aws:ExpiresIn",
+      "@type": "xsd:string"
+    },
+    "TokenType": {
+      "@id": "aws:TokenType",
+      "@type": "xsd:string"
+    },
+    "NewDeviceMetadata": {
+      "@id": "aws:NewDeviceMetadata",
+      "@type": "xsd:string"
+    },
+    "ImageUrl": {
+      "@id": "aws:ImageUrl",
+      "@type": "xsd:string"
+    },
+    "CSSVersion": {
+      "@id": "aws:CSSVersion",
+      "@type": "xsd:string"
+    },
+    "UserPools": {
+      "@id": "aws:UserPools",
+      "@type": "xsd:string"
+    },
+    "ServerName": {
+      "@id": "aws:ServerName",
+      "@type": "xsd:string"
+    },
+    "ServerPath": {
+      "@id": "aws:ServerPath",
+      "@type": "xsd:string"
+    },
+    "HttpHeaders": {
+      "@id": "aws:HttpHeaders",
+      "@type": "xsd:string"
+    },
+    "UserCode": {
+      "@id": "aws:UserCode",
+      "@type": "xsd:string"
+    },
+    "FriendlyDeviceName": {
+      "@id": "aws:FriendlyDeviceName",
+      "@type": "xsd:string"
+    },
+    "Subject": {
+      "@id": "aws:Subject",
+      "@type": "xsd:string"
+    },
+    "HtmlBody": {
+      "@id": "aws:HtmlBody",
+      "@type": "xsd:string"
+    },
+    "TextBody": {
+      "@id": "aws:TextBody",
+      "@type": "xsd:string"
+    },
+    "MinValue": {
+      "@id": "aws:MinValue",
+      "@type": "xsd:string"
+    },
+    "MaxValue": {
+      "@id": "aws:MaxValue",
+      "@type": "xsd:string"
+    },
+    "Providers": {
+      "@id": "aws:Providers",
+      "@type": "xsd:string"
+    },
+    "Priority": {
+      "@id": "aws:Priority",
+      "@type": "xsd:string"
+    },
+    "Permanent": {
+      "@id": "aws:Permanent",
+      "@type": "xsd:string"
+    }
+  }
+}

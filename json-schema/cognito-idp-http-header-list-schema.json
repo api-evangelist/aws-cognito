@@ -1,0 +1,33 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "headerName": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/StringType"
+          },
+          {
+            "description": "The header name."
+          }
+        ]
+      },
+      "headerValue": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/StringType"
+          },
+          {
+            "description": "The header value."
+          }
+        ]
+      }
+    },
+    "description": "The HTTP header."
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-http-header-list-schema.json",
+  "title": "HttpHeaderList",
+  "description": "HttpHeaderList schema from Amazon Cognito"
+}

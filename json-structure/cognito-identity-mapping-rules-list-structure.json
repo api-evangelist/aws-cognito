@@ -1,0 +1,59 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "Claim": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ClaimName"
+          },
+          {
+            "description": "The claim name that must be present in the token, for example, \"isAdmin\" or \"paid\"."
+          }
+        ]
+      },
+      "MatchType": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/MappingRuleMatchType"
+          },
+          {
+            "description": "The match condition that specifies how closely the claim value in the IdP token must match <code>Value</code>."
+          }
+        ]
+      },
+      "Value": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ClaimValue"
+          },
+          {
+            "description": "A brief string that the claim must match, for example, \"paid\" or \"yes\"."
+          }
+        ]
+      },
+      "RoleARN": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ARNString"
+          },
+          {
+            "description": "The role ARN."
+          }
+        ]
+      }
+    },
+    "required": [
+      "Claim",
+      "MatchType",
+      "Value",
+      "RoleARN"
+    ],
+    "description": "A rule that maps a claim name, a claim value, and a match type to a role ARN."
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-mapping-rules-list-structure.json",
+  "name": "MappingRulesList",
+  "description": "MappingRulesList schema from Amazon Cognito"
+}

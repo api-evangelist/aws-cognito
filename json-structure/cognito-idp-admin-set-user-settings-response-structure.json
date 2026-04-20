@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "description": "Represents the response from the server to set user settings as an administrator.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-admin-set-user-settings-response-structure.json",
+  "name": "AdminSetUserSettingsResponse"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "User": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserType"
+        },
+        {
+          "description": "The newly created user."
+        }
+      ]
+    }
+  },
+  "description": "Represents the response from the server to the request to create the user.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-admin-create-user-response-structure.json",
+  "name": "AdminCreateUserResponse"
+}

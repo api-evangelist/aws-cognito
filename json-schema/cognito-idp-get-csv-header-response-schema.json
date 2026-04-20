@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool that the users are to be imported into."
+        }
+      ]
+    },
+    "CSVHeader": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ListOfStringTypes"
+        },
+        {
+          "description": "The header information of the CSV file for the user import job."
+        }
+      ]
+    }
+  },
+  "description": "Represents the response from the server to the request to get the header information of the CSV file for the user import job.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-get-csv-header-response-schema.json",
+  "title": "GetCSVHeaderResponse"
+}

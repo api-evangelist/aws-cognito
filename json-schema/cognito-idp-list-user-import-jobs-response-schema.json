@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "UserImportJobs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserImportJobsListType"
+        },
+        {
+          "description": "The user import jobs."
+        }
+      ]
+    },
+    "PaginationToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKeyType"
+        },
+        {
+          "description": "An identifier that can be used to return the next set of user import jobs in the list."
+        }
+      ]
+    }
+  },
+  "description": "Represents the response from the server to the request to list the user import jobs.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-list-user-import-jobs-response-schema.json",
+  "title": "ListUserImportJobsResponse"
+}

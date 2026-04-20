@@ -1,0 +1,7 @@
+{
+  "Username": "my-user-pool-01",
+  "UserAttributes": "example-value",
+  "MFAOptions": "example-value",
+  "PreferredMfaSetting": "example-value",
+  "UserMFASettingList": "example-value"
+}

@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "ProviderName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProviderNameType"
+        },
+        {
+          "description": "The name of the provider, such as Facebook, Google, or Login with Amazon."
+        }
+      ]
+    },
+    "ProviderAttributeName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The name of the provider attribute to link to, such as <code>NameID</code>."
+        }
+      ]
+    },
+    "ProviderAttributeValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The value of the provider attribute to link to, such as <code>xxxxx_account</code>."
+        }
+      ]
+    }
+  },
+  "description": "A container for information about an IdP for a user pool.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-provider-user-identifier-type-schema.json",
+  "title": "ProviderUserIdentifierType"
+}

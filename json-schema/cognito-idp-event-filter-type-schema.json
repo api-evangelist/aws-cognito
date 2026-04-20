@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "SIGN_IN",
+    "PASSWORD_CHANGE",
+    "SIGN_UP"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-event-filter-type-schema.json",
+  "title": "EventFilterType",
+  "description": "EventFilterType schema from Amazon Cognito"
+}

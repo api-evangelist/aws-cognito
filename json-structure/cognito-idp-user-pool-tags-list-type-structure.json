@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string",
+    "minLength": 1,
+    "maxLength": 128
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-user-pool-tags-list-type-structure.json",
+  "name": "UserPoolTagsListType",
+  "description": "UserPoolTagsListType schema from Amazon Cognito"
+}

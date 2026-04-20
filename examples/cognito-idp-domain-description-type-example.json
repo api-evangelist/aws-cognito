@@ -1,0 +1,10 @@
+{
+  "UserPoolId": "my-user-pool-01",
+  "AWSAccountId": "my-user-pool-01",
+  "Domain": "example-value",
+  "S3Bucket": "example-value",
+  "CloudFrontDistribution": "example-value",
+  "Version": "example-value",
+  "Status": "CONFIRMED",
+  "CustomDomainConfig": "example-value"
+}

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool where you want to delete the client."
+        }
+      ]
+    },
+    "ClientId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientIdType"
+        },
+        {
+          "description": "The app client ID of the app associated with the user pool."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "ClientId"
+  ],
+  "description": "Represents the request to delete a user pool client.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-delete-user-pool-client-request-schema.json",
+  "title": "DeleteUserPoolClientRequest"
+}

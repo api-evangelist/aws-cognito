@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolId"
+        },
+        {
+          "description": "The ID of the Identity Pool you want to set attribute mappings for."
+        }
+      ]
+    },
+    "IdentityProviderName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityProviderName"
+        },
+        {
+          "description": "The provider name you want to use for attribute mappings."
+        }
+      ]
+    },
+    "UseDefaults": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UseDefaults"
+        },
+        {
+          "description": "You can use this operation to use default (username and clientID) attribute mappings."
+        }
+      ]
+    },
+    "PrincipalTags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PrincipalTags"
+        },
+        {
+          "description": "You can use this operation to add principal tags."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityPoolId",
+    "IdentityProviderName"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-set-principal-tag-attribute-map-input-schema.json",
+  "title": "SetPrincipalTagAttributeMapInput",
+  "description": "SetPrincipalTagAttributeMapInput schema from Amazon Cognito"
+}

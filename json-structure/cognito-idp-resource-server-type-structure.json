@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool that hosts the resource server."
+        }
+      ]
+    },
+    "Identifier": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServerIdentifierType"
+        },
+        {
+          "description": "The identifier for the resource server."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServerNameType"
+        },
+        {
+          "description": "The name of the resource server."
+        }
+      ]
+    },
+    "Scopes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServerScopeListType"
+        },
+        {
+          "description": "A list of scopes that are defined for the resource server."
+        }
+      ]
+    }
+  },
+  "description": "A container for information about a resource server for a user pool.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-resource-server-type-structure.json",
+  "name": "ResourceServerType"
+}

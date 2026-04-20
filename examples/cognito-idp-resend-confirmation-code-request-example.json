@@ -1,0 +1,8 @@
+{
+  "ClientId": "my-user-pool-01",
+  "SecretHash": "example-value",
+  "UserContextData": "example-value",
+  "Username": "my-user-pool-01",
+  "AnalyticsMetadata": "example-value",
+  "ClientMetadata": "example-value"
+}

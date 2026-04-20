@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The user pool ID for the user pool."
+        }
+      ]
+    },
+    "User": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProviderUserIdentifierType"
+        },
+        {
+          "description": "The user to be disabled."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "User"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-admin-disable-provider-for-user-request-structure.json",
+  "name": "AdminDisableProviderForUserRequest",
+  "description": "AdminDisableProviderForUserRequest schema from Amazon Cognito"
+}

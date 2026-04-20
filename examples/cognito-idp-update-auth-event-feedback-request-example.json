@@ -1,0 +1,7 @@
+{
+  "UserPoolId": "my-user-pool-01",
+  "Username": "my-user-pool-01",
+  "EventId": "my-user-pool-01",
+  "FeedbackToken": "eyJhbGciOiJSUzI1NiJ9...",
+  "FeedbackValue": "example-value"
+}

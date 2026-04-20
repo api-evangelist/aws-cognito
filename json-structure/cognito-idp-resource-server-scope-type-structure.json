@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "ScopeName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServerScopeNameType"
+        },
+        {
+          "description": "The name of the scope."
+        }
+      ]
+    },
+    "ScopeDescription": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServerScopeDescriptionType"
+        },
+        {
+          "description": "A description of the scope."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ScopeName",
+    "ScopeDescription"
+  ],
+  "description": "A resource server scope.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-resource-server-scope-type-structure.json",
+  "name": "ResourceServerScopeType"
+}

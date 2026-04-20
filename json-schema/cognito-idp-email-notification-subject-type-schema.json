@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}\\s]+",
+  "minLength": 1,
+  "maxLength": 140,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-idp-email-notification-subject-type-schema.json",
+  "title": "EmailNotificationSubjectType",
+  "description": "EmailNotificationSubjectType schema from Amazon Cognito"
+}

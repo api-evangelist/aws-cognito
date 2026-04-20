@@ -1,0 +1,220 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: "Amazon Cognito"
+  description: "Unified taxonomy for Amazon Cognito covering user pool management, user authentication, federated identities, OAuth2/OIDC flows, and credential management."
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+operational:
+  apis:
+    - namespace: cognito-idp
+      version: "2016-04-18"
+      baseUrl: https://cognito-idp.{region}.amazonaws.com
+      status: active
+    - namespace: cognito-identity
+      version: "2014-06-30"
+      baseUrl: https://cognito-identity.{region}.amazonaws.com
+      status: active
+
+  resources:
+    - name: user-pools
+      apis:
+        - cognito-idp
+      actions:
+        - list
+        - create
+        - describe
+        - update
+        - delete
+    - name: users
+      apis:
+        - cognito-idp
+      actions:
+        - list
+        - create
+        - get
+        - update
+        - delete
+    - name: groups
+      apis:
+        - cognito-idp
+      actions:
+        - list
+        - create
+        - delete
+    - name: app-clients
+      apis:
+        - cognito-idp
+      actions:
+        - list
+        - create
+        - describe
+        - update
+        - delete
+    - name: identity-pools
+      apis:
+        - cognito-identity
+      actions:
+        - list
+        - create
+        - describe
+        - update
+        - delete
+    - name: identities
+      apis:
+        - cognito-identity
+      actions:
+        - list
+        - get
+        - unlink
+
+  actions:
+    - name: list
+      methods:
+        - POST
+      pattern: read
+    - name: describe
+      methods:
+        - POST
+      pattern: read
+    - name: get
+      methods:
+        - POST
+      pattern: read
+    - name: create
+      methods:
+        - POST
+      pattern: write
+    - name: update
+      methods:
+        - POST
+      pattern: write
+    - name: delete
+      methods:
+        - POST
+      pattern: destructive
+
+  schemas:
+    user-management:
+      - name: UserPoolType
+        description: Full configuration of a Cognito user pool
+      - name: UserType
+        description: User account with attributes and status
+      - name: GroupType
+        description: User group with role assignment
+    app-clients:
+      - name: UserPoolClientType
+        description: App client configuration with OAuth2 flows and scopes
+    federation:
+      - name: IdentityPool
+        description: Federated identity pool configuration
+      - name: IdentityDescription
+        description: Federated identity with linked login providers
+
+  authentication:
+    schemes:
+      - name: AWS SigV4
+        type: apikey
+        description: AWS Signature Version 4 signing for administrative operations
+    flows:
+      - name: OAuth2 Authorization Code
+        description: PKCE-enabled authorization code flow for web and mobile apps
+      - name: OAuth2 Client Credentials
+        description: Machine-to-machine authentication flow
+      - name: OIDC
+        description: OpenID Connect identity tokens for user authentication
+      - name: SAML 2.0
+        description: Enterprise SAML federation with identity providers
+
+capability:
+  workflows:
+    - name: Identity Management Workflow
+      file: capabilities/identity-management-workflow.yaml
+      description: Manage Cognito user pools, users, groups, and federated identity pools
+      apis:
+        - cognito-idp
+        - cognito-identity
+      tools: 10
+      personas:
+        - Identity Engineer
+        - Application Developer
+
+  personas:
+    - id: identity-engineer
+      name: Identity Engineer
+      description: Manages Cognito user pools, federation, and access control policies
+      workflows:
+        - Identity Management Workflow
+    - id: application-developer
+      name: Application Developer
+      description: Configures Cognito user pools and app clients for application authentication
+      workflows:
+        - Identity Management Workflow
+
+  domains:
+    - name: User Pool Management
+      description: Creating and configuring user pools with authentication flows and policies
+      resources:
+        - user-pools
+        - app-clients
+    - name: User Administration
+      description: Managing user accounts, groups, and access within user pools
+      resources:
+        - users
+        - groups
+    - name: Federated Identity
+      description: Managing federated identities and temporary AWS credential vending
+      resources:
+        - identity-pools
+        - identities
+
+  namespaces:
+    - name: cognito-idp
+      type: consumed
+      baseUri: https://cognito-idp.{region}.amazonaws.com
+    - name: cognito-identity
+      type: consumed
+      baseUri: https://cognito-identity.{region}.amazonaws.com
+    - name: cognito-workflow-api
+      type: rest-exposed
+      port: 8080
+    - name: cognito-workflow-mcp
+      type: mcp-exposed
+      port: 9090
+
+  binds:
+    - name: AWS_ACCESS_KEY_ID
+      workflows:
+        - Identity Management Workflow
+    - name: AWS_SECRET_ACCESS_KEY
+      workflows:
+        - Identity Management Workflow
+    - name: AWS_REGION
+      workflows:
+        - Identity Management Workflow
+
+crossReference:
+  - resource: user-pools
+    operations:
+      - ListUserPools
+      - CreateUserPool
+      - DescribeUserPool
+      - UpdateUserPool
+      - DeleteUserPool
+    workflows:
+      - Identity Management Workflow
+    personas:
+      - Identity Engineer
+  - resource: users
+    operations:
+      - ListUsers
+      - AdminCreateUser
+      - AdminGetUser
+      - AdminUpdateUserAttributes
+      - AdminDeleteUser
+    workflows:
+      - Identity Management Workflow
+    personas:
+      - Identity Engineer
+      - Application Developer

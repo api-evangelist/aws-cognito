@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "IdentityPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolId"
+        },
+        {
+          "description": "An identity pool ID in the format REGION:GUID."
+        }
+      ]
+    },
+    "Roles": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RolesMap"
+        },
+        {
+          "description": "The map of roles associated with this pool. Currently only authenticated and unauthenticated roles are supported."
+        }
+      ]
+    },
+    "RoleMappings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RoleMappingMap"
+        },
+        {
+          "description": "How users for a specific identity provider are to mapped to roles. This is a String-to-<a>RoleMapping</a> object map. The string identifies the identity provider, for example, \"graph.facebook.com\" or \"cognito-idp.us-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id\"."
+        }
+      ]
+    }
+  },
+  "description": "Returned in response to a successful <code>GetIdentityPoolRoles</code> operation.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-identity-get-identity-pool-roles-response-structure.json",
+  "name": "GetIdentityPoolRolesResponse"
+}

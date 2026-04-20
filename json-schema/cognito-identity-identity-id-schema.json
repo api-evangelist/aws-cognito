@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\w-]+:[0-9a-f-]+",
+  "minLength": 1,
+  "maxLength": 55,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-schema/cognito-identity-identity-id-schema.json",
+  "title": "IdentityId",
+  "description": "IdentityId schema from Amazon Cognito"
+}

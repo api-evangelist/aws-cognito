@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^[a-zA-Z0-9_-]+$",
+  "minLength": 1,
+  "maxLength": 64,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/json-structure/cognito-idp-ses-configuration-set-structure.json",
+  "name": "SESConfigurationSet",
+  "description": "SESConfigurationSet schema from Amazon Cognito"
+}

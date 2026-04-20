@@ -1,0 +1,6 @@
+{
+  "UserPoolId": "my-user-pool-01",
+  "Identifier": "my-user-pool-01",
+  "Name": "my-user-pool-01",
+  "Scopes": "example-value"
+}
