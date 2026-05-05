@@ -1,0 +1,13 @@
+{
+  "repo": "aws-cognito",
+  "feeds": [
+    {
+      "source": "https://aws.amazon.com/blogs/security/tag/amazon-cognito/",
+      "feed_url": "https://aws.amazon.com/blogs/security/tag/amazon-cognito/feed/",
+      "saved": 10,
+      "title": "Amazon Cognito \u2013 AWS Security Blog"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-05-03T23:23:11Z"
+}
