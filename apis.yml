@@ -1,10 +1,6 @@
 aid: aws-cognito
 name: Amazon Cognito
-description: 'Amazon Cognito is an AWS service that provides authentication, authorization, and user management for web and
-  mobile applications. It supports OAuth2, OIDC, SAML federation, and social identity providers. Cognito has two main components:
-  User Pools for user authentication and app integration, and Federated Identities for granting temporary AWS credentials
-  to authenticated users. It includes multi-factor authentication, advanced security features, and customizable authentication
-  flows.'
+description: 'Amazon Cognito is an AWS service that provides authentication, authorization, and user management for web and mobile applications. It supports OAuth2, OIDC, SAML federation, and social identity providers. Cognito has two main components: User Pools for user authentication and app integration, and Federated Identities for granting temporary AWS credentials to authenticated users. It includes multi-factor authentication, advanced security features, and customizable authentication flows.'
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
@@ -22,8 +18,7 @@ specificationVersion: '0.19'
 apis:
 - aid: aws-cognito:aws-cognito-identity-provider
   name: Amazon Cognito Identity Provider
-  description: Control plane API for managing Cognito user pools, app clients, users, groups, identity providers, and resource
-    servers. Supports user authentication flows including SRP, custom, and hosted UI authentication.
+  description: Control plane API for managing Cognito user pools, app clients, users, groups, identity providers, and resource servers. Supports user authentication flows including SRP, custom, and hosted UI authentication.
   humanURL: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools.html
   baseURL: https://cognito-idp.{region}.amazonaws.com
   tags:
@@ -43,10 +38,11 @@ apis:
     url: openapi/aws-cognito-identity-provider-openapi.yaml
   - type: NaftikoCapability
     url: capabilities/identity-provider.yaml
+  - url: graphql/aws-cognito-graphql.md
+    type: GraphQL
 - aid: aws-cognito:aws-cognito-identity
   name: Amazon Cognito Identity (Federated Identities)
-  description: Federated identity service that issues temporary AWS credentials to authenticated and unauthenticated users
-    from Cognito user pools, social identity providers (Facebook, Google, Apple), and SAML-based enterprise IdPs.
+  description: Federated identity service that issues temporary AWS credentials to authenticated and unauthenticated users from Cognito user pools, social identity providers (Facebook, Google, Apple), and SAML-based enterprise IdPs.
   humanURL: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   baseURL: https://cognito-identity.{region}.amazonaws.com
   tags:
