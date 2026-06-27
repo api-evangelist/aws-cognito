@@ -36,7 +36,7 @@ apis:
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
   - type: OpenAPI
     url: openapi/aws-cognito-identity-provider-openapi.yaml
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/identity-provider.yaml
   - url: graphql/aws-cognito-graphql.md
     type: GraphQL
@@ -57,7 +57,7 @@ apis:
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
   - type: OpenAPI
     url: openapi/aws-cognito-identity-openapi.yaml
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/identity.yaml
 common:
 - type: Website
