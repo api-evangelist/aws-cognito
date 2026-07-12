@@ -60,6 +60,14 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/identity.yaml
 common:
+- type: TrustCenter
+  url: security/aws-cognito-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/aws-cognito-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/aws-cognito-domain-security.yml
+- type: Authentication
+  url: authentication/aws-cognito-authentication.yml
 - type: Website
   url: https://aws.amazon.com/cognito/
 - type: Documentation
