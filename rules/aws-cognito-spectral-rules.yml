@@ -1,6 +1,21 @@
+# aws-cognito — Spectral ruleset (strengthened)
+# Plain Spectral. Existing hand-authored rules preserved; measured rules added
+# from this provider's own OpenAPI conventions by strengthen_ruleset.py,
+# then self-validated against the spec.
+#
+# Provenance:
+#   - servers-https-only: 50% of servers already https (warn)
+#   - query-params-casing: pascal @ 100% (n=20)
+#   - operationid-casing: pascal @ 100% (n=124)
+#   - schema-names-casing: pascal @ 100% (n=575)
+#   - schema-properties-casing: pascal @ 100% (n=920)
+#   - security: global (root) — NOT emitting operation-security-required
+#   - error-schema-defined: InternalErrorException
+#   - merge: kept 16 existing, added 5 measured, upgraded 0
+#   - added: query-params-casing, schema-names-casing, schema-properties-casing, security-schemes-defined, error-schema-defined
+extends:
+  - spectral:oas
 rules:
-
-  # INFO / METADATA
   info-title-prefix:
     description: API title must start with "Amazon Cognito"
     severity: warn
@@ -8,8 +23,7 @@ rules:
     then:
       function: pattern
       functionOptions:
-        match: "^Amazon Cognito"
-
+        match: ^Amazon Cognito
   info-description-required:
     description: Info object must have a description
     severity: error
@@ -17,7 +31,6 @@ rules:
     then:
       field: description
       function: truthy
-
   info-version-required:
     description: Info object must have a version
     severity: error
@@ -25,8 +38,6 @@ rules:
     then:
       field: version
       function: truthy
-
-  # OPENAPI VERSION
   openapi-version-3:
     description: All specs must use OpenAPI 3.x
     severity: error
@@ -35,9 +46,7 @@ rules:
       field: openapi
       function: pattern
       functionOptions:
-        match: "^3\\."
-
-  # SERVERS
+        match: ^3\.
   servers-defined:
     description: Servers array must be defined
     severity: error
@@ -45,7 +54,6 @@ rules:
     then:
       field: servers
       function: truthy
-
   servers-https:
     description: All server URLs must use HTTPS
     severity: error
@@ -53,9 +61,7 @@ rules:
     then:
       function: pattern
       functionOptions:
-        match: "^https://"
-
-  # OPERATIONS
+        match: ^https://
   operation-summary-required:
     description: Every operation must have a summary
     severity: error
@@ -63,7 +69,6 @@ rules:
     then:
       field: summary
       function: truthy
-
   operation-summary-prefix:
     description: Operation summaries must start with "Amazon Cognito"
     severity: warn
@@ -71,8 +76,7 @@ rules:
     then:
       function: pattern
       functionOptions:
-        match: "^Amazon Cognito"
-
+        match: ^Amazon Cognito
   operation-description-required:
     description: Every operation must have a description
     severity: error
@@ -80,7 +84,6 @@ rules:
     then:
       field: description
       function: truthy
-
   operation-id-required:
     description: Every operation must have an operationId
     severity: error
@@ -88,7 +91,6 @@ rules:
     then:
       field: operationId
       function: truthy
-
   operation-id-pascal-case:
     description: OperationIds should use PascalCase
     severity: warn
@@ -96,9 +98,7 @@ rules:
     then:
       function: pattern
       functionOptions:
-        match: "^[A-Z][a-zA-Z0-9]*$"
-
-  # RESPONSES
+        match: ^[A-Z][a-zA-Z0-9]*$
   response-description-required:
     description: All responses must have descriptions
     severity: error
@@ -106,8 +106,6 @@ rules:
     then:
       field: description
       function: truthy
-
-  # SCHEMAS
   schema-description:
     description: Component schemas should have descriptions
     severity: warn
@@ -115,17 +113,13 @@ rules:
     then:
       field: description
       function: truthy
-
-  # SECURITY
   security-schemes-defined:
-    description: Security schemes should be defined
+    description: Security schemes should be defined in components.
     severity: warn
-    given: $
+    given: $.components
     then:
-      field: components.securitySchemes
+      field: securitySchemes
       function: truthy
-
-  # HTTP METHOD CONVENTIONS
   method-get-no-body:
     description: GET operations must not have a request body
     severity: error
@@ -133,8 +127,6 @@ rules:
     then:
       field: requestBody
       function: falsy
-
-  # GENERAL QUALITY
   no-empty-descriptions:
     description: Descriptions must not be empty
     severity: error
@@ -142,4 +134,38 @@ rules:
     then:
       function: pattern
       functionOptions:
-        match: ".+"
+        match: .+
+  query-params-casing:
+    description: Query parameters should be PascalCase (the dominant convention in this API).
+    severity: warn
+    given: $.paths[*][get,post,put,patch,delete].parameters[?(@.in=='query')]
+    then:
+      field: name
+      function: casing
+      functionOptions:
+        type: pascal
+  schema-names-casing:
+    description: Component schema names should be PascalCase (the dominant convention in this API).
+    severity: warn
+    given: $.components.schemas
+    then:
+      field: '@key'
+      function: pattern
+      functionOptions:
+        match: ^[A-Z][A-Za-z0-9]*$
+  schema-properties-casing:
+    description: Schema properties should be PascalCase (the dominant convention in this API).
+    severity: warn
+    given: $.components.schemas[*].properties
+    then:
+      field: '@key'
+      function: pattern
+      functionOptions:
+        match: ^[A-Z][A-Za-z0-9]*$
+  error-schema-defined:
+    description: A shared error schema (InternalErrorException) should be defined for error payloads.
+    severity: warn
+    given: $.components.schemas
+    then:
+      field: InternalErrorException
+      function: truthy
