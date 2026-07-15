@@ -60,6 +60,8 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/identity.yaml
 common:
+- type: AgenticAccess
+  url: agentic-access/aws-cognito-agentic-access.yml
 - type: TrustCenter
   url: security/aws-cognito-trust-center.yml
 - type: VulnerabilityDisclosure
