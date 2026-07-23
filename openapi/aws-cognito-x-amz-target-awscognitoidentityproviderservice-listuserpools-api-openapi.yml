@@ -1,0 +1,469 @@
+openapi: 3.0.0
+info:
+  version: 2014-06-30
+  x-release: v4
+  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.ListUserPools API'
+  description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: cognito-identity
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-identity-2014-06-30.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: https://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: http://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+- url: https://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=AWSCognitoIdentityProviderService.ListUserPools'
+paths:
+  /#X-Amz-Target=AWSCognitoIdentityProviderService.ListUserPools:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: ListUserPools
+      description: Lists the user pools associated with an Amazon Web Services account.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListUserPoolsResponse'
+              examples:
+                ListUserPools200Example:
+                  summary: Default ListUserPools 200 response
+                  x-microcks-default: true
+                  value:
+                    UserPools: example-value
+                    NextToken: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
+        '480':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+              examples:
+                ListUserPools480Example:
+                  summary: Default ListUserPools 480 response
+                  x-microcks-default: true
+                  value: example
+        '481':
+          description: TooManyRequestsException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TooManyRequestsException'
+              examples:
+                ListUserPools481Example:
+                  summary: Default ListUserPools 481 response
+                  x-microcks-default: true
+                  value: example
+        '482':
+          description: NotAuthorizedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotAuthorizedException'
+              examples:
+                ListUserPools482Example:
+                  summary: Default ListUserPools 482 response
+                  x-microcks-default: true
+                  value: example
+        '483':
+          description: InternalErrorException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalErrorException'
+              examples:
+                ListUserPools483Example:
+                  summary: Default ListUserPools 483 response
+                  x-microcks-default: true
+                  value: example
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ListUserPoolsRequest'
+            examples:
+              ListUserPoolsRequestExample:
+                summary: Default ListUserPools request
+                x-microcks-default: true
+                value:
+                  NextToken: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
+                  MaxResults: example-value
+      parameters:
+      - name: MaxResults
+        in: query
+        schema:
+          type: string
+        description: Pagination limit
+        required: false
+      - name: NextToken
+        in: query
+        schema:
+          type: string
+        description: Pagination token
+        required: false
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - AWSCognitoIdentityProviderService.ListUserPools
+      summary: Amazon Cognito List User Pools
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=AWSCognitoIdentityProviderService.ListUserPools'
+components:
+  schemas:
+    ListUserPoolsRequest:
+      type: object
+      required:
+      - MaxResults
+      title: ListUserPoolsRequest
+      properties:
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationKeyType'
+          - description: An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
+        MaxResults:
+          allOf:
+          - $ref: '#/components/schemas/PoolQueryLimitType'
+          - description: The maximum number of results you want the request to return when listing the user pools.
+      description: Represents the request to list user pools.
+    UserPoolNameType:
+      type: string
+      pattern: '[\w\s+=,.@-]+'
+      minLength: 1
+      maxLength: 128
+    DateType:
+      type: string
+      format: date-time
+    UserPoolDescriptionType:
+      type: object
+      properties:
+        Id:
+          allOf:
+          - $ref: '#/components/schemas/UserPoolIdType'
+          - description: The ID in a user pool description.
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/UserPoolNameType'
+          - description: The name in a user pool description.
+        LambdaConfig:
+          allOf:
+          - $ref: '#/components/schemas/LambdaConfigType'
+          - description: The Lambda configuration information in a user pool description.
+        Status:
+          allOf:
+          - $ref: '#/components/schemas/StatusType'
+          - description: The user pool status in a user pool description.
+        LastModifiedDate:
+          allOf:
+          - $ref: '#/components/schemas/DateType'
+          - description: The date the user pool description was last modified.
+        CreationDate:
+          allOf:
+          - $ref: '#/components/schemas/DateType'
+          - description: The date the user pool description was created.
+      description: A user pool description.
+    InvalidParameterException: {}
+    PaginationKeyType:
+      type: string
+      pattern: '[\S]+'
+      minLength: 1
+    TooManyRequestsException: {}
+    InternalErrorException: {}
+    CustomSMSSenderLambdaVersionType:
+      type: string
+      enum:
+      - V1_0
+    NotAuthorizedException: {}
+    PoolQueryLimitType:
+      type: integer
+      minimum: 1
+      maximum: 60
+    LambdaConfigType:
+      type: object
+      properties:
+        PreSignUp:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: A pre-registration Lambda trigger.
+        CustomMessage:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: A custom Message Lambda trigger.
+        PostConfirmation:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: A post-confirmation Lambda trigger.
+        PreAuthentication:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: A pre-authentication Lambda trigger.
+        PostAuthentication:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: A post-authentication Lambda trigger.
+        DefineAuthChallenge:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: Defines the authentication challenge.
+        CreateAuthChallenge:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: Creates an authentication challenge.
+        VerifyAuthChallengeResponse:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: Verifies the authentication challenge response.
+        PreTokenGeneration:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: A Lambda trigger that is invoked before token generation.
+        UserMigration:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: The user migration Lambda config type.
+        CustomSMSSender:
+          allOf:
+          - $ref: '#/components/schemas/CustomSMSLambdaVersionConfigType'
+          - description: A custom SMS sender Lambda trigger.
+        CustomEmailSender:
+          allOf:
+          - $ref: '#/components/schemas/CustomEmailLambdaVersionConfigType'
+          - description: A custom email sender Lambda trigger.
+        KMSKeyID:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: The Amazon Resource Name (ARN) of an <a href="/kms/latest/developerguide/concepts.html#master_keys">KMS key</a>. Amazon Cognito uses the key to encrypt codes and temporary passwords sent to <code>CustomEmailSender</code> and <code>CustomSMSSender</code>.
+      description: Specifies the configuration for Lambda triggers.
+    CustomSMSLambdaVersionConfigType:
+      type: object
+      required:
+      - LambdaVersion
+      - LambdaArn
+      properties:
+        LambdaVersion:
+          allOf:
+          - $ref: '#/components/schemas/CustomSMSSenderLambdaVersionType'
+          - description: Signature of the "request" attribute in the "event" information that Amazon Cognito passes to your custom SMS Lambda function. The only supported value is <code>V1_0</code>.
+        LambdaArn:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: The Amazon Resource Name (ARN) of the Lambda function that Amazon Cognito activates to send SMS notifications to users.
+      description: A custom SMS sender Lambda configuration type.
+    UserPoolListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/UserPoolDescriptionType'
+    UserPoolIdType:
+      type: string
+      pattern: '[\w-]+_[0-9a-zA-Z]+'
+      minLength: 1
+      maxLength: 55
+    CustomEmailSenderLambdaVersionType:
+      type: string
+      enum:
+      - V1_0
+    ArnType:
+      type: string
+      pattern: arn:[\w+=/,.@-]+:[\w+=/,.@-]+:([\w+=/,.@-]*)?:[0-9]+:[\w+=/,.@-]+(:[\w+=/,.@-]+)?(:[\w+=/,.@-]+)?
+      minLength: 20
+      maxLength: 2048
+    StatusType:
+      type: string
+      enum:
+      - Enabled
+      - Disabled
+    ListUserPoolsResponse:
+      type: object
+      properties:
+        UserPools:
+          allOf:
+          - $ref: '#/components/schemas/UserPoolListType'
+          - description: The user pools from the response to list users.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationKeyType'
+          - description: An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
+      description: Represents the response to list user pools.
+    CustomEmailLambdaVersionConfigType:
+      type: object
+      required:
+      - LambdaVersion
+      - LambdaArn
+      properties:
+        LambdaVersion:
+          allOf:
+          - $ref: '#/components/schemas/CustomEmailSenderLambdaVersionType'
+          - description: Signature of the "request" attribute in the "event" information Amazon Cognito passes to your custom email Lambda function. The only supported value is <code>V1_0</code>.
+        LambdaArn:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: The Amazon Resource Name (ARN) of the Lambda function that Amazon Cognito activates to send email notifications to users.
+      description: A custom email sender Lambda configuration type.
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/cognito-identity/
+x-hasEquivalentPaths: true

@@ -1,0 +1,371 @@
+openapi: 3.0.0
+info:
+  version: 2014-06-30
+  x-release: v4
+  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityService.LookupDeveloperIdentity API'
+  description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: cognito-identity
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-identity-2014-06-30.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: https://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: http://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+- url: https://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=AWSCognitoIdentityService.LookupDeveloperIdentity'
+paths:
+  /#X-Amz-Target=AWSCognitoIdentityService.LookupDeveloperIdentity:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: LookupDeveloperIdentity
+      description: '<p>Retrieves the <code>IdentityID</code> associated with a <code>DeveloperUserIdentifier</code> or the list of <code>DeveloperUserIdentifier</code> values associated with an <code>IdentityId</code> for an existing identity. Either <code>IdentityID</code> or <code>DeveloperUserIdentifier</code> must not be null. If you supply only one of these values, the other value will be searched in the database and returned as a part of the response. If you supply both, <code>DeveloperUserIdentifier</code> will be matched against <code>IdentityID</code>. If the values are verified against the database, the response returns both values and is the same as the request. Otherwise a <code>ResourceConflictException</code> is thrown.</p> <p> <code>LookupDeveloperIdentity</code> is intended for low-throughput control plane operations: for example, to enable customer service to locate an identity ID by username. If you are using it for higher-volume operations such as user authentication, your requests are likely to be throttled. <a>GetOpenIdTokenForDeveloperIdentity</a> is a better option for higher-volume operations for user authentication.</p> <p>You must use AWS Developer credentials to call this API.</p>'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LookupDeveloperIdentityResponse'
+              examples:
+                LookupDeveloperIdentity200Example:
+                  summary: Default LookupDeveloperIdentity 200 response
+                  x-microcks-default: true
+                  value:
+                    IdentityId: us-east-1_AbCdEfGhI
+                    DeveloperUserIdentifierList: us-east-1_AbCdEfGhI
+                    NextToken: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
+        '480':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+              examples:
+                LookupDeveloperIdentity480Example:
+                  summary: Default LookupDeveloperIdentity 480 response
+                  x-microcks-default: true
+                  value: example
+        '481':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+              examples:
+                LookupDeveloperIdentity481Example:
+                  summary: Default LookupDeveloperIdentity 481 response
+                  x-microcks-default: true
+                  value: example
+        '482':
+          description: NotAuthorizedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotAuthorizedException'
+              examples:
+                LookupDeveloperIdentity482Example:
+                  summary: Default LookupDeveloperIdentity 482 response
+                  x-microcks-default: true
+                  value: example
+        '483':
+          description: ResourceConflictException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceConflictException'
+              examples:
+                LookupDeveloperIdentity483Example:
+                  summary: Default LookupDeveloperIdentity 483 response
+                  x-microcks-default: true
+                  value: example
+        '484':
+          description: TooManyRequestsException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TooManyRequestsException'
+              examples:
+                LookupDeveloperIdentity484Example:
+                  summary: Default LookupDeveloperIdentity 484 response
+                  x-microcks-default: true
+                  value: example
+        '485':
+          description: InternalErrorException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalErrorException'
+              examples:
+                LookupDeveloperIdentity485Example:
+                  summary: Default LookupDeveloperIdentity 485 response
+                  x-microcks-default: true
+                  value: example
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LookupDeveloperIdentityInput'
+            examples:
+              LookupDeveloperIdentityRequestExample:
+                summary: Default LookupDeveloperIdentity request
+                x-microcks-default: true
+                value:
+                  IdentityPoolId: us-east-1_AbCdEfGhI
+                  IdentityId: us-east-1_AbCdEfGhI
+                  DeveloperUserIdentifier: us-east-1_AbCdEfGhI
+                  MaxResults: example-value
+                  NextToken: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - AWSCognitoIdentityService.LookupDeveloperIdentity
+      summary: Amazon Cognito Lookup Developer Identity
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=AWSCognitoIdentityService.LookupDeveloperIdentity'
+components:
+  schemas:
+    ResourceNotFoundException: {}
+    IdentityId:
+      type: string
+      pattern: '[\w-]+:[0-9a-f-]+'
+      minLength: 1
+      maxLength: 55
+    IdentityPoolId:
+      type: string
+      pattern: '[\w-]+:[0-9a-f-]+'
+      minLength: 1
+      maxLength: 55
+    DeveloperUserIdentifier:
+      type: string
+      minLength: 1
+      maxLength: 1024
+    QueryLimit:
+      type: integer
+      minimum: 1
+      maximum: 60
+    InvalidParameterException: {}
+    DeveloperUserIdentifierList:
+      type: array
+      items:
+        $ref: '#/components/schemas/DeveloperUserIdentifier'
+    TooManyRequestsException: {}
+    PaginationKey:
+      type: string
+      pattern: '[\S]+'
+      minLength: 1
+      maxLength: 65535
+    LookupDeveloperIdentityResponse:
+      type: object
+      properties:
+        IdentityId:
+          allOf:
+          - $ref: '#/components/schemas/IdentityId'
+          - description: A unique identifier in the format REGION:GUID.
+        DeveloperUserIdentifierList:
+          allOf:
+          - $ref: '#/components/schemas/DeveloperUserIdentifierList'
+          - description: This is the list of developer user identifiers associated with an identity ID. Cognito supports the association of multiple developer user identifiers with an identity ID.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationKey'
+          - description: A pagination token. The first call you make will have <code>NextToken</code> set to null. After that the service will return <code>NextToken</code> values as needed. For example, let's say you make a request with <code>MaxResults</code> set to 10, and there are 20 matches in the database. The service will return a pagination token as a part of the response. This token can be used to call the API again and get results starting from the 11th match.
+      description: Returned in response to a successful <code>LookupDeveloperIdentity</code> action.
+    InternalErrorException: {}
+    NotAuthorizedException: {}
+    LookupDeveloperIdentityInput:
+      type: object
+      required:
+      - IdentityPoolId
+      title: LookupDeveloperIdentityInput
+      properties:
+        IdentityPoolId:
+          allOf:
+          - $ref: '#/components/schemas/IdentityPoolId'
+          - description: An identity pool ID in the format REGION:GUID.
+        IdentityId:
+          allOf:
+          - $ref: '#/components/schemas/IdentityId'
+          - description: A unique identifier in the format REGION:GUID.
+        DeveloperUserIdentifier:
+          allOf:
+          - $ref: '#/components/schemas/DeveloperUserIdentifier'
+          - description: A unique ID used by your backend authentication process to identify a user. Typically, a developer identity provider would issue many developer user identifiers, in keeping with the number of users.
+        MaxResults:
+          allOf:
+          - $ref: '#/components/schemas/QueryLimit'
+          - description: The maximum number of identities to return.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationKey'
+          - description: A pagination token. The first call you make will have <code>NextToken</code> set to null. After that the service will return <code>NextToken</code> values as needed. For example, let's say you make a request with <code>MaxResults</code> set to 10, and there are 20 matches in the database. The service will return a pagination token as a part of the response. This token can be used to call the API again and get results starting from the 11th match.
+      description: Input to the <code>LookupDeveloperIdentityInput</code> action.
+    ResourceConflictException: {}
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/cognito-identity/
+x-hasEquivalentPaths: true

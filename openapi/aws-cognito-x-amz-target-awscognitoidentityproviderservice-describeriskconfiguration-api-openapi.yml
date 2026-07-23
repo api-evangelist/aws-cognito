@@ -1,0 +1,541 @@
+openapi: 3.0.0
+info:
+  version: 2014-06-30
+  x-release: v4
+  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.DescribeRiskConfiguration API'
+  description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: cognito-identity
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-identity-2014-06-30.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: https://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: http://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+- url: https://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=AWSCognitoIdentityProviderService.DescribeRiskConfiguration'
+paths:
+  /#X-Amz-Target=AWSCognitoIdentityProviderService.DescribeRiskConfiguration:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: DescribeRiskConfiguration
+      description: Describes the risk configuration.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DescribeRiskConfigurationResponse'
+              examples:
+                DescribeRiskConfiguration200Example:
+                  summary: Default DescribeRiskConfiguration 200 response
+                  x-microcks-default: true
+                  value:
+                    RiskConfiguration: example-value
+        '480':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+              examples:
+                DescribeRiskConfiguration480Example:
+                  summary: Default DescribeRiskConfiguration 480 response
+                  x-microcks-default: true
+                  value: example
+        '481':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+              examples:
+                DescribeRiskConfiguration481Example:
+                  summary: Default DescribeRiskConfiguration 481 response
+                  x-microcks-default: true
+                  value: example
+        '482':
+          description: TooManyRequestsException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TooManyRequestsException'
+              examples:
+                DescribeRiskConfiguration482Example:
+                  summary: Default DescribeRiskConfiguration 482 response
+                  x-microcks-default: true
+                  value: example
+        '483':
+          description: NotAuthorizedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotAuthorizedException'
+              examples:
+                DescribeRiskConfiguration483Example:
+                  summary: Default DescribeRiskConfiguration 483 response
+                  x-microcks-default: true
+                  value: example
+        '484':
+          description: UserPoolAddOnNotEnabledException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserPoolAddOnNotEnabledException'
+              examples:
+                DescribeRiskConfiguration484Example:
+                  summary: Default DescribeRiskConfiguration 484 response
+                  x-microcks-default: true
+                  value: example
+        '485':
+          description: InternalErrorException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalErrorException'
+              examples:
+                DescribeRiskConfiguration485Example:
+                  summary: Default DescribeRiskConfiguration 485 response
+                  x-microcks-default: true
+                  value: example
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DescribeRiskConfigurationRequest'
+            examples:
+              DescribeRiskConfigurationRequestExample:
+                summary: Default DescribeRiskConfiguration request
+                x-microcks-default: true
+                value:
+                  UserPoolId: us-east-1_AbCdEfGhI
+                  ClientId: us-east-1_AbCdEfGhI
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - AWSCognitoIdentityProviderService.DescribeRiskConfiguration
+      summary: Amazon Cognito Describe Risk Configuration
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=AWSCognitoIdentityProviderService.DescribeRiskConfiguration'
+components:
+  schemas:
+    ResourceNotFoundException: {}
+    AccountTakeoverActionType:
+      type: object
+      required:
+      - Notify
+      - EventAction
+      properties:
+        Notify:
+          allOf:
+          - $ref: '#/components/schemas/AccountTakeoverActionNotifyType'
+          - description: Flag specifying whether to send a notification.
+        EventAction:
+          allOf:
+          - $ref: '#/components/schemas/AccountTakeoverEventActionType'
+          - description: <p>The action to take in response to the account takeover action. Valid values are as follows:</p> <ul> <li> <p> <code>BLOCK</code> Choosing this action will block the request.</p> </li> <li> <p> <code>MFA_IF_CONFIGURED</code> Present an MFA challenge if user has configured it, else allow the request.</p> </li> <li> <p> <code>MFA_REQUIRED</code> Present an MFA challenge if user has configured it, else block the request.</p> </li> <li> <p> <code>NO_ACTION</code> Allow the user to sign in.</p> </li> </ul>
+      description: Account takeover action type.
+    UserPoolAddOnNotEnabledException: {}
+    NotifyConfigurationType:
+      type: object
+      required:
+      - SourceArn
+      properties:
+        From:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The email address that is sending the email. The address must be either individually verified with Amazon Simple Email Service, or from a domain that has been verified with Amazon SES.
+        ReplyTo:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The destination to which the receiver of an email should reply to.
+        SourceArn:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: The Amazon Resource Name (ARN) of the identity that is associated with the sending authorization policy. This identity permits Amazon Cognito to send for the email address specified in the <code>From</code> parameter.
+        BlockEmail:
+          allOf:
+          - $ref: '#/components/schemas/NotifyEmailType'
+          - description: Email template used when a detected risk event is blocked.
+        NoActionEmail:
+          allOf:
+          - $ref: '#/components/schemas/NotifyEmailType'
+          - description: The email template used when a detected risk event is allowed.
+        MfaEmail:
+          allOf:
+          - $ref: '#/components/schemas/NotifyEmailType'
+          - description: The multi-factor authentication (MFA) email template used when MFA is challenged as part of a detected risk.
+      description: The notify configuration type.
+    AccountTakeoverActionsType:
+      type: object
+      properties:
+        LowAction:
+          allOf:
+          - $ref: '#/components/schemas/AccountTakeoverActionType'
+          - description: Action to take for a low risk.
+        MediumAction:
+          allOf:
+          - $ref: '#/components/schemas/AccountTakeoverActionType'
+          - description: Action to take for a medium risk.
+        HighAction:
+          allOf:
+          - $ref: '#/components/schemas/AccountTakeoverActionType'
+          - description: Action to take for a high risk.
+      description: Account takeover actions type.
+    DateType:
+      type: string
+      format: date-time
+    NotifyEmailType:
+      type: object
+      required:
+      - Subject
+      properties:
+        Subject:
+          allOf:
+          - $ref: '#/components/schemas/EmailNotificationSubjectType'
+          - description: The email subject.
+        HtmlBody:
+          allOf:
+          - $ref: '#/components/schemas/EmailNotificationBodyType'
+          - description: The email HTML body.
+        TextBody:
+          allOf:
+          - $ref: '#/components/schemas/EmailNotificationBodyType'
+          - description: The email text body.
+      description: The notify email type.
+    AccountTakeoverEventActionType:
+      type: string
+      enum:
+      - BLOCK
+      - MFA_IF_CONFIGURED
+      - MFA_REQUIRED
+      - NO_ACTION
+    InvalidParameterException: {}
+    SkippedIPRangeListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/StringType'
+      maxItems: 200
+    EventFiltersType:
+      type: array
+      items:
+        $ref: '#/components/schemas/EventFilterType'
+    AccountTakeoverActionNotifyType:
+      type: boolean
+    TooManyRequestsException: {}
+    InternalErrorException: {}
+    EmailNotificationSubjectType:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}\s]+'
+      minLength: 1
+      maxLength: 140
+    EventFilterType:
+      type: string
+      enum:
+      - SIGN_IN
+      - PASSWORD_CHANGE
+      - SIGN_UP
+    StringType:
+      type: string
+    DescribeRiskConfigurationRequest:
+      type: object
+      required:
+      - UserPoolId
+      title: DescribeRiskConfigurationRequest
+      properties:
+        UserPoolId:
+          allOf:
+          - $ref: '#/components/schemas/UserPoolIdType'
+          - description: The user pool ID.
+        ClientId:
+          allOf:
+          - $ref: '#/components/schemas/ClientIdType'
+          - description: The app client ID.
+    DescribeRiskConfigurationResponse:
+      type: object
+      required:
+      - RiskConfiguration
+      properties:
+        RiskConfiguration:
+          allOf:
+          - $ref: '#/components/schemas/RiskConfigurationType'
+          - description: The risk configuration.
+    NotAuthorizedException: {}
+    ClientIdType:
+      type: string
+      pattern: '[\w+]+'
+      minLength: 1
+      maxLength: 128
+      format: password
+    AccountTakeoverRiskConfigurationType:
+      type: object
+      required:
+      - Actions
+      properties:
+        NotifyConfiguration:
+          allOf:
+          - $ref: '#/components/schemas/NotifyConfigurationType'
+          - description: The notify configuration used to construct email notifications.
+        Actions:
+          allOf:
+          - $ref: '#/components/schemas/AccountTakeoverActionsType'
+          - description: Account takeover risk configuration actions.
+      description: Configuration for mitigation actions and notification for different levels of risk detected for a potential account takeover.
+    CompromisedCredentialsActionsType:
+      type: object
+      required:
+      - EventAction
+      properties:
+        EventAction:
+          allOf:
+          - $ref: '#/components/schemas/CompromisedCredentialsEventActionType'
+          - description: The event action.
+      description: The compromised credentials actions type.
+    RiskConfigurationType:
+      type: object
+      properties:
+        UserPoolId:
+          allOf:
+          - $ref: '#/components/schemas/UserPoolIdType'
+          - description: The user pool ID.
+        ClientId:
+          allOf:
+          - $ref: '#/components/schemas/ClientIdType'
+          - description: The app client ID.
+        CompromisedCredentialsRiskConfiguration:
+          allOf:
+          - $ref: '#/components/schemas/CompromisedCredentialsRiskConfigurationType'
+          - description: The compromised credentials risk configuration object, including the <code>EventFilter</code> and the <code>EventAction</code>.
+        AccountTakeoverRiskConfiguration:
+          allOf:
+          - $ref: '#/components/schemas/AccountTakeoverRiskConfigurationType'
+          - description: The account takeover risk configuration object, including the <code>NotifyConfiguration</code> object and <code>Actions</code> to take if there is an account takeover.
+        RiskExceptionConfiguration:
+          allOf:
+          - $ref: '#/components/schemas/RiskExceptionConfigurationType'
+          - description: The configuration to override the risk decision.
+        LastModifiedDate:
+          allOf:
+          - $ref: '#/components/schemas/DateType'
+          - description: The last modified date.
+      description: The risk configuration type.
+    UserPoolIdType:
+      type: string
+      pattern: '[\w-]+_[0-9a-zA-Z]+'
+      minLength: 1
+      maxLength: 55
+    EmailNotificationBodyType:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]+'
+      minLength: 6
+      maxLength: 20000
+    ArnType:
+      type: string
+      pattern: arn:[\w+=/,.@-]+:[\w+=/,.@-]+:([\w+=/,.@-]*)?:[0-9]+:[\w+=/,.@-]+(:[\w+=/,.@-]+)?(:[\w+=/,.@-]+)?
+      minLength: 20
+      maxLength: 2048
+    CompromisedCredentialsRiskConfigurationType:
+      type: object
+      required:
+      - Actions
+      properties:
+        EventFilter:
+          allOf:
+          - $ref: '#/components/schemas/EventFiltersType'
+          - description: Perform the action for these events. The default is to perform all events if no event filter is specified.
+        Actions:
+          allOf:
+          - $ref: '#/components/schemas/CompromisedCredentialsActionsType'
+          - description: The compromised credentials risk configuration actions.
+      description: The compromised credentials risk configuration type.
+    RiskExceptionConfigurationType:
+      type: object
+      properties:
+        BlockedIPRangeList:
+          allOf:
+          - $ref: '#/components/schemas/BlockedIPRangeListType'
+          - description: Overrides the risk decision to always block the pre-authentication requests. The IP range is in CIDR notation, a compact representation of an IP address and its routing prefix.
+        SkippedIPRangeList:
+          allOf:
+          - $ref: '#/components/schemas/SkippedIPRangeListType'
+          - description: Risk detection isn't performed on the IP addresses in this range list. The IP range is in CIDR notation.
+      description: The type of the configuration to override the risk decision.
+    CompromisedCredentialsEventActionType:
+      type: string
+      enum:
+      - BLOCK
+      - NO_ACTION
+    BlockedIPRangeListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/StringType'
+      maxItems: 200
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/cognito-identity/
+x-hasEquivalentPaths: true

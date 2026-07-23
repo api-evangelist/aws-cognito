@@ -1,0 +1,500 @@
+openapi: 3.0.0
+info:
+  version: 2014-06-30
+  x-release: v4
+  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.ConfirmSignUp API'
+  description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: cognito-identity
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-identity-2014-06-30.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: https://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: http://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+- url: https://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=AWSCognitoIdentityProviderService.ConfirmSignUp'
+paths:
+  /#X-Amz-Target=AWSCognitoIdentityProviderService.ConfirmSignUp:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: ConfirmSignUp
+      description: Confirms registration of a new user.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfirmSignUpResponse'
+        '480':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+              examples:
+                ConfirmSignUp480Example:
+                  summary: Default ConfirmSignUp 480 response
+                  x-microcks-default: true
+                  value: example
+        '481':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+              examples:
+                ConfirmSignUp481Example:
+                  summary: Default ConfirmSignUp 481 response
+                  x-microcks-default: true
+                  value: example
+        '482':
+          description: UnexpectedLambdaException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UnexpectedLambdaException'
+              examples:
+                ConfirmSignUp482Example:
+                  summary: Default ConfirmSignUp 482 response
+                  x-microcks-default: true
+                  value: example
+        '483':
+          description: UserLambdaValidationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserLambdaValidationException'
+              examples:
+                ConfirmSignUp483Example:
+                  summary: Default ConfirmSignUp 483 response
+                  x-microcks-default: true
+                  value: example
+        '484':
+          description: NotAuthorizedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotAuthorizedException'
+              examples:
+                ConfirmSignUp484Example:
+                  summary: Default ConfirmSignUp 484 response
+                  x-microcks-default: true
+                  value: example
+        '485':
+          description: TooManyFailedAttemptsException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TooManyFailedAttemptsException'
+              examples:
+                ConfirmSignUp485Example:
+                  summary: Default ConfirmSignUp 485 response
+                  x-microcks-default: true
+                  value: example
+        '486':
+          description: CodeMismatchException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CodeMismatchException'
+              examples:
+                ConfirmSignUp486Example:
+                  summary: Default ConfirmSignUp 486 response
+                  x-microcks-default: true
+                  value: example
+        '487':
+          description: ExpiredCodeException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExpiredCodeException'
+              examples:
+                ConfirmSignUp487Example:
+                  summary: Default ConfirmSignUp 487 response
+                  x-microcks-default: true
+                  value: example
+        '488':
+          description: InvalidLambdaResponseException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidLambdaResponseException'
+              examples:
+                ConfirmSignUp488Example:
+                  summary: Default ConfirmSignUp 488 response
+                  x-microcks-default: true
+                  value: example
+        '489':
+          description: AliasExistsException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AliasExistsException'
+              examples:
+                ConfirmSignUp489Example:
+                  summary: Default ConfirmSignUp 489 response
+                  x-microcks-default: true
+                  value: example
+        '490':
+          description: TooManyRequestsException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TooManyRequestsException'
+              examples:
+                ConfirmSignUp490Example:
+                  summary: Default ConfirmSignUp 490 response
+                  x-microcks-default: true
+                  value: example
+        '491':
+          description: LimitExceededException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LimitExceededException'
+              examples:
+                ConfirmSignUp491Example:
+                  summary: Default ConfirmSignUp 491 response
+                  x-microcks-default: true
+                  value: example
+        '492':
+          description: UserNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserNotFoundException'
+              examples:
+                ConfirmSignUp492Example:
+                  summary: Default ConfirmSignUp 492 response
+                  x-microcks-default: true
+                  value: example
+        '493':
+          description: InternalErrorException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalErrorException'
+              examples:
+                ConfirmSignUp493Example:
+                  summary: Default ConfirmSignUp 493 response
+                  x-microcks-default: true
+                  value: example
+        '494':
+          description: ForbiddenException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ForbiddenException'
+              examples:
+                ConfirmSignUp494Example:
+                  summary: Default ConfirmSignUp 494 response
+                  x-microcks-default: true
+                  value: example
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfirmSignUpRequest'
+            examples:
+              ConfirmSignUpRequestExample:
+                summary: Default ConfirmSignUp request
+                x-microcks-default: true
+                value:
+                  ClientId: us-east-1_AbCdEfGhI
+                  SecretHash: example-value
+                  Username: my-user-pool
+                  ConfirmationCode: example-value
+                  ForceAliasCreation: example-value
+                  AnalyticsMetadata: example-value
+                  UserContextData: example-value
+                  ClientMetadata: example-value
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - AWSCognitoIdentityProviderService.ConfirmSignUp
+      summary: Amazon Cognito Confirm Sign Up
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=AWSCognitoIdentityProviderService.ConfirmSignUp'
+components:
+  schemas:
+    ResourceNotFoundException: {}
+    UserNotFoundException: {}
+    UnexpectedLambdaException: {}
+    ExpiredCodeException: {}
+    CodeMismatchException: {}
+    InvalidParameterException: {}
+    SecretHashType:
+      type: string
+      pattern: '[\w+=/]+'
+      minLength: 1
+      maxLength: 128
+      format: password
+    UserContextDataType:
+      type: object
+      properties:
+        IpAddress:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The source IP address of your user's device.
+        EncodedData:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: Encoded device-fingerprint details that your app collected with the Amazon Cognito context data collection library. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pool-settings-adaptive-authentication.html#user-pool-settings-adaptive-authentication-device-fingerprint">Adding user device and session data to API requests</a>.
+      description: Contextual data, such as the user's device fingerprint, IP address, or location, used for evaluating the risk of an unexpected event by Amazon Cognito advanced security.
+    ConfirmationCodeType:
+      type: string
+      pattern: '[\S]+'
+      minLength: 1
+      maxLength: 2048
+    TooManyRequestsException: {}
+    InternalErrorException: {}
+    ClientMetadataType:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/StringType'
+    StringType:
+      type: string
+    LimitExceededException: {}
+    ConfirmSignUpRequest:
+      type: object
+      required:
+      - ClientId
+      - Username
+      - ConfirmationCode
+      title: ConfirmSignUpRequest
+      properties:
+        ClientId:
+          allOf:
+          - $ref: '#/components/schemas/ClientIdType'
+          - description: The ID of the app client associated with the user pool.
+        SecretHash:
+          allOf:
+          - $ref: '#/components/schemas/SecretHashType'
+          - description: A keyed-hash message authentication code (HMAC) calculated using the secret key of a user pool client and username plus the client ID in the message.
+        Username:
+          allOf:
+          - $ref: '#/components/schemas/UsernameType'
+          - description: The user name of the user whose registration you want to confirm.
+        ConfirmationCode:
+          allOf:
+          - $ref: '#/components/schemas/ConfirmationCodeType'
+          - description: The confirmation code sent by a user's request to confirm registration.
+        ForceAliasCreation:
+          allOf:
+          - $ref: '#/components/schemas/ForceAliasCreation'
+          - description: Boolean to be specified to force user confirmation irrespective of existing alias. By default set to <code>False</code>. If this parameter is set to <code>True</code> and the phone number/email used for sign up confirmation already exists as an alias with a different user, the API call will migrate the alias from the previous user to the newly created user being confirmed. If set to <code>False</code>, the API will throw an <b>AliasExistsException</b> error.
+        AnalyticsMetadata:
+          allOf:
+          - $ref: '#/components/schemas/AnalyticsMetadataType'
+          - description: The Amazon Pinpoint analytics metadata for collecting metrics for <code>ConfirmSignUp</code> calls.
+        UserContextData:
+          allOf:
+          - $ref: '#/components/schemas/UserContextDataType'
+          - description: Contextual data about your user session, such as the device fingerprint, IP address, or location. Amazon Cognito advanced security evaluates the risk of an authentication event based on the context that your app generates and passes to Amazon Cognito when it makes API requests.
+        ClientMetadata:
+          allOf:
+          - $ref: '#/components/schemas/ClientMetadataType'
+          - description: <p>A map of custom key-value pairs that you can provide as input for any custom workflows that this action triggers.</p> <p>You create custom workflows by assigning Lambda functions to user pool triggers. When you use the ConfirmSignUp API action, Amazon Cognito invokes the function that is assigned to the <i>post confirmation</i> trigger. When Amazon Cognito invokes this function, it passes a JSON payload, which the function receives as input. This payload contains a <code>clientMetadata</code> attribute, which provides the data that you assigned to the ClientMetadata parameter in your ConfirmSignUp request. In your function code in Lambda, you can process the <code>clientMetadata</code> value to enhance your workflow for your specific needs.</p> <p>For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools-working-with-aws-lambda-triggers.html"> Customizing user pool Workflows with Lambda Triggers</a> in the <i>Amazon Cognito Developer Guide</i>.</p> <note> <p>When you use the ClientMetadata parameter, remember that Amazon Cognito won't do the following:</p> <ul> <li> <p>Store the ClientMetadata value. This data is available only to Lambda triggers that are assigned to a user pool to support custom workflows. If your user pool configuration doesn't include triggers, the ClientMetadata parameter serves no purpose.</p> </li> <li> <p>Validate the ClientMetadata value.</p> </li> <li> <p>Encrypt the ClientMetadata value. Don't use Amazon Cognito to provide sensitive information.</p> </li> </ul> </note>
+      description: Represents the request to confirm registration of a user.
+    InvalidLambdaResponseException: {}
+    NotAuthorizedException: {}
+    AliasExistsException: {}
+    ClientIdType:
+      type: string
+      pattern: '[\w+]+'
+      minLength: 1
+      maxLength: 128
+      format: password
+    AnalyticsMetadataType:
+      type: object
+      properties:
+        AnalyticsEndpointId:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The endpoint ID.
+      description: <p>An Amazon Pinpoint analytics endpoint.</p> <p>An endpoint uniquely identifies a mobile device, email address, or phone number that can receive messages from Amazon Pinpoint analytics. For more information about Amazon Web Services Regions that can contain Amazon Pinpoint resources for use with Amazon Cognito user pools, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.html">Using Amazon Pinpoint analytics with Amazon Cognito user pools</a>.</p>
+    ConfirmSignUpResponse:
+      type: object
+      properties: {}
+      description: Represents the response from the server for the registration confirmation.
+    UsernameType:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
+      minLength: 1
+      maxLength: 128
+      format: password
+    UserLambdaValidationException: {}
+    ForceAliasCreation:
+      type: boolean
+    ForbiddenException: {}
+    TooManyFailedAttemptsException: {}
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/cognito-identity/
+x-hasEquivalentPaths: true

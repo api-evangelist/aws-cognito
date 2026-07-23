@@ -1,0 +1,423 @@
+openapi: 3.0.0
+info:
+  version: 2014-06-30
+  x-release: v4
+  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityService.SetIdentityPoolRoles API'
+  description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: cognito-identity
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-identity-2014-06-30.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: https://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: http://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+- url: https://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=AWSCognitoIdentityService.SetIdentityPoolRoles'
+paths:
+  /#X-Amz-Target=AWSCognitoIdentityService.SetIdentityPoolRoles:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: SetIdentityPoolRoles
+      description: <p>Sets the roles for an identity pool. These roles are used when making calls to <a>GetCredentialsForIdentity</a> action.</p> <p>You must use AWS Developer credentials to call this API.</p>
+      responses:
+        '200':
+          description: Success
+        '480':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+              examples:
+                SetIdentityPoolRoles480Example:
+                  summary: Default SetIdentityPoolRoles 480 response
+                  x-microcks-default: true
+                  value: example
+        '481':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+              examples:
+                SetIdentityPoolRoles481Example:
+                  summary: Default SetIdentityPoolRoles 481 response
+                  x-microcks-default: true
+                  value: example
+        '482':
+          description: NotAuthorizedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotAuthorizedException'
+              examples:
+                SetIdentityPoolRoles482Example:
+                  summary: Default SetIdentityPoolRoles 482 response
+                  x-microcks-default: true
+                  value: example
+        '483':
+          description: ResourceConflictException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceConflictException'
+              examples:
+                SetIdentityPoolRoles483Example:
+                  summary: Default SetIdentityPoolRoles 483 response
+                  x-microcks-default: true
+                  value: example
+        '484':
+          description: TooManyRequestsException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TooManyRequestsException'
+              examples:
+                SetIdentityPoolRoles484Example:
+                  summary: Default SetIdentityPoolRoles 484 response
+                  x-microcks-default: true
+                  value: example
+        '485':
+          description: InternalErrorException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalErrorException'
+              examples:
+                SetIdentityPoolRoles485Example:
+                  summary: Default SetIdentityPoolRoles 485 response
+                  x-microcks-default: true
+                  value: example
+        '486':
+          description: ConcurrentModificationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConcurrentModificationException'
+              examples:
+                SetIdentityPoolRoles486Example:
+                  summary: Default SetIdentityPoolRoles 486 response
+                  x-microcks-default: true
+                  value: example
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SetIdentityPoolRolesInput'
+            examples:
+              SetIdentityPoolRolesRequestExample:
+                summary: Default SetIdentityPoolRoles request
+                x-microcks-default: true
+                value:
+                  IdentityPoolId: us-east-1_AbCdEfGhI
+                  Roles: example-value
+                  RoleMappings: example-value
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - AWSCognitoIdentityService.SetIdentityPoolRoles
+      summary: Amazon Cognito Set Identity Pool Roles
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=AWSCognitoIdentityService.SetIdentityPoolRoles'
+components:
+  schemas:
+    ResourceNotFoundException: {}
+    MappingRuleMatchType:
+      type: string
+      enum:
+      - Equals
+      - Contains
+      - StartsWith
+      - NotEqual
+    RolesMap:
+      type: object
+      maxProperties: 2
+      additionalProperties:
+        $ref: '#/components/schemas/ARNString'
+    IdentityPoolId:
+      type: string
+      pattern: '[\w-]+:[0-9a-f-]+'
+      minLength: 1
+      maxLength: 55
+    ARNString:
+      type: string
+      minLength: 20
+      maxLength: 2048
+    SetIdentityPoolRolesInput:
+      type: object
+      required:
+      - IdentityPoolId
+      - Roles
+      title: SetIdentityPoolRolesInput
+      properties:
+        IdentityPoolId:
+          allOf:
+          - $ref: '#/components/schemas/IdentityPoolId'
+          - description: An identity pool ID in the format REGION:GUID.
+        Roles:
+          allOf:
+          - $ref: '#/components/schemas/RolesMap'
+          - description: The map of roles associated with this pool. For a given role, the key will be either "authenticated" or "unauthenticated" and the value will be the Role ARN.
+        RoleMappings:
+          allOf:
+          - $ref: '#/components/schemas/RoleMappingMap'
+          - description: <p>How users for a specific identity provider are to mapped to roles. This is a string to <a>RoleMapping</a> object map. The string identifies the identity provider, for example, "graph.facebook.com" or "cognito-idp.us-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id".</p> <p>Up to 25 rules can be specified per identity provider.</p>
+      description: Input to the <code>SetIdentityPoolRoles</code> action.
+    MappingRulesList:
+      type: array
+      items:
+        $ref: '#/components/schemas/MappingRule'
+      minItems: 1
+      maxItems: 400
+    InvalidParameterException: {}
+    ClaimName:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
+      minLength: 1
+      maxLength: 64
+    TooManyRequestsException: {}
+    InternalErrorException: {}
+    RoleMappingMap:
+      type: object
+      maxProperties: 10
+      additionalProperties:
+        $ref: '#/components/schemas/RoleMapping'
+    AmbiguousRoleResolutionType:
+      type: string
+      enum:
+      - AuthenticatedRole
+      - Deny
+    NotAuthorizedException: {}
+    RulesConfigurationType:
+      type: object
+      required:
+      - Rules
+      properties:
+        Rules:
+          allOf:
+          - $ref: '#/components/schemas/MappingRulesList'
+          - description: <p>An array of rules. You can specify up to 25 rules per identity provider.</p> <p>Rules are evaluated in order. The first one to match specifies the role.</p>
+      description: A container for rules.
+    MappingRule:
+      type: object
+      required:
+      - Claim
+      - MatchType
+      - Value
+      - RoleARN
+      properties:
+        Claim:
+          allOf:
+          - $ref: '#/components/schemas/ClaimName'
+          - description: The claim name that must be present in the token, for example, "isAdmin" or "paid".
+        MatchType:
+          allOf:
+          - $ref: '#/components/schemas/MappingRuleMatchType'
+          - description: The match condition that specifies how closely the claim value in the IdP token must match <code>Value</code>.
+        Value:
+          allOf:
+          - $ref: '#/components/schemas/ClaimValue'
+          - description: A brief string that the claim must match, for example, "paid" or "yes".
+        RoleARN:
+          allOf:
+          - $ref: '#/components/schemas/ARNString'
+          - description: The role ARN.
+      description: A rule that maps a claim name, a claim value, and a match type to a role ARN.
+    ConcurrentModificationException: {}
+    ResourceConflictException: {}
+    ClaimValue:
+      type: string
+      minLength: 1
+      maxLength: 128
+    RoleMapping:
+      type: object
+      required:
+      - Type
+      properties:
+        Type:
+          allOf:
+          - $ref: '#/components/schemas/RoleMappingType'
+          - description: The role mapping type. Token will use <code>cognito:roles</code> and <code>cognito:preferred_role</code> claims from the Cognito identity provider token to map groups to roles. Rules will attempt to match claims from the token to map to a role.
+        AmbiguousRoleResolution:
+          allOf:
+          - $ref: '#/components/schemas/AmbiguousRoleResolutionType'
+          - description: <p>If you specify Token or Rules as the <code>Type</code>, <code>AmbiguousRoleResolution</code> is required.</p> <p>Specifies the action to be taken if either no rules match the claim value for the <code>Rules</code> type, or there is no <code>cognito:preferred_role</code> claim and there are multiple <code>cognito:roles</code> matches for the <code>Token</code> type.</p>
+        RulesConfiguration:
+          allOf:
+          - $ref: '#/components/schemas/RulesConfigurationType'
+          - description: <p>The rules to be used for mapping users to roles.</p> <p>If you specify Rules as the role mapping type, <code>RulesConfiguration</code> is required.</p>
+      description: A role mapping.
+    RoleMappingType:
+      type: string
+      enum:
+      - Token
+      - Rules
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/cognito-identity/
+x-hasEquivalentPaths: true

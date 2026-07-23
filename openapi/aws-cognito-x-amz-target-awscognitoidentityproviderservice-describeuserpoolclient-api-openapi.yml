@@ -1,0 +1,590 @@
+openapi: 3.0.0
+info:
+  version: 2014-06-30
+  x-release: v4
+  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.DescribeUserPoolClient API'
+  description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: cognito-identity
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-identity-2014-06-30.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: https://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: http://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+- url: https://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=AWSCognitoIdentityProviderService.DescribeUserPoolClient'
+paths:
+  /#X-Amz-Target=AWSCognitoIdentityProviderService.DescribeUserPoolClient:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: DescribeUserPoolClient
+      description: Client method for returning the configuration information and metadata of the specified user pool app client.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DescribeUserPoolClientResponse'
+              examples:
+                DescribeUserPoolClient200Example:
+                  summary: Default DescribeUserPoolClient 200 response
+                  x-microcks-default: true
+                  value:
+                    UserPoolClient: example-value
+        '480':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+              examples:
+                DescribeUserPoolClient480Example:
+                  summary: Default DescribeUserPoolClient 480 response
+                  x-microcks-default: true
+                  value: example
+        '481':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+              examples:
+                DescribeUserPoolClient481Example:
+                  summary: Default DescribeUserPoolClient 481 response
+                  x-microcks-default: true
+                  value: example
+        '482':
+          description: TooManyRequestsException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TooManyRequestsException'
+              examples:
+                DescribeUserPoolClient482Example:
+                  summary: Default DescribeUserPoolClient 482 response
+                  x-microcks-default: true
+                  value: example
+        '483':
+          description: NotAuthorizedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotAuthorizedException'
+              examples:
+                DescribeUserPoolClient483Example:
+                  summary: Default DescribeUserPoolClient 483 response
+                  x-microcks-default: true
+                  value: example
+        '484':
+          description: InternalErrorException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalErrorException'
+              examples:
+                DescribeUserPoolClient484Example:
+                  summary: Default DescribeUserPoolClient 484 response
+                  x-microcks-default: true
+                  value: example
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DescribeUserPoolClientRequest'
+            examples:
+              DescribeUserPoolClientRequestExample:
+                summary: Default DescribeUserPoolClient request
+                x-microcks-default: true
+                value:
+                  UserPoolId: us-east-1_AbCdEfGhI
+                  ClientId: us-east-1_AbCdEfGhI
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - AWSCognitoIdentityProviderService.DescribeUserPoolClient
+      summary: Amazon Cognito Describe User Pool Client
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=AWSCognitoIdentityProviderService.DescribeUserPoolClient'
+components:
+  schemas:
+    CallbackURLsListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/RedirectUrlType'
+      minItems: 0
+      maxItems: 100
+    ResourceNotFoundException: {}
+    ProviderNameType:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
+      minLength: 1
+      maxLength: 32
+    AccessTokenValidityType:
+      type: integer
+      minimum: 1
+      maximum: 86400
+    DateType:
+      type: string
+      format: date-time
+    ScopeType:
+      type: string
+      pattern: '[\x21\x23-\x5B\x5D-\x7E]+'
+      minLength: 1
+      maxLength: 256
+    PreventUserExistenceErrorTypes:
+      type: string
+      enum:
+      - LEGACY
+      - ENABLED
+    InvalidParameterException: {}
+    AuthSessionValidityType:
+      type: integer
+      minimum: 3
+      maximum: 15
+    OAuthFlowsType:
+      type: array
+      items:
+        $ref: '#/components/schemas/OAuthFlowType'
+      minItems: 0
+      maxItems: 3
+    TooManyRequestsException: {}
+    DescribeUserPoolClientResponse:
+      type: object
+      properties:
+        UserPoolClient:
+          allOf:
+          - $ref: '#/components/schemas/UserPoolClientType'
+          - description: The user pool client from a server response to describe the user pool client.
+      description: Represents the response from the server from a request to describe the user pool client.
+    InternalErrorException: {}
+    HexStringType:
+      type: string
+      pattern: ^[0-9a-fA-F]+$
+    StringType:
+      type: string
+    TimeUnitsType:
+      type: string
+      enum:
+      - seconds
+      - minutes
+      - hours
+      - days
+    NotAuthorizedException: {}
+    RefreshTokenValidityType:
+      type: integer
+      minimum: 0
+      maximum: 315360000
+    WrappedBooleanType:
+      type: boolean
+    ExplicitAuthFlowsType:
+      type: string
+      enum:
+      - ADMIN_NO_SRP_AUTH
+      - CUSTOM_AUTH_FLOW_ONLY
+      - USER_PASSWORD_AUTH
+      - ALLOW_ADMIN_USER_PASSWORD_AUTH
+      - ALLOW_CUSTOM_AUTH
+      - ALLOW_USER_PASSWORD_AUTH
+      - ALLOW_USER_SRP_AUTH
+      - ALLOW_REFRESH_TOKEN_AUTH
+    ClientIdType:
+      type: string
+      pattern: '[\w+]+'
+      minLength: 1
+      maxLength: 128
+      format: password
+    ScopeListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/ScopeType'
+      maxItems: 50
+    IdTokenValidityType:
+      type: integer
+      minimum: 1
+      maximum: 86400
+    LogoutURLsListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/RedirectUrlType'
+      minItems: 0
+      maxItems: 100
+    DescribeUserPoolClientRequest:
+      type: object
+      required:
+      - UserPoolId
+      - ClientId
+      title: DescribeUserPoolClientRequest
+      properties:
+        UserPoolId:
+          allOf:
+          - $ref: '#/components/schemas/UserPoolIdType'
+          - description: The user pool ID for the user pool you want to describe.
+        ClientId:
+          allOf:
+          - $ref: '#/components/schemas/ClientIdType'
+          - description: The app client ID of the app associated with the user pool.
+      description: Represents the request to describe a user pool client.
+    SupportedIdentityProvidersListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/ProviderNameType'
+    ExplicitAuthFlowsListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/ExplicitAuthFlowsType'
+    TokenValidityUnitsType:
+      type: object
+      properties:
+        AccessToken:
+          allOf:
+          - $ref: '#/components/schemas/TimeUnitsType'
+          - description: ' A time unit of <code>seconds</code>, <code>minutes</code>, <code>hours</code>, or <code>days</code> for the value that you set in the <code>AccessTokenValidity</code> parameter. The default <code>AccessTokenValidity</code> time unit is hours.'
+        IdToken:
+          allOf:
+          - $ref: '#/components/schemas/TimeUnitsType'
+          - description: A time unit of <code>seconds</code>, <code>minutes</code>, <code>hours</code>, or <code>days</code> for the value that you set in the <code>IdTokenValidity</code> parameter. The default <code>IdTokenValidity</code> time unit is hours.
+        RefreshToken:
+          allOf:
+          - $ref: '#/components/schemas/TimeUnitsType'
+          - description: A time unit of <code>seconds</code>, <code>minutes</code>, <code>hours</code>, or <code>days</code> for the value that you set in the <code>RefreshTokenValidity</code> parameter. The default <code>RefreshTokenValidity</code> time unit is days.
+      description: The data type TokenValidityUnits specifies the time units you use when you set the duration of ID, access, and refresh tokens.
+    UserPoolClientType:
+      type: object
+      properties:
+        UserPoolId:
+          allOf:
+          - $ref: '#/components/schemas/UserPoolIdType'
+          - description: The user pool ID for the user pool client.
+        ClientName:
+          allOf:
+          - $ref: '#/components/schemas/ClientNameType'
+          - description: The client name from the user pool request of the client type.
+        ClientId:
+          allOf:
+          - $ref: '#/components/schemas/ClientIdType'
+          - description: The ID of the client associated with the user pool.
+        ClientSecret:
+          allOf:
+          - $ref: '#/components/schemas/ClientSecretType'
+          - description: The client secret from the user pool request of the client type.
+        LastModifiedDate:
+          allOf:
+          - $ref: '#/components/schemas/DateType'
+          - description: The date the user pool client was last modified.
+        CreationDate:
+          allOf:
+          - $ref: '#/components/schemas/DateType'
+          - description: The date the user pool client was created.
+        RefreshTokenValidity:
+          allOf:
+          - $ref: '#/components/schemas/RefreshTokenValidityType'
+          - description: <p>The refresh token time limit. After this limit expires, your user can't use their refresh token. To specify the time unit for <code>RefreshTokenValidity</code> as <code>seconds</code>, <code>minutes</code>, <code>hours</code>, or <code>days</code>, set a <code>TokenValidityUnits</code> value in your API request.</p> <p>For example, when you set <code>RefreshTokenValidity</code> as <code>10</code> and <code>TokenValidityUnits</code> as <code>days</code>, your user can refresh their session and retrieve new access and ID tokens for 10 days.</p> <p>The default time unit for <code>RefreshTokenValidity</code> in an API request is days. You can't set <code>RefreshTokenValidity</code> to 0. If you do, Amazon Cognito overrides the value with the default value of 30 days. <i>Valid range</i> is displayed below in seconds.</p> <p>If you don't specify otherwise in the configuration of your app client, your refresh tokens are valid for 30 days.</p>
+        AccessTokenValidity:
+          allOf:
+          - $ref: '#/components/schemas/AccessTokenValidityType'
+          - description: <p>The access token time limit. After this limit expires, your user can't use their access token. To specify the time unit for <code>AccessTokenValidity</code> as <code>seconds</code>, <code>minutes</code>, <code>hours</code>, or <code>days</code>, set a <code>TokenValidityUnits</code> value in your API request.</p> <p>For example, when you set <code>AccessTokenValidity</code> to <code>10</code> and <code>TokenValidityUnits</code> to <code>hours</code>, your user can authorize access with their access token for 10 hours.</p> <p>The default time unit for <code>AccessTokenValidity</code> in an API request is hours. <i>Valid range</i> is displayed below in seconds.</p> <p>If you don't specify otherwise in the configuration of your app client, your access tokens are valid for one hour.</p>
+        IdTokenValidity:
+          allOf:
+          - $ref: '#/components/schemas/IdTokenValidityType'
+          - description: <p>The ID token time limit. After this limit expires, your user can't use their ID token. To specify the time unit for <code>IdTokenValidity</code> as <code>seconds</code>, <code>minutes</code>, <code>hours</code>, or <code>days</code>, set a <code>TokenValidityUnits</code> value in your API request.</p> <p>For example, when you set <code>IdTokenValidity</code> as <code>10</code> and <code>TokenValidityUnits</code> as <code>hours</code>, your user can authenticate their session with their ID token for 10 hours.</p> <p>The default time unit for <code>AccessTokenValidity</code> in an API request is hours. <i>Valid range</i> is displayed below in seconds.</p> <p>If you don't specify otherwise in the configuration of your app client, your ID tokens are valid for one hour.</p>
+        TokenValidityUnits:
+          allOf:
+          - $ref: '#/components/schemas/TokenValidityUnitsType'
+          - description: 'The time units used to specify the token validity times of each token type: ID, access, and refresh.'
+        ReadAttributes:
+          allOf:
+          - $ref: '#/components/schemas/ClientPermissionListType'
+          - description: The Read-only attributes.
+        WriteAttributes:
+          allOf:
+          - $ref: '#/components/schemas/ClientPermissionListType'
+          - description: The writeable attributes.
+        ExplicitAuthFlows:
+          allOf:
+          - $ref: '#/components/schemas/ExplicitAuthFlowsListType'
+          - description: '<p>The authentication flows that you want your user pool client to support. For each app client in your user pool, you can sign in your users with any combination of one or more flows, including with a user name and Secure Remote Password (SRP), a user name and password, or a custom authentication process that you define with Lambda functions.</p> <note> <p>If you don''t specify a value for <code>ExplicitAuthFlows</code>, your user client supports <code>ALLOW_REFRESH_TOKEN_AUTH</code>, <code>ALLOW_USER_SRP_AUTH</code>, and <code>ALLOW_CUSTOM_AUTH</code>.</p> </note> <p>Valid values include:</p> <ul> <li> <p> <code>ALLOW_ADMIN_USER_PASSWORD_AUTH</code>: Enable admin based user password authentication flow <code>ADMIN_USER_PASSWORD_AUTH</code>. This setting replaces the <code>ADMIN_NO_SRP_AUTH</code> setting. With this authentication flow, your app passes a user name and password to Amazon Cognito in the request, instead of using the Secure Remote Password (SRP) protocol to securely transmit the password.</p> </li> <li> <p> <code>ALLOW_CUSTOM_AUTH</code>: Enable Lambda trigger based authentication.</p> </li> <li> <p> <code>ALLOW_USER_PASSWORD_AUTH</code>: Enable user password-based authentication. In this flow, Amazon Cognito receives the password in the request instead of using the SRP protocol to verify passwords.</p> </li> <li> <p> <code>ALLOW_USER_SRP_AUTH</code>: Enable SRP-based authentication.</p> </li> <li> <p> <code>ALLOW_REFRESH_TOKEN_AUTH</code>: Enable authflow to refresh tokens.</p> </li> </ul> <p>In some environments, you will see the values <code>ADMIN_NO_SRP_AUTH</code>, <code>CUSTOM_AUTH_FLOW_ONLY</code>, or <code>USER_PASSWORD_AUTH</code>. You can''t assign these legacy <code>ExplicitAuthFlows</code> values to user pool clients at the same time as values that begin with <code>ALLOW_</code>, like <code>ALLOW_USER_SRP_AUTH</code>.</p>'
+        SupportedIdentityProviders:
+          allOf:
+          - $ref: '#/components/schemas/SupportedIdentityProvidersListType'
+          - description: 'A list of provider names for the IdPs that this client supports. The following are supported: <code>COGNITO</code>, <code>Facebook</code>, <code>Google</code>, <code>SignInWithApple</code>, <code>LoginWithAmazon</code>, and the names of your own SAML and OIDC providers.'
+        CallbackURLs:
+          allOf:
+          - $ref: '#/components/schemas/CallbackURLsListType'
+          - description: <p>A list of allowed redirect (callback) URLs for the IdPs.</p> <p>A redirect URI must:</p> <ul> <li> <p>Be an absolute URI.</p> </li> <li> <p>Be registered with the authorization server.</p> </li> <li> <p>Not include a fragment component.</p> </li> </ul> <p>See <a href="https://tools.ietf.org/html/rfc6749#section-3.1.2">OAuth 2.0 - Redirection Endpoint</a>.</p> <p>Amazon Cognito requires HTTPS over HTTP except for http://localhost for testing purposes only.</p> <p>App callback URLs such as myapp://example are also supported.</p>
+        LogoutURLs:
+          allOf:
+          - $ref: '#/components/schemas/LogoutURLsListType'
+          - description: A list of allowed logout URLs for the IdPs.
+        DefaultRedirectURI:
+          allOf:
+          - $ref: '#/components/schemas/RedirectUrlType'
+          - description: <p>The default redirect URI. Must be in the <code>CallbackURLs</code> list.</p> <p>A redirect URI must:</p> <ul> <li> <p>Be an absolute URI.</p> </li> <li> <p>Be registered with the authorization server.</p> </li> <li> <p>Not include a fragment component.</p> </li> </ul> <p>See <a href="https://tools.ietf.org/html/rfc6749#section-3.1.2">OAuth 2.0 - Redirection Endpoint</a>.</p> <p>Amazon Cognito requires HTTPS over HTTP except for http://localhost for testing purposes only.</p> <p>App callback URLs such as myapp://example are also supported.</p>
+        AllowedOAuthFlows:
+          allOf:
+          - $ref: '#/components/schemas/OAuthFlowsType'
+          - description: <p>The allowed OAuth flows.</p> <dl> <dt>code</dt> <dd> <p>Use a code grant flow, which provides an authorization code as the response. This code can be exchanged for access tokens with the <code>/oauth2/token</code> endpoint.</p> </dd> <dt>implicit</dt> <dd> <p>Issue the access token (and, optionally, ID token, based on scopes) directly to your user.</p> </dd> <dt>client_credentials</dt> <dd> <p>Issue the access token from the <code>/oauth2/token</code> endpoint directly to a non-person user using a combination of the client ID and client secret.</p> </dd> </dl>
+        AllowedOAuthScopes:
+          allOf:
+          - $ref: '#/components/schemas/ScopeListType'
+          - description: The OAuth scopes that your app client supports. Possible values that OAuth provides are <code>phone</code>, <code>email</code>, <code>openid</code>, and <code>profile</code>. Possible values that Amazon Web Services provides are <code>aws.cognito.signin.user.admin</code>. Amazon Cognito also supports custom scopes that you create in Resource Servers.
+        AllowedOAuthFlowsUserPoolClient:
+          allOf:
+          - $ref: '#/components/schemas/BooleanType'
+          - description: Set to true if the client is allowed to follow the OAuth protocol when interacting with Amazon Cognito user pools.
+        AnalyticsConfiguration:
+          allOf:
+          - $ref: '#/components/schemas/AnalyticsConfigurationType'
+          - description: <p>The Amazon Pinpoint analytics configuration for the user pool client.</p> <note> <p>Amazon Cognito user pools only support sending events to Amazon Pinpoint projects in the US East (N. Virginia) us-east-1 Region, regardless of the Region where the user pool resides.</p> </note>
+        PreventUserExistenceErrors:
+          allOf:
+          - $ref: '#/components/schemas/PreventUserExistenceErrorTypes'
+          - description: <p>Errors and responses that you want Amazon Cognito APIs to return during authentication, account confirmation, and password recovery when the user doesn't exist in the user pool. When set to <code>ENABLED</code> and the user doesn't exist, authentication returns an error indicating either the username or password was incorrect. Account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to <code>LEGACY</code>, those APIs return a <code>UserNotFoundException</code> exception if the user doesn't exist in the user pool.</p> <p>Valid values include:</p> <ul> <li> <p> <code>ENABLED</code> - This prevents user existence-related errors.</p> </li> <li> <p> <code>LEGACY</code> - This represents the old behavior of Amazon Cognito where user existence related errors aren't prevented.</p> </li> </ul>
+        EnableTokenRevocation:
+          allOf:
+          - $ref: '#/components/schemas/WrappedBooleanType'
+          - description: Indicates whether token revocation is activated for the user pool client. When you create a new user pool client, token revocation is activated by default. For more information about revoking tokens, see <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_RevokeToken.html">RevokeToken</a>.
+        EnablePropagateAdditionalUserContextData:
+          allOf:
+          - $ref: '#/components/schemas/WrappedBooleanType'
+          - description: <p>When <code>EnablePropagateAdditionalUserContextData</code> is true, Amazon Cognito accepts an <code>IpAddress</code> value that you send in the <code>UserContextData</code> parameter. The <code>UserContextData</code> parameter sends information to Amazon Cognito advanced security for risk analysis. You can send <code>UserContextData</code> when you sign in Amazon Cognito native users with the <code>InitiateAuth</code> and <code>RespondToAuthChallenge</code> API operations.</p> <p>When <code>EnablePropagateAdditionalUserContextData</code> is false, you can't send your user's source IP address to Amazon Cognito advanced security with unauthenticated API operations. <code>EnablePropagateAdditionalUserContextData</code> doesn't affect whether you can send a source IP address in a <code>ContextData</code> parameter with the authenticated API operations <code>AdminInitiateAuth</code> and <code>AdminRespondToAuthChallenge</code>.</p> <p>You can only activate <code>EnablePropagateAdditionalUserContextData</code> in an app client that has a client secret. For more information about propagation of user context data, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pool-settings-adaptive-authentication.html#user-pool-settings-adaptive-authentication-device-fingerprint">Adding user device and session data to API requests</a>.</p>
+        AuthSessionValidity:
+          allOf:
+          - $ref: '#/components/schemas/AuthSessionValidityType'
+          - description: Amazon Cognito creates a session token for each API request in an authentication flow. <code>AuthSessionValidity</code> is the duration, in minutes, of that session token. Your user pool native user must respond to each authentication challenge before the session expires.
+      description: Contains information about a user pool client.
+    ClientPermissionType:
+      type: string
+      minLength: 1
+      maxLength: 2048
+    UserPoolIdType:
+      type: string
+      pattern: '[\w-]+_[0-9a-zA-Z]+'
+      minLength: 1
+      maxLength: 55
+    BooleanType:
+      type: boolean
+    ArnType:
+      type: string
+      pattern: arn:[\w+=/,.@-]+:[\w+=/,.@-]+:([\w+=/,.@-]*)?:[0-9]+:[\w+=/,.@-]+(:[\w+=/,.@-]+)?(:[\w+=/,.@-]+)?
+      minLength: 20
+      maxLength: 2048
+    ClientSecretType:
+      type: string
+      pattern: '[\w+]+'
+      minLength: 1
+      maxLength: 64
+      format: password
+    AnalyticsConfigurationType:
+      type: object
+      properties:
+        ApplicationId:
+          allOf:
+          - $ref: '#/components/schemas/HexStringType'
+          - description: The application ID for an Amazon Pinpoint application.
+        ApplicationArn:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: The Amazon Resource Name (ARN) of an Amazon Pinpoint project. You can use the Amazon Pinpoint project to integrate with the chosen user pool Client. Amazon Cognito publishes events to the Amazon Pinpoint project that the app ARN declares.
+        RoleArn:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: The ARN of an Identity and Access Management role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics.
+        ExternalId:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The external ID.
+        UserDataShared:
+          allOf:
+          - $ref: '#/components/schemas/BooleanType'
+          - description: If <code>UserDataShared</code> is <code>true</code>, Amazon Cognito includes user data in the events that it publishes to Amazon Pinpoint analytics.
+      description: <p>The Amazon Pinpoint analytics configuration necessary to collect metrics for a user pool.</p> <note> <p>In Regions where Amazon Pinpointisn't available, user pools only support sending events to Amazon Pinpoint projects in us-east-1. In Regions where Amazon Pinpoint is available, user pools support sending events to Amazon Pinpoint projects within that same Region.</p> </note>
+    ClientPermissionListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/ClientPermissionType'
+    OAuthFlowType:
+      type: string
+      enum:
+      - code
+      - implicit
+      - client_credentials
+    ClientNameType:
+      type: string
+      pattern: '[\w\s+=,.@-]+'
+      minLength: 1
+      maxLength: 128
+    RedirectUrlType:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
+      minLength: 1
+      maxLength: 1024
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/cognito-identity/
+x-hasEquivalentPaths: true

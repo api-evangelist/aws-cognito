@@ -1,0 +1,543 @@
+openapi: 3.0.0
+info:
+  version: 2014-06-30
+  x-release: v4
+  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.UpdateUserAttributes API'
+  description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: cognito-identity
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-identity-2014-06-30.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: https://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: http://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+- url: https://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=AWSCognitoIdentityProviderService.UpdateUserAttributes'
+paths:
+  /#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserAttributes:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: UpdateUserAttributes
+      description: <p>Allows a user to update a specific attribute (one at a time).</p> <note> <p>This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with <a href="https://console.aws.amazon.com/pinpoint/home/">Amazon Pinpoint</a>. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in.</p> <p>If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In <i> <a href="https://docs.aws.amazon.com/sns/latest/dg/sns-sms-sandbox.html">sandbox mode</a> </i>, you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools-sms-userpool-settings.html"> SMS message settings for Amazon Cognito user pools</a> in the <i>Amazon Cognito Developer Guide</i>.</p> </note>
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateUserAttributesResponse'
+              examples:
+                UpdateUserAttributes200Example:
+                  summary: Default UpdateUserAttributes 200 response
+                  x-microcks-default: true
+                  value:
+                    CodeDeliveryDetailsList: example-value
+        '480':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+              examples:
+                UpdateUserAttributes480Example:
+                  summary: Default UpdateUserAttributes 480 response
+                  x-microcks-default: true
+                  value: example
+        '481':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+              examples:
+                UpdateUserAttributes481Example:
+                  summary: Default UpdateUserAttributes 481 response
+                  x-microcks-default: true
+                  value: example
+        '482':
+          description: CodeMismatchException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CodeMismatchException'
+              examples:
+                UpdateUserAttributes482Example:
+                  summary: Default UpdateUserAttributes 482 response
+                  x-microcks-default: true
+                  value: example
+        '483':
+          description: ExpiredCodeException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExpiredCodeException'
+              examples:
+                UpdateUserAttributes483Example:
+                  summary: Default UpdateUserAttributes 483 response
+                  x-microcks-default: true
+                  value: example
+        '484':
+          description: NotAuthorizedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotAuthorizedException'
+              examples:
+                UpdateUserAttributes484Example:
+                  summary: Default UpdateUserAttributes 484 response
+                  x-microcks-default: true
+                  value: example
+        '485':
+          description: UnexpectedLambdaException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UnexpectedLambdaException'
+              examples:
+                UpdateUserAttributes485Example:
+                  summary: Default UpdateUserAttributes 485 response
+                  x-microcks-default: true
+                  value: example
+        '486':
+          description: UserLambdaValidationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserLambdaValidationException'
+              examples:
+                UpdateUserAttributes486Example:
+                  summary: Default UpdateUserAttributes 486 response
+                  x-microcks-default: true
+                  value: example
+        '487':
+          description: InvalidLambdaResponseException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidLambdaResponseException'
+              examples:
+                UpdateUserAttributes487Example:
+                  summary: Default UpdateUserAttributes 487 response
+                  x-microcks-default: true
+                  value: example
+        '488':
+          description: TooManyRequestsException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TooManyRequestsException'
+              examples:
+                UpdateUserAttributes488Example:
+                  summary: Default UpdateUserAttributes 488 response
+                  x-microcks-default: true
+                  value: example
+        '489':
+          description: AliasExistsException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AliasExistsException'
+              examples:
+                UpdateUserAttributes489Example:
+                  summary: Default UpdateUserAttributes 489 response
+                  x-microcks-default: true
+                  value: example
+        '490':
+          description: InvalidSmsRoleAccessPolicyException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidSmsRoleAccessPolicyException'
+              examples:
+                UpdateUserAttributes490Example:
+                  summary: Default UpdateUserAttributes 490 response
+                  x-microcks-default: true
+                  value: example
+        '491':
+          description: InvalidSmsRoleTrustRelationshipException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidSmsRoleTrustRelationshipException'
+              examples:
+                UpdateUserAttributes491Example:
+                  summary: Default UpdateUserAttributes 491 response
+                  x-microcks-default: true
+                  value: example
+        '492':
+          description: InvalidEmailRoleAccessPolicyException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidEmailRoleAccessPolicyException'
+              examples:
+                UpdateUserAttributes492Example:
+                  summary: Default UpdateUserAttributes 492 response
+                  x-microcks-default: true
+                  value: example
+        '493':
+          description: CodeDeliveryFailureException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CodeDeliveryFailureException'
+              examples:
+                UpdateUserAttributes493Example:
+                  summary: Default UpdateUserAttributes 493 response
+                  x-microcks-default: true
+                  value: example
+        '494':
+          description: PasswordResetRequiredException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PasswordResetRequiredException'
+              examples:
+                UpdateUserAttributes494Example:
+                  summary: Default UpdateUserAttributes 494 response
+                  x-microcks-default: true
+                  value: example
+        '495':
+          description: UserNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserNotFoundException'
+              examples:
+                UpdateUserAttributes495Example:
+                  summary: Default UpdateUserAttributes 495 response
+                  x-microcks-default: true
+                  value: example
+        '496':
+          description: UserNotConfirmedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserNotConfirmedException'
+              examples:
+                UpdateUserAttributes496Example:
+                  summary: Default UpdateUserAttributes 496 response
+                  x-microcks-default: true
+                  value: example
+        '497':
+          description: InternalErrorException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalErrorException'
+              examples:
+                UpdateUserAttributes497Example:
+                  summary: Default UpdateUserAttributes 497 response
+                  x-microcks-default: true
+                  value: example
+        '498':
+          description: ForbiddenException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ForbiddenException'
+              examples:
+                UpdateUserAttributes498Example:
+                  summary: Default UpdateUserAttributes 498 response
+                  x-microcks-default: true
+                  value: example
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateUserAttributesRequest'
+            examples:
+              UpdateUserAttributesRequestExample:
+                summary: Default UpdateUserAttributes request
+                x-microcks-default: true
+                value:
+                  UserAttributes: example-value
+                  AccessToken: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
+                  ClientMetadata: example-value
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - AWSCognitoIdentityProviderService.UpdateUserAttributes
+      summary: Amazon Cognito Update User Attributes
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=AWSCognitoIdentityProviderService.UpdateUserAttributes'
+components:
+  schemas:
+    ResourceNotFoundException: {}
+    AttributeType:
+      type: object
+      required:
+      - Name
+      properties:
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/AttributeNameType'
+          - description: The name of the attribute.
+        Value:
+          allOf:
+          - $ref: '#/components/schemas/AttributeValueType'
+          - description: The value of the attribute.
+      description: Specifies whether the attribute is standard or custom.
+    AttributeNameType:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
+      minLength: 1
+      maxLength: 32
+    UpdateUserAttributesRequest:
+      type: object
+      required:
+      - UserAttributes
+      - AccessToken
+      title: UpdateUserAttributesRequest
+      properties:
+        UserAttributes:
+          allOf:
+          - $ref: '#/components/schemas/AttributeListType'
+          - description: <p>An array of name-value pairs representing user attributes.</p> <p>For custom attributes, you must prepend the <code>custom:</code> prefix to the attribute name.</p> <p>If you have set an attribute to require verification before Amazon Cognito updates its value, this request doesn’t immediately update the value of that attribute. After your user receives and responds to a verification message to verify the new value, Amazon Cognito updates the attribute value. Your user can sign in and receive messages with the original attribute value until they verify the new value.</p>
+        AccessToken:
+          allOf:
+          - $ref: '#/components/schemas/TokenModelType'
+          - description: A valid access token that Amazon Cognito issued to the user whose user attributes you want to update.
+        ClientMetadata:
+          allOf:
+          - $ref: '#/components/schemas/ClientMetadataType'
+          - description: <p>A map of custom key-value pairs that you can provide as input for any custom workflows that this action initiates. </p> <p>You create custom workflows by assigning Lambda functions to user pool triggers. When you use the UpdateUserAttributes API action, Amazon Cognito invokes the function that is assigned to the <i>custom message</i> trigger. When Amazon Cognito invokes this function, it passes a JSON payload, which the function receives as input. This payload contains a <code>clientMetadata</code> attribute, which provides the data that you assigned to the ClientMetadata parameter in your UpdateUserAttributes request. In your function code in Lambda, you can process the <code>clientMetadata</code> value to enhance your workflow for your specific needs.</p> <p>For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools-working-with-aws-lambda-triggers.html"> Customizing user pool Workflows with Lambda Triggers</a> in the <i>Amazon Cognito Developer Guide</i>.</p> <note> <p>When you use the ClientMetadata parameter, remember that Amazon Cognito won't do the following:</p> <ul> <li> <p>Store the ClientMetadata value. This data is available only to Lambda triggers that are assigned to a user pool to support custom workflows. If your user pool configuration doesn't include triggers, the ClientMetadata parameter serves no purpose.</p> </li> <li> <p>Validate the ClientMetadata value.</p> </li> <li> <p>Encrypt the ClientMetadata value. Don't use Amazon Cognito to provide sensitive information.</p> </li> </ul> </note>
+      description: Represents the request to update user attributes.
+    InvalidSmsRoleAccessPolicyException: {}
+    UserNotFoundException: {}
+    InvalidSmsRoleTrustRelationshipException: {}
+    UnexpectedLambdaException: {}
+    DeliveryMediumType:
+      type: string
+      enum:
+      - SMS
+      - EMAIL
+    ExpiredCodeException: {}
+    CodeMismatchException: {}
+    AttributeListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/AttributeType'
+    UserNotConfirmedException: {}
+    InvalidParameterException: {}
+    TooManyRequestsException: {}
+    InternalErrorException: {}
+    ClientMetadataType:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/StringType'
+    StringType:
+      type: string
+    InvalidLambdaResponseException: {}
+    NotAuthorizedException: {}
+    AliasExistsException: {}
+    CodeDeliveryFailureException: {}
+    PasswordResetRequiredException: {}
+    TokenModelType:
+      type: string
+      pattern: '[A-Za-z0-9-_=.]+'
+      format: password
+    InvalidEmailRoleAccessPolicyException: {}
+    UpdateUserAttributesResponse:
+      type: object
+      properties:
+        CodeDeliveryDetailsList:
+          allOf:
+          - $ref: '#/components/schemas/CodeDeliveryDetailsListType'
+          - description: The code delivery details list from the server for the request to update user attributes.
+      description: Represents the response from the server for the request to update user attributes.
+    UserLambdaValidationException: {}
+    CodeDeliveryDetailsListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/CodeDeliveryDetailsType'
+    ForbiddenException: {}
+    AttributeValueType:
+      type: string
+      maxLength: 2048
+      format: password
+    CodeDeliveryDetailsType:
+      type: object
+      properties:
+        Destination:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The email address or phone number destination where Amazon Cognito sent the code.
+        DeliveryMedium:
+          allOf:
+          - $ref: '#/components/schemas/DeliveryMediumType'
+          - description: The method that Amazon Cognito used to send the code.
+        AttributeName:
+          allOf:
+          - $ref: '#/components/schemas/AttributeNameType'
+          - description: The name of the attribute that Amazon Cognito verifies with the code.
+      description: The delivery details for an email or SMS message that Amazon Cognito sent for authentication or verification.
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/cognito-identity/
+x-hasEquivalentPaths: true

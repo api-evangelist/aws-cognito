@@ -1,0 +1,581 @@
+openapi: 3.0.0
+info:
+  version: 2014-06-30
+  x-release: v4
+  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.InitiateAuth API'
+  description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: cognito-identity
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-identity-2014-06-30.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: https://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: http://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+- url: https://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=AWSCognitoIdentityProviderService.InitiateAuth'
+paths:
+  /#X-Amz-Target=AWSCognitoIdentityProviderService.InitiateAuth:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: InitiateAuth
+      description: <p>Initiates sign-in for a user in the Amazon Cognito user directory. You can't sign in a user with a federated IdP with <code>InitiateAuth</code>. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-federation.html"> Adding user pool sign-in through a third party</a>.</p> <note> <p>This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with <a href="https://console.aws.amazon.com/pinpoint/home/">Amazon Pinpoint</a>. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in.</p> <p>If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In <i> <a href="https://docs.aws.amazon.com/sns/latest/dg/sns-sms-sandbox.html">sandbox mode</a> </i>, you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools-sms-userpool-settings.html"> SMS message settings for Amazon Cognito user pools</a> in the <i>Amazon Cognito Developer Guide</i>.</p> </note>
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InitiateAuthResponse'
+              examples:
+                InitiateAuth200Example:
+                  summary: Default InitiateAuth 200 response
+                  x-microcks-default: true
+                  value:
+                    ChallengeName: my-user-pool
+                    Session: example-value
+                    ChallengeParameters: example-value
+                    AuthenticationResult: example-value
+        '480':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+              examples:
+                InitiateAuth480Example:
+                  summary: Default InitiateAuth 480 response
+                  x-microcks-default: true
+                  value: example
+        '481':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+              examples:
+                InitiateAuth481Example:
+                  summary: Default InitiateAuth 481 response
+                  x-microcks-default: true
+                  value: example
+        '482':
+          description: NotAuthorizedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotAuthorizedException'
+              examples:
+                InitiateAuth482Example:
+                  summary: Default InitiateAuth 482 response
+                  x-microcks-default: true
+                  value: example
+        '483':
+          description: TooManyRequestsException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TooManyRequestsException'
+              examples:
+                InitiateAuth483Example:
+                  summary: Default InitiateAuth 483 response
+                  x-microcks-default: true
+                  value: example
+        '484':
+          description: UnexpectedLambdaException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UnexpectedLambdaException'
+              examples:
+                InitiateAuth484Example:
+                  summary: Default InitiateAuth 484 response
+                  x-microcks-default: true
+                  value: example
+        '485':
+          description: InvalidUserPoolConfigurationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidUserPoolConfigurationException'
+              examples:
+                InitiateAuth485Example:
+                  summary: Default InitiateAuth 485 response
+                  x-microcks-default: true
+                  value: example
+        '486':
+          description: UserLambdaValidationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserLambdaValidationException'
+              examples:
+                InitiateAuth486Example:
+                  summary: Default InitiateAuth 486 response
+                  x-microcks-default: true
+                  value: example
+        '487':
+          description: InvalidLambdaResponseException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidLambdaResponseException'
+              examples:
+                InitiateAuth487Example:
+                  summary: Default InitiateAuth 487 response
+                  x-microcks-default: true
+                  value: example
+        '488':
+          description: PasswordResetRequiredException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PasswordResetRequiredException'
+              examples:
+                InitiateAuth488Example:
+                  summary: Default InitiateAuth 488 response
+                  x-microcks-default: true
+                  value: example
+        '489':
+          description: UserNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserNotFoundException'
+              examples:
+                InitiateAuth489Example:
+                  summary: Default InitiateAuth 489 response
+                  x-microcks-default: true
+                  value: example
+        '490':
+          description: UserNotConfirmedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserNotConfirmedException'
+              examples:
+                InitiateAuth490Example:
+                  summary: Default InitiateAuth 490 response
+                  x-microcks-default: true
+                  value: example
+        '491':
+          description: InternalErrorException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalErrorException'
+              examples:
+                InitiateAuth491Example:
+                  summary: Default InitiateAuth 491 response
+                  x-microcks-default: true
+                  value: example
+        '492':
+          description: InvalidSmsRoleAccessPolicyException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidSmsRoleAccessPolicyException'
+              examples:
+                InitiateAuth492Example:
+                  summary: Default InitiateAuth 492 response
+                  x-microcks-default: true
+                  value: example
+        '493':
+          description: InvalidSmsRoleTrustRelationshipException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidSmsRoleTrustRelationshipException'
+              examples:
+                InitiateAuth493Example:
+                  summary: Default InitiateAuth 493 response
+                  x-microcks-default: true
+                  value: example
+        '494':
+          description: ForbiddenException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ForbiddenException'
+              examples:
+                InitiateAuth494Example:
+                  summary: Default InitiateAuth 494 response
+                  x-microcks-default: true
+                  value: example
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InitiateAuthRequest'
+            examples:
+              InitiateAuthRequestExample:
+                summary: Default InitiateAuth request
+                x-microcks-default: true
+                value:
+                  AuthFlow: example-value
+                  AuthParameters: example-value
+                  ClientMetadata: example-value
+                  ClientId: us-east-1_AbCdEfGhI
+                  AnalyticsMetadata: example-value
+                  UserContextData: example-value
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - AWSCognitoIdentityProviderService.InitiateAuth
+      summary: Amazon Cognito Initiate Auth
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=AWSCognitoIdentityProviderService.InitiateAuth'
+components:
+  schemas:
+    ResourceNotFoundException: {}
+    ChallengeParametersType:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/StringType'
+    InvalidSmsRoleAccessPolicyException: {}
+    SessionType:
+      type: string
+      minLength: 20
+      maxLength: 2048
+    UserNotFoundException: {}
+    InvalidSmsRoleTrustRelationshipException: {}
+    UnexpectedLambdaException: {}
+    UserNotConfirmedException: {}
+    InvalidParameterException: {}
+    AuthenticationResultType:
+      type: object
+      properties:
+        AccessToken:
+          allOf:
+          - $ref: '#/components/schemas/TokenModelType'
+          - description: A valid access token that Amazon Cognito issued to the user who you want to authenticate.
+        ExpiresIn:
+          allOf:
+          - $ref: '#/components/schemas/IntegerType'
+          - description: The expiration period of the authentication result in seconds.
+        TokenType:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The token type.
+        RefreshToken:
+          allOf:
+          - $ref: '#/components/schemas/TokenModelType'
+          - description: The refresh token.
+        IdToken:
+          allOf:
+          - $ref: '#/components/schemas/TokenModelType'
+          - description: The ID token.
+        NewDeviceMetadata:
+          allOf:
+          - $ref: '#/components/schemas/NewDeviceMetadataType'
+          - description: The new device metadata from an authentication result.
+      description: The authentication result.
+    InitiateAuthResponse:
+      type: object
+      properties:
+        ChallengeName:
+          allOf:
+          - $ref: '#/components/schemas/ChallengeNameType'
+          - description: '<p>The name of the challenge that you''re responding to with this call. This name is returned in the <code>AdminInitiateAuth</code> response if you must pass another challenge.</p> <p>Valid values include the following:</p> <note> <p>All of the following challenges require <code>USERNAME</code> and <code>SECRET_HASH</code> (if applicable) in the parameters.</p> </note> <ul> <li> <p> <code>SMS_MFA</code>: Next challenge is to supply an <code>SMS_MFA_CODE</code>, delivered via SMS.</p> </li> <li> <p> <code>PASSWORD_VERIFIER</code>: Next challenge is to supply <code>PASSWORD_CLAIM_SIGNATURE</code>, <code>PASSWORD_CLAIM_SECRET_BLOCK</code>, and <code>TIMESTAMP</code> after the client-side SRP calculations.</p> </li> <li> <p> <code>CUSTOM_CHALLENGE</code>: This is returned if your custom authentication flow determines that the user should pass another challenge before tokens are issued.</p> </li> <li> <p> <code>DEVICE_SRP_AUTH</code>: If device tracking was activated on your user pool and the previous challenges were passed, this challenge is returned so that Amazon Cognito can start tracking this device.</p> </li> <li> <p> <code>DEVICE_PASSWORD_VERIFIER</code>: Similar to <code>PASSWORD_VERIFIER</code>, but for devices only.</p> </li> <li> <p> <code>NEW_PASSWORD_REQUIRED</code>: For users who are required to change their passwords after successful first login. </p> <p>Respond to this challenge with <code>NEW_PASSWORD</code> and any required attributes that Amazon Cognito returned in the <code>requiredAttributes</code> parameter. You can also set values for attributes that aren''t required by your user pool and that your app client can write. For more information, see <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_RespondToAuthChallenge.html">RespondToAuthChallenge</a>.</p> <note> <p>In a <code>NEW_PASSWORD_REQUIRED</code> challenge response, you can''t modify a required attribute that already has a value. In <code>RespondToAuthChallenge</code>, set a value for any keys that Amazon Cognito returned in the <code>requiredAttributes</code> parameter, then use the <code>UpdateUserAttributes</code> API operation to modify the value of any additional attributes.</p> </note> </li> <li> <p> <code>MFA_SETUP</code>: For users who are required to setup an MFA factor before they can sign in. The MFA types activated for the user pool will be listed in the challenge parameters <code>MFA_CAN_SETUP</code> value. </p> <p> To set up software token MFA, use the session returned here from <code>InitiateAuth</code> as an input to <code>AssociateSoftwareToken</code>. Use the session returned by <code>VerifySoftwareToken</code> as an input to <code>RespondToAuthChallenge</code> with challenge name <code>MFA_SETUP</code> to complete sign-in. To set up SMS MFA, an administrator should help the user to add a phone number to their account, and then the user should call <code>InitiateAuth</code> again to restart sign-in.</p> </li> </ul>'
+        Session:
+          allOf:
+          - $ref: '#/components/schemas/SessionType'
+          - description: The session that should pass both ways in challenge-response calls to the service. If the caller must pass another challenge, they return a session with other challenge parameters. This session should be passed as it is to the next <code>RespondToAuthChallenge</code> API call.
+        ChallengeParameters:
+          allOf:
+          - $ref: '#/components/schemas/ChallengeParametersType'
+          - description: <p>The challenge parameters. These are returned in the <code>InitiateAuth</code> response if you must pass another challenge. The responses in this parameter should be used to compute inputs to the next call (<code>RespondToAuthChallenge</code>). </p> <p>All challenges require <code>USERNAME</code> and <code>SECRET_HASH</code> (if applicable).</p>
+        AuthenticationResult:
+          allOf:
+          - $ref: '#/components/schemas/AuthenticationResultType'
+          - description: The result of the authentication response. This result is only returned if the caller doesn't need to pass another challenge. If the caller does need to pass another challenge before it gets tokens, <code>ChallengeName</code>, <code>ChallengeParameters</code>, and <code>Session</code> are returned.
+      description: Initiates the authentication response.
+    UserContextDataType:
+      type: object
+      properties:
+        IpAddress:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The source IP address of your user's device.
+        EncodedData:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: Encoded device-fingerprint details that your app collected with the Amazon Cognito context data collection library. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pool-settings-adaptive-authentication.html#user-pool-settings-adaptive-authentication-device-fingerprint">Adding user device and session data to API requests</a>.
+      description: Contextual data, such as the user's device fingerprint, IP address, or location, used for evaluating the risk of an unexpected event by Amazon Cognito advanced security.
+    TooManyRequestsException: {}
+    InternalErrorException: {}
+    ClientMetadataType:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/StringType'
+    StringType:
+      type: string
+    InvalidLambdaResponseException: {}
+    IntegerType:
+      type: integer
+    NotAuthorizedException: {}
+    AuthFlowType:
+      type: string
+      enum:
+      - USER_SRP_AUTH
+      - REFRESH_TOKEN_AUTH
+      - REFRESH_TOKEN
+      - CUSTOM_AUTH
+      - ADMIN_NO_SRP_AUTH
+      - USER_PASSWORD_AUTH
+      - ADMIN_USER_PASSWORD_AUTH
+    PasswordResetRequiredException: {}
+    ClientIdType:
+      type: string
+      pattern: '[\w+]+'
+      minLength: 1
+      maxLength: 128
+      format: password
+    InitiateAuthRequest:
+      type: object
+      required:
+      - AuthFlow
+      - ClientId
+      title: InitiateAuthRequest
+      properties:
+        AuthFlow:
+          allOf:
+          - $ref: '#/components/schemas/AuthFlowType'
+          - description: '<p>The authentication flow for this call to run. The API action will depend on this value. For example:</p> <ul> <li> <p> <code>REFRESH_TOKEN_AUTH</code> takes in a valid refresh token and returns new tokens.</p> </li> <li> <p> <code>USER_SRP_AUTH</code> takes in <code>USERNAME</code> and <code>SRP_A</code> and returns the SRP variables to be used for next challenge execution.</p> </li> <li> <p> <code>USER_PASSWORD_AUTH</code> takes in <code>USERNAME</code> and <code>PASSWORD</code> and returns the next challenge or tokens.</p> </li> </ul> <p>Valid values include:</p> <ul> <li> <p> <code>USER_SRP_AUTH</code>: Authentication flow for the Secure Remote Password (SRP) protocol.</p> </li> <li> <p> <code>REFRESH_TOKEN_AUTH</code>/<code>REFRESH_TOKEN</code>: Authentication flow for refreshing the access token and ID token by supplying a valid refresh token.</p> </li> <li> <p> <code>CUSTOM_AUTH</code>: Custom authentication flow.</p> </li> <li> <p> <code>USER_PASSWORD_AUTH</code>: Non-SRP authentication flow; user name and password are passed directly. If a user migration Lambda trigger is set, this flow will invoke the user migration Lambda if it doesn''t find the user name in the user pool. </p> </li> </ul> <p> <code>ADMIN_NO_SRP_AUTH</code> isn''t a valid value.</p>'
+        AuthParameters:
+          allOf:
+          - $ref: '#/components/schemas/AuthParametersType'
+          - description: '<p>The authentication parameters. These are inputs corresponding to the <code>AuthFlow</code> that you''re invoking. The required values depend on the value of <code>AuthFlow</code>:</p> <ul> <li> <p>For <code>USER_SRP_AUTH</code>: <code>USERNAME</code> (required), <code>SRP_A</code> (required), <code>SECRET_HASH</code> (required if the app client is configured with a client secret), <code>DEVICE_KEY</code>.</p> </li> <li> <p>For <code>REFRESH_TOKEN_AUTH/REFRESH_TOKEN</code>: <code>REFRESH_TOKEN</code> (required), <code>SECRET_HASH</code> (required if the app client is configured with a client secret), <code>DEVICE_KEY</code>.</p> </li> <li> <p>For <code>CUSTOM_AUTH</code>: <code>USERNAME</code> (required), <code>SECRET_HASH</code> (if app client is configured with client secret), <code>DEVICE_KEY</code>. To start the authentication flow with password verification, include <code>ChallengeName: SRP_A</code> and <code>SRP_A: (The SRP_A Value)</code>.</p> </li> </ul>'
+        ClientMetadata:
+          allOf:
+          - $ref: '#/components/schemas/ClientMetadataType'
+          - description: <p>A map of custom key-value pairs that you can provide as input for certain custom workflows that this action triggers.</p> <p>You create custom workflows by assigning Lambda functions to user pool triggers. When you use the InitiateAuth API action, Amazon Cognito invokes the Lambda functions that are specified for various triggers. The ClientMetadata value is passed as input to the functions for only the following triggers:</p> <ul> <li> <p>Pre signup</p> </li> <li> <p>Pre authentication</p> </li> <li> <p>User migration</p> </li> </ul> <p>When Amazon Cognito invokes the functions for these triggers, it passes a JSON payload, which the function receives as input. This payload contains a <code>validationData</code> attribute, which provides the data that you assigned to the ClientMetadata parameter in your InitiateAuth request. In your function code in Lambda, you can process the <code>validationData</code> value to enhance your workflow for your specific needs.</p> <p>When you use the InitiateAuth API action, Amazon Cognito also invokes the functions for the following triggers, but it doesn't provide the ClientMetadata value as input:</p> <ul> <li> <p>Post authentication</p> </li> <li> <p>Custom message</p> </li> <li> <p>Pre token generation</p> </li> <li> <p>Create auth challenge</p> </li> <li> <p>Define auth challenge</p> </li> <li> <p>Verify auth challenge</p> </li> </ul> <p>For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools-working-with-aws-lambda-triggers.html"> Customizing user pool Workflows with Lambda Triggers</a> in the <i>Amazon Cognito Developer Guide</i>.</p> <note> <p>When you use the ClientMetadata parameter, remember that Amazon Cognito won't do the following:</p> <ul> <li> <p>Store the ClientMetadata value. This data is available only to Lambda triggers that are assigned to a user pool to support custom workflows. If your user pool configuration doesn't include triggers, the ClientMetadata parameter serves no purpose.</p> </li> <li> <p>Validate the ClientMetadata value.</p> </li> <li> <p>Encrypt the ClientMetadata value. Don't use Amazon Cognito to provide sensitive information.</p> </li> </ul> </note>
+        ClientId:
+          allOf:
+          - $ref: '#/components/schemas/ClientIdType'
+          - description: The app client ID.
+        AnalyticsMetadata:
+          allOf:
+          - $ref: '#/components/schemas/AnalyticsMetadataType'
+          - description: The Amazon Pinpoint analytics metadata that contributes to your metrics for <code>InitiateAuth</code> calls.
+        UserContextData:
+          allOf:
+          - $ref: '#/components/schemas/UserContextDataType'
+          - description: Contextual data about your user session, such as the device fingerprint, IP address, or location. Amazon Cognito advanced security evaluates the risk of an authentication event based on the context that your app generates and passes to Amazon Cognito when it makes API requests.
+      description: Initiates the authentication request.
+    AnalyticsMetadataType:
+      type: object
+      properties:
+        AnalyticsEndpointId:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The endpoint ID.
+      description: <p>An Amazon Pinpoint analytics endpoint.</p> <p>An endpoint uniquely identifies a mobile device, email address, or phone number that can receive messages from Amazon Pinpoint analytics. For more information about Amazon Web Services Regions that can contain Amazon Pinpoint resources for use with Amazon Cognito user pools, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.html">Using Amazon Pinpoint analytics with Amazon Cognito user pools</a>.</p>
+    TokenModelType:
+      type: string
+      pattern: '[A-Za-z0-9-_=.]+'
+      format: password
+    InvalidUserPoolConfigurationException: {}
+    NewDeviceMetadataType:
+      type: object
+      properties:
+        DeviceKey:
+          allOf:
+          - $ref: '#/components/schemas/DeviceKeyType'
+          - description: The device key.
+        DeviceGroupKey:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The device group key.
+      description: The new device metadata type.
+    UserLambdaValidationException: {}
+    ChallengeNameType:
+      type: string
+      enum:
+      - SMS_MFA
+      - SOFTWARE_TOKEN_MFA
+      - SELECT_MFA_TYPE
+      - MFA_SETUP
+      - PASSWORD_VERIFIER
+      - CUSTOM_CHALLENGE
+      - DEVICE_SRP_AUTH
+      - DEVICE_PASSWORD_VERIFIER
+      - ADMIN_NO_SRP_AUTH
+      - NEW_PASSWORD_REQUIRED
+    ForbiddenException: {}
+    AuthParametersType:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/StringType'
+    DeviceKeyType:
+      type: string
+      pattern: '[\w-]+_[0-9a-f-]+'
+      minLength: 1
+      maxLength: 55
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/cognito-identity/
+x-hasEquivalentPaths: true

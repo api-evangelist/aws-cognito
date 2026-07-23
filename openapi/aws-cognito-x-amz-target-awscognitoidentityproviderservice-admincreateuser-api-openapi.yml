@@ -1,0 +1,603 @@
+openapi: 3.0.0
+info:
+  version: 2014-06-30
+  x-release: v4
+  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AdminCreateUser API'
+  description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: cognito-identity
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-identity-2014-06-30.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: https://cognito-identity.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon Cognito Identity multi-region endpoint
+- url: http://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+- url: https://cognito-identity.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=AWSCognitoIdentityProviderService.AdminCreateUser'
+paths:
+  /#X-Amz-Target=AWSCognitoIdentityProviderService.AdminCreateUser:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: AdminCreateUser
+      description: <p>Creates a new user in the specified user pool.</p> <p>If <code>MessageAction</code> isn't set, the default is to send a welcome message via email or phone (SMS).</p> <note> <p>This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with <a href="https://console.aws.amazon.com/pinpoint/home/">Amazon Pinpoint</a>. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in.</p> <p>If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In <i> <a href="https://docs.aws.amazon.com/sns/latest/dg/sns-sms-sandbox.html">sandbox mode</a> </i>, you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools-sms-userpool-settings.html"> SMS message settings for Amazon Cognito user pools</a> in the <i>Amazon Cognito Developer Guide</i>.</p> </note> <p>This message is based on a template that you configured in your call to create or update a user pool. This template includes your custom sign-up instructions and placeholders for user name and temporary password.</p> <p>Alternatively, you can call <code>AdminCreateUser</code> with <code>SUPPRESS</code> for the <code>MessageAction</code> parameter, and Amazon Cognito won't send any email. </p> <p>In either case, the user will be in the <code>FORCE_CHANGE_PASSWORD</code> state until they sign in and change their password.</p> <p> <code>AdminCreateUser</code> requires developer credentials.</p>
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AdminCreateUserResponse'
+              examples:
+                AdminCreateUser200Example:
+                  summary: Default AdminCreateUser 200 response
+                  x-microcks-default: true
+                  value:
+                    User: example-value
+        '480':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+              examples:
+                AdminCreateUser480Example:
+                  summary: Default AdminCreateUser 480 response
+                  x-microcks-default: true
+                  value: example
+        '481':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+              examples:
+                AdminCreateUser481Example:
+                  summary: Default AdminCreateUser 481 response
+                  x-microcks-default: true
+                  value: example
+        '482':
+          description: UserNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserNotFoundException'
+              examples:
+                AdminCreateUser482Example:
+                  summary: Default AdminCreateUser 482 response
+                  x-microcks-default: true
+                  value: example
+        '483':
+          description: UsernameExistsException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UsernameExistsException'
+              examples:
+                AdminCreateUser483Example:
+                  summary: Default AdminCreateUser 483 response
+                  x-microcks-default: true
+                  value: example
+        '484':
+          description: InvalidPasswordException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidPasswordException'
+              examples:
+                AdminCreateUser484Example:
+                  summary: Default AdminCreateUser 484 response
+                  x-microcks-default: true
+                  value: example
+        '485':
+          description: CodeDeliveryFailureException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CodeDeliveryFailureException'
+              examples:
+                AdminCreateUser485Example:
+                  summary: Default AdminCreateUser 485 response
+                  x-microcks-default: true
+                  value: example
+        '486':
+          description: UnexpectedLambdaException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UnexpectedLambdaException'
+              examples:
+                AdminCreateUser486Example:
+                  summary: Default AdminCreateUser 486 response
+                  x-microcks-default: true
+                  value: example
+        '487':
+          description: UserLambdaValidationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserLambdaValidationException'
+              examples:
+                AdminCreateUser487Example:
+                  summary: Default AdminCreateUser 487 response
+                  x-microcks-default: true
+                  value: example
+        '488':
+          description: InvalidLambdaResponseException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidLambdaResponseException'
+              examples:
+                AdminCreateUser488Example:
+                  summary: Default AdminCreateUser 488 response
+                  x-microcks-default: true
+                  value: example
+        '489':
+          description: PreconditionNotMetException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PreconditionNotMetException'
+              examples:
+                AdminCreateUser489Example:
+                  summary: Default AdminCreateUser 489 response
+                  x-microcks-default: true
+                  value: example
+        '490':
+          description: InvalidSmsRoleAccessPolicyException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidSmsRoleAccessPolicyException'
+              examples:
+                AdminCreateUser490Example:
+                  summary: Default AdminCreateUser 490 response
+                  x-microcks-default: true
+                  value: example
+        '491':
+          description: InvalidSmsRoleTrustRelationshipException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidSmsRoleTrustRelationshipException'
+              examples:
+                AdminCreateUser491Example:
+                  summary: Default AdminCreateUser 491 response
+                  x-microcks-default: true
+                  value: example
+        '492':
+          description: TooManyRequestsException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TooManyRequestsException'
+              examples:
+                AdminCreateUser492Example:
+                  summary: Default AdminCreateUser 492 response
+                  x-microcks-default: true
+                  value: example
+        '493':
+          description: NotAuthorizedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotAuthorizedException'
+              examples:
+                AdminCreateUser493Example:
+                  summary: Default AdminCreateUser 493 response
+                  x-microcks-default: true
+                  value: example
+        '494':
+          description: UnsupportedUserStateException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UnsupportedUserStateException'
+              examples:
+                AdminCreateUser494Example:
+                  summary: Default AdminCreateUser 494 response
+                  x-microcks-default: true
+                  value: example
+        '495':
+          description: InternalErrorException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalErrorException'
+              examples:
+                AdminCreateUser495Example:
+                  summary: Default AdminCreateUser 495 response
+                  x-microcks-default: true
+                  value: example
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AdminCreateUserRequest'
+            examples:
+              AdminCreateUserRequestExample:
+                summary: Default AdminCreateUser request
+                x-microcks-default: true
+                value:
+                  UserPoolId: us-east-1_AbCdEfGhI
+                  Username: my-user-pool
+                  UserAttributes: example-value
+                  ValidationData: us-east-1_AbCdEfGhI
+                  TemporaryPassword: example-value
+                  ForceAliasCreation: example-value
+                  MessageAction: example-value
+                  DesiredDeliveryMediums: example-value
+                  ClientMetadata: example-value
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - AWSCognitoIdentityProviderService.AdminCreateUser
+      summary: Amazon Cognito Admin Create User
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=AWSCognitoIdentityProviderService.AdminCreateUser'
+components:
+  schemas:
+    ResourceNotFoundException: {}
+    AttributeType:
+      type: object
+      required:
+      - Name
+      properties:
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/AttributeNameType'
+          - description: The name of the attribute.
+        Value:
+          allOf:
+          - $ref: '#/components/schemas/AttributeValueType'
+          - description: The value of the attribute.
+      description: Specifies whether the attribute is standard or custom.
+    AttributeNameType:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
+      minLength: 1
+      maxLength: 32
+    InvalidSmsRoleAccessPolicyException: {}
+    InvalidPasswordException: {}
+    UserNotFoundException: {}
+    InvalidSmsRoleTrustRelationshipException: {}
+    AdminCreateUserResponse:
+      type: object
+      properties:
+        User:
+          allOf:
+          - $ref: '#/components/schemas/UserType'
+          - description: The newly created user.
+      description: Represents the response from the server to the request to create the user.
+    UnexpectedLambdaException: {}
+    AttributeListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/AttributeType'
+    DeliveryMediumType:
+      type: string
+      enum:
+      - SMS
+      - EMAIL
+    DateType:
+      type: string
+      format: date-time
+    PreconditionNotMetException: {}
+    InvalidParameterException: {}
+    UnsupportedUserStateException: {}
+    TooManyRequestsException: {}
+    InternalErrorException: {}
+    ClientMetadataType:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/StringType'
+    MFAOptionListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/MFAOptionType'
+    StringType:
+      type: string
+    InvalidLambdaResponseException: {}
+    NotAuthorizedException: {}
+    CodeDeliveryFailureException: {}
+    PasswordType:
+      type: string
+      pattern: '[\S]+'
+      maxLength: 256
+      format: password
+    UserStatusType:
+      type: string
+      enum:
+      - UNCONFIRMED
+      - CONFIRMED
+      - ARCHIVED
+      - COMPROMISED
+      - UNKNOWN
+      - RESET_REQUIRED
+      - FORCE_CHANGE_PASSWORD
+    UserType:
+      type: object
+      properties:
+        Username:
+          allOf:
+          - $ref: '#/components/schemas/UsernameType'
+          - description: The user name of the user you want to describe.
+        Attributes:
+          allOf:
+          - $ref: '#/components/schemas/AttributeListType'
+          - description: A container with information about the user type attributes.
+        UserCreateDate:
+          allOf:
+          - $ref: '#/components/schemas/DateType'
+          - description: The creation date of the user.
+        UserLastModifiedDate:
+          allOf:
+          - $ref: '#/components/schemas/DateType'
+          - description: The last modified date of the user.
+        Enabled:
+          allOf:
+          - $ref: '#/components/schemas/BooleanType'
+          - description: Specifies whether the user is enabled.
+        UserStatus:
+          allOf:
+          - $ref: '#/components/schemas/UserStatusType'
+          - description: <p>The user status. This can be one of the following:</p> <ul> <li> <p>UNCONFIRMED - User has been created but not confirmed.</p> </li> <li> <p>CONFIRMED - User has been confirmed.</p> </li> <li> <p>EXTERNAL_PROVIDER - User signed in with a third-party IdP.</p> </li> <li> <p>ARCHIVED - User is no longer active.</p> </li> <li> <p>UNKNOWN - User status isn't known.</p> </li> <li> <p>RESET_REQUIRED - User is confirmed, but the user must request a code and reset their password before they can sign in.</p> </li> <li> <p>FORCE_CHANGE_PASSWORD - The user is confirmed and the user can sign in using a temporary password, but on first sign-in, the user must change their password to a new value before doing anything else. </p> </li> </ul>
+        MFAOptions:
+          allOf:
+          - $ref: '#/components/schemas/MFAOptionListType'
+          - description: The MFA options for the user.
+      description: A user profile in a Amazon Cognito user pool.
+    UserPoolIdType:
+      type: string
+      pattern: '[\w-]+_[0-9a-zA-Z]+'
+      minLength: 1
+      maxLength: 55
+    BooleanType:
+      type: boolean
+    MessageActionType:
+      type: string
+      enum:
+      - RESEND
+      - SUPPRESS
+    UsernameExistsException: {}
+    UsernameType:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
+      minLength: 1
+      maxLength: 128
+      format: password
+    UserLambdaValidationException: {}
+    DeliveryMediumListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/DeliveryMediumType'
+    ForceAliasCreation:
+      type: boolean
+    AttributeValueType:
+      type: string
+      maxLength: 2048
+      format: password
+    MFAOptionType:
+      type: object
+      properties:
+        DeliveryMedium:
+          allOf:
+          - $ref: '#/components/schemas/DeliveryMediumType'
+          - description: The delivery medium to send the MFA code. You can use this parameter to set only the <code>SMS</code> delivery medium value.
+        AttributeName:
+          allOf:
+          - $ref: '#/components/schemas/AttributeNameType'
+          - description: The attribute name of the MFA option type. The only valid value is <code>phone_number</code>.
+      description: ' <i>This data type is no longer supported.</i> Applies only to SMS multi-factor authentication (MFA) configurations. Does not apply to time-based one-time password (TOTP) software token MFA configurations.'
+    AdminCreateUserRequest:
+      type: object
+      required:
+      - UserPoolId
+      - Username
+      title: AdminCreateUserRequest
+      properties:
+        UserPoolId:
+          allOf:
+          - $ref: '#/components/schemas/UserPoolIdType'
+          - description: The user pool ID for the user pool where the user will be created.
+        Username:
+          allOf:
+          - $ref: '#/components/schemas/UsernameType'
+          - description: The username for the user. Must be unique within the user pool. Must be a UTF-8 string between 1 and 128 characters. After the user is created, the username can't be changed.
+        UserAttributes:
+          allOf:
+          - $ref: '#/components/schemas/AttributeListType'
+          - description: '<p>An array of name-value pairs that contain user attributes and attribute values to be set for the user to be created. You can create a user without specifying any attributes other than <code>Username</code>. However, any attributes that you specify as required (when creating a user pool or in the <b>Attributes</b> tab of the console) either you should supply (in your call to <code>AdminCreateUser</code>) or the user should supply (when they sign up in response to your welcome message).</p> <p>For custom attributes, you must prepend the <code>custom:</code> prefix to the attribute name.</p> <p>To send a message inviting the user to sign up, you must specify the user''s email address or phone number. You can do this in your call to AdminCreateUser or in the <b>Users</b> tab of the Amazon Cognito console for managing your user pools.</p> <p>In your call to <code>AdminCreateUser</code>, you can set the <code>email_verified</code> attribute to <code>True</code>, and you can set the <code>phone_number_verified</code> attribute to <code>True</code>. You can also do this by calling <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminUpdateUserAttributes.html">AdminUpdateUserAttributes</a>.</p> <ul> <li> <p> <b>email</b>: The email address of the user to whom the message that contains the code and username will be sent. Required if the <code>email_verified</code> attribute is set to <code>True</code>, or if <code>"EMAIL"</code> is specified in the <code>DesiredDeliveryMediums</code> parameter.</p> </li> <li> <p> <b>phone_number</b>: The phone number of the user to whom the message that contains the code and username will be sent. Required if the <code>phone_number_verified</code> attribute is set to <code>True</code>, or if <code>"SMS"</code> is specified in the <code>DesiredDeliveryMediums</code> parameter.</p> </li> </ul>'
+        ValidationData:
+          allOf:
+          - $ref: '#/components/schemas/AttributeListType'
+          - description: <p>The user's validation data. This is an array of name-value pairs that contain user attributes and attribute values that you can use for custom validation, such as restricting the types of user accounts that can be registered. For example, you might choose to allow or disallow user sign-up based on the user's domain.</p> <p>To configure custom validation, you must create a Pre Sign-up Lambda trigger for the user pool as described in the Amazon Cognito Developer Guide. The Lambda trigger receives the validation data and uses it in the validation process.</p> <p>The user's validation data isn't persisted.</p>
+        TemporaryPassword:
+          allOf:
+          - $ref: '#/components/schemas/PasswordType'
+          - description: <p>The user's temporary password. This password must conform to the password policy that you specified when you created the user pool.</p> <p>The temporary password is valid only once. To complete the Admin Create User flow, the user must enter the temporary password in the sign-in page, along with a new password to be used in all future sign-ins.</p> <p>This parameter isn't required. If you don't specify a value, Amazon Cognito generates one for you.</p> <p>The temporary password can only be used until the user account expiration limit that you specified when you created the user pool. To reset the account after that time limit, you must call <code>AdminCreateUser</code> again, specifying <code>"RESEND"</code> for the <code>MessageAction</code> parameter.</p>
+        ForceAliasCreation:
+          allOf:
+          - $ref: '#/components/schemas/ForceAliasCreation'
+          - description: <p>This parameter is used only if the <code>phone_number_verified</code> or <code>email_verified</code> attribute is set to <code>True</code>. Otherwise, it is ignored.</p> <p>If this parameter is set to <code>True</code> and the phone number or email address specified in the UserAttributes parameter already exists as an alias with a different user, the API call will migrate the alias from the previous user to the newly created user. The previous user will no longer be able to log in using that alias.</p> <p>If this parameter is set to <code>False</code>, the API throws an <code>AliasExistsException</code> error if the alias already exists. The default value is <code>False</code>.</p>
+        MessageAction:
+          allOf:
+          - $ref: '#/components/schemas/MessageActionType'
+          - description: Set to <code>RESEND</code> to resend the invitation message to a user that already exists and reset the expiration limit on the user's account. Set to <code>SUPPRESS</code> to suppress sending the message. You can specify only one value.
+        DesiredDeliveryMediums:
+          allOf:
+          - $ref: '#/components/schemas/DeliveryMediumListType'
+          - description: Specify <code>"EMAIL"</code> if email will be used to send the welcome message. Specify <code>"SMS"</code> if the phone number will be used. The default value is <code>"SMS"</code>. You can specify more than one value.
+        ClientMetadata:
+          allOf:
+          - $ref: '#/components/schemas/ClientMetadataType'
+          - description: <p>A map of custom key-value pairs that you can provide as input for any custom workflows that this action triggers.</p> <p>You create custom workflows by assigning Lambda functions to user pool triggers. When you use the AdminCreateUser API action, Amazon Cognito invokes the function that is assigned to the <i>pre sign-up</i> trigger. When Amazon Cognito invokes this function, it passes a JSON payload, which the function receives as input. This payload contains a <code>clientMetadata</code> attribute, which provides the data that you assigned to the ClientMetadata parameter in your AdminCreateUser request. In your function code in Lambda, you can process the <code>clientMetadata</code> value to enhance your workflow for your specific needs.</p> <p>For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools-working-with-aws-lambda-triggers.html"> Customizing user pool Workflows with Lambda Triggers</a> in the <i>Amazon Cognito Developer Guide</i>.</p> <note> <p>When you use the ClientMetadata parameter, remember that Amazon Cognito won't do the following:</p> <ul> <li> <p>Store the ClientMetadata value. This data is available only to Lambda triggers that are assigned to a user pool to support custom workflows. If your user pool configuration doesn't include triggers, the ClientMetadata parameter serves no purpose.</p> </li> <li> <p>Validate the ClientMetadata value.</p> </li> <li> <p>Encrypt the ClientMetadata value. Don't use Amazon Cognito to provide sensitive information.</p> </li> </ul> </note>
+      description: Represents the request to create a user in the specified user pool.
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/cognito-identity/
+x-hasEquivalentPaths: true
