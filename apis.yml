@@ -3737,6 +3737,8 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/identity.yaml
 common:
+- type: PostmanWorkspace
+  url: https://www.postman.com/kinlaneapi/amazon-cognito/overview
 - type: AgenticAccess
   url: agentic-access/aws-cognito-agentic-access.yml
 - type: TrustCenter
