@@ -49,16 +49,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminaddusertogroup-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.AdminAddUserToGroup API'
@@ -79,16 +75,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminconfirmsignup-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.AdminConfirmSignUp API'
@@ -109,16 +101,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-admincreateuser-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.AdminCreateUser API'
@@ -139,16 +127,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuser-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.AdminDeleteUser API'
@@ -169,16 +153,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuserattributes-api
   name: >-
@@ -200,16 +180,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableproviderforuser-api
   name: >-
@@ -231,16 +207,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableuser-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.AdminDisableUser API'
@@ -261,16 +233,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminenableuser-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.AdminEnableUser API'
@@ -291,16 +259,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminforgetdevice-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.AdminForgetDevice API'
@@ -321,16 +285,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-admingetdevice-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.AdminGetDevice API'
@@ -351,16 +311,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-admingetuser-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.AdminGetUser API'
   description: >-
@@ -380,16 +336,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-admininitiateauth-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.AdminInitiateAuth API'
@@ -410,16 +362,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminlinkproviderforuser-api
   name: >-
@@ -441,16 +389,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistdevices-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.AdminListDevices API'
@@ -471,16 +415,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistgroupsforuser-api
   name: >-
@@ -502,16 +442,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistuserauthevents-api
   name: >-
@@ -533,16 +469,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminremoveuserfromgroup-api
   name: >-
@@ -564,16 +496,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminresetuserpassword-api
   name: >-
@@ -595,16 +523,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminrespondtoauthchallenge-api
   name: >-
@@ -626,16 +550,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusermfapreference-api
   name: >-
@@ -657,16 +577,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetuserpassword-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.AdminSetUserPassword API'
@@ -687,16 +603,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusersettings-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.AdminSetUserSettings API'
@@ -717,16 +629,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateautheventfeedback-api
   name: >-
@@ -748,16 +656,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdatedevicestatus-api
   name: >-
@@ -779,16 +683,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateuserattributes-api
   name: >-
@@ -810,16 +710,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminuserglobalsignout-api
   name: >-
@@ -841,16 +737,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-associatesoftwaretoken-api
   name: >-
@@ -872,16 +764,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-changepassword-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ChangePassword API'
@@ -902,16 +790,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-confirmdevice-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ConfirmDevice API'
   description: >-
@@ -931,16 +815,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-confirmforgotpassword-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ConfirmForgotPassword API'
@@ -961,16 +841,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-confirmsignup-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ConfirmSignUp API'
   description: >-
@@ -990,16 +866,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-creategroup-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.CreateGroup API'
   description: >-
@@ -1019,16 +891,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-createidentityprovider-api
   name: >-
@@ -1050,16 +918,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-createresourceserver-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.CreateResourceServer API'
@@ -1080,16 +944,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-createuserimportjob-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.CreateUserImportJob API'
@@ -1110,16 +970,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpool-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.CreateUserPool API'
@@ -1140,16 +996,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpoolclient-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.CreateUserPoolClient API'
@@ -1170,16 +1022,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpooldomain-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.CreateUserPoolDomain API'
@@ -1200,16 +1048,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-deletegroup-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.DeleteGroup API'
   description: >-
@@ -1229,16 +1073,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-deleteidentityprovider-api
   name: >-
@@ -1260,16 +1100,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-deleteresourceserver-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.DeleteResourceServer API'
@@ -1290,16 +1126,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuser-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.DeleteUser API'
   description: >-
@@ -1319,16 +1151,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserattributes-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.DeleteUserAttributes API'
@@ -1349,16 +1177,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpool-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.DeleteUserPool API'
@@ -1379,16 +1203,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpoolclient-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.DeleteUserPoolClient API'
@@ -1409,16 +1229,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpooldomain-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.DeleteUserPoolDomain API'
@@ -1439,16 +1255,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-describeidentityprovider-api
   name: >-
@@ -1470,16 +1282,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-describeresourceserver-api
   name: >-
@@ -1501,16 +1309,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-describeriskconfiguration-api
   name: >-
@@ -1532,16 +1336,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserimportjob-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.DescribeUserImportJob API'
@@ -1562,16 +1362,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpool-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.DescribeUserPool API'
@@ -1592,16 +1388,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpoolclient-api
   name: >-
@@ -1623,16 +1415,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpooldomain-api
   name: >-
@@ -1654,16 +1442,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-forgetdevice-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ForgetDevice API'
   description: >-
@@ -1683,16 +1467,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-forgotpassword-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ForgotPassword API'
@@ -1713,16 +1493,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-getcsvheader-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.GetCSVHeader API'
   description: >-
@@ -1742,16 +1518,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-getdevice-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.GetDevice API'
   description: >-
@@ -1771,16 +1543,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-getgroup-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.GetGroup API'
   description: >-
@@ -1800,16 +1568,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-getidentityproviderbyidentifier-api
   name: >-
@@ -1831,16 +1595,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-getsigningcertificate-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.GetSigningCertificate API'
@@ -1861,16 +1621,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-getuicustomization-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.GetUICustomization API'
@@ -1891,16 +1647,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-getuser-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.GetUser API'
   description: >-
@@ -1920,16 +1672,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-getuserattributeverificationcode-api
   name: >-
@@ -1951,16 +1699,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-getuserpoolmfaconfig-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.GetUserPoolMfaConfig API'
@@ -1981,16 +1725,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-globalsignout-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.GlobalSignOut API'
   description: >-
@@ -2010,16 +1750,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-initiateauth-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.InitiateAuth API'
   description: >-
@@ -2039,16 +1775,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-listdevices-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ListDevices API'
   description: >-
@@ -2068,16 +1800,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-listgroups-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ListGroups API'
   description: >-
@@ -2097,16 +1825,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-listidentityproviders-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ListIdentityProviders API'
@@ -2127,16 +1851,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-listresourceservers-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ListResourceServers API'
@@ -2157,16 +1877,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-listtagsforresource-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ListTagsForResource API'
@@ -2187,16 +1903,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-listuserimportjobs-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ListUserImportJobs API'
@@ -2217,16 +1929,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpoolclients-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ListUserPoolClients API'
@@ -2247,16 +1955,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpools-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ListUserPools API'
   description: >-
@@ -2276,16 +1980,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-listusers-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ListUsers API'
   description: >-
@@ -2305,16 +2005,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-listusersingroup-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.ListUsersInGroup API'
@@ -2335,16 +2031,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-resendconfirmationcode-api
   name: >-
@@ -2366,16 +2058,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-respondtoauthchallenge-api
   name: >-
@@ -2397,16 +2085,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-revoketoken-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.RevokeToken API'
   description: >-
@@ -2426,16 +2110,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-setriskconfiguration-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.SetRiskConfiguration API'
@@ -2456,16 +2136,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-setuicustomization-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.SetUICustomization API'
@@ -2486,16 +2162,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-setusermfapreference-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.SetUserMFAPreference API'
@@ -2516,16 +2188,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-setuserpoolmfaconfig-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.SetUserPoolMfaConfig API'
@@ -2546,16 +2214,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-setusersettings-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.SetUserSettings API'
@@ -2576,16 +2240,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-signup-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.SignUp API'
   description: >-
@@ -2605,16 +2265,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-startuserimportjob-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.StartUserImportJob API'
@@ -2635,16 +2291,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-stopuserimportjob-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.StopUserImportJob API'
@@ -2665,16 +2317,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-tagresource-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.TagResource API'
   description: >-
@@ -2694,16 +2342,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-untagresource-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.UntagResource API'
   description: >-
@@ -2723,16 +2367,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-updateautheventfeedback-api
   name: >-
@@ -2754,16 +2394,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-updatedevicestatus-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.UpdateDeviceStatus API'
@@ -2784,16 +2420,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-updategroup-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.UpdateGroup API'
   description: >-
@@ -2813,16 +2445,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-updateidentityprovider-api
   name: >-
@@ -2844,16 +2472,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-updateresourceserver-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.UpdateResourceServer API'
@@ -2874,16 +2498,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserattributes-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.UpdateUserAttributes API'
@@ -2904,16 +2524,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpool-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.UpdateUserPool API'
@@ -2934,16 +2550,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpoolclient-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.UpdateUserPoolClient API'
@@ -2964,16 +2576,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpooldomain-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.UpdateUserPoolDomain API'
@@ -2994,16 +2602,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-verifysoftwaretoken-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.VerifySoftwareToken API'
@@ -3024,16 +2628,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityproviderservice-verifyuserattribute-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityProviderService.VerifyUserAttribute API'
@@ -3054,16 +2654,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-createidentitypool-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.CreateIdentityPool API'
   description: >-
@@ -3083,16 +2679,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-deleteidentities-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.DeleteIdentities API'
   description: >-
@@ -3112,16 +2704,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-deleteidentitypool-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.DeleteIdentityPool API'
   description: >-
@@ -3141,16 +2729,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-describeidentity-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.DescribeIdentity API'
   description: >-
@@ -3170,16 +2754,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-describeidentitypool-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.DescribeIdentityPool API'
   description: >-
@@ -3199,16 +2779,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-getcredentialsforidentity-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.GetCredentialsForIdentity API'
@@ -3229,16 +2805,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-getid-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.GetId API'
   description: >-
@@ -3257,16 +2829,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-getidentitypoolroles-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.GetIdentityPoolRoles API'
   description: >-
@@ -3286,16 +2854,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-getopenidtoken-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.GetOpenIdToken API'
   description: >-
@@ -3315,16 +2879,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-getopenidtokenfordeveloperidentity-api
   name: >-
@@ -3346,16 +2906,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-getprincipaltagattributemap-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.GetPrincipalTagAttributeMap API'
@@ -3376,16 +2932,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-listidentities-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.ListIdentities API'
   description: >-
@@ -3405,16 +2957,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-listidentitypools-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.ListIdentityPools API'
   description: >-
@@ -3434,16 +2982,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-listtagsforresource-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.ListTagsForResource API'
   description: >-
@@ -3463,16 +3007,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-lookupdeveloperidentity-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.LookupDeveloperIdentity API'
@@ -3493,16 +3033,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-mergedeveloperidentities-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.MergeDeveloperIdentities API'
@@ -3523,16 +3059,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-setidentitypoolroles-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.SetIdentityPoolRoles API'
   description: >-
@@ -3552,16 +3084,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-setprincipaltagattributemap-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap API'
@@ -3582,16 +3110,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-tagresource-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.TagResource API'
   description: >-
@@ -3610,16 +3134,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: >-
     aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-unlinkdeveloperidentity-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.UnlinkDeveloperIdentity API'
@@ -3640,16 +3160,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-unlinkidentity-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.UnlinkIdentity API'
   description: >-
@@ -3669,16 +3185,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-untagresource-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.UntagResource API'
   description: >-
@@ -3697,16 +3209,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 - aid: aws-cognito:aws-cognito-x-amz-target-awscognitoidentityservice-updateidentitypool-api
   name: 'Amazon Cognito #X Amz Target=AWSCognitoIdentityService.UpdateIdentityPool API'
   description: >-
@@ -3726,16 +3234,12 @@ apis:
     url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   - type: Authentication
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/security-iam.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity-provider.yaml
   - type: GraphQL
     url: graphql/aws-cognito-graphql.md
   - type: Documentation
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
-  - type: X-NaftikoCapability
-    url: capabilities/identity.yaml
 common:
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-cognito/overview
