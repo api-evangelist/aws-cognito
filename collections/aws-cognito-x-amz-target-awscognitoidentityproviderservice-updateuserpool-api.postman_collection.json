@@ -1,0 +1,1435 @@
+{
+  "item": [
+    {
+      "id": "364abf39-a025-4515-8b95-11511e187a5c",
+      "name": "#X Amz Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "5f336e0e-cbc2-4e3e-8ad3-656525d27fff",
+          "name": "Amazon Cognito Update User Pool",
+          "request": {
+            "name": "Amazon Cognito Update User Pool",
+            "description": {
+              "content": "<p>Updates the specified user pool with the specified attributes. You can get a list of the current user pool settings using <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DescribeUserPool.html\">DescribeUserPool</a>. If you don't provide a value for an attribute, it will be set to the default value. </p> <note> <p>This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with <a href=\"https://console.aws.amazon.com/pinpoint/home/\">Amazon Pinpoint</a>. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in.</p> <p>If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In <i> <a href=\"https://docs.aws.amazon.com/sns/latest/dg/sns-sms-sandbox.html\">sandbox mode</a> </i>, you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools-sms-userpool-settings.html\"> SMS message settings for Amazon Cognito user pools</a> in the <i>Amazon Cognito Developer Guide</i>.</p> </note>",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                  "type": "any",
+                  "value": "{{region}}",
+                  "key": "region"
+                }
+              ]
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "<string>"
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Date",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Algorithm",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Credential",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Security-Token",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Signature",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"UserPoolId\": \"<string>\",\n  \"Policies\": {\n    \"PasswordPolicy\": {\n      \"MinimumLength\": \"<integer>\",\n      \"RequireUppercase\": \"<boolean>\",\n      \"RequireLowercase\": \"<boolean>\",\n      \"RequireNumbers\": \"<boolean>\",\n      \"RequireSymbols\": \"<boolean>\",\n      \"TemporaryPasswordValidityDays\": \"<integer>\"\n    }\n  },\n  \"DeletionProtection\": \"<string>\",\n  \"LambdaConfig\": {\n    \"PreSignUp\": \"<string>\",\n    \"CustomMessage\": \"<string>\",\n    \"PostConfirmation\": \"<string>\",\n    \"PreAuthentication\": \"<string>\",\n    \"PostAuthentication\": \"<string>\",\n    \"DefineAuthChallenge\": \"<string>\",\n    \"CreateAuthChallenge\": \"<string>\",\n    \"VerifyAuthChallengeResponse\": \"<string>\",\n    \"PreTokenGeneration\": \"<string>\",\n    \"UserMigration\": \"<string>\",\n    \"CustomSMSSender\": {\n      \"LambdaVersion\": \"<string>\",\n      \"LambdaArn\": \"<string>\"\n    },\n    \"CustomEmailSender\": {\n      \"LambdaVersion\": \"<string>\",\n      \"LambdaArn\": \"<string>\"\n    },\n    \"KMSKeyID\": \"<string>\"\n  },\n  \"AutoVerifiedAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"SmsVerificationMessage\": \"<string>\",\n  \"EmailVerificationMessage\": \"<string>\",\n  \"EmailVerificationSubject\": \"<string>\",\n  \"VerificationMessageTemplate\": {\n    \"SmsMessage\": \"<string>\",\n    \"EmailMessage\": \"<string>\",\n    \"EmailSubject\": \"<string>\",\n    \"EmailMessageByLink\": \"<string>\",\n    \"EmailSubjectByLink\": \"<string>\",\n    \"DefaultEmailOption\": \"<string>\"\n  },\n  \"SmsAuthenticationMessage\": \"<string>\",\n  \"UserAttributeUpdateSettings\": {\n    \"AttributesRequireVerificationBeforeUpdate\": [\n      \"<string>\",\n      \"<string>\"\n    ]\n  },\n  \"MfaConfiguration\": \"<string>\",\n  \"DeviceConfiguration\": {\n    \"ChallengeRequiredOnNewDevice\": \"<boolean>\",\n    \"DeviceOnlyRememberedOnUserPrompt\": \"<boolean>\"\n  },\n  \"EmailConfiguration\": {\n    \"SourceArn\": \"<string>\",\n    \"ReplyToEmailAddress\": \"<string>\",\n    \"EmailSendingAccount\": \"<string>\",\n    \"From\": \"<string>\",\n    \"ConfigurationSet\": \"<string>\"\n  },\n  \"SmsConfiguration\": {\n    \"SnsCallerArn\": \"<string>\",\n    \"ExternalId\": \"<string>\",\n    \"SnsRegion\": \"<string>\"\n  },\n  \"UserPoolTags\": {\n    \"key_0\": \"<string>\",\n    \"key_1\": \"<string>\"\n  },\n  \"AdminCreateUserConfig\": {\n    \"AllowAdminCreateUserOnly\": \"<boolean>\",\n    \"UnusedAccountValidityDays\": \"<integer>\",\n    \"InviteMessageTemplate\": {\n      \"SMSMessage\": \"<string>\",\n      \"EmailMessage\": \"<string>\",\n      \"EmailSubject\": \"<string>\"\n    }\n  },\n  \"UserPoolAddOns\": {\n    \"AdvancedSecurityMode\": \"<string>\"\n  },\n  \"AccountRecoverySetting\": {\n    \"RecoveryMechanisms\": [\n      {\n        \"Priority\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Name\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      }\n    ]\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "a1b69b2b-e2b1-4ff2-8291-cd4b63d17c1e",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"us-east-1_AbCdEfGhI\",\n  \"Policies\": \"example-value\",\n  \"DeletionProtection\": \"example-value\",\n  \"LambdaConfig\": \"example-value\",\n  \"AutoVerifiedAttributes\": \"example-value\",\n  \"SmsVerificationMessage\": \"example-value\",\n  \"EmailVerificationMessage\": \"user@example.com\",\n  \"EmailVerificationSubject\": \"user@example.com\",\n  \"VerificationMessageTemplate\": \"example-value\",\n  \"SmsAuthenticationMessage\": \"example-value\",\n  \"UserAttributeUpdateSettings\": \"example-value\",\n  \"MfaConfiguration\": \"example-value\",\n  \"DeviceConfiguration\": \"example-value\",\n  \"EmailConfiguration\": \"user@example.com\",\n  \"SmsConfiguration\": \"example-value\",\n  \"UserPoolTags\": \"example-value\",\n  \"AdminCreateUserConfig\": \"example-value\",\n  \"UserPoolAddOns\": \"example-value\",\n  \"AccountRecoverySetting\": \"example-value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3b5bb3c9-eaf3-4a49-a8d3-49b808547dcb",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"us-east-1_AbCdEfGhI\",\n  \"Policies\": \"example-value\",\n  \"DeletionProtection\": \"example-value\",\n  \"LambdaConfig\": \"example-value\",\n  \"AutoVerifiedAttributes\": \"example-value\",\n  \"SmsVerificationMessage\": \"example-value\",\n  \"EmailVerificationMessage\": \"user@example.com\",\n  \"EmailVerificationSubject\": \"user@example.com\",\n  \"VerificationMessageTemplate\": \"example-value\",\n  \"SmsAuthenticationMessage\": \"example-value\",\n  \"UserAttributeUpdateSettings\": \"example-value\",\n  \"MfaConfiguration\": \"example-value\",\n  \"DeviceConfiguration\": \"example-value\",\n  \"EmailConfiguration\": \"user@example.com\",\n  \"SmsConfiguration\": \"example-value\",\n  \"UserPoolTags\": \"example-value\",\n  \"AdminCreateUserConfig\": \"example-value\",\n  \"UserPoolAddOns\": \"example-value\",\n  \"AccountRecoverySetting\": \"example-value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 480,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "bb74de38-c153-48a5-b4de-f367e9b5239a",
+              "name": "InvalidParameterException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"us-east-1_AbCdEfGhI\",\n  \"Policies\": \"example-value\",\n  \"DeletionProtection\": \"example-value\",\n  \"LambdaConfig\": \"example-value\",\n  \"AutoVerifiedAttributes\": \"example-value\",\n  \"SmsVerificationMessage\": \"example-value\",\n  \"EmailVerificationMessage\": \"user@example.com\",\n  \"EmailVerificationSubject\": \"user@example.com\",\n  \"VerificationMessageTemplate\": \"example-value\",\n  \"SmsAuthenticationMessage\": \"example-value\",\n  \"UserAttributeUpdateSettings\": \"example-value\",\n  \"MfaConfiguration\": \"example-value\",\n  \"DeviceConfiguration\": \"example-value\",\n  \"EmailConfiguration\": \"user@example.com\",\n  \"SmsConfiguration\": \"example-value\",\n  \"UserPoolTags\": \"example-value\",\n  \"AdminCreateUserConfig\": \"example-value\",\n  \"UserPoolAddOns\": \"example-value\",\n  \"AccountRecoverySetting\": \"example-value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 481,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ba4e9c6f-e4ec-41ca-98e8-5806c724bd04",
+              "name": "ConcurrentModificationException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"us-east-1_AbCdEfGhI\",\n  \"Policies\": \"example-value\",\n  \"DeletionProtection\": \"example-value\",\n  \"LambdaConfig\": \"example-value\",\n  \"AutoVerifiedAttributes\": \"example-value\",\n  \"SmsVerificationMessage\": \"example-value\",\n  \"EmailVerificationMessage\": \"user@example.com\",\n  \"EmailVerificationSubject\": \"user@example.com\",\n  \"VerificationMessageTemplate\": \"example-value\",\n  \"SmsAuthenticationMessage\": \"example-value\",\n  \"UserAttributeUpdateSettings\": \"example-value\",\n  \"MfaConfiguration\": \"example-value\",\n  \"DeviceConfiguration\": \"example-value\",\n  \"EmailConfiguration\": \"user@example.com\",\n  \"SmsConfiguration\": \"example-value\",\n  \"UserPoolTags\": \"example-value\",\n  \"AdminCreateUserConfig\": \"example-value\",\n  \"UserPoolAddOns\": \"example-value\",\n  \"AccountRecoverySetting\": \"example-value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 482,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "15440604-945f-4810-82ed-59d6f4946d36",
+              "name": "TooManyRequestsException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"us-east-1_AbCdEfGhI\",\n  \"Policies\": \"example-value\",\n  \"DeletionProtection\": \"example-value\",\n  \"LambdaConfig\": \"example-value\",\n  \"AutoVerifiedAttributes\": \"example-value\",\n  \"SmsVerificationMessage\": \"example-value\",\n  \"EmailVerificationMessage\": \"user@example.com\",\n  \"EmailVerificationSubject\": \"user@example.com\",\n  \"VerificationMessageTemplate\": \"example-value\",\n  \"SmsAuthenticationMessage\": \"example-value\",\n  \"UserAttributeUpdateSettings\": \"example-value\",\n  \"MfaConfiguration\": \"example-value\",\n  \"DeviceConfiguration\": \"example-value\",\n  \"EmailConfiguration\": \"user@example.com\",\n  \"SmsConfiguration\": \"example-value\",\n  \"UserPoolTags\": \"example-value\",\n  \"AdminCreateUserConfig\": \"example-value\",\n  \"UserPoolAddOns\": \"example-value\",\n  \"AccountRecoverySetting\": \"example-value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 483,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b1e5c544-b21d-43d0-a3b3-17c716fa2ddc",
+              "name": "NotAuthorizedException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"us-east-1_AbCdEfGhI\",\n  \"Policies\": \"example-value\",\n  \"DeletionProtection\": \"example-value\",\n  \"LambdaConfig\": \"example-value\",\n  \"AutoVerifiedAttributes\": \"example-value\",\n  \"SmsVerificationMessage\": \"example-value\",\n  \"EmailVerificationMessage\": \"user@example.com\",\n  \"EmailVerificationSubject\": \"user@example.com\",\n  \"VerificationMessageTemplate\": \"example-value\",\n  \"SmsAuthenticationMessage\": \"example-value\",\n  \"UserAttributeUpdateSettings\": \"example-value\",\n  \"MfaConfiguration\": \"example-value\",\n  \"DeviceConfiguration\": \"example-value\",\n  \"EmailConfiguration\": \"user@example.com\",\n  \"SmsConfiguration\": \"example-value\",\n  \"UserPoolTags\": \"example-value\",\n  \"AdminCreateUserConfig\": \"example-value\",\n  \"UserPoolAddOns\": \"example-value\",\n  \"AccountRecoverySetting\": \"example-value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 484,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "174fdd54-a9f4-461e-a7c2-fb295a506f83",
+              "name": "UserImportInProgressException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"us-east-1_AbCdEfGhI\",\n  \"Policies\": \"example-value\",\n  \"DeletionProtection\": \"example-value\",\n  \"LambdaConfig\": \"example-value\",\n  \"AutoVerifiedAttributes\": \"example-value\",\n  \"SmsVerificationMessage\": \"example-value\",\n  \"EmailVerificationMessage\": \"user@example.com\",\n  \"EmailVerificationSubject\": \"user@example.com\",\n  \"VerificationMessageTemplate\": \"example-value\",\n  \"SmsAuthenticationMessage\": \"example-value\",\n  \"UserAttributeUpdateSettings\": \"example-value\",\n  \"MfaConfiguration\": \"example-value\",\n  \"DeviceConfiguration\": \"example-value\",\n  \"EmailConfiguration\": \"user@example.com\",\n  \"SmsConfiguration\": \"example-value\",\n  \"UserPoolTags\": \"example-value\",\n  \"AdminCreateUserConfig\": \"example-value\",\n  \"UserPoolAddOns\": \"example-value\",\n  \"AccountRecoverySetting\": \"example-value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 485,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "53c6e401-54c3-4f9a-829f-5ac8333c693f",
+              "name": "InternalErrorException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"us-east-1_AbCdEfGhI\",\n  \"Policies\": \"example-value\",\n  \"DeletionProtection\": \"example-value\",\n  \"LambdaConfig\": \"example-value\",\n  \"AutoVerifiedAttributes\": \"example-value\",\n  \"SmsVerificationMessage\": \"example-value\",\n  \"EmailVerificationMessage\": \"user@example.com\",\n  \"EmailVerificationSubject\": \"user@example.com\",\n  \"VerificationMessageTemplate\": \"example-value\",\n  \"SmsAuthenticationMessage\": \"example-value\",\n  \"UserAttributeUpdateSettings\": \"example-value\",\n  \"MfaConfiguration\": \"example-value\",\n  \"DeviceConfiguration\": \"example-value\",\n  \"EmailConfiguration\": \"user@example.com\",\n  \"SmsConfiguration\": \"example-value\",\n  \"UserPoolTags\": \"example-value\",\n  \"AdminCreateUserConfig\": \"example-value\",\n  \"UserPoolAddOns\": \"example-value\",\n  \"AccountRecoverySetting\": \"example-value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 486,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "076571a7-219e-46bd-bc95-f86c33ed0910",
+              "name": "InvalidSmsRoleAccessPolicyException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"us-east-1_AbCdEfGhI\",\n  \"Policies\": \"example-value\",\n  \"DeletionProtection\": \"example-value\",\n  \"LambdaConfig\": \"example-value\",\n  \"AutoVerifiedAttributes\": \"example-value\",\n  \"SmsVerificationMessage\": \"example-value\",\n  \"EmailVerificationMessage\": \"user@example.com\",\n  \"EmailVerificationSubject\": \"user@example.com\",\n  \"VerificationMessageTemplate\": \"example-value\",\n  \"SmsAuthenticationMessage\": \"example-value\",\n  \"UserAttributeUpdateSettings\": \"example-value\",\n  \"MfaConfiguration\": \"example-value\",\n  \"DeviceConfiguration\": \"example-value\",\n  \"EmailConfiguration\": \"user@example.com\",\n  \"SmsConfiguration\": \"example-value\",\n  \"UserPoolTags\": \"example-value\",\n  \"AdminCreateUserConfig\": \"example-value\",\n  \"UserPoolAddOns\": \"example-value\",\n  \"AccountRecoverySetting\": \"example-value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 487,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fab1d7a1-4329-4849-b5e3-ad61687dd31a",
+              "name": "InvalidSmsRoleTrustRelationshipException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"us-east-1_AbCdEfGhI\",\n  \"Policies\": \"example-value\",\n  \"DeletionProtection\": \"example-value\",\n  \"LambdaConfig\": \"example-value\",\n  \"AutoVerifiedAttributes\": \"example-value\",\n  \"SmsVerificationMessage\": \"example-value\",\n  \"EmailVerificationMessage\": \"user@example.com\",\n  \"EmailVerificationSubject\": \"user@example.com\",\n  \"VerificationMessageTemplate\": \"example-value\",\n  \"SmsAuthenticationMessage\": \"example-value\",\n  \"UserAttributeUpdateSettings\": \"example-value\",\n  \"MfaConfiguration\": \"example-value\",\n  \"DeviceConfiguration\": \"example-value\",\n  \"EmailConfiguration\": \"user@example.com\",\n  \"SmsConfiguration\": \"example-value\",\n  \"UserPoolTags\": \"example-value\",\n  \"AdminCreateUserConfig\": \"example-value\",\n  \"UserPoolAddOns\": \"example-value\",\n  \"AccountRecoverySetting\": \"example-value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 488,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ad1c5f13-42c2-4ca6-9076-59c0291983e8",
+              "name": "UserPoolTaggingException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"us-east-1_AbCdEfGhI\",\n  \"Policies\": \"example-value\",\n  \"DeletionProtection\": \"example-value\",\n  \"LambdaConfig\": \"example-value\",\n  \"AutoVerifiedAttributes\": \"example-value\",\n  \"SmsVerificationMessage\": \"example-value\",\n  \"EmailVerificationMessage\": \"user@example.com\",\n  \"EmailVerificationSubject\": \"user@example.com\",\n  \"VerificationMessageTemplate\": \"example-value\",\n  \"SmsAuthenticationMessage\": \"example-value\",\n  \"UserAttributeUpdateSettings\": \"example-value\",\n  \"MfaConfiguration\": \"example-value\",\n  \"DeviceConfiguration\": \"example-value\",\n  \"EmailConfiguration\": \"user@example.com\",\n  \"SmsConfiguration\": \"example-value\",\n  \"UserPoolTags\": \"example-value\",\n  \"AdminCreateUserConfig\": \"example-value\",\n  \"UserPoolAddOns\": \"example-value\",\n  \"AccountRecoverySetting\": \"example-value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 489,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9d774e4d-4fbd-4dc2-8070-14f6d15118f6",
+              "name": "InvalidEmailRoleAccessPolicyException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"us-east-1_AbCdEfGhI\",\n  \"Policies\": \"example-value\",\n  \"DeletionProtection\": \"example-value\",\n  \"LambdaConfig\": \"example-value\",\n  \"AutoVerifiedAttributes\": \"example-value\",\n  \"SmsVerificationMessage\": \"example-value\",\n  \"EmailVerificationMessage\": \"user@example.com\",\n  \"EmailVerificationSubject\": \"user@example.com\",\n  \"VerificationMessageTemplate\": \"example-value\",\n  \"SmsAuthenticationMessage\": \"example-value\",\n  \"UserAttributeUpdateSettings\": \"example-value\",\n  \"MfaConfiguration\": \"example-value\",\n  \"DeviceConfiguration\": \"example-value\",\n  \"EmailConfiguration\": \"user@example.com\",\n  \"SmsConfiguration\": \"example-value\",\n  \"UserPoolTags\": \"example-value\",\n  \"AdminCreateUserConfig\": \"example-value\",\n  \"UserPoolAddOns\": \"example-value\",\n  \"AccountRecoverySetting\": \"example-value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 490,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "us-east-1",
+      "key": "region"
+    },
+    {
+      "type": "string",
+      "value": "http://cognito-identity.{{region}}.amazonaws.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "d6d75dd1-68a3-4c37-9d8b-15eda486898f",
+    "name": "Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.UpdateUserPool API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "<fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html\">Authentication Flow</a>.</p> <p>For more information see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html\">Amazon Cognito Federated Identities</a>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+      "type": "text/plain"
+    }
+  }
+}
