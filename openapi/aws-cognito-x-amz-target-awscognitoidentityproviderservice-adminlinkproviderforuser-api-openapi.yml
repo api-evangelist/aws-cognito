@@ -1,9 +1,9 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 2016-04-18
   x-release: v4
-  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AdminLinkProviderForUser API'
-  description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
+  title: 'Amazon Cognito Identity Provider #X Amz Target=AWSCognitoIdentityProviderService.AdminLinkProviderForUser API'
+  description: <p>Using the Amazon Cognito user pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.</p> <p>This API reference provides information about user pools in Amazon Cognito user pools.</p> <p>For more information, see the <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html">Amazon Cognito Documentation</a>.</p>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -17,12 +17,13 @@ info:
     name: Apache 2.0 License
     url: http://www.apache.org/licenses/
   x-providerName: amazonaws.com
-  x-serviceName: cognito-identity
+  x-serviceName: cognito-idp
   x-origin:
   - contentType: application/json
-    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-identity-2014-06-30.normal.json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-idp-2016-04-18.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -30,7 +31,7 @@ info:
   - cloud
   x-preferred: true
 servers:
-- url: http://cognito-identity.{region}.amazonaws.com
+- url: http://cognito-idp.{region}.amazonaws.com
   variables:
     region:
       description: The AWS region
@@ -59,8 +60,8 @@ servers:
       - sa-east-1
       - me-south-1
       default: us-east-1
-  description: The Amazon Cognito Identity multi-region endpoint
-- url: https://cognito-identity.{region}.amazonaws.com
+  description: The Amazon Cognito Identity Provider multi-region endpoint
+- url: https://cognito-idp.{region}.amazonaws.com
   variables:
     region:
       description: The AWS region
@@ -89,8 +90,8 @@ servers:
       - sa-east-1
       - me-south-1
       default: us-east-1
-  description: The Amazon Cognito Identity multi-region endpoint
-- url: http://cognito-identity.{region}.amazonaws.com.cn
+  description: The Amazon Cognito Identity Provider multi-region endpoint
+- url: http://cognito-idp.{region}.amazonaws.com.cn
   variables:
     region:
       description: The AWS region
@@ -98,8 +99,8 @@ servers:
       - cn-north-1
       - cn-northwest-1
       default: cn-north-1
-  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
-- url: https://cognito-identity.{region}.amazonaws.com.cn
+  description: The Amazon Cognito Identity Provider endpoint for China (Beijing) and China (Ningxia)
+- url: https://cognito-idp.{region}.amazonaws.com.cn
   variables:
     region:
       description: The AWS region
@@ -107,7 +108,7 @@ servers:
       - cn-north-1
       - cn-northwest-1
       default: cn-north-1
-  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+  description: The Amazon Cognito Identity Provider endpoint for China (Beijing) and China (Ningxia)
 security:
 - hmac: []
 tags:
@@ -251,20 +252,17 @@ paths:
 components:
   schemas:
     ResourceNotFoundException: {}
+    NotAuthorizedException: {}
     ProviderNameType:
       type: string
       pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
       minLength: 1
       maxLength: 32
-    UserNotFoundException: {}
-    InvalidParameterException: {}
-    TooManyRequestsException: {}
-    InternalErrorException: {}
-    StringType:
-      type: string
     LimitExceededException: {}
-    NotAuthorizedException: {}
     AliasExistsException: {}
+    AdminLinkProviderForUserResponse:
+      type: object
+      properties: {}
     ProviderUserIdentifierType:
       type: object
       properties:
@@ -281,6 +279,12 @@ components:
           - $ref: '#/components/schemas/StringType'
           - description: The value of the provider attribute to link to, such as <code>xxxxx_account</code>.
       description: A container for information about an IdP for a user pool.
+    UserNotFoundException: {}
+    TooManyRequestsException: {}
+    StringType:
+      type: string
+    InvalidParameterException: {}
+    InternalErrorException: {}
     AdminLinkProviderForUserRequest:
       type: object
       required:
@@ -301,10 +305,19 @@ components:
           allOf:
           - $ref: '#/components/schemas/ProviderUserIdentifierType'
           - description: <p>An external IdP account for a user who doesn't exist yet in the user pool. This user must be a federated user (for example, a SAML or Facebook user), not another native user.</p> <p>If the <code>SourceUser</code> is using a federated social IdP, such as Facebook, Google, or Login with Amazon, you must set the <code>ProviderAttributeName</code> to <code>Cognito_Subject</code>. For social IdPs, the <code>ProviderName</code> will be <code>Facebook</code>, <code>Google</code>, or <code>LoginWithAmazon</code>, and Amazon Cognito will automatically parse the Facebook, Google, and Login with Amazon tokens for <code>id</code>, <code>sub</code>, and <code>user_id</code>, respectively. The <code>ProviderAttributeValue</code> for the user must be the same value as the <code>id</code>, <code>sub</code>, or <code>user_id</code> value found in the social IdP token.</p> <p/> <p>For SAML, the <code>ProviderAttributeName</code> can be any value that matches a claim in the SAML assertion. If you want to link SAML users based on the subject of the SAML assertion, you should map the subject to a claim through the SAML IdP and submit that claim name as the <code>ProviderAttributeName</code>. If you set <code>ProviderAttributeName</code> to <code>Cognito_Subject</code>, Amazon Cognito will automatically parse the default unique identifier found in the subject from the SAML token.</p>
-    AdminLinkProviderForUserResponse:
-      type: object
-      properties: {}
   parameters:
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Credential:
       name: X-Amz-Credential
       in: header
@@ -317,26 +330,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Algorithm:
       name: X-Amz-Algorithm
       in: header
       schema:
         type: string
       required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Signature:
+      name: X-Amz-Signature
       in: header
       schema:
         type: string
@@ -356,5 +357,5 @@ components:
       x-amazon-apigateway-authtype: awsSigv4
 externalDocs:
   description: Amazon Web Services documentation
-  url: https://docs.aws.amazon.com/cognito-identity/
+  url: https://docs.aws.amazon.com/cognito-idp/
 x-hasEquivalentPaths: true

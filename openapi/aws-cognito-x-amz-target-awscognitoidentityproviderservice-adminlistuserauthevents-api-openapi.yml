@@ -1,9 +1,9 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 2016-04-18
   x-release: v4
-  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AdminListUserAuthEvents API'
-  description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
+  title: 'Amazon Cognito Identity Provider #X Amz Target=AWSCognitoIdentityProviderService.AdminListUserAuthEvents API'
+  description: <p>Using the Amazon Cognito user pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.</p> <p>This API reference provides information about user pools in Amazon Cognito user pools.</p> <p>For more information, see the <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html">Amazon Cognito Documentation</a>.</p>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -17,12 +17,13 @@ info:
     name: Apache 2.0 License
     url: http://www.apache.org/licenses/
   x-providerName: amazonaws.com
-  x-serviceName: cognito-identity
+  x-serviceName: cognito-idp
   x-origin:
   - contentType: application/json
-    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-identity-2014-06-30.normal.json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-idp-2016-04-18.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -30,7 +31,7 @@ info:
   - cloud
   x-preferred: true
 servers:
-- url: http://cognito-identity.{region}.amazonaws.com
+- url: http://cognito-idp.{region}.amazonaws.com
   variables:
     region:
       description: The AWS region
@@ -59,8 +60,8 @@ servers:
       - sa-east-1
       - me-south-1
       default: us-east-1
-  description: The Amazon Cognito Identity multi-region endpoint
-- url: https://cognito-identity.{region}.amazonaws.com
+  description: The Amazon Cognito Identity Provider multi-region endpoint
+- url: https://cognito-idp.{region}.amazonaws.com
   variables:
     region:
       description: The AWS region
@@ -89,8 +90,8 @@ servers:
       - sa-east-1
       - me-south-1
       default: us-east-1
-  description: The Amazon Cognito Identity multi-region endpoint
-- url: http://cognito-identity.{region}.amazonaws.com.cn
+  description: The Amazon Cognito Identity Provider multi-region endpoint
+- url: http://cognito-idp.{region}.amazonaws.com.cn
   variables:
     region:
       description: The AWS region
@@ -98,8 +99,8 @@ servers:
       - cn-north-1
       - cn-northwest-1
       default: cn-north-1
-  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
-- url: https://cognito-identity.{region}.amazonaws.com.cn
+  description: The Amazon Cognito Identity Provider endpoint for China (Beijing) and China (Ningxia)
+- url: https://cognito-idp.{region}.amazonaws.com.cn
   variables:
     region:
       description: The AWS region
@@ -107,7 +108,7 @@ servers:
       - cn-north-1
       - cn-northwest-1
       default: cn-north-1
-  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+  description: The Amazon Cognito Identity Provider endpoint for China (Beijing) and China (Ningxia)
 security:
 - hmac: []
 tags:
@@ -259,98 +260,42 @@ paths:
       - '#X Amz Target=AWSCognitoIdentityProviderService.AdminListUserAuthEvents'
 components:
   schemas:
-    ResourceNotFoundException: {}
-    AdminListUserAuthEventsResponse:
+    RiskLevelType:
+      type: string
+      enum:
+      - Low
+      - Medium
+      - High
+    AdminListUserAuthEventsRequest:
       type: object
+      required:
+      - UserPoolId
+      - Username
+      title: AdminListUserAuthEventsRequest
       properties:
-        AuthEvents:
+        UserPoolId:
           allOf:
-          - $ref: '#/components/schemas/AuthEventsType'
-          - description: The response object. It includes the <code>EventID</code>, <code>EventType</code>, <code>CreationDate</code>, <code>EventRisk</code>, and <code>EventResponse</code>.
+          - $ref: '#/components/schemas/UserPoolIdType'
+          - description: The user pool ID.
+        Username:
+          allOf:
+          - $ref: '#/components/schemas/UsernameType'
+          - description: The user pool username or an alias.
+        MaxResults:
+          allOf:
+          - $ref: '#/components/schemas/QueryLimitType'
+          - description: The maximum number of authentication events to return. Returns 60 events if you set <code>MaxResults</code> to 0, or if you don't include a <code>MaxResults</code> parameter.
         NextToken:
           allOf:
           - $ref: '#/components/schemas/PaginationKey'
           - description: A pagination token.
-    EventRiskType:
-      type: object
-      properties:
-        RiskDecision:
-          allOf:
-          - $ref: '#/components/schemas/RiskDecisionType'
-          - description: The risk decision.
-        RiskLevel:
-          allOf:
-          - $ref: '#/components/schemas/RiskLevelType'
-          - description: The risk level.
-        CompromisedCredentialsDetected:
-          allOf:
-          - $ref: '#/components/schemas/WrappedBooleanType'
-          - description: Indicates whether compromised credentials were detected during an authentication event.
-      description: The event risk type.
-    UserNotFoundException: {}
-    UserPoolAddOnNotEnabledException: {}
-    EventType:
-      type: string
-      enum:
-      - SignIn
-      - SignUp
-      - ForgotPassword
-      - PasswordChange
-      - ResendCode
-    EventFeedbackType:
-      type: object
-      required:
-      - FeedbackValue
-      - Provider
-      properties:
-        FeedbackValue:
-          allOf:
-          - $ref: '#/components/schemas/FeedbackValueType'
-          - description: The event feedback value.
-        Provider:
-          allOf:
-          - $ref: '#/components/schemas/StringType'
-          - description: The provider.
-        FeedbackDate:
-          allOf:
-          - $ref: '#/components/schemas/DateType'
-          - description: The event feedback date.
-      description: Specifies the event feedback type.
-    FeedbackValueType:
-      type: string
-      enum:
-      - Valid
-      - Invalid
-    DateType:
-      type: string
-      format: date-time
-    InvalidParameterException: {}
+    ResourceNotFoundException: {}
     EventResponseType:
       type: string
       enum:
       - Pass
       - Fail
       - InProgress
-    TooManyRequestsException: {}
-    PaginationKey:
-      type: string
-      pattern: '[\S]+'
-      minLength: 1
-    InternalErrorException: {}
-    StringType:
-      type: string
-    NotAuthorizedException: {}
-    ChallengeResponse:
-      type: string
-      enum:
-      - Success
-      - Failure
-    ChallengeResponseListType:
-      type: array
-      items:
-        $ref: '#/components/schemas/ChallengeResponseType'
-    WrappedBooleanType:
-      type: boolean
     EventContextDataType:
       type: object
       properties:
@@ -375,33 +320,7 @@ components:
           - $ref: '#/components/schemas/StringType'
           - description: The user's country.
       description: Specifies the user context data captured at the time of an event request.
-    QueryLimitType:
-      type: integer
-      minimum: 0
-      maximum: 60
-    AdminListUserAuthEventsRequest:
-      type: object
-      required:
-      - UserPoolId
-      - Username
-      title: AdminListUserAuthEventsRequest
-      properties:
-        UserPoolId:
-          allOf:
-          - $ref: '#/components/schemas/UserPoolIdType'
-          - description: The user pool ID.
-        Username:
-          allOf:
-          - $ref: '#/components/schemas/UsernameType'
-          - description: The user pool username or an alias.
-        MaxResults:
-          allOf:
-          - $ref: '#/components/schemas/QueryLimitType'
-          - description: The maximum number of authentication events to return. Returns 60 events if you set <code>MaxResults</code> to 0, or if you don't include a <code>MaxResults</code> parameter.
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/PaginationKey'
-          - description: A pagination token.
+    UserPoolAddOnNotEnabledException: {}
     UserPoolIdType:
       type: string
       pattern: '[\w-]+_[0-9a-zA-Z]+'
@@ -419,33 +338,64 @@ components:
           - $ref: '#/components/schemas/ChallengeResponse'
           - description: The challenge response.
       description: The challenge response type.
+    EventType:
+      type: string
+      enum:
+      - SignIn
+      - SignUp
+      - ForgotPassword
+      - PasswordChange
+      - ResendCode
+    EventRiskType:
+      type: object
+      properties:
+        RiskDecision:
+          allOf:
+          - $ref: '#/components/schemas/RiskDecisionType'
+          - description: The risk decision.
+        RiskLevel:
+          allOf:
+          - $ref: '#/components/schemas/RiskLevelType'
+          - description: The risk level.
+        CompromisedCredentialsDetected:
+          allOf:
+          - $ref: '#/components/schemas/WrappedBooleanType'
+          - description: Indicates whether compromised credentials were detected during an authentication event.
+      description: The event risk type.
+    AuthEventsType:
+      type: array
+      items:
+        $ref: '#/components/schemas/AuthEventType'
+    FeedbackValueType:
+      type: string
+      enum:
+      - Valid
+      - Invalid
+    QueryLimitType:
+      type: integer
+      minimum: 0
+      maximum: 60
+    ChallengeName:
+      type: string
+      enum:
+      - Password
+      - Mfa
+    NotAuthorizedException: {}
     UsernameType:
       type: string
       pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
       minLength: 1
       maxLength: 128
       format: password
-    AuthEventsType:
+    ChallengeResponseListType:
       type: array
       items:
-        $ref: '#/components/schemas/AuthEventType'
-    RiskLevelType:
+        $ref: '#/components/schemas/ChallengeResponseType'
+    ChallengeResponse:
       type: string
       enum:
-      - Low
-      - Medium
-      - High
-    RiskDecisionType:
-      type: string
-      enum:
-      - NoRisk
-      - AccountTakeover
-      - Block
-    ChallengeName:
-      type: string
-      enum:
-      - Password
-      - Mfa
+      - Success
+      - Failure
     AuthEventType:
       type: object
       properties:
@@ -482,7 +432,70 @@ components:
           - $ref: '#/components/schemas/EventFeedbackType'
           - description: 'A flag specifying the user feedback captured at the time of an event request is good or bad. '
       description: The authentication event type.
+    PaginationKey:
+      type: string
+      pattern: '[\S]+'
+      minLength: 1
+    DateType:
+      type: string
+      format: date-time
+    AdminListUserAuthEventsResponse:
+      type: object
+      properties:
+        AuthEvents:
+          allOf:
+          - $ref: '#/components/schemas/AuthEventsType'
+          - description: The response object. It includes the <code>EventID</code>, <code>EventType</code>, <code>CreationDate</code>, <code>EventRisk</code>, and <code>EventResponse</code>.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationKey'
+          - description: A pagination token.
+    UserNotFoundException: {}
+    TooManyRequestsException: {}
+    RiskDecisionType:
+      type: string
+      enum:
+      - NoRisk
+      - AccountTakeover
+      - Block
+    StringType:
+      type: string
+    InvalidParameterException: {}
+    EventFeedbackType:
+      type: object
+      required:
+      - FeedbackValue
+      - Provider
+      properties:
+        FeedbackValue:
+          allOf:
+          - $ref: '#/components/schemas/FeedbackValueType'
+          - description: The event feedback value.
+        Provider:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The provider.
+        FeedbackDate:
+          allOf:
+          - $ref: '#/components/schemas/DateType'
+          - description: The event feedback date.
+      description: Specifies the event feedback type.
+    InternalErrorException: {}
+    WrappedBooleanType:
+      type: boolean
   parameters:
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Credential:
       name: X-Amz-Credential
       in: header
@@ -495,26 +508,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Algorithm:
       name: X-Amz-Algorithm
       in: header
       schema:
         type: string
       required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Signature:
+      name: X-Amz-Signature
       in: header
       schema:
         type: string
@@ -534,5 +535,5 @@ components:
       x-amazon-apigateway-authtype: awsSigv4
 externalDocs:
   description: Amazon Web Services documentation
-  url: https://docs.aws.amazon.com/cognito-identity/
+  url: https://docs.aws.amazon.com/cognito-idp/
 x-hasEquivalentPaths: true

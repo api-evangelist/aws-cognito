@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 2014-06-30
   x-release: v4
-  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityService.DescribeIdentity API'
+  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityService.DescribeIdentity API'
   description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -23,6 +23,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-identity-2014-06-30.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -224,12 +225,38 @@ paths:
       - '#X Amz Target=AWSCognitoIdentityService.DescribeIdentity'
 components:
   schemas:
-    ResourceNotFoundException: {}
     LoginsList:
       type: array
       items:
         $ref: '#/components/schemas/IdentityProviderName'
+    TooManyRequestsException: {}
+    IdentityId:
+      type: string
+      pattern: '[\w-]+:[0-9a-f-]+'
+      minLength: 1
+      maxLength: 55
+    IdentityProviderName:
+      type: string
+      minLength: 1
+      maxLength: 128
+    ResourceNotFoundException: {}
+    DescribeIdentityInput:
+      type: object
+      required:
+      - IdentityId
+      title: DescribeIdentityInput
+      properties:
+        IdentityId:
+          allOf:
+          - $ref: '#/components/schemas/IdentityId'
+          - description: A unique identifier in the format REGION:GUID.
+      description: Input to the <code>DescribeIdentity</code> action.
+    DateType:
+      type: string
+      format: date-time
     InvalidParameterException: {}
+    NotAuthorizedException: {}
+    InternalErrorException: {}
     IdentityDescription:
       type: object
       properties:
@@ -250,35 +277,9 @@ components:
           - $ref: '#/components/schemas/DateType'
           - description: Date on which the identity was last modified.
       description: A description of the identity.
-    TooManyRequestsException: {}
-    InternalErrorException: {}
-    IdentityId:
-      type: string
-      pattern: '[\w-]+:[0-9a-f-]+'
-      minLength: 1
-      maxLength: 55
-    IdentityProviderName:
-      type: string
-      minLength: 1
-      maxLength: 128
-    DescribeIdentityInput:
-      type: object
-      required:
-      - IdentityId
-      title: DescribeIdentityInput
-      properties:
-        IdentityId:
-          allOf:
-          - $ref: '#/components/schemas/IdentityId'
-          - description: A unique identifier in the format REGION:GUID.
-      description: Input to the <code>DescribeIdentity</code> action.
-    NotAuthorizedException: {}
-    DateType:
-      type: string
-      format: date-time
   parameters:
-    X-Amz-Date:
-      name: X-Amz-Date
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
@@ -307,8 +308,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
+    X-Amz-Date:
+      name: X-Amz-Date
       in: header
       schema:
         type: string

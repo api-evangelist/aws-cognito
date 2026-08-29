@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 2014-06-30
   x-release: v4
-  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityService.ListIdentityPools API'
+  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityService.ListIdentityPools API'
   description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -23,6 +23,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-identity-2014-06-30.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -241,34 +242,11 @@ components:
       pattern: '[\w-]+:[0-9a-f-]+'
       minLength: 1
       maxLength: 55
-    ListIdentityPoolsInput:
-      type: object
-      required:
-      - MaxResults
-      title: ListIdentityPoolsInput
-      properties:
-        MaxResults:
-          allOf:
-          - $ref: '#/components/schemas/QueryLimit'
-          - description: The maximum number of identities to return.
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/PaginationKey'
-          - description: A pagination token.
-      description: Input to the ListIdentityPools action.
-    QueryLimit:
-      type: integer
-      minimum: 1
-      maximum: 60
-    InvalidParameterException: {}
-    TooManyRequestsException: {}
-    PaginationKey:
+    IdentityPoolName:
       type: string
-      pattern: '[\S]+'
+      pattern: '[\w\s+=,.@-]+'
       minLength: 1
-      maxLength: 65535
-    InternalErrorException: {}
-    NotAuthorizedException: {}
+      maxLength: 128
     IdentityPoolsList:
       type: array
       items:
@@ -285,6 +263,31 @@ components:
           - $ref: '#/components/schemas/PaginationKey'
           - description: A pagination token.
       description: The result of a successful ListIdentityPools action.
+    NotAuthorizedException: {}
+    ListIdentityPoolsInput:
+      type: object
+      required:
+      - MaxResults
+      title: ListIdentityPoolsInput
+      properties:
+        MaxResults:
+          allOf:
+          - $ref: '#/components/schemas/QueryLimit'
+          - description: The maximum number of identities to return.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationKey'
+          - description: A pagination token.
+      description: Input to the ListIdentityPools action.
+    PaginationKey:
+      type: string
+      pattern: '[\S]+'
+      minLength: 1
+      maxLength: 65535
+    QueryLimit:
+      type: integer
+      minimum: 1
+      maximum: 60
     IdentityPoolShortDescription:
       type: object
       properties:
@@ -297,12 +300,22 @@ components:
           - $ref: '#/components/schemas/IdentityPoolName'
           - description: A string that you provide.
       description: A description of the identity pool.
-    IdentityPoolName:
-      type: string
-      pattern: '[\w\s+=,.@-]+'
-      minLength: 1
-      maxLength: 128
+    TooManyRequestsException: {}
+    InvalidParameterException: {}
+    InternalErrorException: {}
   parameters:
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Credential:
       name: X-Amz-Credential
       in: header
@@ -315,26 +328,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Algorithm:
       name: X-Amz-Algorithm
       in: header
       schema:
         type: string
       required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Signature:
+      name: X-Amz-Signature
       in: header
       schema:
         type: string
