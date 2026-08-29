@@ -1,0 +1,1017 @@
+slug: aws-cognito
+provider: Amazon Cognito
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 111
+edges:
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminAddUserToGroup'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminaddusertogroup-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: '"Amazon Cognito Admin Add User to Group"; schemas AdminAddUserToGroupRequest, GroupNameType,
+    UsernameType'
+  reason: Administratively assigning a user to a group in a user pool is group-based access administration
+    — squarely Identity & Access Management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminInitiateAuth'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-admininitiateauth-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: AdminInitiateAuth  Amazon Cognito Admin Initiate Auth; ChallengeNameType, TokenModelType
+  reason: Initiates an authentication flow issuing tokens and MFA challenges — core authentication/IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminListGroupsForUser'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistgroupsforuser-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: POST AdminListGroupsForUser — 'Amazon Cognito Admin List Groups for User'; schemas GroupType,
+    UserPoolIdType
+  reason: Lists the security groups a user belongs to in a Cognito user pool — group/role membership administration,
+    i.e. identity and access management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminRemoveUserFromGroup'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminremoveuserfromgroup-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: AdminRemoveUserFromGroup — 'Amazon Cognito Admin Remove User from Group'; AdminRemoveUserFromGroupRequest,
+    GroupNameType
+  reason: Revokes a user's group membership in an identity directory — access provisioning/deprovisioning,
+    squarely IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminResetUserPassword'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminresetuserpassword-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: AdminResetUserPassword — 'Amazon Cognito Admin Reset User Password'
+  reason: Administrative credential reset for a directory user; classic identity and access management
+    operation.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminSetUserMFAPreference'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusermfapreference-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: AdminSetUserMFAPreference; schemas SoftwareTokenMfaSettingsType, SMSMfaSettingsType
+  reason: Configures multi-factor authentication settings for a user — authentication factor administration
+    under IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminSetUserPassword'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetuserpassword-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: AdminSetUserPassword; schemas PasswordType, InvalidPasswordException
+  reason: Administrator sets a directory user's password — credential lifecycle management, IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ChangePassword'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-changepassword-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: ChangePassword  Amazon Cognito Change Password — 'InvalidPasswordException', 'PasswordResetRequiredException'
+  reason: Credential change for an authenticated user account — core identity & access management operation
+    of an authentication service.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ConfirmForgotPassword'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-confirmforgotpassword-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: ConfirmForgotPassword  Amazon Cognito Confirm Forgot Password — 'ExpiredCodeException', 'InvalidPasswordException'
+  reason: Password reset confirmation flow for user accounts — credential lifecycle within identity &
+    access management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.CreateIdentityProvider'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-createidentityprovider-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: CreateIdentityProvider — 'IdentityProviderType', 'AttributeMappingType', 'ProviderDetailsType'
+  reason: Configures a federated identity provider (SAML/OIDC/social) for a user pool — identity federation,
+    squarely IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DeleteIdentityProvider'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-deleteidentityprovider-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: DeleteIdentityProvider  Amazon Cognito Delete Identity Provider; UnsupportedIdentityProviderException
+  reason: Manages federated identity provider configuration (SAML/OIDC/social) for a user pool — squarely
+    IAM federation.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DescribeIdentityProvider'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-describeidentityprovider-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: DescribeIdentityProvider; IdentityProviderType, AttributeMappingType, ProviderDetailsType
+  reason: Reads federated identity provider configuration and attribute mapping — IAM federation configuration.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ForgotPassword'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-forgotpassword-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: ForgotPassword — 'Amazon Cognito Forgot Password', schemas 'CodeDeliveryDetailsType', 'PasswordResetRequiredException'
+  reason: Password reset / credential recovery is squarely Identity & Access Management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.GetIdentityProviderByIdentifier'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-getidentityproviderbyidentifier-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: GetIdentityProviderByIdentifier, schemas 'IdentityProviderType', 'AttributeMappingType', 'ProviderNameType'
+  reason: Federated identity provider configuration (SAML/OIDC/social) — federation is explicitly part
+    of Identity & Access Management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.InitiateAuth'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-initiateauth-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: InitiateAuth  Amazon Cognito Initiate Auth ... AuthParametersType, ChallengeNameType
+  reason: Initiates the authentication flow for a user pool user; authentication is the core of Identity
+    & Access Management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-updateidentityprovider-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: 'UpdateIdentityProvider ... schemas: IdentityProviderType, ProviderDetailsType, AttributeMappingType,
+    UnsupportedIdentityProviderException'
+  reason: Configures federated identity providers and attribute mapping — squarely IAM/federation.
+- tag: '#X Amz Target=AWSCognitoIdentityService.GetCredentialsForIdentity'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-getcredentialsforidentity-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: GetCredentialsForIdentity ... Credentials, AccessKeyString, SecretKeyString, SessionTokenString
+  reason: Issues temporary scoped credentials for an authenticated identity — access credential issuance,
+    core IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityService.GetIdentityPoolRoles'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-getidentitypoolroles-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.9
+  evidence: GetIdentityPoolRoles ... RoleMappingMap, AmbiguousRoleResolutionType, MappingRule
+  reason: Retrieves role mapping rules governing which IAM roles authenticated identities assume — authorization/role
+    management, IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminCreateUser'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-admincreateuser-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.88
+  evidence: AdminCreateUser  Amazon Cognito Admin Create User; "provides authentication, authorization,
+    and user management for web and mobile applications"
+  reason: Administrative creation of user accounts in an identity provider service — identity and access
+    management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminDeleteUser'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuser-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.88
+  evidence: AdminDeleteUser  Amazon Cognito Admin Delete User; schemas UserPoolIdType, UsernameType
+  reason: Deprovisioning of identity accounts in a user pool — IAM joiner-mover-leaver lifecycle.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminDisableUser'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableuser-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.88
+  evidence: AdminDisableUser  Amazon Cognito Admin Disable User
+  reason: Disabling access for a user account — access lifecycle control in IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminEnableUser'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminenableuser-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.88
+  evidence: AdminEnableUser  Amazon Cognito Admin Enable User
+  reason: Re-enabling user account access — IAM account lifecycle.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminRespondToAuthChallenge'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminrespondtoauthchallenge-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.88
+  evidence: AdminRespondToAuthChallenge; schemas ChallengeNameType, TokenModelType, MFAMethodNotFoundException
+  reason: Completes an authentication challenge (including MFA) and issues tokens — authentication flow,
+    i.e. identity and access management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminUserGlobalSignOut'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminuserglobalsignout-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.88
+  evidence: AdminUserGlobalSignOut — 'Amazon Cognito Admin User Global Sign Out'
+  reason: Revokes all of a user's sessions/tokens across devices — session and access revocation, an IAM
+    function.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DeleteUser'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuser-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.88
+  evidence: DeleteUser  Amazon Cognito Delete User; UserNotFoundException, PasswordResetRequiredException
+  reason: Deletes an authenticated user account in the identity directory — user lifecycle within IAM,
+    not customer data mastering.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.RespondToAuthChallenge'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-respondtoauthchallenge-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.88
+  evidence: RespondToAuthChallenge  Amazon Cognito Respond to Auth Challenge; ChallengeNameType, MFAMethodNotFoundException,
+    TokenModelType
+  reason: Authentication challenge/MFA flow issuing tokens is squarely identity and access management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.SetUserMFAPreference'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-setusermfapreference-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.88
+  evidence: SetUserMFAPreference; SoftwareTokenMfaSettingsType, SMSMfaSettingsType
+  reason: Configuring per-user multi-factor authentication preferences is identity and access management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.SetUserPoolMfaConfig'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-setuserpoolmfaconfig-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.88
+  evidence: SetUserPoolMfaConfig; SmsMfaConfigType, SoftwareTokenMfaConfigType, UserPoolMfaType
+  reason: Pool-level MFA policy configuration is an authentication control within IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityService.SetIdentityPoolRoles'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-setidentitypoolroles-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.88
+  evidence: SetIdentityPoolRoles ... RoleMappingMap, MappingRule, ClaimName, AmbiguousRoleResolutionType
+  reason: Configures claim-to-IAM-role mappings that determine what privileges an authenticated identity
+    receives — squarely Identity & Access Management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminConfirmSignUp'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminconfirmsignup-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: '"Amazon Cognito Admin Confirm Sign Up"; schemas AdminConfirmSignUpRequest, UserPoolIdType,
+    UsernameType'
+  reason: Admin confirmation of a user registration in a user pool is user account lifecycle administration
+    within an authentication service, i.e. Identity & Access Management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminDeleteUserAttributes'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuserattributes-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: AdminDeleteUserAttributes  Amazon Cognito Admin Delete User Attributes; AttributeNameListType
+  reason: Administration of identity account attributes within the authentication directory — IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminDisableProviderForUser'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableproviderforuser-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: AdminDisableProviderForUser; ProviderUserIdentifierType, ProviderNameType
+  reason: Unlinking a federated identity provider from a user — identity federation management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminGetUser'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-admingetuser-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: AdminGetUser  Amazon Cognito Admin Get User; UserMFASettingListType, MFAOptionType
+  reason: Reading identity account details including MFA settings from the identity provider — IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminLinkProviderForUser'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminlinkproviderforuser-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: AdminLinkProviderForUser  Amazon Cognito Admin Link Provider for User; ProviderUserIdentifierType
+  reason: Linking an external federated identity provider account to a user — identity federation within
+    IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminSetUserSettings'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusersettings-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: AdminSetUserSettings; schemas MFAOptionType, MFAOptionListType, DeliveryMediumType
+  reason: Sets a user pool user's MFA delivery options — authentication configuration for an identity,
+    IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminUpdateUserAttributes'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateuserattributes-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: AdminUpdateUserAttributes; schemas AttributeType, AttributeListType, UserPoolIdType
+  reason: Administrative update of directory user attributes in a Cognito user pool — user account record
+    administration within IAM, not customer master data.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AssociateSoftwareToken'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-associatesoftwaretoken-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: AssociateSoftwareToken — schemas 'SecretCodeType', 'SoftwareTokenMFANotFoundException'
+  reason: Registers a TOTP software token for multi-factor authentication on a user account; this is identity
+    and access management (authentication factor enrolment), not a business-domain capability.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ConfirmSignUp'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-confirmsignup-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: ConfirmSignUp  Amazon Cognito Confirm Sign Up — 'ConfirmSignUpRequest', 'UserNotFoundException'
+  reason: Confirms user registration in a user pool (account activation/verification) — user account lifecycle
+    in an authentication service, i.e. IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.CreateGroup'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-creategroup-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: CreateGroup — 'GroupType', 'PrecedenceType', 'UserPoolIdType'
+  reason: Creates authorization groups (with role ARN and precedence) inside a user pool — group/role-based
+    access management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.CreateUserPool'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpool-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: CreateUserPool — 'AdminCreateUserConfigType', 'RecoveryMechanismsType', 'AdvancedSecurityModeType'
+  reason: Creates the user directory (user pool) with password policy, MFA/recovery and advanced security
+    configuration — establishing identity & access management infrastructure.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DeleteGroup'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-deletegroup-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: DeleteGroup  Amazon Cognito Delete Group; schemas UserPoolIdType, GroupNameType
+  reason: Operation deletes a user-pool group in Cognito's user directory — group/role administration
+    within an identity and access management service, not a business grouping construct.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DeleteUserAttributes'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserattributes-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: DeleteUserAttributes  Amazon Cognito Delete User Attributes; AttributeNameListType
+  reason: Maintains attributes on identity-directory user records used for authentication/authorisation
+    — IAM user administration.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DeleteUserPool'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpool-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: DeleteUserPool  Amazon Cognito Delete User Pool; UserImportInProgressException
+  reason: Deletes an entire user directory (user pool) — administration of the identity store, an IAM
+    capability.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DescribeUserPool'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpool-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: DescribeUserPool — 'Amazon Cognito provides authentication, authorization, and user management
+    for web and mobile applications'
+  reason: Cognito user pool configuration is identity and access management infrastructure; the operation
+    describes an authentication user pool. Maps to Identity & Access Management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.GetGroup'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-getgroup-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: GetGroup, schemas 'GroupType', 'PrecedenceType', 'UserPoolIdType'
+  reason: User pool groups drive role/permission assignment for authenticated users — access management,
+    not HR groups.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.GetUser'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-getuser-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: GetUser, schemas 'UserMFASettingListType', 'MFAOptionType', 'TokenModelType'
+  reason: Retrieves the authenticated user's attributes and MFA settings from the identity provider —
+    Identity & Access Management, not customer master data.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.GetUserPoolMfaConfig'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-getuserpoolmfaconfig-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: GetUserPoolMfaConfig ... SoftwareTokenMfaConfigType, SmsMfaConfigType, UserPoolMfaType
+  reason: Reads multi-factor authentication configuration for a user pool — authentication control configuration,
+    squarely Identity & Access Management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.GlobalSignOut'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-globalsignout-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: GlobalSignOut  Amazon Cognito Global Sign Out ... TokenModelType
+  reason: Invalidates a user's sessions/tokens across devices — session and access revocation, an IAM
+    function.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ListIdentityProviders'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-listidentityproviders-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: 'ListIdentityProviders ... IdentityProviderTypeType, ProviderDescription; vendor: "supports
+    OAuth2, OIDC, SAML federation, and social identity providers"'
+  reason: Manages federated identity provider configuration for a user pool — identity federation, an
+    explicit sub-part of Identity & Access Management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ListUsers'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-listusers-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: ListUsers  Amazon Cognito List Users; schemas UsersListType, UserPoolIdType, UserStatusType
+  reason: Cognito user pool user directory listing is identity and access management (user account administration),
+    not a business-domain capability.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ListUsersInGroup'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-listusersingroup-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: ListUsersInGroup  Amazon Cognito List Users in Group
+  reason: Listing users by group membership is access-group administration within IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.RevokeToken'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-revoketoken-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: RevokeToken  Amazon Cognito Revoke Token; RevokeTokenRequest, UnsupportedTokenTypeException
+  reason: Revoking refresh/access tokens is credential/session lifecycle management in IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.UpdateUserPool'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpool-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: 'UpdateUserPool ... schemas: PasswordPolicyType, AdvancedSecurityModeType, DeviceConfigurationType,
+    RecoveryMechanismsType'
+  reason: Configures the user directory's password policy, MFA/advanced security and recovery mechanisms
+    — identity and access management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.VerifySoftwareToken'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-verifysoftwaretoken-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: VerifySoftwareToken ... schemas EnableSoftwareTokenMFAException, SoftwareTokenMFAUserCodeType
+  reason: Operation verifies a TOTP software token for multi-factor authentication of a user — squarely
+    identity and access management (authentication factor enrolment/verification), not a business-domain
+    capability.
+- tag: '#X Amz Target=AWSCognitoIdentityService.CreateIdentityPool'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-createidentitypool-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: CreateIdentityPool ... schemas SAMLProviderList, OIDCProviderList, IdentityProviders
+  reason: Creates a federated identity pool with SAML/OIDC provider configuration — identity federation
+    configuration, i.e. IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityService.GetOpenIdToken'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-getopenidtoken-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: GetOpenIdToken ... OIDCToken, LoginsMap, IdentityProviderToken
+  reason: Issues an OpenID Connect token for a federated identity — token issuance in an authentication/federation
+    flow, IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityService.GetOpenIdTokenForDeveloperIdentity'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-getopenidtokenfordeveloperidentity-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: GetOpenIdTokenForDeveloperIdentity ... OIDCToken, DeveloperUserAlreadyRegisteredException,
+    PrincipalTags
+  reason: Registers/links a developer-authenticated identity and issues an OIDC token — federated authentication
+    and token issuance, IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityService.ListIdentities'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-listidentities-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: ListIdentities  Amazon Cognito List Identities; schemas IdentityDescription, IdentityPoolId,
+    LoginsList
+  reason: Enumerates federated user identities within an identity pool; this is identity lifecycle/federation
+    management, mapping to Identity & Access Management.
+- tag: '#X Amz Target=AWSCognitoIdentityService.UpdateIdentityPool'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-updateidentitypool-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: UpdateIdentityPool; "enable authentication with one or more third-party identity providers
+    ... acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary,
+    limited-privilege AWS credentials"; schemas SAMLProviderList, OIDCProviderList, IdentityProviders
+  reason: The operation configures a federated identity pool with SAML/OIDC providers and credential scoping
+    — identity and access management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminUpdateDeviceStatus'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdatedevicestatus-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.82
+  evidence: AdminUpdateDeviceStatus; schemas DeviceKeyType, DeviceRememberedStatusType
+  reason: Updates the remembered/trusted status of a user's authentication device in the user pool — device
+    trust as part of authentication administration.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.SignUp'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-signup-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.82
+  evidence: SignUp  Amazon Cognito Sign Up; SignUpRequest, UsernameExistsException, InvalidPasswordException
+  reason: Self-service registration of an end-user account in a user pool is identity provisioning, not
+    customer data mastering.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.UpdateGroup'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-updategroup-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.82
+  evidence: 'UpdateGroup ... schemas: GroupType, PrecedenceType, UserPoolIdType, ArnType'
+  reason: Updates user-pool groups (with IAM role ARN and precedence) that drive authorization for users
+    — identity and access management.
+- tag: '#X Amz Target=AWSCognitoIdentityService.ListIdentityPools'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-listidentitypools-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.82
+  evidence: ListIdentityPools ... IdentityPoolShortDescription, IdentityPoolName
+  reason: Lists identity pools — the containers governing authentication and federated credential issuance;
+    an IAM administration surface.
+- tag: '#X Amz Target=AWSCognitoIdentityService.LookupDeveloperIdentity'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-lookupdeveloperidentity-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.82
+  evidence: LookupDeveloperIdentity ... DeveloperUserIdentifier, IdentityId, DeveloperProviderName
+  reason: Resolves the link between a developer-provided user identifier and the Cognito identity id —
+    identity resolution/federation within an access management service.
+- tag: '#X Amz Target=AWSCognitoIdentityService.MergeDeveloperIdentities'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-mergedeveloperidentities-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.82
+  evidence: MergeDeveloperIdentities ... DeveloperUserIdentifier, IdentityId, DeveloperProviderName
+  reason: Merges two federated identities into one identity record — identity lifecycle administration
+    in an authentication/authorization service.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminForgetDevice'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminforgetdevice-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: AdminForgetDevice  Amazon Cognito Admin Forget Device; DeviceKeyType, UserPoolIdType
+  reason: Removal of a remembered/trusted device for a user in the auth service — part of authentication/IAM
+    administration.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ConfirmDevice'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-confirmdevice-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: ConfirmDevice — 'DeviceKeyType', 'DeviceSecretVerifierConfigType'
+  reason: Confirms/remembers a device as a trusted authentication factor for a user; part of authentication
+    and access management rather than any business capability.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.CreateResourceServer'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-createresourceserver-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: CreateResourceServer — 'ResourceServerScopeType', 'ResourceServerScopeListType'
+  reason: Defines an OAuth resource server and its scopes used to authorize access tokens — access authorization
+    configuration within IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DeleteResourceServer'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-deleteresourceserver-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: DeleteResourceServer  Amazon Cognito Delete Resource Server; ResourceServerIdentifierType
+  reason: OAuth2 resource server / scope definition used for authorisation decisions — access management
+    configuration, not a business capability of the buyer.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DeleteUserPoolClient'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpoolclient-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: DeleteUserPoolClient  Amazon Cognito Delete User Pool Client; ClientIdType
+  reason: Lifecycle of an OAuth app client registered against a user pool — credential/client administration
+    inside an IAM service.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DescribeResourceServer'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-describeresourceserver-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: DescribeResourceServer; ResourceServerScopeType, ResourceServerScopeListType
+  reason: Reads OAuth scopes defined on a resource server — authorisation scope configuration within IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DescribeRiskConfiguration'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-describeriskconfiguration-api-openapi.yml
+  capability_id: BC-620
+  capability_id_l1: BC-620
+  capability_name: Cybersecurity Management
+  confidence: 0.8
+  evidence: DescribeRiskConfiguration; AccountTakeoverRiskConfigurationType, CompromisedCredentialsActionsType
+  reason: Adaptive-authentication risk settings (account takeover, compromised credentials) — clearly
+    cybersecurity, but sits between IAM configuration and threat detection, so no L2 asserted.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DescribeUserPoolClient'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpoolclient-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: DescribeUserPoolClient with schemas 'OAuthFlowsType', 'ExplicitAuthFlowsType', 'ClientSecretType'
+  reason: App client OAuth flow configuration for an authentication service — identity and access management.
+    Could arguably be developer credential management, but the surface is IAM configuration.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ListGroups'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-listgroups-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: ListGroups ... GroupType, PrecedenceType, UserPoolIdType, ArnType
+  reason: Lists user-pool groups (with IAM role ARN and precedence) used to grant permissions to users
+    — access group administration, an IAM capability.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ResendConfirmationCode'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-resendconfirmationcode-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: ResendConfirmationCode  Amazon Cognito Resend Confirmation Code; CodeDeliveryDetailsType
+  reason: Re-sending sign-up verification codes is part of user registration/credential verification in
+    identity management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.SetUserSettings'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-setusersettings-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: SetUserSettings; MFAOptionListType, MFAOptionType, TokenModelType
+  reason: Legacy operation setting a user's MFA delivery options — authentication settings on a user account.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.UpdateResourceServer'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-updateresourceserver-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: 'UpdateResourceServer ... schemas: ResourceServerScopeType, ResourceServerScopeListType'
+  reason: Defines OAuth resource servers and scopes used for access authorization — identity and access
+    management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.VerifyUserAttribute'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-verifyuserattribute-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: VerifyUserAttribute  Amazon Cognito Verify User Attribute ... ConfirmationCodeType, AttributeNameType
+  reason: Verifies a user pool account attribute (e.g. email/phone) via confirmation code as part of user
+    account lifecycle in an identity service; maps to Identity & Access Management.
+- tag: '#X Amz Target=AWSCognitoIdentityService.DeleteIdentities'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-deleteidentities-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: DeleteIdentities  Amazon Cognito Delete Identities ... IdentityIdList
+  reason: Deletes federated user identities from the identity store — identity lifecycle administration
+    under IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityService.DeleteIdentityPool'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-deleteidentitypool-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: DeleteIdentityPool  Amazon Cognito Delete Identity Pool
+  reason: Lifecycle management of a federated identity pool; identity infrastructure administration, mapped
+    to Identity & Access Management.
+- tag: '#X Amz Target=AWSCognitoIdentityService.DescribeIdentity'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-describeidentity-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: DescribeIdentity ... IdentityDescription, IdentityProviderName, LoginsList
+  reason: Retrieves a federated identity record and its linked login providers — identity administration,
+    not customer master data.
+- tag: '#X Amz Target=AWSCognitoIdentityService.DescribeIdentityPool'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-describeidentitypool-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: DescribeIdentityPool ... SAMLProviderList, OIDCProviderList, IdentityProviders
+  reason: Reads federated identity pool configuration including SAML/OIDC providers — identity federation
+    configuration.
+- tag: '#X Amz Target=AWSCognitoIdentityService.GetId'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-getid-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: GetId  Amazon Cognito Get Id ... LoginsMap, IdentityPoolId, IdentityId
+  reason: Resolves/creates a unique federated identity id from provider logins — identity resolution within
+    an authentication service, IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityService.UnlinkDeveloperIdentity'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-unlinkdeveloperidentity-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: UnlinkDeveloperIdentity ... DeveloperProviderName, DeveloperUserIdentifier, IdentityId
+  reason: Removes the link between a developer identity and a Cognito identity — federated identity lifecycle
+    management within IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityService.UnlinkIdentity'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-unlinkidentity-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: UnlinkIdentity ... LoginsMap, IdentityProviderToken, IdentityProviderName
+  reason: Unlinks a federated login (external identity provider) from a Cognito identity — identity federation
+    administration.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-addcustomattributes-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.78
+  evidence: '"Amazon Cognito Add Custom Attributes"; schemas AddCustomAttributesRequest, UserPoolIdType,
+    SchemaAttributeType — vendor provides "authentication, authorization, and user management"'
+  reason: Operation extends the user-pool user directory schema with custom attributes, i.e. configuration
+    of an identity store. This is Identity & Access Management; slight ambiguity because it is directory
+    schema configuration rather than access administration itself.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminGetDevice'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-admingetdevice-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.78
+  evidence: AdminGetDevice  Amazon Cognito Admin Get Device; DeviceType, UserPoolIdType
+  reason: Retrieval of trusted-device records tied to a user pool identity — authentication/IAM administration.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminListDevices'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistdevices-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.78
+  evidence: AdminListDevices  Amazon Cognito Admin List Devices; DeviceListType, UserPoolIdType
+  reason: Listing devices registered against a user pool identity — authentication/IAM administration.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminListUserAuthEvents'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistuserauthevents-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.78
+  evidence: AdminListUserAuthEvents ... schemas AuthEventType, EventRiskType, RiskLevelType, ChallengeName
+  reason: Reads authentication event history and risk levels for a user pool user. This is authentication/access
+    administration; a threat-detection reading is possible but the surface is user-pool identity data,
+    so IAM is the safer sub-capability.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.GetUserAttributeVerificationCode'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-getuserattributeverificationcode-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.78
+  evidence: GetUserAttributeVerificationCode ... schemas CodeDeliveryDetailsType, UserNotConfirmedException,
+    PasswordResetRequiredException
+  reason: Cognito user-pool operation that issues a verification code to confirm a user's email/phone
+    attribute — part of user identity verification and credential lifecycle, i.e. Identity & Access Management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.UpdateUserAttributes'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserattributes-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.78
+  evidence: 'UpdateUserAttributes ... schemas: AttributeListType, TokenModelType, CodeDeliveryFailureException'
+  reason: Updates attributes of an authenticated user account in a Cognito user pool, including verification
+    delivery — user identity administration, not customer master data for a business.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.CreateUserPoolClient'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpoolclient-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.75
+  evidence: CreateUserPoolClient — 'OAuthFlowsType', 'ExplicitAuthFlowsType', 'IdTokenValidityType'
+  reason: Registers an app client with OAuth flows, scopes and token validity — configuration of authentication
+    clients/credentials, an IAM concern.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DeleteUserPoolDomain'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpooldomain-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.75
+  evidence: DeleteUserPoolDomain  Amazon Cognito Delete User Pool Domain; DomainType
+  reason: Configures the hosted sign-in domain for a user pool — supporting configuration of the authentication
+    service; IAM is the closest honest fit.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DescribeUserImportJob'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserimportjob-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.75
+  evidence: DescribeUserImportJob; UserImportJobType, UserImportJobStatusType, PreSignedUrlType
+  reason: Status of a bulk user-import job into the identity directory; it is a batch job wrapper but
+    its subject is IAM user provisioning.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ForgetDevice'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-forgetdevice-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.75
+  evidence: ForgetDevice — 'Amazon Cognito Forget Device', schemas 'DeviceKeyType', 'TokenModelType'
+  reason: Remembered-device management within the authentication flow (device tracking for MFA) — identity
+    and access management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.GetDevice'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-getdevice-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.75
+  evidence: GetDevice, schemas 'DeviceKeyType', 'TokenModelType', 'DeviceType'
+  reason: Retrieval of a tracked device associated with an authenticated user — part of the authentication/IAM
+    surface.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ListUserPools'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpools-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.75
+  evidence: ListUserPools ... UserPoolListType, UserPoolDescriptionType, LambdaConfigType
+  reason: Lists Cognito user pools — the directories that hold user identities and authentication policy;
+    administration of these is Identity & Access Management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.UpdateUserPoolClient'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpoolclient-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.75
+  evidence: 'UpdateUserPoolClient ... schemas: OAuthFlowsType, ExplicitAuthFlowsType, ScopeListType, LogoutURLsListType'
+  reason: Configures OAuth app clients, allowed auth flows and scopes for authentication — identity and
+    access management.
+- tag: '#X Amz Target=AWSCognitoIdentityService.GetPrincipalTagAttributeMap'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-getprincipaltagattributemap-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.75
+  evidence: GetPrincipalTagAttributeMap ... schemas PrincipalTags, IdentityProviderName, IdentityPoolId
+    — 'acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary,
+    limited-privilege AWS credentials'
+  reason: Retrieves the mapping of federated identity provider attributes to IAM principal tags used in
+    access-control decisions — identity and access management plumbing for federated identities, not a
+    domain business function.
+- tag: '#X Amz Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityservice-setprincipaltagattributemap-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.75
+  evidence: SetPrincipalTagAttributeMap ... PrincipalTags, IdentityProviderName, UseDefaults
+  reason: Configures how identity-provider attributes become principal tags used for authorization decisions
+    — access management configuration.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.AdminUpdateAuthEventFeedback'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateautheventfeedback-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.72
+  evidence: AdminUpdateAuthEventFeedback; schemas FeedbackValueType, EventIdType, UserPoolAddOnNotEnabledException
+  reason: Marks an authentication event as valid or fraudulent for adaptive authentication risk scoring.
+    Sits between IAM and threat detection; the object is a user-pool auth event, so IAM is the defensible
+    mapping at moderate confidence.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ListResourceServers'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-listresourceservers-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.72
+  evidence: ListResourceServers ... ResourceServerScopeType, ResourceServerScopeNameType
+  reason: Lists OAuth2 resource servers and their scopes used for authorization decisions — access/authorization
+    configuration within IAM.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.UpdateDeviceStatus'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-updatedevicestatus-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.72
+  evidence: 'UpdateDeviceStatus ... schemas: DeviceKeyType, DeviceRememberedStatusType, TokenModelType'
+  reason: Manages remembered-device status used in user authentication flows — identity and access management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.CreateUserImportJob'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-createuserimportjob-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: CreateUserImportJob — 'UserImportJobType', 'UserImportJobStatusType', 'PreSignedUrlType'
+  reason: Bulk import of user accounts into a user pool; although it is a batch-job mechanism, its object
+    is user identity provisioning, so IAM is the honest mapping.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.DescribeUserPoolDomain'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpooldomain-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: DescribeUserPoolDomain, schemas 'CustomDomainConfigType', 'DomainStatusType'
+  reason: Hosted sign-in domain configuration for the Cognito authentication service; part of IAM/federation
+    setup. Thin but consistent with the identity service.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.GetSigningCertificate'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-getsigningcertificate-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: GetSigningCertificate, schemas 'UserPoolIdType', 'GetSigningCertificateResponse'
+  reason: Retrieval of the SAML signing certificate used for identity federation — IAM/federation cryptographic
+    material.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ListDevices'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-listdevices-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: ListDevices ... DeviceKeyType, DeviceListType, DeviceType with TokenModelType
+  reason: Lists the remembered/trusted devices associated with an authenticated user's identity — device
+    trust in the authentication flow, part of IAM rather than endpoint/IT asset management.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.ListUserPoolClients'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpoolclients-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: ListUserPoolClients ... UserPoolClientDescription, ClientIdType, ClientNameType
+  reason: Lists app clients (OAuth clients) registered against a user pool — credential/client registration
+    for authentication, an IAM configuration surface.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.SetRiskConfiguration'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-setriskconfiguration-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: SetRiskConfiguration; AccountTakeoverRiskConfigurationType, CompromisedCredentialsActionsType
+  reason: Adaptive-authentication risk policy for account takeover and compromised credentials; security
+    control configuration on the identity service, not enterprise risk management. L2 IAM chosen as it
+    configures authentication decisions; some overlap with threat detection.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.StartUserImportJob'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-startuserimportjob-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: StartUserImportJob; UserImportJobType, UserImportJobStatusType, UserPoolIdType
+  reason: Bulk import of user accounts into a user pool — a batch job, but its object is identity account
+    provisioning; moderate confidence given the job-orchestration nature.
+- tag: '#X Amz Target=AWSCognitoIdentityProviderService.StopUserImportJob'
+  spec_file: aws-cognito-x-amz-target-awscognitoidentityproviderservice-stopuserimportjob-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: 'StopUserImportJob ... schemas: UserImportJobType, UserPoolIdType'
+  reason: Stopping a bulk user-import job into a Cognito user pool is administration of user accounts/identities,
+    i.e. identity and access management. Job-control framing lowers confidence slightly.

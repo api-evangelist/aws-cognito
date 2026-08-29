@@ -3351,6 +3351,9 @@ apis:
   - type: APIReference
     url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
 common:
+- type: CapabilityMap
+  url: capabilities/aws-cognito-capability-edges.yml
+  name: Amazon Cognito Business Capability Map
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-cognito/overview
 - type: AgenticAccess
